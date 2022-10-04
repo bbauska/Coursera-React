@@ -1,5 +1,5 @@
 ---
-Coursera-React: "My first web page using React"
+Coursera-React: "Build Your First React Website"
 ---
 <!---
 [link](URL){:target="_blank"}
@@ -56,3 +56,16 @@ Instagram - https://www.instagram.com/thenetninja/
 <!-----------
 {width="5.0in" height="2.202991032370954in"}
 ------------>
+
+<h3>Project Structure</h3>
+The hands-on project on Build Your First React Website is divided into following tasks:
+
+Task 1: User interface orientation and finished product preview
+Task 2: React Overview
+Task 3: Create the starter website and start customising
+Task 4: Render the banner image with a functional component
+Task 5: Apply CSS to make the banner image responsive
+Task 6: Display a prototype photo with a class-based component
+Task 7: Make an album component and render all our photos
+Task 8: Dynamically generate the content for the album with JSON
+Task 9: Debugging React
