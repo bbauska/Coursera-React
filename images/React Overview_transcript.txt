@@ -1,0 +1,95 @@
+Welcome back.
+So when this Times, we're going to look at an overview
+of what it's react before we dive into it.
+So I'm going to disable your side of the screen just so I
+can show you some black true Okay, so what?
+It's react, react.
+It's an open source, JavaScript library or framework that
+is created by Facebook, Actually, and Facebook does use this
+to manage their APP and website special handling data
+presentation.
+Such a assistance.
+Webpages.
+Um, it's not to be confused with React Native, which is used
+for developing mobile APS.
+Eso. There's also a phones feature called Virtual Dome that
+facilities fast and possible screen update.
+This is kind of a an advantage off using react.
+So let me show you what that means.
+De Om don't stands for document object model.
+So it takes the ex GMO structure off in an oven extremo
+document and just create this tree like structure so you can
+see that the top Allen's got map into the top level elements.
+And then what's inside of that?
+There's another level, and that's what's inside off.
+Uh, this tack, for example, right here, the source and all
+attributes get mapping to another level off, adamant as well.
+So you can kind of go into this tree like structure to add to
+access any of the element in this tree.
+Now what we act does is it has something got a virtual dom?
+So it basically copied this structure into the memory off the
+machine that it's running on, Um, when an element of the
+screen gets updated.
+So let's say we're changing this element right here.
+Um, domed of react.
+Well, first, compare what is in the memory and also what is
+already on the screen and find a difference and update that
+particular element under screen in set off, refreshing the
+whole screen, which makes it a lot more efficient and very
+fast. So the topics will be covering today would be Js X,
+which is JavaScript X XML.
+We'll talk about that more off that in a little bit.
+I'm the 22 types of components that we will be using its ah
+functional component and also class based components.
+So components it's a big part of react.
+So it's basically taking part of the screen presentation into
+different components, kind of a different objects that we can
+manage individually.
+Eso functional component.
+You can think of them as kind of the kind of life last
+destabilised.
+It's a snapshot of things.
+It's a one off.
+So let's say you want to do something with a particular set
+of values.
+You just use the functional components and they're kind of
+simple.
+The cost base components are kind of like objects they have
+states.
+They're more like an object oriented approach.
+They also have something called lifecycle hooks, which get
+cause and they have.
+These objects have life cycles.
+They kind of like alive.
+If you can think of it that way, we'll look at both of these
+in a little bit in an extra task.
+And let's look at what it's J s ex.
+So Js eggs stands for JavaScript XML Sylvia familiar with XML
+Um, you know that the structure is very, very similar to x x
+x TML. So, um, this kind of form it allows us to return this
+whole block as a Java script XML and create X X GMO contents
+using this so because it is XML and not html so, one of the
+requirement is that you have to have on a pair and closing
+tax for for this.
+So you cannot just say I'm going to create this attack.
+I'm gonna create X x five tack and six tax.
+So if you just returned these free elements, you will
+generate an error because every all the J JSX have to be
+enclosed in a now outside and closing tap.
+So that's a very important, um, things you have to remember
+eso these little things that are in curly workers.
+They're called javascript expressions.
+So what they do is they allowed us to insert JavaScript
+expressions into our Js X.
+So this one, for example, would get evaluated into whatever
+this is this variable is in now, JavaScript, that is running
+this this part of the code So you can do any of you can
+insert anything in this in Java script.
+It can be evaluated into something into these curly brackets.
+So this is called JavaScript expressions.
+So we're looking looking to all this in the next field house
+and we're going to practice.
+We're going to play with this.
+So let's get started.
+We'll get our hands on experience studying the next task.
+So see you there.

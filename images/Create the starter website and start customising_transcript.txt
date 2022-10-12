@@ -1,0 +1,177 @@
+Welcome back.
+And this house, We're going to create a starter website that
+we will modify to become our final product.
+So go ahead and switch to the command.
+Prompt eso We're going to minimize this.
+Um, you can just minimus everything on your that's top.
+I want you to double click this command palms right here
+on your desktop mixtures.
+You know, activating this one down below.
+Test the surfer process for a final product.
+So we're going to start a new command part.
+Um, So I want you to start, um, going typing with me,
+We're going to change our to actually Teoh gas problem.
+Okay, so and then we're going to use, um this dual and p x
+create cash react.
+Yeah. And then, um so we're just going to use a test name?
+Um, speakers I want to see.
+I want you to see how this process works.
+So go ahead and hit.
+Enter and you'll see.
+You see this start running and selling to generate
+a website, so this can take a while.
+This can I think on this machine, it takes about 2.5 minutes.
+I just want you to see a few a few seconds of it.
+I'm not gonna have you sit in, um, way 2.5 minutes.
+So I really created a start.
+A website for you.
+So let's go ahead.
+And cancer this Let's hit control.
+C terminated batch job and just tape.
+Yes, table.
+Why? And then hit.
+Enter. Okay, so I want you to see what happens when
+it's finished.
+You will see the screen right here.
+And it looked like this.
+I will say happy hacking.
+And then you'll get this.
+You command prompt back.
+That's when you're done.
+Um OK, so let's minimize this again and go back to this, um,
+command prompt.
+So I already created the Webster that we need for you.
+So all you have to do is so it is called photo Journal.
+It's on the desktop.
+That is a photo under their stop.
+So all you have to do is type NPM stopped.
+Actually, you know what we have to change into the directory
+Defensive less Resco CD folk.
+Oh, journal.
+Remember, You can drag my side of the screen, could see more.
+You can't So would do that.
+And then now we can do N p m stopped, Nuggets will start
+the reactor Web server for our website that's called Photo
+Journal that we created.
+So why don't you hit that?
+It will start running, and then it will launch a Web browser
+and show the, uh, the website that we this process created
+for you.
+That's the starter.
+So just wait a few seconds.
+So if your side of the screen is sticking longer than, um,
+what it takes in my lecture, you can just pass my video
+and resume and it shows up.
+So this is what you will see.
+It will open up a new tap in your Web browser, and this is
+the kind of with the starter website that it created for you.
+You can tell this apart from our finished product, it says
+Finished photo journal.
+Just so you don't get confused, the one that sits react apt
+would be the one we will be working on in this cross.
+Okay, so it's kind of nice.
+It just created this skeleton for you.
+Let's see underneath what mix up of this.
+So just remember that react is a programming language
+and react webpages needs to be served.
+And unlike any html files.
+They knocked a static tax file that you can just pop
+into a weapons.
+Er so which is why we have that web server process running
+the command prompt.
+So we just keep it running to vote this cross.
+And in case you accidentally closed this tap, you can just
+open up a new tappin type local host cold
+in 3000 and will play get back up.
+So let's see how all this works.
+So let's go over here to Adam.
+Tax Editor, Click on this screen icon on the bottom of your
+screen.
+So we're going to add that, uh, project that we just create
+the Webb said we just created as a project photo, um,
+onto Adam so you can right click on the left side off athm
+and then seal act at Project Photo.
+And then now our project is on Desktops of scorpion.
+Double click on their stop.
+Um, and then it is photo journal Just could see like that
+and sets a lack photo down here, and it will add it to you.
+Adam Tax Editor.
+So the first fire we're going to look at its under SRC
+the source sub folders So go ahead and open that, um I want
+you to select index dot Js Double click on that.
+And who opened up on this out of the screen.
+So now this is a Java script, remember?
+Overreact, Ace JavaScript.
+Um, so this is a Java script file, but it is, um, using the
+react framework.
+So we have to up.
+We have to import it first.
+You can see it's up, is it?
+It's imported up here.
+Um, and then it does.
+It's imported a bunch of other things packages a swell.
+So down here, this is calling a reactor function called
+render, and it just renders this section off Js x to the Web
+browser that asked for it.
+Um, Jess XX JavaScript ext XML.
+And a lot of time in Reiko.
+We will use it to render X TML coat because their form
+it's are very similar.
+So inside we have this component here called ap AP P So let's
+go look at that.
+So we, um we look at a p p dot Js Right here.
+Um, so you can see that app.
+It's a functional component because it's that function.
+So this is a were component and it returns this section
+off a J s X two, which makes up off the website that we just
+saw. You can see the logo here.
+That which is that nuclear symbol You cannot.
+So we're going to modify it and see what happens.
+So let's change the P.
+You can just type along.
+When I'm doing this, we can do it together.
+So let's change the P to the ivy and then this one down
+here, we're going to change it to close the I V.
+And then what's inside a d i v inside of division?
+That's the tax that we saw at it.
+Ah, this file and, um hit save to reload.
+So we're going to change it to what we want to say.
+So we're going to it.
+Delete this and we're going to add an H one.
+Having it's will be ah website heading.
+So remember, that's welcome to my photo, you know, and we'll
+close this h one pack the London leave that we're just going
+to after another x XT free.
+We're going, Teoh, I'm going to type my name Weaken, type
+your name or just make up any name you want.
+So we're gonna close that extra attack.
+We're also going to get rid of this whole section
+of the attack.
+We don't need that link.
+Two for a website.
+Okay, so this is all the modification we're going to do
+for now.
+So what you want to do is hit control.
+Asked to save this whenever you see a blue dot up here, that
+means you have changes that you have not safe in that tab.
+So that's a good control ass that saved it.
+Now, if you go over to chrome, you can see that the changes
+already.
+Um, in website eso Were it already changed to what we just
+enter in atom, you do not have to have to have to hit refresh
+most of the time.
+And Adam and react because the server process actually, um
+keeps an eye on all the files.
+And so if it noticed any changes, it will just refresh our
+website automatically.
+So we are kind of act kind of works like that is it's pretty
+automatic most of the time.
+So you can see that how easy this we are already one step
+closer to our final product and just really easy.
+Teoh created Webster start a website and start modifying Teoh
+to what we want at the end.
+So, um, in the next house, we're going to change this, uh,
+new clothes symbol to the banner image.
+So I don't know if you remember and finished products.
+That's a nice banner images.
+So we're going to do that in our next task, So see you there.
