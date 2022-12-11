@@ -6970,24 +6970,20 @@ manage the whole state. At the end of this exercise you will be able to:
 -   In the redux folder, create a new file named dishes.js and add the
     following to it:
 
+```
 > import { DISHES } from \'../shared/dishes\';
 >
->  
->
 > export const Dishes = (state = DISHES, action) =\> {
->
 >     switch (action.type) {
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
+```
 
 -   Then, create a file named comments.js and add the following to it:
 
+```
 > import { COMMENTS } from \'../shared/comments\';
 >
 >  
@@ -7005,10 +7001,12 @@ manage the whole state. At the end of this exercise you will be able to:
 >       }
 >
 > };
+```
 
 -   Similarly, create a new file named promotions.js and add the
     following to it:
 
+```
 > import { PROMOTIONS } from \'../shared/promotions\';
 >
 >  
@@ -7024,65 +7022,46 @@ manage the whole state. At the end of this exercise you will be able to:
 >       }
 >
 > };
+```
 
 -   And finally, create a new file named leaders.js and add the
     following to it:
 
+```
 > import { LEADERS } from \'../shared/leaders\';
 >
->  
->
 > export const Leaders = (state = LEADERS, action) =\> {
->
 >     switch (action.type) {
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
+```
 
 -   Now that we have split the management of state into different
     reducers that manage partial state, we need to combine them
     together. Open configureStore.js and update it as follows:
 
+```
 > import {createStore, combineReducers} from \'redux\';
->
 > import { Dishes } from \'./dishes\';
->
 > import { Comments } from \'./comments\';
->
 > import { Promotions } from \'./promotions\';
->
 > import { Leaders } from \'./leaders\';
 >
->  
->
 > export const ConfigureStore = () =\> {
->
 >     const store = createStore(
->
 >         combineReducers({
->
 >             dishes: Dishes,
->
 >             comments: Comments,
->
 >             promotions: Promotions,
->
 >             leaders: Leaders
->
 >         })
->
 >     );
->
 >  
->
 >     return store;
->
 > }
+```
 
 -   Now we can safely delete the reducer.js file from the project.
 
@@ -7114,11 +7093,14 @@ store. At the end of this exercise you will be able to:
 -   In the *redux* folder create a new file named *ActionTypes.js* and
     add the following to it:
 
+```
 > export const ADD_COMMENT = \'ADD_COMMENT\';
+```
 
 -   Then, create a file named *ActionCreators.js* and add the following
     to it:
 
+```
 > import \* as ActionTypes from \'./ActionTypes\';
 >
 >  
@@ -7132,100 +7114,67 @@ store. At the end of this exercise you will be able to:
 >         dishId: dishId,
 >
 >         rating: rating,
->
 >         author: author,
->
 >         comment: comment
->
 >     }
->
 > });
+```
 
 -   Next, update *comments.js* to initiate action when the action is
     dispatched by the ActionCreator as follows:
 
+```
 > import { COMMENTS } from \'../shared/comments\';
 >
 > import \* as ActionTypes from \'./ActionTypes\';
 >
->  
->
 > export const Comments = (state = COMMENTS, action) =\> {
->
 >     switch (action.type) {
->
 >         case ActionTypes.ADD_COMMENT:
->
 >             var comment = action.payload;
->
 >             comment.id = state.length;
->
 >             comment.date = new Date().toISOString();
->
 >             console.log(\"Comment: \", comment);
->
 >             return state.concat(comment);
->
->  
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
+```
 
 -   Now update *MainComponent.js* to make the action available for use
     within the DishdetailComponent as follows:
 
+```
 > . . .
 >
 >  
->
 > import { addComment } from \'../redux/ActionCreators\';
 >
->  
->
 > . . .
->
->  
 >
 >   const mapDispatchToProps = dispatch =\> ({
 >
->   
->
 >     addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment))
->
->   
 >
 >   });
 >
->  
->
 > . . .
->
->  
 >
 >       \<DishDetail dish={this.props.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
->
 >         comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
->
 >         addComment={this.props.addComment}
->
 >       /\>
->
->  
 >
 > . . .
 >
->  
->
 > export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+```
 
 -   Finally, update *DishdetailComponent.js* as follows to initiate the
     action upon the user submitting the comment form:
 
+```
 > . . .
 >
 >  
@@ -7275,6 +7224,7 @@ store. At the end of this exercise you will be able to:
 >  
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Redux
     Actions\"
@@ -7334,63 +7284,48 @@ function. At the end of this exercise you will be able to:
 
 -   Install Redux Thunk and Logger as shown below:
 
+```
 > yarn add redux-thunk@2.2.0
 >
 > yarn add redux-logger@3.0.6
+```
 
 -   Then open *configureStore.js* and update it to use the Thunk and
     Logger as follows:
 
+```
 > import {createStore, combineReducers, applyMiddleware } from \'redux\';
 >
->  
->
 > . . .
->
->  
 >
 > import thunk from \'redux-thunk\';
->
 > import logger from \'redux-logger\';
 >
->  
->
 > . . .
->
->  
->
 >         combineReducers({
->
 >             dishes: Dishes,
->
 >             comments: Comments,
->
 >             promotions: Promotions,
->
 >             leaders: Leaders
->
 >         }),
->
 >         applyMiddleware(thunk, logger)
 >
->         
->
 > . . .
+```
 
 -   Next, open *ActionTypes.js* and add new action types as follows:
 
+```
 . . .
 
- 
-
 export const DISHES_LOADING = \'DISHES_LOADING\';
-
 export const DISHES_FAILED = \'DISHES_FAILED\';
-
 export const ADD_DISHES = \'ADD_DISHES\';
+```
 
 -   Then open ActionCreators.js and add new actions:
 
+```
 > . . .
 >
 >  
@@ -7448,10 +7383,12 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >     payload: dishes
 >
 > });
+```
 
 -   Next, open dishes.js and add the code to respond to actions as
     follows:
 
+```
 > import \* as ActionTypes from \'./ActionTypes\';
 >
 >  
@@ -7489,10 +7426,12 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >     }
 >
 > };
+```
 
 -   Add a new component named *LoadingComponent.js* to display a loading
     message as follows:
 
+```
 > import React from \'react\';
 >
 >  
@@ -7512,10 +7451,12 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >     );
 >
 > };
+```
 
 -   Now we will update the remaining components to use the actions.
     First, open *MainComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -7595,9 +7536,11 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >     
 >
 > . . .
+```
 
 -   Open *DishdetailComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -7653,9 +7596,11 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >         
 >
 > . . .
+```
 
 -   Open *HomeComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -7731,9 +7676,11 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >  
 >
 > . . .
+```
 
 -   Finally, update *MenuComponent.js* as follows:
 
+```
 > . . .
 >
 >  
@@ -7801,6 +7748,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >         
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Redux
     Thunk\".
@@ -7828,6 +7776,7 @@ store. At the end of this exercise you will be able to:
 -   Add a new file named *forms.js* in the *redux* folder and add the
     following to it:
 
+```
 > export const InitialFeedback = {
 >
 >     firstname: \'\',
@@ -7845,10 +7794,12 @@ store. At the end of this exercise you will be able to:
 >     message: \'\'
 >
 > };
+```
 
 -   Then, open *configureStore.js* and update it to add the form to the
     reducers:
 
+```
 > . . .
 >
 >  
@@ -7890,9 +7841,11 @@ store. At the end of this exercise you will be able to:
 >         
 >
 > . . .
+```
 
 -   Next, open *MainComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -7918,9 +7871,11 @@ store. At the end of this exercise you will be able to:
 >               
 >
 > . . .
+```
 
 -   Open CommentComponent.js and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -7966,6 +7921,7 @@ store. At the end of this exercise you will be able to:
 >  
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Forms Revisited\".
@@ -8059,12 +8015,15 @@ from any folder on your computer.
 -   Move to this folder in your terminal window, and type the following
     at the command prompt to start the server:
 
+```
 >      json-server \--watch db.json -p 3001 -d 2000
+```
 
 -   This should start up a server at port number 3001 on your machine.
     The data from this server can be accessed by typing the following
     addresses into your **browser address bar**:
 
+```
 > [http://localhost:3001/dishes]{.underline}
 >
 > [http://localhost:3001/promotions]{.underline}
@@ -8072,8 +8031,7 @@ from any folder on your computer.
 > [http://localhost:3001/leaders]{.underline}
 >
 > [http://localhost:3001/feedback]{.underline}
-
- 
+```
 
 -   Type these addresses into the browser address and see the JSON data
     being served up by the server. This data is obtained from the
@@ -8086,7 +8044,9 @@ from any folder on your computer.
     that you put in a folder named **public** in the **json-server**
     folder above, will be served by the server at the following address:
 
+```
 >   <http://localhost:3001/>
+```
 
 -   Shut down the server by typing **ctrl-C** in the terminal window.
 
@@ -8101,7 +8061,9 @@ from any folder on your computer.
     up the images for our React app. You can view these images by typing
     the following into your browser address bar:
 
+```
 > [http://localhost:3001/images/]{.underline}\<image name\>.png
+```
 
 ### Conclusions
 
@@ -8179,7 +8141,9 @@ exercise you will be able to:
     to connect to the server. First, create a file named *baseUrl.js* in
     the *shared* folder and add the following to it:
 
+```
 > export const baseUrl = \'[http://localhost:3001/]{.underline}\';
+```
 
 -   Make sure that the json-server is running and servi
 
@@ -8187,22 +8151,18 @@ exercise you will be able to:
 
 -   Next, open *ActionTypes.js* and add the following:
 
+```
 . . .
-
- 
-
 export const ADD_COMMENTS = \'ADD_COMMENTS\';
-
 export const COMMENTS_FAILED = \'COMMENTS_FAILED\';
-
 export const PROMOS_LOADING = \'PROMOS_LOADING\';
-
 export const ADD_PROMOS = \'ADD_PROMOS\';
-
 export const PROMOS_FAILED = \'PROMOS_FAILED\';
+```
 
 -   Then, open *ActionCreators.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8282,9 +8242,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 > export const promosLoading = () =\> ({
 >
 >     type: ActionTypes.PROMOS_LOADING
+```
 
 -   Next, open *comments.js* and update it as follows:
 
+```
 > import \* as ActionTypes from \'./ActionTypes\';
 >
 >  
@@ -8324,9 +8286,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >   }
 >
 > };
+```
 
 -   Similarly, open *promotions.js* and update it as follows:
 
+```
 > import \* as ActionTypes from \'./ActionTypes\';
 >
 >  
@@ -8364,12 +8328,14 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >       }
 >
 > };
+```
 
 -   Now that the Redux actions are all updated, it\'s time to update the
     components.
 
 -   Open *MainComponent.js* and update it as follows:
 
+```
 > . . . 
 >
 > import { addComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
@@ -8447,9 +8413,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >             isLoading={this.props.dishes.isLoading}
 >
 >             errMess={this.props.dishes.errMess}
+```
 
 -   Then, open *MenuComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8467,9 +8435,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >                     
 >
 > . . .
+```
 
 -   Then, open *HomeComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8495,9 +8465,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >                     
 >
 > . . .
+```
 
 -   Then, open *DishdetailComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8515,6 +8487,7 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >                 
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
     from Server\".
@@ -8541,6 +8514,7 @@ able to:
 
 -   Open *ActionCreators.j*s and update it as follows:
 
+```
 > . . .
 >
 > export const fetchDishes = () =\> (dispatch) =\> {
@@ -8618,6 +8592,7 @@ able to:
 >       error =\> {
 >
 >             var errmess = new Error(error.message);
+```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
     Handling Errors\".
@@ -8645,6 +8620,7 @@ to:
 
 -   Open *ActionCreators.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8724,9 +8700,11 @@ to:
 >     .then(response =\> dispatch(addComment(response)))
 >
 >     .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
+```
 
 -   Open *comment.js* and **remove** the following two lines from it:
 
+```
 > . . .
 >
 >  
@@ -8738,9 +8716,11 @@ to:
 >  
 >
 >  . . .
+```
 
 -   Open *MainComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8766,9 +8746,11 @@ to:
 >             
 >
 > . . .
+```
 
 -   Finally, open *DishdetailComponent.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -8802,6 +8784,7 @@ to:
 >                             
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
     Post Comment\".
@@ -8886,6 +8869,7 @@ yarn add react-transition-group@2.3.0
 -   Configure CSS classes for use in animation. Open *App.css* and add
     the following classes:
 
+```
 > . . .
 >
 >  
@@ -8933,10 +8917,12 @@ yarn add react-transition-group@2.3.0
 > }
 >
 >  
+```
 
 -   Then, open MainComponent.js and add in the following to configure
     the animation:
 
+```
 > . . .
 >
 >  
@@ -8976,6 +8962,7 @@ yarn add react-transition-group@2.3.0
 >           
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Animations\".
@@ -9002,14 +8989,17 @@ you will be able to:
 
 -   Install react-animation-components into your React app as follows:
 
+```
 > yarn add react-animation-components@3.0.0
 >
 > yarn add prop-types@15.6.0
+```
 
 ### Adding Animations
 
 -   Open *HomeComponents.js* and update as follows:
 
+```
 > . . .
 >
 >  
@@ -9053,9 +9043,11 @@ you will be able to:
 >             
 >
 > . . .
+```
 
 -   Open DishdetailComponents.js and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -9127,6 +9119,7 @@ you will be able to:
 >                         
 >
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Animation Components\".
