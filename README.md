@@ -76,8 +76,15 @@ Task 9: Debugging React
 
 Part II of Front-end web development from Coursera
 
-![](./images/image001.png){width="5.0in"
-height="2.6180555555555554in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image001.png?raw=true"
+   width="65%"
+   alt="Hong Kong University of Science and Technology logo." />
+</p>
+<!-- width="5.0in" height="2.6180555555555554in" --->
 
 ## About this course:
 
@@ -1013,14 +1020,23 @@ during the installation steps.**
     following at the command prompt to check for the version of **Node**
     and **NPM**
 
-![](./images/image002.png){width="4.235295275590551in"
-height="5.4in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image002.png?raw=true"
+   width="65%"
+   alt="Hong Kong University of Science and Technology logo." />
+</p>
+<!-- width="4.235295275590551in" height="5.4in" --->
 
+```
 > node -v
 >
 >       
 >
 > npm -v
+```
 
 ### Conclusions
 
@@ -1061,7 +1077,9 @@ of this exercise, you will be able to:
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
+```
 > npm install lite-server \--save-dev
+```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -1069,54 +1087,36 @@ of this exercise, you will be able to:
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
+```
 > {
->
 >   \"name\": \"git-test\",
->
 >   \"version\": \"1.0.0\",
->
 >   \"description\": \"This is the Git and Node basic learning project\",
->
 >   \"main\": \"index.html\",
->
 >   \"scripts\": {
->
 >     \"start\": \"npm run lite\",
->
 >     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
->
 >     \"lite\": \"lite-server\"
->
 >   },
->
 >   \"repository\": {
->
 >     \"type\": \"git\",
->
->     \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
->
+>     \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
 >   },
->
 >   \"author\": \"\",
->
 >   \"license\": \"ISC\",
->
 >   \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
->
 >   \"devDependencies\": {
->
 >     \"lite-server\": \"\^2.2.2\"
->
 >   }
->
 > }
-
- 
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
 
+```
 > npm start
+```
 
 -   This should open your *index.html* page in your default browser.
 
@@ -1130,7 +1130,9 @@ of this exercise, you will be able to:
     (**Note**: the name starts with a period)Then, add the following to
     the .gitignore file
 
+```
 > node_modules
+```
 
 -   Then do a git commit and push the changes to the online repository.
     You will note that the node_modules folder will not be added to the
@@ -1250,7 +1252,9 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
     applications. To learn more about the various commands that this CLI
     provides, type at the prompt:
 
+```
 > create-react-app --help
+```
 
 ### Generating and Serving a React Project using create-react-app
 
@@ -1275,11 +1279,11 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
+```
 > git init
->
 > git add .
->
 > git commit -m \"Initial Setup\"
+```
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -1714,22 +1718,30 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
+```
 git --version
+```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
+```
 git config \--global user.name \"Your Name\"
+```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
+```
 git config \--global user.email \<your email address\>
+```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
+```
 git config \--list
+```
 
 ### Conclusions
 
@@ -1759,21 +1771,16 @@ the end of this exercise you will be able to:
 -   Add a file named *index.html* to this folder, and add the following
     HTML code to this file:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
 >
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 ### Initializing the folder as a Git repository
 
@@ -1781,52 +1788,56 @@ the end of this exercise you will be able to:
     following at the prompt to initialize the folder as a Git
     repository:
 
+```
 git init
+```
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
+```
 git status
+```
 
 ### Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
+```
 git add .
+```
 
 ### Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
+```
 git commit -m \"first commit\"
+```
 
 ### Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
+```
 git log \--oneline
+```
 
 -   Now, modify the *index.html* file as follows:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
 >
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >         \<p\>This is a paragraph\</p\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 -   Add a sub-folder named **templates** to your **git-test** folder,
     and then add a file named *test.html* to the templates folder. Then
@@ -1839,25 +1850,18 @@ git log \--oneline
 
 -   Now, modify the *index.html* file as follows:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
 >
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >         \<p\>This is a paragraph\</p\>
->
 >         \<p\>This is a second paragraph\</p\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1868,18 +1872,24 @@ git log \--oneline
     of the second commit using the git log, and then type the following
     at the prompt:
 
+```
 git checkout \<second commit\'s number\> index.html
+```
 
 ### Resetting the Git repository
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
 
+```
 git reset HEAD index.html
+```
 
 -   Then type the following at the prompt:
 
+```
 git checkout \-- index.html
+```
 
 -   You can also use *git reset* to reset the staging area to the last
     commit without disturbing the working directory.
@@ -1934,7 +1944,9 @@ git remote add origin \<repository URL\>
 
 1
 
+```
 git push -u origin master
+```
 
 ### Cloning an online repository
 
@@ -1943,7 +1955,9 @@ git push -u origin master
 
 1
 
+```
 git clone \<repository URL\>
+```
 
 ### Conclusions
 
@@ -2084,7 +2098,9 @@ during the installation steps.**
 
 3
 
+```
 npm -v
+```
 
 ### Conclusions
 
@@ -2108,7 +2124,9 @@ of this exercise, you will be able to:
 
 -   At the command prompt in your **git-test** folder, type
 
+```
 npm init
+```
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -2123,7 +2141,9 @@ Installing an NPM Module
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
+```
 npm install lite-server \--save-dev
+```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -2131,42 +2151,30 @@ npm install lite-server \--save-dev
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
+```
     \"start\": \"npm run lite\",
-
     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
-
     \"lite\": \"lite-server\"
-
   },
-
   \"repository\": {
-
     \"type\": \"git\",
-
     \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
-
   },
-
   \"author\": \"\",
-
   \"license\": \"ISC\",
-
   \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
-
   \"devDependencies\": {
-
     \"lite-server\": \"\^2.2.2\"
-
   }
-
 }
-
- 
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
 
+```
 npm start
+```
 
 -   This should open your *index.html* page in your default browser.
 
@@ -2180,7 +2188,9 @@ npm start
     (**Note**: the name starts with a period)Then, add the following to
     the .gitignore file
 
+```
 node_modules
+```
 
 -   Then do a git commit and push the changes to the online repository.
     You will note that the node_modules folder will not be added to the
@@ -2464,7 +2474,9 @@ community!
 -   To install *create-react-app* globally, type the following at the
     prompt:
 
+```
 yarn global add create-react-app@1.5.2
+```
 
 Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 \"npm install -g create-react-app@1.5.2\".
@@ -2473,7 +2485,9 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
     applications. To learn more about the various commands that this CLI
     provides, type at the prompt:
 
+```
 create-react-app \--help
+```
 
 ### Generating and Serving a React Project using *create-react-app*
 
@@ -2483,14 +2497,18 @@ create-react-app \--help
 -   Then type the following at the prompt to create a new React
     application named *confusion*:
 
+```
 create-react-app confusion
+```
 
 -   This should create a new folder named *confusion* within your
     *React* folder and create the React application in that folder.
 
 -   Move to the *confusion* folder and type the following at the prompt:
 
+```
 yarn start
+```
 
 -   This will compile the project and then open a tab in your default
     browser at the address \<Your Computer\'s Name\>:3000.
@@ -2498,11 +2516,11 @@ yarn start
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
+```
 git commit -m \"Initial Setup\"
-
 git init
-
 git add .
+```
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -2538,11 +2556,11 @@ end of this exercise you will be able to:
 -   To configure your project to use reactstrap, type the following at
     the prompt to install reactstrap, and Bootstrap 4:
 
+```
 yarn add bootstrap@4.0.0
-
 yarn add reactstrap@5.0.0
-
 yarn add react-popper@0.9.2
+```
 
 **Note**: You can also install the same using npm using the \"npm
 install \<package\> \--save\" option if you are using npm instead of
@@ -2553,53 +2571,37 @@ yarn.
 -   Next, open index.js file in the src folder and add the following
     line into the imports:
 
+```
 . . .
-
 import \'bootstrap/dist/css/bootstrap.min.css\';
-
 . . .
+```
 
 ### Adding a Navigation Bar:
 
 -   Open App.js in the src folder and update it as follows:
-
  
-
+```
 class App extends Component {
-
   render() {
-
     return (
-
       \<div className=\"App\"\>
-
         \<Navbar dark color=\"primary\"\>
-
           \<div className=\"container\"\>
-
             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
-
           \</div\>
-
         \</Navbar\>
-
       \</div\>
-
     );
-
   }
-
 }
-
- 
 
 . . .
 
 import { Navbar, NavbarBrand } from \'reactstrap\';
 
- 
-
 . . .
+```
 
 -   Do a Git commit with the message \"Configuring React\"
 
@@ -2731,105 +2733,63 @@ you will be able to:
 
 -   Add the following code to *MenuComponent.js*:
 
+```
         this.state = {
-
             dishes: \[
-
                 {
-
                   id: 0,
-
                   name:\'Uthappizza\',
-
                   image: \'assets/images/uthappizza.png\',
-
                   category: \'mains\',
-
                   label:\'Hot\',
-
                   price:\'4.99\',
-
                   description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                        },
-
                {
-
                   id: 1,
-
                   name:\'Zucchipakoda\',
-
                   image: \'assets/images/zucchipakoda.png\',
-
                   category: \'appetizer\',
-
                   label:\'\',
-
                   price:\'1.99\',
-
                   description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'                        },
-
                {
-
                   id: 2,
-
                   name:\'Vadonut\',
-
                   image: \'assets/images/vadonut.png\',
-
                   category: \'appetizer\',
-
                   label:\'New\',
-
                   price:\'1.99\',
-
                   description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'                        },
-
                {
-
                   id: 3,
-
                   name:\'ElaiCheese Cake\',
-
                   image: \'assets/images/elaicheesecake.png\',
-
                   category: \'dessert\',
-
                   label:\'\',
-
                   price:\'2.99\',
-
                   description:\'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms\'                        }
 
 class Menu extends Component {
-
     constructor(props) {
-
         super(props);
-
 import React, { Component } from \'react\';
-
 import { Media } from \'reactstrap\';
+```
 
- 
 
 -   Next, open *App.js* file and update it as follows:
 
+```
 . . .
-
- 
 
 import Menu from \'./components/MenuComponent\';
 
- 
-
 . . .
-
- 
 
     \<Menu /\>
 
-    
-
     . . .
+```
 
 -   Open *App.css* file and delete all its contents.
 
@@ -2872,6 +2832,7 @@ JS File
     that we have removed the dishes variable from the state of the
     component, and updated it to use the Card: 
 
+```
 >     constructor(props) {
 >
 >         super(props);
@@ -2949,6 +2910,7 @@ JS File
 >  . . .
 >
 >  
+```
 
 -   Add a folder named *shared* under the *src* folder.
 
@@ -2957,6 +2919,7 @@ JS File
     the *dishes.js* file given above in the Exercise Resources and move
     it to the shared folder. Make sure the file is named *dishes.js*):
 
+```
 > export const DISHES =
 >
 >     \[
@@ -3076,6 +3039,7 @@ JS File
 >  
 >
 > . . .
+```
 
 -   Save the changes and do a Git commit with the message \"Components
     Part 2\".
@@ -3476,110 +3440,65 @@ data and behavior. At the end of this exercise you will learn about:
 -   Add a new component named *MainComponent.js* in the components
     folder and update its contents as follows:
 
+```
 > import React, { Component } from \'react\';
->
 > import { Navbar, NavbarBrand } from \'reactstrap\';
->
 > import Menu from \'./MenuComponent\';
->
 > import DishDetail from \'./DishdetailComponent\';
->
 > import { DISHES } from \'../shared/dishes\';
->
 >  
->
 > class Main extends Component {
->
 >  
->
 >   constructor(props) {
->
 >     super(props);
->
 >     this.state = {
->
 >         dishes: DISHES,
->
 >         selectedDish: null
->
 >     };
->
 >   }
->
 >  
->
 >   onDishSelect(dishId) {
->
 >     this.setState({ selectedDish: dishId});
->
 >   }
->
 >  
->
 >   render() {
->
 >     return (
->
 >       \<div\>
->
 >         \<Navbar dark color=\"primary\"\>
->
 >           \<div className=\"container\"\>
->
 >             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->
 >           \</div\>
->
 >         \</Navbar\>
->
 >         \<Menu dishes={this.state.dishes} onClick={(dishId) =\> this.onDishSelect(dishId)} /\>
->
 >         \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === this.state.selectedDish)\[0\]} /\>
->
 >       \</div\>
->
 >     );
->
 >   }
->
 > }
->
 >  
->
 > export default Main;
+```
 
 -   Update the *App.js* by removing the state related information, and
     make use of Main Component to render the UI:
 
+```
 > . . .
->
 > import Main from \'./components/MainComponent\';
->
 >  
->
 > class App extends Component {
->
 >  
->
 >   render() {
->
 >     return (
->
 >       \<div className=\"App\"\>
->
 >         \<Main /\>
->
 >       \</div\>
->
 >     );
->
 >   }
->
 > }
->
 >  
->
 > . . .
+```
 
 ### Turn Menu Component into a Presentational Component
 
@@ -3588,17 +3507,14 @@ data and behavior. At the end of this exercise you will learn about:
     onClick supplied by MainComponent through the props to deal with the
     clicking of a menu item:
 
+```
 > . . .
->
 >  
->
 >                     \<Card key={dish.id}
->
 >                         onClick={() =\> this.props.onClick(dish.id)}\>
->
 >                         
->
 > . . .
+```
 
 -   The DishdetailComponent is already structured as a presentational
     component and hence needs no further update, except wrapping the
@@ -3609,7 +3525,9 @@ data and behavior. At the end of this exercise you will learn about:
     human readability, you can update your renderComment function with
     the code snippet shown below:
 
+```
 > {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}
+```
 
 -   Save all the changes and do a Git commit with the message
     \"Presentational and Container Components\"
@@ -3643,127 +3561,73 @@ to:
 
 -   Open MenuComponent.js and update it as follows:
 
+```
 > import React from \'react\';
->
 > import { Card, CardImg, CardImgOverlay,
->
 >     CardTitle } from \'reactstrap\';
->
 >  
->
 >     function RenderMenuItem ({dish, onClick}) {
->
 >         return (
->
 >             \<Card
->
 >                 onClick={() =\> onClick(dish.id)}\>
->
 >                 \<CardImg width=\"100%\" src={dish.image} alt={dish.name} /\>
->
 >                 \<CardImgOverlay\>
->
 >                     \<CardTitle\>{dish.name}\</CardTitle\>
->
 >                 \</CardImgOverlay\>
->
 >             \</Card\>
->
 >         );
->
 >     }
->
->  
 >
 >     const Menu = (props) =\> {
->
 >  
->
 >         const menu = props.dishes.map((dish) =\> {
->
 >             return (
->
 >                 \<div className=\"col-12 col-md-5 m-1\"  key={dish.id}\>
->
 >                     \<RenderMenuItem dish={dish} onClick={props.onClick} /\>
->
 >                 \</div\>
->
 >             );
->
 >         });
->
 >  
->
 >         return (
->
 >             \<div className=\"container\"\>
->
 >                 \<div className=\"row\"\>
->
 >                     {menu}
->
 >                 \</div\>
->
 >             \</div\>
->
 >         );
->
 >     }
->
 >  
->
 > export default Menu;
+```
 
 -   Then open DishdetailComponent.js and update it as follows:
 
+```
 > import React from \'react\';
->
 > import { Card, CardImg, CardText, CardBody,
->
 >     CardTitle } from \'reactstrap\';
->
 >  
->
 >  
->
 >     function RenderDish({dish}) {
->
 >     
->
 >       . . .
->
 >  
->
 >     }
->
 >  
->
 >     function RenderComments({comments}) {
->
 >       
->
 >       . . .
->
 >       
->
 >     }
->
 >  
->
 >     const  DishDetail = (props) =\> {
->
 >  
->
 >       . . .
->
 >       
->
 >     }
->
 >  
->
 > export default DishDetail;
+```
 
 -   Save all the changes and do a Git commit with the message
     \"Functional Components\".
@@ -3836,168 +3700,104 @@ your application. At the end of this exercise you will be able to:
 -   First use yarn or npm to fetch Font Awesome and Bootstrap-social to
     the project by typing the following at the prompt:
 
+```
 > yarn add font-awesome@4.7.0
->
 > yarn add bootstrap-social@5.1.1
+```
 
 -   Then, open index.js file and update it as follows to enable your
     application to use Font Awesome and Bootstrap Social:
 
+```
 > . . .
->
 >  
->
 > import \'font-awesome/css/font-awesome.css\';
->
 > import \'bootstrap-social/bootstrap-social.css\';
->
 >  
->
 > . . .
+```
 
 ### Adding a Header and a Footer
 
 -   Create a new file named HeaderComponent.js and add the following to
     it:
 
+```
 > import React, { Component } from \'react\';
->
 > import { Navbar, NavbarBrand, Jumbotron } from \'reactstrap\';
->
 >  
->
 > class Header extends Component {
->
 >   render() {
->
 >     return(
->
 >     \<React.Fragment\>
->
 >       \<Navbar dark\>
->
 >         \<div className=\"container\"\>
->
 >             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->
 >         \</div\>
->
 >       \</Navbar\>
->
 >       \<Jumbotron\>
->
 >            \<div className=\"container\"\>
->
 >                \<div className=\"row row-header\"\>
->
 >                    \<div className=\"col-12 col-sm-6\"\>
->
 >                        \<h1\>Ristorante con Fusion\</h1\>
->
 >                        \<p\>We take inspiration from the World\'s best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!\</p\>
->
 >                    \</div\>
->
 >                \</div\>
->
 >            \</div\>
->
 >        \</Jumbotron\>
->
 >     \</React.Fragment\>
->
 >     );
->
 >   }
->
 > }
->
 >  
->
 > export default Header;
+```
 
 -   Then, add another file named FooterComponent.js and add the
     following to it:
 
+```
 > import React from \'react\';
->
 >  
->
 > function Footer(props) {
->
 >     return(
->
 >     \<div className=\"footer\"\>
->
 >         \<div className=\"container\"\>
->
 >             \<div className=\"row justify-content-center\"\>             
->
 >                 \<div className=\"col-4 offset-1 col-sm-2\"\>
->
 >                     \<h5\>Links\</h5\>
->
 >                     \<ul className=\"list-unstyled\"\>
->
 >                         \<li\>\<a href=\"#\"\>Home\</a\>\</li\>
->
 >                         \<li\>\<a href=\"#\"\>About\</a\>\</li\>
->
 >                         \<li\>\<a href=\"#\"\>Menu\</a\>\</li\>
->
 >                         \<li\>\<a href=\"contactus.html\"\>Contact\</a\>\</li\>
->
 >                     \</ul\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-7 col-sm-5\"\>
->
 >                     \<h5\>Our Address\</h5\>
->
 >                     \<address\>
->
 >                       121, Clear Water Bay Road\<br /\>
->
 >                       Clear Water Bay, Kowloon\<br /\>
->
 >                       HONG KONG\<br /\>
->
 >                       \<i className=\"fa fa-phone fa-lg\"\>\</i\>: +852 1234 5678\<br /\>
->
 >                       \<i className=\"fa fa-fax fa-lg\"\>\</i\>: +852 8765 4321\<br /\>
->
 >                       \<i className=\"fa fa-envelope fa-lg\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>
->
 >                          confusion@food.net\</a\>
->
 >                     \</address\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-sm-4 align-self-center\"\>
->
 >                     \<div className=\"text-center\"\>
->
 >                         \<a className=\"btn btn-social-icon btn-google\" href=\"[http://google.com/+]{.underline}\"\>\<i className=\"fa fa-google-plus\"\>\</i\>\</a\>
->
 >                         \<a className=\"btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className=\"fa fa-facebook\"\>\</i\>\</a\>
->
 >                         \<a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
->
 >                         \<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
->
 >                         \<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
->
 >                         \<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >             \</div\>
->
 >             \<div className=\"row justify-content-center\"\>             
+```
 
 ### Integrating Header and Footer into the React Application
 
