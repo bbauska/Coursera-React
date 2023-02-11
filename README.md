@@ -41,7 +41,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <!---------------------------------------- Coursera logo ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/coursera-logo.sgv.png?raw=true"
+<img src="./images/coursera-logo.png?raw=true"
    width="35%"
    alt="Coursera logo." />
 </p>
