@@ -4521,151 +4521,72 @@ JS File
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
 
+```
 > import React from \'react\';
->
 > import { Card, CardImg, CardText, CardBody,
->
 >     CardTitle, CardSubtitle} from \'reactstrap\';
->
->  
->
 > function RenderCard({item}) {
->
->  
->
 >     return(
->
 >         \<Card\>
->
 >             \<CardImg src={item.image} alt={item.name} /\>
->
 >             \<CardBody\>
->
 >             \<CardTitle\>{item.name}\</CardTitle\>
->
 >             {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->
 >             \<CardText\>{item.description}\</CardText\>
->
 >             \</CardBody\>
->
 >         \</Card\>
->
 >     );
->
->  
->
 > }
->
->  
->
 > function Home(props) {
->
 >     return(
->
 >         \<div className=\"container\"\>
->
 >             \<div className=\"row align-items-start\"\>
->
 >                 \<div className=\"col-12 col-md m-1\"\>
->
 >                     \<RenderCard item={props.dish} /\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-md m-1\"\>
->
 >                     \<RenderCard item={props.promotion} /\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-md m-1\"\>
->
 >                     \<RenderCard item={props.leader} /\>
->
 >                 \</div\>
->
 >             \</div\>
->
 >         \</div\>
->
 >     );
->
 > }
->
->  
->
 > export default Home;
+```
 
 -   Next, update MainComponent.js as follows:
 
+```
 > . . .
->
->  
->
 > import { COMMENTS } from \'../shared/comments\';
->
 > import { PROMOTIONS } from \'../shared/promotions\';
->
 > import { LEADERS } from \'../shared/leaders\';
->
->  
->
 > . . .
->
->  
->
 > class Main extends Component {
->
->  
->
 >   constructor(props) {
->
 >     super(props);
->
->  
->
 >     this.state = {
->
 >       dishes: DISHES,
->
 >       comments: COMMENTS,
->
 >       promotions: PROMOTIONS,
->
 >       leaders: LEADERS
->
 >     };
->
 >   }
->
->   
->
 >   . . .
->
->  
->
 >     const HomePage = () =\> {
->
 >       return(
->
 >           \<Home 
->
 >               dish={this.state.dishes.filter((dish) =\> dish.featured)\[0\]}
->
 >               promotion={this.state.promotions.filter((promo) =\> promo.featured)\[0\]}
->
 >               leader={this.state.leaders.filter((leader) =\> leader.featured)\[0\]}
->
 >           /\>
->
 >       );
->
 >     }
->
->     
->
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Single
     Page Applications Part 1\".
@@ -4698,229 +4619,117 @@ the end of this exercise you will be able to:
     enable the information about the selected dish to be passed to the
     DishdetailComponent:
 
+```
 . . .
-
 >  
->
 > import { Card, CardImg, CardImgOverlay,
->
 >     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
->
 > import { Link } from \'react-router-dom\';
 >
->  
->
 >     function RenderMenuItem ({dish, onClick}) {
->
 >         return (
->
 >             \<Card\>
->
 >                 \<Link to={\`/menu/\${dish.id}\`} \>
->
 >                     \<CardImg width=\"100%\" src={dish.image} alt={dish.name} /\>
->
 >                     \<CardImgOverlay\>
->
 >                         \<CardTitle\>{dish.name}\</CardTitle\>
->
 >                     \</CardImgOverlay\>
->
 >                 \</Link\>
->
 >             \</Card\>
->
 >         );
->
 >     }
->
->     
->
 > . . .
->
->  
->
 >         return (
->
 >             \<div className=\"container\"\>
->
 >                 \<div className=\"row\"\>
->
 >                     \<Breadcrumb\>
->
 >                         \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->
 >                         \<BreadcrumbItem active\>Menu\</BreadcrumbItem\>
->
 >                     \</Breadcrumb\>
->
 >                     \<div className=\"col-12\"\>
->
 >                         \<h3\>Menu\</h3\>
->
 >                         \<hr /\>
->
 >                     \</div\>                
->
 >                 \</div\>
->
 >                 \<div className=\"row\"\>
->
 >                     {menu}
->
 >                 \</div\>
->
 >             \</div\>
->
 >         );
->
->         
->
 > . . .
+```
 
 -   Open *MainComponent.js* and update it as follows:
 
+```
 > . . .
->
->  
->
->  
->
 >     const DishWithId = ({match}) =\> {
->
 >       return(
->
 >           \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]} 
->
 >             comments={this.state.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))} /\>
->
 >       );
->
 >     };
->
->     
->
 > . . .
->
->  
->
 >               \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
->
->  
->
 > . . .
+```
 
 ### Updating DishDetail Component
 
 -   Open *DishdetailComponent.js* and update it as follows:
 
+```
 > . . .
->
->  
->
 > import { Card, CardImg, CardText, CardBody,
->
 >     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
->
 > import { Link } from \'react-router-dom\';
->
->  
->
->  
->
 > . . .
->
->  
->
 >             return (
->
 >                 \<div className=\"container\"\>
->
 >                 \<div className=\"row\"\>
->
 >                     \<Breadcrumb\>
->
->  
->
 >                         \<BreadcrumbItem\>\<Link to=\"/menu\"\>Menu\</Link\>\</BreadcrumbItem\>
->
 >                         \<BreadcrumbItem active\>{props.dish.name}\</BreadcrumbItem\>
->
 >                     \</Breadcrumb\>
->
 >                     \<div className=\"col-12\"\>
->
 >                         \<h3\>{props.dish.name}\</h3\>
->
 >                         \<hr /\>
->
 >                     \</div\>                
->
 >                 \</div\>
->
 >                 \<div className=\"row\"\>
->
 >                     \<div className=\"col-12 col-md-5 m-1\"\>
->
 >                         \<RenderDish dish={props.dish} /\>
->
 >                     \</div\>
->
 >                     \<div className=\"col-12 col-md-5 m-1\"\>
->
 >                         \<RenderComments comments={props.comments} /\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >                 \</div\>
->
 >             );
->
->             
->
 > . . .
+```
 
 ### Adding Breadcrumbs to ContactComponent
 
 -   Open ContactComponent.js and add Breadcrumbs to it as follows:
 
+```
 > . . .
->
->  
->
 > import { Breadcrumb, BreadcrumbItem } from \'reactstrap\';
->
 > import { Link } from \'react-router-dom\';
->
->  
->
 > . . .
->
->  
->
 >             \<div className=\"row\"\>
->
 >                 \<Breadcrumb\>
->
 >                     \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->
 >                     \<BreadcrumbItem active\>Contact Us\</BreadcrumbItem\>
->
 >                 \</Breadcrumb\>
->
 >                 \<div className=\"col-12\"\>
->
 >                     \<h3\>Contact Us\</h3\>
->
 >                     \<hr /\>
->
 >                 \</div\>                
->
 >             \</div\>
->
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message \"Single
     Page Applications Part 2\".
@@ -5290,204 +5099,104 @@ exercise you will be able to:
 -   You will start out by importing the necessary components from
     reactstrap into *ContactComponent.js* as follows:
 
+```
 > . . .
->
->  
->
 > import React, { Component } from \'react\';
->
 > import { Breadcrumb, BreadcrumbItem,
->
 >             Button, Form, FormGroup, Label, Input, Col } from \'reactstrap\';
->
->   
->
 >   . . .
+```
 
 -   You will then change the *ContactComponent* to a class-based
     component as follows:
 
+```
 > . . .
->
->  
->
 > class Contact extends Component {
->
->   
->
 >   render() {
->
->     
->
 >     . . .
->
->     
->
 >   }
->
->  
->
 > }
+```
 
 ### Creating the Controlled Form
 
 -   Update the *ContactComponent.js* file as follows to set up the
     Controlled Form:
 
+```
 > . . .
->
->  
->
 >     constructor(props) {
->
 >         super(props);
->
->  
->
 >         this.state = {
->
 >             firstname: \'\',
->
 >             lastname: \'\',
->
 >             telnum: \'\',
->
 >             email: \'\',
->
 >             agree: false,
->
 >             contactType: \'Tel.\',
->
 >             message: \'\'
->
 >         };
->
->  
->
 >         this.handleInputChange = this.handleInputChange.bind(this);
->
 >         this.handleSubmit = this.handleSubmit.bind(this);
->
->         
->
 >     }
->
->  
->
 >     handleInputChange(event) {
->
 >         const target = event.target;
->
 >         const value = target.type === \'checkbox\' ? target.checked : target.value;
->
 >         const name = target.name;
->
->     
->
 >         this.setState({
->
 >           \[name\]: value
->
 >         });
->
 >     }
->
->  
->
 >     handleSubmit(event) {
->
 >         console.log(\'Current State is: \' + JSON.stringify(this.state));
->
 >         alert(\'Current State is: \' + JSON.stringify(this.state));
->
 >         event.preventDefault();
->
 >     }
->
->  
->
 > . . .
->
 >  
+```
 
 -   Then add the controlled form to it as follows:
 
+```
 > . . .
->
->  
->
 >                 \<div className=\"row row-content\"\>
->
 >                    \<div className=\"col-12\"\>
->
 >                       \<h3\>Send us your Feedback\</h3\>
->
 >                    \</div\>
->
 >                     \<div className=\"col-12 col-md-9\"\>
->
 >                         \<Form onSubmit={this.handleSubmit}\>
->
 >                             \<FormGroup row\>
->
 >                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Input type=\"text\" id=\"firstname\" name=\"firstname\"
->
 >                                         placeholder=\"First Name\"
->
 >                                         value={this.state.firstname}
->
 >                                         onChange={this.handleInputChange} /\>
->
 >                                 \</Col\>
->
 >                             \</FormGroup\>
->
 >                             \<FormGroup row\>
->
 >                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Input type=\"text\" id=\"lastname\" name=\"lastname\"
->
 >                                         placeholder=\"Last Name\"
->
 >                                         value={this.state.lastname}
->
 >                                         onChange={this.handleInputChange} /\>
->
 >                                 \</Col\>                        
->
 >                             \</FormGroup\>
->
 >                             \<FormGroup row\>
->
 >                             \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Input type=\"tel\" id=\"telnum\" name=\"telnum\"
->
 >                                         placeholder=\"Tel. number\"
->
 >                                         value={this.state.telnum}
->
 >                                         onChange={this.handleInputChange} /\>
->
 >                                 \</Col\>
->
 >                             \</FormGroup\>
->
 >                             \<FormGroup row\>
->
 >                                 \<Label htmlFor=\"email\" md={2}\>Email\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Input type=\"email\" id=\"email\" name=\"email\"
 >
 >                                         placeholder=\"Email\"
