@@ -35,19 +35,19 @@ Instagram - https://www.instagram.com/thenetninja/
 
 <h2 align="center">Coursera - React</h2>
 <br/>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- readme.md of coursera-react.bauska.net ----------------------------->
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------------- Coursera logo ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of coursera-react.bauska.net ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Coursera logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/coursera-logo.png?raw=true"
    width="35%"
    alt="Coursera logo." />
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 01. hong kong university of science and technology logo (01) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
    width="65%"
@@ -548,13 +548,9 @@ development. At the end of this lesson, you will be able to:
 -   Understand the position of this course in the context of this
     specialization
 
-# WEEK
+<h1>WEEK # 1</h1>
 
-# 1
-
-**10 hours to complete**
-
-## Introduction to React
+<h2>Introduction to React</h2>
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
@@ -735,24 +731,32 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
+```
 > git \--version
+```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
+```
 > git config \--global user.name \"Your Name\"
+```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
+```
 > git config \--global user.email \<your email address\>
+```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
 ## Exercise (Video): Basic Git Commands
 
+```
 > git config \--list
+```
 
 ### Conclusions
 
@@ -780,21 +784,15 @@ the end of this exercise, you will be able to:
 -   Add a file named *index.html* to this folder, and add the following
     HTML code to this file:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
->
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 Initializing the folder as a Git repository
 
@@ -802,52 +800,55 @@ Initializing the folder as a Git repository
     following at the prompt to initialize the folder as a Git
     repository:
 
+```
 > git init
+```
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
+```
 > git status
+```
 
 Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
+```
 > git add .
+```
 
 Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
+```
 > git commit -m \"first commit\"
+```
 
 Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
+```
 > git log --oneline
+```
 
 -   Now, modify the *index.html* file as follows:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
->
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >         \<p\>This is a paragraph\</p\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 -   Add a sub-folder named **templates** to your **git-test** folder,
     and then add a file named *test.html* to the templates folder. Then
@@ -860,25 +861,17 @@ Checking the log of Git commits
 
 -   Now, modify the *index.html* file as follows:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html\>
->
 >     \<head\>\</head\>
->
->  
->
 >     \<body\>
->
 >         \<h1\>This is a Header\</h1\>
->
 >         \<p\>This is a paragraph\</p\>
->
 >         \<p\>This is a second paragraph\</p\>
->
 >     \</body\>
->
 > \</html\>
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
