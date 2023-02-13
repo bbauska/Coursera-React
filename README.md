@@ -500,7 +500,8 @@ This course will use JavaScript ES6 for developing React application.
 
 ```{=html}
 <!-- -->
-```
+
+
 -   You will then learn to use Fetch for client-server communication and
     the use of REST API on the server side.
 
@@ -731,7 +732,7 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-```
+
 > git \--version
 ```
 
@@ -745,18 +746,14 @@ would be able to:
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-```
 > git config \--global user.email \<your email address\>
-```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
 ## Exercise (Video): Basic Git Commands
 
-```
 > git config \--list
-```
 
 ### Conclusions
 
@@ -784,7 +781,6 @@ the end of this exercise, you will be able to:
 -   Add a file named *index.html* to this folder, and add the following
     HTML code to this file:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -792,7 +788,6 @@ the end of this exercise, you will be able to:
 >         \<h1\>This is a Header\</h1\>
 >     \</body\>
 > \</html\>
-```
 
 Initializing the folder as a Git repository
 
@@ -800,46 +795,35 @@ Initializing the folder as a Git repository
     following at the prompt to initialize the folder as a Git
     repository:
 
-```
 > git init
-```
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-```
 > git status
-```
 
 Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
-```
 > git add .
-```
 
 Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
-```
 > git commit -m \"first commit\"
-```
 
 Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
-```
 > git log --oneline
-```
 
 -   Now, modify the *index.html* file as follows:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -848,7 +832,6 @@ Checking the log of Git commits
 >         \<p\>This is a paragraph\</p\>
 >     \</body\>
 > \</html\>
-```
 
 -   Add a sub-folder named **templates** to your **git-test** folder,
     and then add a file named *test.html* to the templates folder. Then
@@ -861,7 +844,6 @@ Checking the log of Git commits
 
 -   Now, modify the *index.html* file as follows:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -871,7 +853,6 @@ Checking the log of Git commits
 >         \<p\>This is a second paragraph\</p\>
 >     \</body\>
 > \</html\>
-```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1023,13 +1004,11 @@ during the installation steps.**
 </p>
 <!-- width="4.235295275590551in" height="5.4in" --->
 
-```
 > node -v
 >
 >       
 >
 > npm -v
-```
 
 ### Conclusions
 
@@ -1070,9 +1049,7 @@ of this exercise, you will be able to:
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-```
 > npm install lite-server \--save-dev
-```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -1080,7 +1057,6 @@ of this exercise, you will be able to:
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-```
 > {
 >   \"name\": \"git-test\",
 >   \"version\": \"1.0.0\",
@@ -1102,14 +1078,11 @@ of this exercise, you will be able to:
 >     \"lite-server\": \"\^2.2.2\"
 >   }
 > }
-```
 
 -   Next, start the development server by typing the following at the
     prompt:
 
-```
 > npm start
-```
 
 -   This should open your *index.html* page in your default browser.
 
@@ -1123,9 +1096,7 @@ of this exercise, you will be able to:
     (**Note**: the name starts with a period)Then, add the following to
     the .gitignore file
 
-```
 > node_modules
-```
 
 -   Then do a git commit and push the changes to the online repository.
     You will note that the node_modules folder will not be added to the
@@ -1272,11 +1243,9 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
-```
 > git init
 > git add .
 > git commit -m \"Initial Setup\"
-```
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -1326,92 +1295,7 @@ browser.
     available through the **Additional Resources** of the specific
     lesson.
 
-**Exercise (Video): Basic Git Commands 18m**
-
-**Exercise (Video): Online Git Repositories 12m**
-
-## Node.js and NPM 3m
-
-## Exercise (Video): Setting up Node.js and NPM 2m
-
-## Exercise (Video): Basics of Node.js and NPM 23m
-
-## Front-end JavaScript Frameworks and Libraries Overview 12m
-
-## Introduction to React 8m
-
-## Exercise (Video): Getting Started with React 9m
-
-## React App Overview 16m
-
-## Introduction to JSX 5m
-
-## Exercise (Video): Configuring your React Application 9m
-
-## React Components 3m
-
-## Exercise (Video): React Components Part1 24m
-
-## React Components: State and Props 9m
-
-## Exercise (Video): React Components Part 2 22m
-
-## React Components: Lifecycle Methods Part 1 14m
-
-## Assignment 1 Requirements (Video): React Components 5m
-
-## **23 readings**
-
-## Welcome to Front-End Web Development with React: Additional Resources 10m
-
-## Full-Stack Web Development: The Big Picture: Objectives and Outcomes 10m
-
-## Full Stack Web Development: Additional Resources 10m
-
-## Setting up Your Development Environment: Git and Node: Objectives and Outcomes 10m
-
-## Setting up your Development Environment 10m
-
-## Exercise (Instructions): Setting up Git 10m
-
-Exercise (Instructions): Basic Git Commands 10m
-
-Exercise (Instructions): Online Git Repositories 10m
-
-Exercise (Instructions): Setting up Node.js and NPM 10m
-
-Exercise (Instructions): Basics of Node.js and NPM 10m
-
-Setting up your Development Environment: Git and Node: Additional
-Resources 10m
-
-Introduction to React: Objectives and Outcomes 10m
-
-Exercise (Instructions): Getting Started with React 10m
-
-Exercise (Instructions): Configuring your React Application 10m
-
-Introduction to React: Additional Resources 10m
-
-React Components: Objectives and Outcomes 10m
-
-Exercise (Instructions): React Components Part 1 10m
-
-Exercise (Instructions): React Components Part 2 10m
-
-React Components: Additional Resources 10m
-
-Assignment 1: React Components: Additional Resources 10m
-
-Ideation: Objectives and Outcomes 10m
-
-Ideation Report Template 10m
-
-Ideation: Additional Resources 10m
-
-# WEEK
-
-# 2
+<h1>WEEK # 2</h1>
 
 **8 hours to complete**
 
@@ -1424,72 +1308,6 @@ React Router to design single page applications.
 
 ## [Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m
 
-Exercise (Video): Presentational and Container Components 21m
-
-React Components: Lifecycle Methods Part 2 8m
-
-Functional Components 3m
-
-Exercise (Video): Functional Components 14m
-
-React Virtual DOM 6m
-
-Exercise (Video): Header and Footer 17m
-
-React Router 8m
-
-Exercise (Video): React Router 36m
-
-Single Page Applications 9m
-
-Exercise (Video): Single Page Applications Part 1 23m
-
-React Router: Parameters 6m
-
-Exercise (Video): Single Page Applications Part 2 23m
-
-Assignment 2: React Router and Single Page Applications 4m
-
-**16 readings**
-
-React Component Types: Objectives and Outcomes 10m
-
-Exercise (Instructions): Presentational and Container Components 10m
-
-Exercise (Instructions): Functional Components 10m
-
-React Component Types: Additional Resources 10m
-
-React Router: Objectives and Outcomes 10m
-
-Exercise (Instructions): Header and Footer 10m
-
-Exercise (Instructions): React Router 10m
-
-React Router: Additional Resources 10m
-
-Single Page Applications: Objectives and Outcomes 10m
-
-Exercise (Instructions): Single Page Applications Part 1 10m
-
-Exercise (Instructions): Single Page Applications Part 2 10m
-
-Single Page Applications: Additional Resources 10m
-
-Assignment 2: React Router and Single Page Applications: Additional
-Resources 10m
-
-UI Design and Prototyping: Objectives and Outcomes 10m
-
-UI Design and Prototyping Report Template 10m
-
-UI Design and Prototyping: Additional Resources 10m
-
-# WEEK
-
-# 3
-
-**7 hours to complete**
 
 ## React Forms, Flow Architecture and Introduction to Redux
 
@@ -1500,65 +1318,7 @@ a way of realizing the flux architecture.
 
 ### [Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m
 
-Exercise (Video): Controlled Forms 35m
-
-Exercise (Video): Controlled Form Validation 23m
-
-Uncontrolled Components 2m
-
-Exercise (Video): Uncontrolled Forms 17m
-
-The Model-View-Controller Framework 7m
-
-The Flux Architecture 11m
-
-Introduction to Redux 20m
-
-Exercise (Video): Introduction to Redux 23m
-
-React Redux Forms 4m
-
-Exercise (Video): React Redux Form 13m
-
-Exercise (Video): React Redux Form Validation 15m
-
-Assignment 3: React Forms and Redux 5m
-
-**15 readings**
-
-Controlled Forms: Objectives and Oute 10m
-
-Exercise (Instructions): Controlled Forms 10m
-
-Exercise (Instructions): Controlled Form Validation 10m
-
-Controlled Forms: Additional Resources 10m
-
-Uncontrolled Forms: Objectives and Outcomes 10m
-
-Exercise (Instructions): Uncontrolled Forms 10m
-
-Uncontrolled Forms: Additional Resources 10m
-
-Introduction to Redux: Objectives and Outcomes 10m
-
-Exercise (Instructions): Introduction to Redux 10m
-
-Introduction to Redux: Additional Resources 10m
-
-React Redux Form: Objectives and Outcomes 10m
-
-Exercise (Instructions): React Redux Form 10m
-
-## Exercise (Instructions): React Redux Form Validation 10m
-
-## React Redux Form: Additional Resources 10m
-
-## Assignment 3: React Forms and Redux: Additional Resources 10m
-
-# WEEK
-
-# 4
+<h1>WEEK # 4</h1>
 
 **12 hours to complete**
 
@@ -1711,30 +1471,22 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-```
-git --version
-```
+> git --version
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
-```
-git config \--global user.name \"Your Name\"
-```
+> git config \--global user.name \"Your Name\"
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-```
-git config \--global user.email \<your email address\>
-```
+> git config \--global user.email \<your email address\>
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
-```
-git config \--list
-```
+> git config \--list
 
 ### Conclusions
 
@@ -1764,7 +1516,6 @@ the end of this exercise you will be able to:
 -   Add a file named *index.html* to this folder, and add the following
     HTML code to this file:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -1773,7 +1524,6 @@ the end of this exercise you will be able to:
 >         \<h1\>This is a Header\</h1\>
 >     \</body\>
 > \</html\>
-```
 
 ### Initializing the folder as a Git repository
 
@@ -1781,56 +1531,43 @@ the end of this exercise you will be able to:
     following at the prompt to initialize the folder as a Git
     repository:
 
-```
-git init
-```
+> git init
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-```
-git status
-```
+> git status
 
 ### Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
-```
-git add .
-```
+> git add .
 
 ### Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
-```
-git commit -m \"first commit\"
-```
+> git commit -m \"first commit\"
 
 ### Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
-```
-git log \--oneline
-```
+> git log \--oneline
 
 -   Now, modify the *index.html* file as follows:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
->
 >     \<body\>
 >         \<h1\>This is a Header\</h1\>
 >         \<p\>This is a paragraph\</p\>
 >     \</body\>
 > \</html\>
-```
 
 -   Add a sub-folder named **templates** to your **git-test** folder,
     and then add a file named *test.html* to the templates folder. Then
@@ -1843,7 +1580,6 @@ git log \--oneline
 
 -   Now, modify the *index.html* file as follows:
 
-```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -1854,7 +1590,6 @@ git log \--oneline
 >         \<p\>This is a second paragraph\</p\>
 >     \</body\>
 > \</html\>
-```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1865,24 +1600,18 @@ git log \--oneline
     of the second commit using the git log, and then type the following
     at the prompt:
 
-```
-git checkout \<second commit\'s number\> index.html
-```
+> git checkout \<second commit\'s number\> index.html
 
 ### Resetting the Git repository
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
 
-```
-git reset HEAD index.html
-```
+> git reset HEAD index.html
 
 -   Then type the following at the prompt:
 
-```
-git checkout \-- index.html
-```
+> git checkout \-- index.html
 
 -   You can also use *git reset* to reset the staging area to the last
     commit without disturbing the working directory.
@@ -1926,8 +1655,6 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-1
-
 git remote add origin \<repository URL\>
 
 ### Pushing your commits to the online repository
@@ -1935,22 +1662,14 @@ git remote add origin \<repository URL\>
 -   At the prompt, type the following to push the commits to the online
     repository:
 
-1
-
-```
-git push -u origin master
-```
+> git push -u origin master
 
 ### Cloning an online repository
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-1
-
-```
-git clone \<repository URL\>
-```
+> git clone \<repository URL\>
 
 ### Conclusions
 
@@ -2089,11 +1808,7 @@ during the installation steps.**
 
 ![](./images/image002.png){width="6.5in" height="8.2875in"}
 
-3
-
-```
-npm -v
-```
+> npm -v
 
 ### Conclusions
 
@@ -2117,9 +1832,7 @@ of this exercise, you will be able to:
 
 -   At the command prompt in your **git-test** folder, type
 
-```
-npm init
-```
+> npm init
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -2134,9 +1847,7 @@ Installing an NPM Module
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-```
-npm install lite-server \--save-dev
-```
+> npm install lite-server \--save-dev
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -2144,30 +1855,26 @@ npm install lite-server \--save-dev
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-```
-    \"start\": \"npm run lite\",
-    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
-    \"lite\": \"lite-server\"
-  },
-  \"repository\": {
-    \"type\": \"git\",
-    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
-  },
-  \"author\": \"\",
-  \"license\": \"ISC\",
-  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
-  \"devDependencies\": {
-    \"lite-server\": \"\^2.2.2\"
-  }
-}
-```
+>    \"start\": \"npm run lite\",
+>    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
+>    \"lite\": \"lite-server\"
+>  },
+>  \"repository\": {
+>    \"type\": \"git\",
+>    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
+>  },
+>  \"author\": \"\",
+>  \"license\": \"ISC\",
+>  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
+>  \"devDependencies\": {
+>    \"lite-server\": \"\^2.2.2\"
+>  }
+>}
 
 -   Next, start the development server by typing the following at the
     prompt:
 
-```
-npm start
-```
+> npm start
 
 -   This should open your *index.html* page in your default browser.
 
@@ -2564,37 +2271,33 @@ yarn.
 -   Next, open index.js file in the src folder and add the following
     line into the imports:
 
-```
-. . .
-import \'bootstrap/dist/css/bootstrap.min.css\';
-. . .
-```
+> . . .
+> import \'bootstrap/dist/css/bootstrap.min.css\';
+> . . .
 
 ### Adding a Navigation Bar:
 
 -   Open App.js in the src folder and update it as follows:
  
-```
-class App extends Component {
-  render() {
-    return (
-      \<div className=\"App\"\>
-        \<Navbar dark color=\"primary\"\>
-          \<div className=\"container\"\>
-            \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
-          \</div\>
-        \</Navbar\>
-      \</div\>
-    );
-  }
-}
-
-. . .
-
-import { Navbar, NavbarBrand } from \'reactstrap\';
-
-. . .
-```
+> class App extends Component {
+>   render() {
+>     return (
+>       \<div className=\"App\"\>
+>         \<Navbar dark color=\"primary\"\>
+>           \<div className=\"container\"\>
+>             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
+>           \</div\>
+>         \</Navbar\>
+>       \</div\>
+>     );
+>   }
+> }
+> 
+> . . .
+> 
+> import { Navbar, NavbarBrand } from \'reactstrap\';
+> 
+> . . .
 
 -   Do a Git commit with the message \"Configuring React\"
 
@@ -2726,63 +2429,61 @@ you will be able to:
 
 -   Add the following code to *MenuComponent.js*:
 
-```
-        this.state = {
-            dishes: \[
-                {
-                  id: 0,
-                  name:\'Uthappizza\',
-                  image: \'assets/images/uthappizza.png\',
-                  category: \'mains\',
-                  label:\'Hot\',
-                  price:\'4.99\',
-                  description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                        },
-               {
-                  id: 1,
-                  name:\'Zucchipakoda\',
-                  image: \'assets/images/zucchipakoda.png\',
-                  category: \'appetizer\',
-                  label:\'\',
-                  price:\'1.99\',
-                  description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'                        },
-               {
-                  id: 2,
-                  name:\'Vadonut\',
-                  image: \'assets/images/vadonut.png\',
-                  category: \'appetizer\',
-                  label:\'New\',
-                  price:\'1.99\',
-                  description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'                        },
-               {
-                  id: 3,
-                  name:\'ElaiCheese Cake\',
-                  image: \'assets/images/elaicheesecake.png\',
-                  category: \'dessert\',
-                  label:\'\',
-                  price:\'2.99\',
-                  description:\'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms\'                        }
-
-class Menu extends Component {
-    constructor(props) {
-        super(props);
-import React, { Component } from \'react\';
-import { Media } from \'reactstrap\';
-```
-
+>         this.state = {
+>             dishes: \[
+>                 {
+>                   id: 0,
+>                   name:\'Uthappizza\',
+>                   image: \'assets/images/uthappizza.png\',
+>                   category: \'mains\',
+>                   label:\'Hot\',
+>                   price:\'4.99\',
+> 
+> 
+>               description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                  >      },
+>               {
+>                   id: 1,
+>                   name:\'Zucchipakoda\',
+>                   image: \'assets/images/zucchipakoda.png\',
+>                   category: \'appetizer\',
+>                   label:\'\',
+>                   price:\'1.99\',
+>                   description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce\'                        },
+>                {
+>                   id: 2,
+>                   name:\'Vadonut\',
+>                   image: \'assets/images/vadonut.png\',
+>                   category: \'appetizer\',
+>                   label:\'New\',
+>                   price:\'1.99\',
+> 
+>                   description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'          >               },
+>                {
+>                   id: 3,
+>                   name:\'ElaiCheese Cake\',
+>                   image: \'assets/images/elaicheesecake.png\',
+>                   category: \'dessert\',
+>                   label:\'\',
+>                   price:\'2.99\',
+>                   description:\'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust an> d spiced with Indian cardamoms\'                        }
+> 
+> class Menu extends Component {
+>     constructor(props) {
+>        super(props);
+> import React, { Component } from \'react\';
+> import { Media } from \'reactstrap\';
 
 -   Next, open *App.js* file and update it as follows:
 
-```
-. . .
-
-import Menu from \'./components/MenuComponent\';
-
-. . .
-
-    \<Menu /\>
-
-    . . .
-```
+> . . .
+> 
+> import Menu from \'./components/MenuComponent\';
+> 
+> . . .
+> 
+>     \<Menu /\>
+> 
+> . . .
 
 -   Open *App.css* file and delete all its contents.
 
