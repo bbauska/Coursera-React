@@ -2834,82 +2834,43 @@ JS File
 
 ```
 >     constructor(props) {
->
 >         super(props);
 >
->  
->
 >         this.state = {
->
 >             selectedDish: null
->
 >         }
->
 >     }
->
->  
 >
 >     onDishSelect(dish) {
->
 >         this.setState({ selectedDish: dish});
->
 >     }
->
->  
 >
 >     renderDish(dish) {
->
 >         if (dish != null)
->
 >             return(
->
 >                 \<Card\>
->
 >                     \<CardImg top src={dish.image} alt={dish.name} /\>
->
 >                     \<CardBody\>
->
 >                       \<CardTitle\>{dish.name}\</CardTitle\>
->
 >                       \<CardText\>{dish.description}\</CardText\>
->
 >                     \</CardBody\>
->
 >                 \</Card\>
->
 >             );
->
 >         else
->
 >             return(
->
 >                 \<div\>\</div\>
->
 >             );
->
 >     }
 >
->  
->
 >     render() {
->
 >         const menu = this.props.dishes.map((dish) =\> {
->
 >             return (
->
 >               \<div  className=\"col-12 col-md-5 m-1\"\>
->
 > class Menu extends Component {
 >
->  
->
 > import { Card, CardImg, CardImgOverlay, CardText, CardBody,
->
 >     CardTitle } from \'reactstrap\';
->
 >  . . .
->
->  
 ```
 
 -   Add a folder named *shared* under the *src* folder.
@@ -2921,128 +2882,73 @@ JS File
 
 ```
 > export const DISHES =
->
->     \[
->
+>     [
 >         {
->
 >         id: 0,
->
->         name:\'Uthappizza\',
->
->         image: \'assets/images/uthappizza.png\',
->
->         category: \'mains\',
->
->         label:\'Hot\',
->
->         price:\'4.99\',
->
->         description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\',
->
->         comments: \[
->
+>         name:'Uthappizza',
+>         image: 'assets/images/uthappizza.png',
+>         category: 'mains',
+>         label:'Hot',
+>         price:'4.99',
+>        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+>         comments: [
 >             {
->
 >             id: 0,
->
 >             rating: 5,
->
->             comment: \"Imagine all the eatables, living in conFusion!\",
->
->             author: \"John Lemon\",
->
->             date: \"2012-10-16T17:57:28.556094Z\"
->
+>             comment: "Imagine all the eatables, living in conFusion!",
+>             author: "John Lemon",
+>             date: "2012-10-16T17:57:28.556094Z"
 >             },
->
 >             {
->
 >             id: 1,
->
 >             rating: 4,
+>             comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+>             author: "Paul McVites",
 >
->             comment: \"Sends anyone to heaven, I wish I could get my mother-in-law to eat it!\",
->
->             author: \"Paul McVites\",
->
->             date: \"2014-09-05T17:57:28.556094Z\"
->
+>             date: "2014-09-05T17:57:28.556094Z"
 >             },
->
 >             {
->
 >             id: 2,
->
 >             rating: 3,
->
->             comment: \"Eat it, just eat it!\",
->
->             author: \"Michael Jaikishan\",
->
->             date: \"2015-02-13T17:57:28.556094Z\"
->
+>             comment: "Eat it, just eat it!",
+>             author: "Michael Jaikishan",
+>             date: "2015-02-13T17:57:28.556094Z"
 >             },
->
 >             {
->
 >             id: 3,
->
 >             rating: 4,
->
->             comment: \"Ultimate, Reaching for the stars!\",
->
->             author: \"Ringo Starry\",
->
->             date: \"2013-12-02T17:57:28.556094Z\"
->
+>             comment: "Ultimate, Reaching for the stars!",
+>             author: "Ringo Starry",
+>             date: "2013-12-02T17:57:28.556094Z"
 >             },
->
 >             {
+```
 
 -   Open *App.js* and update it as follows:
 
+```
 > . . .
 >
->  
->
-> import { DISHES } from \'./shared/dishes\';
->
->  
+> import { DISHES } from './shared/dishes';
 >
 > . . .
->
->  
 >
 > class App extends Component {
->
 >   constructor(props) {
->
 >     super(props);
->
 >     this.state = {
->
 >       dishes: DISHES
->
 >     };
->
 >   }
->
->  
 >
 > . . .
 >
->  
->
->   \<Menu dishes={this.state.dishes} /\>
->
->  
+>   <Menu dishes={this.state.dishes} />
 >
 > . . .
 ```
 
--   Save the changes and do a Git commit with the message \"Components
-    Part 2\".
+-   Save the changes and do a Git commit with the message "Components Part 2".
 
 Conclusions
 
@@ -3441,11 +3347,11 @@ data and behavior. At the end of this exercise you will learn about:
     folder and update its contents as follows:
 
 ```
-> import React, { Component } from \'react\';
-> import { Navbar, NavbarBrand } from \'reactstrap\';
-> import Menu from \'./MenuComponent\';
-> import DishDetail from \'./DishdetailComponent\';
-> import { DISHES } from \'../shared/dishes\';
+> import React, { Component } from 'react';
+> import { Navbar, NavbarBrand } from 'reactstrap';
+> import Menu from './MenuComponent';
+> import DishDetail from './DishdetailComponent';
+> import { DISHES } from '../shared/dishes';
 >  
 > class Main extends Component {
 >  
@@ -3463,15 +3369,15 @@ data and behavior. At the end of this exercise you will learn about:
 >  
 >   render() {
 >     return (
->       \<div\>
->         \<Navbar dark color=\"primary\"\>
->           \<div className=\"container\"\>
->             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->           \</div\>
->         \</Navbar\>
->         \<Menu dishes={this.state.dishes} onClick={(dishId) =\> this.onDishSelect(dishId)} /\>
->         \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === this.state.selectedDish)\[0\]} /\>
->       \</div\>
+>       <div>
+>         <Navbar dark color="primary">
+>           <div className="container">
+>             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+>           </div>
+>         </Navbar>
+>         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+>         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+>       </div>
 >     );
 >   }
 > }
@@ -3484,15 +3390,15 @@ data and behavior. At the end of this exercise you will learn about:
 
 ```
 > . . .
-> import Main from \'./components/MainComponent\';
+> import Main from './components/MainComponent';
 >  
 > class App extends Component {
 >  
 >   render() {
 >     return (
->       \<div className=\"App\"\>
->         \<Main /\>
->       \</div\>
+>       <div className="App">
+>         <Main />
+>       </div>
 >     );
 >   }
 > }
@@ -3509,10 +3415,8 @@ data and behavior. At the end of this exercise you will learn about:
 
 ```
 > . . .
->  
->                     \<Card key={dish.id}
->                         onClick={() =\> this.props.onClick(dish.id)}\>
->                         
+>                     <Card key={dish.id}
+>                         onClick={() => this.props.onClick(dish.id)}>
 > . . .
 ```
 
@@ -3526,11 +3430,11 @@ data and behavior. At the end of this exercise you will learn about:
     the code snippet shown below:
 
 ```
-> {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}
+> {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
 ```
 
 -   Save all the changes and do a Git commit with the message
-    \"Presentational and Container Components\"
+    "Presentational and Container Components"
 
 ### Conclusions
 
@@ -3562,38 +3466,38 @@ to:
 -   Open MenuComponent.js and update it as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 > import { Card, CardImg, CardImgOverlay,
->     CardTitle } from \'reactstrap\';
+>     CardTitle } from 'reactstrap';
 >  
 >     function RenderMenuItem ({dish, onClick}) {
 >         return (
->             \<Card
->                 onClick={() =\> onClick(dish.id)}\>
->                 \<CardImg width=\"100%\" src={dish.image} alt={dish.name} /\>
->                 \<CardImgOverlay\>
->                     \<CardTitle\>{dish.name}\</CardTitle\>
->                 \</CardImgOverlay\>
->             \</Card\>
+>             <Card
+>                 onClick={() => onClick(dish.id)}>
+>                 <CardImg width="100%" src={dish.image} alt={dish.name} />
+>                 <CardImgOverlay>
+>                     <CardTitle>{dish.name}</CardTitle>
+>                 </CardImgOverlay>
+>             </Card>
 >         );
 >     }
 >
->     const Menu = (props) =\> {
+>     const Menu = (props) => {
 >  
->         const menu = props.dishes.map((dish) =\> {
+>         const menu = props.dishes.map((dish) => {
 >             return (
->                 \<div className=\"col-12 col-md-5 m-1\"  key={dish.id}\>
->                     \<RenderMenuItem dish={dish} onClick={props.onClick} /\>
->                 \</div\>
+>                 <div className="col-12 col-md-5 m-1"  key={dish.id}>
+>                     <RenderMenuItem dish={dish} onClick={props.onClick} />
+>                 </div>
 >             );
 >         });
 >  
 >         return (
->             \<div className=\"container\"\>
->                 \<div className=\"row\"\>
+>             <div className="container">
+>                 <div className="row">
 >                     {menu}
->                 \</div\>
->             \</div\>
+>                 </div>
+>             </div>
 >         );
 >     }
 >  
@@ -3603,39 +3507,27 @@ to:
 -   Then open DishdetailComponent.js and update it as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 > import { Card, CardImg, CardText, CardBody,
->     CardTitle } from \'reactstrap\';
->  
->  
+>     CardTitle } from 'reactstrap';
 >     function RenderDish({dish}) {
->     
 >       . . .
->  
 >     }
->  
 >     function RenderComments({comments}) {
->       
 >       . . .
->       
 >     }
->  
->     const  DishDetail = (props) =\> {
->  
+>     const  DishDetail = (props) => {
 >       . . .
->       
 >     }
->  
 > export default DishDetail;
 ```
 
 -   Save all the changes and do a Git commit with the message
-    \"Functional Components\".
+    "Functional Components".
 
 ### Conclusions
 
-In this exercise we have learnt to implement our components as pure
-functional components.
+In this exercise we have learnt to implement our components as pure functional components.
 
 ## React Component Types: Additional Resources
 
@@ -3723,29 +3615,29 @@ your application. At the end of this exercise you will be able to:
     it:
 
 ```
-> import React, { Component } from \'react\';
-> import { Navbar, NavbarBrand, Jumbotron } from \'reactstrap\';
+> import React, { Component } from 'react';
+> import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
 >  
 > class Header extends Component {
 >   render() {
 >     return(
->     \<React.Fragment\>
->       \<Navbar dark\>
->         \<div className=\"container\"\>
->             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->         \</div\>
->       \</Navbar\>
->       \<Jumbotron\>
->            \<div className=\"container\"\>
->                \<div className=\"row row-header\"\>
->                    \<div className=\"col-12 col-sm-6\"\>
->                        \<h1\>Ristorante con Fusion\</h1\>
->                        \<p\>We take inspiration from the World\'s best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!\</p\>
->                    \</div\>
->                \</div\>
->            \</div\>
->        \</Jumbotron\>
->     \</React.Fragment\>
+>     <React.Fragment>
+>       <Navbar dark>
+>         <div className="container">
+>             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+>         </div>
+>       </Navbar>
+>       <Jumbotron>
+>            <div className="container">
+>                <div className="row row-header">
+>                    <div className="col-12 col-sm-6">
+>                        <h1>Ristorante con Fusion</h1>
+>                       <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+>                    </div>
+>                </div>
+>            </div>
+>        </Jumbotron>
+>     </React.Fragment>
 >     );
 >   }
 > }
@@ -3757,39 +3649,39 @@ your application. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >  
 > function Footer(props) {
 >     return(
->     \<div className=\"footer\"\>
->         \<div className=\"container\"\>
->             \<div className=\"row justify-content-center\"\>             
->                 \<div className=\"col-4 offset-1 col-sm-2\"\>
->                     \<h5\>Links\</h5\>
->                     \<ul className=\"list-unstyled\"\>
->                         \<li\>\<a href=\"#\"\>Home\</a\>\</li\>
->                         \<li\>\<a href=\"#\"\>About\</a\>\</li\>
->                         \<li\>\<a href=\"#\"\>Menu\</a\>\</li\>
->                         \<li\>\<a href=\"contactus.html\"\>Contact\</a\>\</li\>
->                     \</ul\>
->                 \</div\>
->                 \<div className=\"col-7 col-sm-5\"\>
->                     \<h5\>Our Address\</h5\>
->                     \<address\>
->                       121, Clear Water Bay Road\<br /\>
->                       Clear Water Bay, Kowloon\<br /\>
->                       HONG KONG\<br /\>
->                       \<i className=\"fa fa-phone fa-lg\"\>\</i\>: +852 1234 5678\<br /\>
->                       \<i className=\"fa fa-fax fa-lg\"\>\</i\>: +852 8765 4321\<br /\>
->                       \<i className=\"fa fa-envelope fa-lg\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>
->                          confusion@food.net\</a\>
->                     \</address\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-4 align-self-center\"\>
->                     \<div className=\"text-center\"\>
->                         \<a className=\"btn btn-social-icon btn-google\" href=\"[http://google.com/+]{.underline}\"\>\<i className=\"fa fa-google-plus\"\>\</i\>\</a\>
->                         \<a className=\"btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className=\"fa fa-facebook\"\>\</i\>\</a\>
->                         \<a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
+>     <div className="footer">
+>         <div className="container">
+>             <div className="row justify-content-center\"\>             
+>                 <div className="col-4 offset-1 col-sm-2\"\>
+>                     <h5>Links</h5>
+>                     <ul className="list-unstyled">
+>                         <li><a href="#">Home</a></li>
+>                         <li><a href="#">About</a></li>
+>                         <li><a href="#">Menu</a></li>
+>                         <li><a href="contactus.html">Contact</a></li>
+>                     </ul>
+>                 </div>
+>                 <div className="col-7 col-sm-5">
+>                     <h5>Our Address</h5>
+>                     <address>
+>                       121, Clear Water Bay Road<br />
+>                       Clear Water Bay, Kowloon<br />
+>                       HONG KONG<br />
+>                       <i className="fa fa-phone fa-lg\"\>\</i\>: +852 1234 5678\<br /\>
+>                       <i className="fa fa-fax fa-lg\"\>\</i\>: +852 8765 4321\<br /\>
+>                       <i className="fa fa-envelope fa-lg\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>
+>                          confusion@food.net</a>
+>                     </address>
+>                 </div>
+>                 <div className="col-12 col-sm-4 align-self-center">
+>                     <div className="text-center">
+>                         <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
+>                         <a className="btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className="fa fa-facebook"></i></a>
+>                         <a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
 >                         \<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
 >                         \<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
 >                         \<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
