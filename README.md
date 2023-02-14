@@ -3373,12 +3373,12 @@ your application. At the end of this exercise you will be able to:
 >                 </div>
 >                 <div className="col-12 col-sm-4 align-self-center">
 >                     <div className="text-center">
->                         <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
->                         <a className="btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className="fa fa-facebook"></i></a>
->                         <a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
->                         \<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
->                         \<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
->                         \<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
+>  <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
+> <a className="btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className="fa fa-facebook"></i></a>
+> <a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
+>\<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
+>\<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
+>\<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
 >                     \</div\>
 >                 \</div\>
 >             \</div\>
@@ -3390,6 +3390,7 @@ your application. At the end of this exercise you will be able to:
 -   Now we open MainComponent.js and update it to integrate the header
     and footer into our application:
 
+```
 > . . .
 >
 >  
@@ -3484,6 +3485,7 @@ your application. At the end of this exercise you will be able to:
 >     background-color: #512DA8;
 >
 > }
+```
 
 -   Save all the changes and do a Git commit with the message \"Header
     and Footer\"
@@ -3520,6 +3522,7 @@ this exercise you will be able to:
 
 -   Then, open *App.js* and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -3545,12 +3548,14 @@ this exercise you will be able to:
 >     
 >
 > . . .
+```
 
 ### Add a Home Component
 
 -   Create a new file named HomeComponent.js in the components folder
     and add the following to it:
 
+```
 > import React from \'react\';
 >
 >  
@@ -3572,76 +3577,48 @@ this exercise you will be able to:
 >  
 >
 > export default Home;   
+```
 
 ### Configuring the Router
 
 -   Open *MainComponent.js* file and update it as follows:
 
+```
 > . . .
->
->  
 >
 > import Home from \'./HomeComponent\';
 >
->  
->
 > . . .
->
->  
 >
 > import { Switch, Route, Redirect } from \'react-router-dom\';
 >
->  
->
 > . . .
->
->  
 >
 >   render() {
 >
->  
->
->  
->
 >     const HomePage = () =\> {
->
 >       return(
->
 >           \<Home 
->
 >           /\>
->
 >       );
->
 >     }
 >
->  
->
 > . . .
->
->  
->
 >           \<Switch\>
->
 >               \<Route path=\'/home\' component={HomePage} /\>
->
 >               \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.state.dishes} /\>} /\>
->
 >               \<Redirect to=\"/home\" /\>
->
 >           \</Switch\>
 >
->  
->
 > . . .
 >
 >  
->
->  
+```
 
 -   Open *HeaderComponent.js* and update its contents with the
     following:
 
+```
 > import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from \'reactstrap\';
 >
 > import { NavLink } from \'react-router-dom\';
@@ -3692,7 +3669,7 @@ this exercise you will be able to:
 >
 >                         \<NavbarToggler onClick={this.toggleNav} /\>
 >
->                         \<NavbarBrand className=\"mr-auto\" href=\"/\"\>\<img src=\'assets/images/logo.png\' height=\"30\" width=\"41\" alt=\'Ristorante Con Fusion\' /\>\</NavbarBrand\>
+> \<NavbarBrand className=\"mr-auto\" href=\"/\"\>\<img src=\'assets/images/logo.png\' height=\"30\" width=\"41\" alt=\'Ristorante Con Fusion\' /\>\</NavbarBrand\>
 >
 >                         \<Collapse isOpen={this.state.isNavOpen} navbar\>
 >
@@ -3700,30 +3677,32 @@ this exercise you will be able to:
 >
 >                             \<NavItem\>
 >
->                                 \<NavLink className=\"nav-link\"  to=\'/home\'\>\<span className=\"fa fa-home fa-lg\"\>\</span\> Home\</NavLink\>
+> \<NavLink className=\"nav-link\"  to=\'/home\'\>\<span className=\"fa fa-home fa-lg\"\>\</span\> Home\</NavLink\>
 >
 >                             \</NavItem\>
 >
 >                             \<NavItem\>
 >
->                                 \<NavLink className=\"nav-link\" to=\'/aboutus\'\>\<span className=\"fa fa-info fa-lg\"\>\</span\> About Us\</NavLink\>
+> \<NavLink className=\"nav-link\" to=\'/aboutus\'\>\<span className=\"fa fa-info fa-lg\"\>\</span\> About Us\</NavLink\>
 >
 >                             \</NavItem\>
 >
 >                             \<NavItem\>
 >
->                                 \<NavLink className=\"nav-link\"  to=\'/menu\'\>\<span className=\"fa fa-list fa-lg\"\>\</span\> Menu\</NavLink\>
+>  \<NavLink className=\"nav-link\"  to=\'/menu\'\>\<span className=\"fa fa-list fa-lg\"\>\</span\> Menu\</NavLink\>
 >
 >                             \</NavItem\>
 >
 >                             \<NavItem\>
 >
->                                 \<NavLink className=\"nav-link\" to=\'/contactus\'\>\<span className=\"fa fa-address-card fa-lg\"\>\</span\> Contact Us\</NavLink\>
+> \<NavLink className=\"nav-link\" to=\'/contactus\'\>\<span className=\"fa fa-address-card fa-lg\"\>\</span\> Contact Us\</NavLink\>
 >
 >                             \</NavItem\>
+```
 
 -   Then, open FooterComponent.js and update it as follows:
 
+```
 > . . .
 >
 >  
@@ -3747,6 +3726,7 @@ this exercise you will be able to:
 >                         
 >
 > . . .
+```
 
 -   Open MenuComponent.js and remove the onClick() from the Card in the
     RenderMenuItem() function.
@@ -3846,81 +3826,54 @@ JS File
 -   Add a new file named *ContactComponent.js* file and update its
     contents as follows:
 
+```
 > import React from \'react\';
 >
->  
->
 > function Contact(props) {
->
 >     return(
->
 >         \<div className=\"container\"\>
->
 >             \<div className=\"row row-content\"\>
->
 >                 \<div className=\"col-12\"\>
->
 >                 \<h3\>Location Information\</h3\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-sm-4 offset-sm-1\"\>
->
 >                         \<h5\>Our Address\</h5\>
->
 >                         \<address\>
->
 >                         121, Clear Water Bay Road\<br /\>
->
 >                         Clear Water Bay, Kowloon\<br /\>
->
 >                         HONG KONG\<br /\>
->
 >                         \<i className=\"fa fa-phone\"\>\</i\>: +852 1234 5678\<br /\>
->
 >                         \<i className=\"fa fa-fax\"\>\</i\>: +852 8765 4321\<br /\>
->
->                         \<i className=\"fa fa-envelope\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>confusion@food.net\</a\>
+>  \<i className=\"fa fa-envelope\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>confusion@food.net\</a\>
 >
 >                         \</address\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-sm-6 offset-sm-1\"\>
->
 >                     \<h5\>Map of our Location\</h5\>
->
 >                 \</div\>
->
 >                 \<div className=\"col-12 col-sm-11 offset-sm-1\"\>
->
 >                     \<div className=\"btn-group\" role=\"group\"\>
 >
->                         \<a role=\"button\" className=\"btn btn-primary\" href=\"tel:+85212345678\"\>\<i className=\"fa fa-phone\"\>\</i\> Call\</a\>
+>\<a role=\"button\" className=\"btn btn-primary\" href=\"tel:+85212345678\"\>\<i className=\"fa fa-phone\"\>\</i\> Call\</a\>
 >
->                         \<a role=\"button\" className=\"btn btn-info\"\>\<i className=\"fa fa-skype\"\>\</i\> Skype\</a\>
+>\<a role=\"button\" className=\"btn btn-info\"\>\<i className=\"fa fa-skype\"\>\</i\> Skype\</a\>
 >
->                         \<a role=\"button\" className=\"btn btn-success\" href=\"mailto:confusion@food.net\"\>\<i className=\"fa fa-envelope-o\"\>\</i\> Email\</a\>
+>\<a role=\"button\" className=\"btn btn-success\" href=\"mailto:confusion@food.net\"\>\<i className=\"fa fa-envelope-o\"\>\</i\> Email\</a\>
 >
 >                     \</div\>
->
 >                 \</div\>
->
 >             \</div\>
->
 >         \</div\>
->
 >     );
->
 > }
 >
->  
->
 > export default Contact;
+```
 
 -   Update the *MainComponent.js* file to integrate the ContactComponent
     by adding in the following:
 
+```
 > . . .
 >
 >  
@@ -3936,6 +3889,7 @@ JS File
 >               \<Route exact path=\'/contactus\' component={Contact} /\>} /\>
 >
 >  
+```
 
 ### Updating the Home Component
 
@@ -3944,90 +3898,56 @@ JS File
     *dishes.js, comments.js, promotions.js* and *leaders.js* given above
     in Exercise resources and move them to the shared folder):
 
+```
 > export const DISHES =
->
 >     \[
->
 >         {
->
 >         id: 0,
->
 >         name:\'Uthappizza\',
->
 >         image: \'/assets/images/uthappizza.png\',
->
 >         category: \'mains\',
->
 >         label:\'Hot\',
->
 >         price:\'4.99\',
->
 >         featured: true,
 >
->         description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                    
->
+>  description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                    
 >         },
->
 >         {
->
 >         id: 1,
->
 >         name:\'Zucchipakoda\',
->
 >         image: \'/assets/images/zucchipakoda.png\',
->
 >         category: \'appetizer\',
->
 >         label:\'\',
->
 >         price:\'1.99\',
->
 >         featured: false,
->
->         description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'
+>description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'
 >
 >         },
->
 >         {
->
 >         id: 2,
->
 >         name:\'Vadonut\',
->
 >         image: \'/assets/images/vadonut.png\',
->
 >         category: \'appetizer\',
->
 >         label:\'New\',
->
 >         price:\'1.99\',
->
 >         featured: false,
->
 >         description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'
->
 >         },
->
 >         {
->
 >         id: 3,
->
 >         name:\'ElaiCheese Cake\',
->
 >         image: \'/assets/images/elaicheesecake.png\',
->
 >         category: \'dessert\',
->
 >         label:\'\',
->
 >         price:\'2.99\',
->
 >         featured: false,
+```
 
 -   Now add a new file named *comments.js* to the shared folder and
     update it as follows. We are now moving the comments about the
     dishes into its own file:
 
+```
 > export const COMMENTS = 
 >
 > \[
@@ -6553,83 +6473,36 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
->
->  
->
 > import { addComment, fetchDishes } from \'../redux/ActionCreators\';
->
->  
->
 > . . .
->
->  
->
 >   fetchDishes: () =\> { dispatch(fetchDishes())}
->
->   
->
 > . . .
->
->  
->
 >   componentDidMount() {
->
 >     this.props.fetchDishes();
->
 >   }
->
->   
->
 > . . .
->
->  
->
 >     const HomePage = () =\> {
->
 >       return(
->
 >           \<Home 
->
 >               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
->
 >               dishesLoading={this.props.dishes.isLoading}
->
 >               dishesErrMess={this.props.dishes.errMess}
->
 >               promotion={this.props.promotions.filter((promo) =\> promo.featured)\[0\]}
->
 >               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->
 >           /\>
->
 >       );
->
 >     }
->
->  
->
 >     const DishWithId = ({match}) =\> {
->
 >       return(
->
->           \<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
+>\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
 >
 >             isLoading={this.props.dishes.isLoading}
->
 >             errMess={this.props.dishes.errMess}
->
->             comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
->
+> comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
 >             addComment={this.props.addComment}
->
 >           /\>
->
 >       );
->
 >     };
->
->     
->
 > . . .
 ```
 
@@ -6637,59 +6510,27 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
->
->  
->
 > import { Loading } from \'./LoadingComponent\';
->
->  
->
 > . . .
->
->  
->
->             
->
 >         if (props.isLoading) {
->
 >             return(
->
 >                 \<div className=\"container\"\>
->
 >                     \<div className=\"row\"\>            
->
 >                         \<Loading /\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >             );
->
 >         }
->
 >         else if (props.errMess) {
->
 >             return(
->
 >                 \<div className=\"container\"\>
->
 >                     \<div className=\"row\"\>            
->
 >                         \<h4\>{props.errMess}\</h4\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >             );
->
 >         }
->
 >         else if (props.dish != null) 
->
->         
->
 > . . .
 ```
 
@@ -6697,78 +6538,37 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
->
->  
->
 > import { Loading } from \'./LoadingComponent\';
->
->  
->
 > . . .
->
->  
->
 >  
 >
 > function RenderCard({item, isLoading, errMess}) {
 >
->     
->
 >     if (isLoading) {
->
 >         return(
->
 >                 \<Loading /\>
->
 >         );
->
 >     }
->
 >     else if (errMess) {
->
 >         return(
->
 >                 \<h4\>{errMess}\</h4\>
->
 >         );
->
 >     }
->
 >     else 
->
 >         return(
->
 >             \<Card\>
 >
 >                 \<CardImg src={item.image} alt={item.name} /\>
->
 >                 \<CardBody\>
->
 >                 \<CardTitle\>{item.name}\</CardTitle\>
->
 >                 {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->
 >                 \<CardText\>{item.description}\</CardText\>
->
 >                 \</CardBody\>
->
 >             \</Card\>
->
 >         );
->
->  
->
 > }
->
->  
->
 > . . .
->
->  
->
->                     \<RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  /\>
->
->  
+> \<RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  /\>
 >
 > . . .
 ```
@@ -6777,71 +6577,32 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
->
->  
->
 > import { Loading } from \'./LoadingComponent\';
->
->  
->
 > . . .
->
->  
->
 >         const menu = props.dishes.dishes.map((dish) =\> {
->
->           
->
 > . . .
->
->  
->
->  
 >
 >         if (props.dishes.isLoading) {
->
 >             return(
->
 >                 \<div className=\"container\"\>
->
 >                     \<div className=\"row\"\>            
->
 >                         \<Loading /\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >             );
->
 >         }
->
 >         else if (props.dishes.errMess) {
->
 >             return(
->
 >                 \<div className=\"container\"\>
->
 >                     \<div className=\"row\"\> 
->
 >                         \<div className=\"col-12\"\>
->
 >                             \<h4\>{props.dishes.errMess}\</h4\>
->
 >                         \</div\>
->
 >                     \</div\>
->
 >                 \</div\>
->
 >             );
->
 >         }
->
 >         else
->
->         
->
 > . . .
 ```
 
@@ -6873,21 +6634,13 @@ store. At the end of this exercise you will be able to:
 
 ```
 > export const InitialFeedback = {
->
 >     firstname: \'\',
->
 >     lastname: \'\',
->
 >     telnum: \'\',
->
 >     email: \'\',
->
 >     agree: false,
->
 >     contactType: \'Tel.\',
->
 >     message: \'\'
->
 > };
 ```
 
@@ -6896,45 +6649,19 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 > import { createForms } from \'react-redux-form\';
->
->  
->
 > . . .
->
->  
->
 > import { InitialFeedback } from \'./forms\';
->
->  
->
 > . . .
->
->  
->
 >         combineReducers({
->
 >             dishes: Dishes,
->
 >             comments: Comments,
->
 >             promotions: Promotions,
->
 >             leaders: Leaders,
->
 >             \...createForms({
->
 >                 feedback: InitialFeedback
->
 >             })
->
 >         }),
->
->         
->
 > . . .
 ```
 
@@ -6942,28 +6669,11 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 > import { actions } from \'react-redux-form\';
->
->  
->
 > . . .
->
->  
->
 >   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))}
->
->   
->
 > . . .
->
->  
->
->               \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
->
->               
+> \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
 >
 > . . .
 ```
@@ -6972,49 +6682,19 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 > import { Control, Form, Errors, actions } from \'react-redux-form\';
->
->  
->
 > . . .
->
->  
->
 >     handleSubmit(values) {
->
 >         console.log(\'Current State is: \' + JSON.stringify(values));
->
 >         alert(\'Current State is: \' + JSON.stringify(values));
->
 >         this.props.resetFeedbackForm();
->
 >         // event.preventDefault();
->
 >     }
->
->  
->
 > . . .
->
->  
->
 >                         \<Form model=\"feedback\" onSubmit={(values) =\> this.handleSubmit(values)}\>
->
->                           
->
 >                           . . .
 >
->                           
->
->  
->
 >                         \</Form\>
->
->  
->
 > . . .
 ```
 
@@ -7259,83 +6939,32 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
->
->  
->
 > import { baseUrl } from \'../shared/baseUrl\';
->
->  
->
 > . . .
->
->  
->
 >     return fetch(baseUrl + \'dishes\')
->
 >     .then(response =\> response.json())
->
 >     .then(dishes =\> dispatch(addDishes(dishes)));
->
->     
->
 > . . .
->
->  
->
->  
->
 > export const fetchComments = () =\> (dispatch) =\> {    
->
 >     return fetch(baseUrl + \'comments\')
->
 >     .then(response =\> response.json())
->
 >     .then(comments =\> dispatch(addComments(comments)));
->
 > };
->
->  
->
 > export const commentsFailed = (errmess) =\> ({
->
 >     type: ActionTypes.COMMENTS_FAILED,
->
 >     payload: errmess
->
 > });
->
->  
->
 > export const addComments = (comments) =\> ({
->
 >     type: ActionTypes.ADD_COMMENTS,
->
 >     payload: comments
->
 > });
->
->  
->
 > export const fetchPromos = () =\> (dispatch) =\> {
->
->     
->
 >     dispatch(promosLoading());
->
->  
->
 >     return fetch(baseUrl + \'promotions\')
->
 >     .then(response =\> response.json())
->
 >     .then(promos =\> dispatch(addPromos(promos)));
->
 > }
->
->  
->
 > export const promosLoading = () =\> ({
->
 >     type: ActionTypes.PROMOS_LOADING
 ```
 
@@ -7344,42 +6973,20 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 ```
 > import \* as ActionTypes from \'./ActionTypes\';
 >
->  
->
 > export const Comments = (state = { errMess: null, comments:\[\]}, action) =\> {
->
 >   switch (action.type) {
->
 >     case ActionTypes.ADD_COMMENTS:
->
 >       return {\...state, errMess: null, comments: action.payload};
->
->  
->
 >     case ActionTypes.COMMENTS_FAILED:
->
 >       return {\...state, errMess: action.payload};
->
->  
->
 >     case ActionTypes.ADD_COMMENT:
->
 >         var comment = action.payload;
->
 >         comment.id = state.comments.length;
->
 >         comment.date = new Date().toISOString();
->
 >         return { \...state, comments: state.comments.concat(comment)};
->
->  
->
 >     default:
->
 >       return state;
->
 >   }
->
 > };
 ```
 
@@ -7387,41 +6994,19 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > import \* as ActionTypes from \'./ActionTypes\';
->
->  
->
 > export const Promotions = (state  = { isLoading: true,
->
 >                                         errMess: null,
->
 >                                         promotions:\[\]}, action) =\> {
->
 >     switch (action.type) {
->
 >         case ActionTypes.ADD_PROMOS:
->
 >         return {\...state, isLoading: false, errMess: null, promotions: action.payload};
->
->  
->
 >         case ActionTypes.PROMOS_LOADING:
->
 >             return {\...state, isLoading: true, errMess: null, promotions: \[\]}
->
->  
->
 >         case ActionTypes.PROMOS_FAILED:
->
 >             return {\...state, isLoading: false, errMess: action.payload};
->
->  
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
 ```
 
@@ -7432,81 +7017,35 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . . 
->
 > import { addComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
->
->  
->
 > . . .
->
->  
->
->  
->
 > const mapDispatchToProps = dispatch =\> ({
->
 >   addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment)),
->
 >   fetchDishes: () =\> { dispatch(fetchDishes())},
->
 >   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))},
->
 >   fetchComments: () =\> dispatch(fetchComments()),
->
 >   fetchPromos: () =\> dispatch(fetchPromos())
->
 > });
 >
->  
->
 > . . .
->
->  
->
 >   componentDidMount() {
->
 >     this.props.fetchDishes();
->
 >     this.props.fetchComments();
->
 >     this.props.fetchPromos();
->
 >   }
->
->   
->
 > . . .
->
->  
->
 >           \<Home 
->
 >               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
->
 >               dishesLoading={this.props.dishes.isLoading}
->
 >               dishErrMess={this.props.dishes.errMess}
->
 >               promotion={this.props.promotions.promotions.filter((promo) =\> promo.featured)\[0\]}
->
 >               promoLoading={this.props.promotions.isLoading}
->
 >               promoErrMess={this.props.promotions.errMess}
->
 >               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->
 >           /\>
->
->           
->
 > . . .
->
->  
->
->           \<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
->
+>\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
 >             isLoading={this.props.dishes.isLoading}
->
 >             errMess={this.props.dishes.errMess}
 ```
 
@@ -7514,21 +7053,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
->
->  
->
 > import { baseUrl } from \'../shared/baseUrl\';
->
->  
->
 > . . .
->
->  
->
 >                     \<CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} /\>
->
->                     
->
 > . . .
 ```
 
@@ -7536,28 +7063,12 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
->
->  
->
 > import { baseUrl } from \'../shared/baseUrl\';
->
->  
->
 > . . .
 >
->  
->
->                 \<CardImg src={baseUrl + item.image} alt={item.name} /\>
->
->                 
->
+>        \<CardImg src={baseUrl + item.image} alt={item.name} /\>
 > . . .
->
->  
->
->                     \<RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} /\>
->
->                     
+>         \<RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} /\>
 >
 > . . .
 ```
@@ -7567,20 +7078,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 ```
 > . . .
 >
->  
->
 > import { baseUrl } from \'../shared/baseUrl\';
->
->  
->
 > . . .
->
->  
->
 >                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
->
->                 
->
 > . . .
 ```
 
@@ -7614,78 +7114,39 @@ able to:
 >
 > export const fetchDishes = () =\> (dispatch) =\> {
 >
->  
->
 >     dispatch(dishesLoading(true));
 >
->  
->
 >     return fetch(baseUrl + \'dishes\')
->
 >     .then(response =\> {
->
 >         if (response.ok) {
->
 >           return response;
->
 >         } else {
->
 >           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
->
 >           error.response = response;
->
 >           throw error;
->
 >         }
->
 >       },
->
 >       error =\> {
->
 >             var errmess = new Error(error.message);
->
 >             throw errmess;
->
 >       })
->
 >     .then(response =\> response.json())
->
 >     .then(dishes =\> dispatch(addDishes(dishes)))
->
 >     .catch(error =\> dispatch(dishesFailed(error.message)));
->
 > }
->
->  
->
 > . . .
->
->  
->
 > export const fetchComments = () =\> (dispatch) =\> {    
->
 >     return fetch(baseUrl + \'comments\')
->
 >     .then(response =\> {
->
 >         if (response.ok) {
->
 >           return response;
->
 >         } else {
->
 >           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
->
 >           error.response = response;
->
 >           throw error;
->
 >         }
->
 >       },
->
 >       error =\> {
->
 >             var errmess = new Error(error.message);
 ```
 
@@ -7718,83 +7179,42 @@ to:
 ```
 > . . .
 >
->  
->
 > export const addComment = (comment) =\> ({
->
 >     type: ActionTypes.ADD_COMMENT,
->
 >     payload: comment
->
 > });
 >
->  
->
 > export const postComment = (dishId, rating, author, comment) =\> (dispatch) =\> {
->
->  
->
 >     const newComment = {
->
 >         dishId: dishId,
->
 >         rating: rating,
->
 >         author: author,
->
 >         comment: comment
->
 >     };
->
 >     newComment.date = new Date().toISOString();
->
->     
->
 >     return fetch(baseUrl + \'comments\', {
->
 >         method: \"POST\",
->
 >         body: JSON.stringify(newComment),
->
 >         headers: {
->
 >           \"Content-Type\": \"application/json\"
->
 >         },
->
 >         credentials: \"same-origin\"
->
 >     })
->
 >     .then(response =\> {
->
 >         if (response.ok) {
->
 >           return response;
->
 >         } else {
->
 >           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
->
 >           error.response = response;
->
 >           throw error;
->
 >         }
->
 >       },
->
 >       error =\> {
->
 >             throw error;
->
 >       })
->
 >     .then(response =\> response.json())
->
 >     .then(response =\> dispatch(addComment(response)))
->
->     .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
+>    .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
 ```
 
 -   Open *comment.js* and **remove** the following two lines from it:
@@ -7802,13 +7222,8 @@ to:
 ```
 > . . .
 >
->  
->
 >        comment.id = state.comments.length;
->
 >        comment.date = new Date().toISOString();
->
->  
 >
 >  . . .
 ```
@@ -7818,28 +7233,14 @@ to:
 ```
 > . . .
 >
->  
->
 > import { postComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
 >
->  
->
 > . . .
->
->  
 >
 >   postComment: (dishId, rating, author, comment) =\> dispatch(postComment(dishId, rating, author, comment))
 >
->  
->
 > . . .
->
->  
->
 >             postComment={this.props.postComment}
->
->             
->
 > . . .
 ```
 
@@ -7847,37 +7248,13 @@ to:
 
 ```
 > . . .
->
->  
->
 >     function RenderComments({comments, postComment, dishId}) {
->
->       
->
 > . . .
->
->  
->
 >                     \<CommentForm dishId={dishId} postComment={postComment} /\>
->
->                     
->
 > . . .
->
->  
->
 >             this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
->
->             
->
 > . . .
->
->  
->
 >                             postComment={props.postComment}
->
->                             
->
 > . . .
 ```
 
@@ -7967,50 +7344,26 @@ yarn add react-transition-group@2.3.0
 ```
 > . . .
 >
->  
->
 > .page-enter {
->
 >     opacity: 0.01;
->
 >     transform: translateX(-100%);
->
 > }
->
->  
 >
 > .page-enter-active {
->
 >     opacity: 1;
->
 >     transform: translateX(0%);
->
 >     transition: all 300ms ease-in;
->
 > }
->
->  
 >
 > .page-exit {
->
 >     opacity: 1;
->
 >     transform: translateX(0%);
->
 > }
->
->  
->
 > .page-exit-active {
->
 >     opacity: 0.01;
->
 >     transform: translateX(100%);
->
 >     transition: all 300ms ease-out;
->
 > }
->
 >  
 ```
 
@@ -8020,41 +7373,22 @@ yarn add react-transition-group@2.3.0
 ```
 > . . .
 >
->  
->
 > import { TransitionGroup, CSSTransition } from \'react-transition-group\';
->
->  
 >
 > . . .
 >
->  
->
 >           \<TransitionGroup\>
->
 >             \<CSSTransition key={this.props.location.key} classNames=\"page\" timeout={300}\>
->
 >               \<Switch location={this.props.location}\>
->
 >                   \<Route path=\'/home\' component={HomePage} /\>
->
 >                   \<Route exact path=\'/aboutus\' component={() =\> \<About leaders={this.props.leaders} /\>} /\>} /\>
->
 >                   \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.props.dishes} /\>} /\>
->
 >                   \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
->
->                   \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
->
+                  \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
 >                   \<Redirect to=\"/home\" /\>
->
 >               \</Switch\>
->
 >             \</CSSTransition\>
->
 >           \</TransitionGroup\>
->
->           
 >
 > . . .
 ```
@@ -8097,45 +7431,24 @@ you will be able to:
 ```
 > . . .
 >
->  
->
 > import { FadeTransform } from \'react-animation-components\';
->
->  
 >
 > . . .
 >
->  
->
 >             \<FadeTransform
->
 >                 in
->
 >                 transformProps={{
->
 >                     exitTransform: \'scale(0.5) translateY(-50%)\'
->
 >                 }}\>
->
 >                 \<Card\>
->
 >                     \<CardImg src={baseUrl + item.image} alt={item.name} /\>
->
 >                     \<CardBody\>
->
 >                     \<CardTitle\>{item.name}\</CardTitle\>
->
 >                     {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->
 >                     \<CardText\>{item.description}\</CardText\>
->
 >                     \</CardBody\>
->
 >                 \</Card\>
->
 >             \</FadeTransform\>
->
->             
 >
 > . . .
 ```
@@ -8145,73 +7458,38 @@ you will be able to:
 ```
 > . . .
 >
->  
->
 > import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
 >
->  
->
 > . . .
->
->  
 >
 >             \<FadeTransform
->
 >                 in
->
 >                 transformProps={{
->
 >                     exitTransform: \'scale(0.5) translateY(-50%)\'
->
 >                 }}\>
->
 >             \<Card\>
->
 >                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
->
 >                 \<CardBody\>
->
 >                     \<CardTitle\>{dish.name}\</CardTitle\>
->
 >                     \<CardText\>{dish.description}\</CardText\>
->
 >                 \</CardBody\>
->
 >             \</Card\>
->
 >             \</FadeTransform\>
->
->             
 >
 > . . .
 >
->  
->
 >                     \<Stagger in\>
->
 >                         {comments.map((comment) =\> {
->
 >                             return (
->
 >                                 \<Fade in\>
->
 >                                 \<li key={comment.id}\>
->
 >                                 \<p\>{comment.comment}\</p\>
->
 >                                 \<p\>\-- {comment.author} , {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}\</p\>
->
 >                                 \</li\>
->
 >                                 \</Fade\>
->
 >                             );
->
 >                         })}
->
 >                         \</Stagger\>
->
->                         
 >
 > . . .
 ```
@@ -8612,3 +7890,4 @@ considering the following items:
 
 ..the end.
 
+Last updated 2-14-23 12:55am
