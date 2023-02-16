@@ -5,7 +5,7 @@ Coursera-React: "Build Your First React Website"
 [link](URL){:target="_blank"}
 [Hello, world!](http://example.com/){target="_blank"}
 [Go to this page](http://somelink.com/?target=_blank)
-> :memo: **Memo or Note:**
+> :memo: <b>Memo or Note:</b>
 $ npm 
 --->
 <!---
@@ -40,7 +40,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Coursera logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p text-align="center">
 <img src="./images/coursera-logo.png?raw=true"
    width="35%"
    alt="Coursera logo." />
@@ -105,33 +105,29 @@ on Bootstrap 4, or have a working knowledge of Bootstrap 4 to be able to
 navigate this course. Also, a good working knowledge of JavaScript,
 especially ES 5 is strongly recommended.
 
-## At the end of this course, you will: 
+<h2>At the end of this course, you will: </h2>
 
-\- Be familiar with client-side Javascript application development and
-the React library
+  - Be familiar with client-side Javascript application development and the React library
 
-\- Be able to implement single page applications in React
+  - Be able to implement single page applications in React
 
-\- Be able to use various React features including components and forms
+  - Be able to use various React features including components and forms
 
-\- Be able to implement a functional front-end web application using
-React
+  - Be able to implement a functional front-end web application using React
 
-\- Be able to use Reactstrap for designing responsive React applications
+  - Be able to use Reactstrap for designing responsive React applications
 
-\- Be able to use Redux to design the architecture for a React-Redux
-application
+  - Be able to use Redux to design the architecture for a React-Redux application
 
-**Week 1 of 4 - Syllabus**
+<b>Week 1 of 4 - Syllabus</b>
 
-**\
-Introduction to React** 10hrs
+<b>Introduction to React</b> 10hrs
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
 also learn about React components and JSX.
 
-**21 videos (Total 234 min), 23 readings**
+<b>21 videos (Total 234 min), 23 readings</b>
 
 ## [Welcome to Front-End Web Development with React](https://www.coursera.org/lecture/front-end-react/welcome-to-front-end-web-development-with-react-zHA5u) 10m
 
@@ -175,7 +171,7 @@ also learn about React components and JSX.
 
 ## Assignment 1 Requirements (Video): React Components 5m
 
-**23 readings -- Chapter 1**
+<b>23 readings -- Chapter 1</b>
 
 ## Welcome to Front-End Web Development with React: Additional Resources 10m
 
@@ -223,9 +219,9 @@ also learn about React components and JSX.
 
 ## Ideation: Additional Resources 10m
 
-**Week 2**
+<b>Week 2</b>
 
-**8 hours to complete**
+<b>8 hours to complete</b>
 
 ### React Router and Single Page Applications
 
@@ -234,7 +230,7 @@ learn about React router and its use in designing single page
 applications. You will also learn about single page applications and use
 React Router to design single page applications.
 
-**14 videos (Total 191 min), 16 readings**
+<b>14 videos (Total 191 min), 16 readings</b>
 
 ## [Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m
 
@@ -264,7 +260,7 @@ React Router to design single page applications.
 
 ## Assignment 2: React Router and Single Page Applications 4m
 
-**16 readings**
+<b>16 readings</b>
 
 ## React Component Types: Objectives and Outcomes 10m
 
@@ -298,10 +294,10 @@ React Router to design single page applications.
 
 ## UI Design and Prototyping: Additional Resources 10m
 
-**Week 3**
+<b>Week 3</b>
 
-**\
-7 hours to complete**
+<b>\
+7 hours to complete</b>
 
 ### React Forms, Flow Architecture and Introduction to Redux
 
@@ -310,7 +306,7 @@ forms and briefly examine form validation in React applications. You
 will get an overview of the Flux architecture and introduced to Redux as
 a way of realizing the flux architecture
 
-**13 videos (Total 188 min), 15 readings**
+<b>13 videos (Total 188 min), 15 readings</b>
 
 ## [Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m
 
@@ -338,7 +334,7 @@ a way of realizing the flux architecture
 
 ## Assignment 3: React Forms and Redux 5m
 
-**15 readings**
+<b>15 readings</b>
 
 ## Controlled Forms: Objectives and Oute 10m
 
@@ -370,9 +366,9 @@ a way of realizing the flux architecture
 
 ## Assignment 3: React Forms and Redux: Additional Resources 10m
 
-**Week 4**
+<b>Week 4</b>
 
-**12 hours to complete**
+<b>12 hours to complete</b>
 
 ### More Redux and Client-Server Communication
 
@@ -382,7 +378,7 @@ Fetch and the REST API. You will get a brief introduction to animation
 in React. You will also learn about testing, building and deploying
 React applications.
 
-**20 videos (Total 312 min), 26 readings**
+<b>20 videos (Total 312 min), 26 readings</b>
 
 ## [Redux Actions](https://www.coursera.org/lecture/front-end-react/redux-actions-hUr1y) 8m
 
@@ -424,7 +420,7 @@ React applications.
 
 ## Exercise (Video): Building and Deploying the React Application 11m
 
-**26 readings**
+<b>26 readings</b>
 
 ## Redux Actions: Objectives and Outcomes 10m
 
@@ -515,22 +511,19 @@ specialization on Bootstrap 4, or have a working knowledge of Bootstrap
 Also, a good working knowledge of JavaScript, especially ES 5 is
 strongly recommended.
 
-**At the end of this course, you will:**
+<b>At the end of this course, you will:</b>
 
-\- Be familiar with client-side Javascript application development and
-the React library
+  - Be familiar with client-side Javascript application development and the React library
 
-\- Be able to implement single page applications in React
+  - Be able to implement single page applications in React
 
-\- Be able to use various React features including components and forms
+  - Be able to use various React features including components and forms
 
-\- Be able to implement a functional front-end web application using
-React
+  - Be able to implement a functional front-end web application using React
 
-\- Be able to use Reactstrap for designing responsive React applications
+  - Be able to use Reactstrap for designing responsive React applications
 
-\- Be able to use Redux to design the architecture for a React-Redux
-application.
+  - Be able to use Redux to design the architecture for a React-Redux application.
 
 <https://reactjs.org/>
 
@@ -572,11 +565,11 @@ also learn about React components and JSX.
 
 ### PDFs of Presentations
 
-**0-Course-Overview.pdf**
+<b>0-Course-Overview.pdf</b>
 
 PDF File
 
-**How to Learn.pdf**
+<b>How to Learn.pdf</b>
 
 PDF File
 
@@ -593,7 +586,7 @@ PDF File
 
 ## How to Use the Learning Resources 10m
 
-**Module 2: What is Full-Stack Web Development?**
+<b>Module 2: What is Full-Stack Web Development?</b>
 
 ### Objectives and Outcomes
 
@@ -612,7 +605,7 @@ development. At the end of this lesson, you will be able to:
 
 ## Full Stack Web Development: Additional Resources
 
-**Exercise (Video): Setting up Git**
+<b>Exercise (Video): Setting up Git</b>
 
 ### Useful Links
 
@@ -648,14 +641,14 @@ this lesson, you will be able to:
 
 ### Software Requirements
 
-1.  **Text editor of your choice**: Any text editor that you are already
+1.  <b>Text editor of your choice</b>: Any text editor that you are already
     familiar with can be used for editing the project files. I will be
     using Visual Studio Code (<https://code.visualstudio.com/>) as the
     editor of choice in this specialization. You may also consider other
     editors such as Brackets (<http://brackets.io/>), Sublime Text
     (<http://www.sublimetext.com/)>, or Atom (<https://atom.io/>).
 
-2.  **Browser of your choice**: You may use your preferred browser. I
+2.  <b>Browser of your choice</b>: You may use your preferred browser. I
     will be using Chrome as the browser in all the exercises. All the
     exercises and assignments in this course have been tested using
     Chrome v. 46. Please note that not all browsers may support all the
@@ -664,18 +657,18 @@ this lesson, you will be able to:
     browser for the exercises and assignments in this course so that any
     problems are minimized.
 
-3.  **Command line shell**: Familiarity with the command-line shell will
+3.  <b>Command line shell</b>: Familiarity with the command-line shell will
     be essential for the exercises. In Windows a cmd window or power
     shell with admin privileges would be needed. On a Mac or in Linux, a
     terminal window can be used. Please get familiar with the \"sudo\"
     command in OS X and Linux.
 
-4.  **Files required for the exercises**: We will provide additional
+4.  <b>Files required for the exercises</b>: We will provide additional
     starter files for the exercises wherever needed. Links to download
-    the files will be provided inline in the **exercise instructions**
+    the files will be provided inline in the <b>exercise instructions</b>
     that follow each exercise video. Please download the files provided
     there, if any, before beginning the exercise. The links are also
-    available through the **Additional Resources** of the specific
+    available through the <b>Additional Resources</b> of the specific
     lesson.
 
 Note: Please remember to retain the folders and all the files that you
@@ -774,11 +767,11 @@ the end of this exercise, you will be able to:
 ## Basic Git Commands
 
 -   At a convenient location on your computer, create a folder named
-    **git-test**.
+    <b>git-test</b>.
 
 -   Open this git-test folder in your favorite editor.
 
--   Add a file named *index.html* to this folder, and add the following
+-   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
 > \<!DOCTYPE html\>
@@ -822,7 +815,7 @@ Checking the log of Git commits
 
 > git log --oneline
 
--   Now, modify the *index.html* file as follows:
+-   Now, modify the <i>index.html</i> file as follows:
 
 > \<!DOCTYPE html\>
 > \<html\>
@@ -833,16 +826,16 @@ Checking the log of Git commits
 >     \</body\>
 > \</html\>
 
--   Add a sub-folder named **templates** to your **git-test** folder,
-    and then add a file named *test.html* to the templates folder. Then
-    set the contents of this file to be the same as the *index.html*
+-   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
+    and then add a file named <i>test.html</i> to the templates folder. Then
+    set the contents of this file to be the same as the <i>index.html</i>
     file above.
 
 -   Then check the status and add all the files to the staging area.
 
 -   Then do the second commit to your repository
 
--   Now, modify the *index.html* file as follows:
+-   Now, modify the <i>index.html</i> file as follows:
 
 > \<!DOCTYPE html\>
 > \<html\>
@@ -876,7 +869,7 @@ Checking the log of Git commits
 
 > git checkout \-- index.html
 
--   You can also use *git reset* to reset the staging area to the last
+-   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
 
 ### Conclusions
@@ -908,7 +901,7 @@ online repository. At the end of this exercise, you will be able to:
     ([https://bitbucket.org](https://bitbucket.org/)) or GitHub
     ([https://github.com](https://github.com/)).
 
--   Then set up an online Git repository named **git-test**. Note the
+-   Then set up an online Git repository named <b>git-test</b>. Note the
     URL of your online Git repository. Note that private repositories on
     GitHub requires a paid account, and is not available for free
     accounts.
@@ -946,9 +939,9 @@ an online repository.
 
 ## Exercise (Instructions): Setting up Node.js and NPM
 
-**Note: Make sure you have installed Git on your machine before you
+<b>Note: Make sure you have installed Git on your machine before you
 install Node.js. Please complete the previous Git installation exercise
-before proceeding with this exercise.**
+before proceeding with this exercise.</b>
 
 ### Objectives and Outcomes
 
@@ -980,19 +973,19 @@ will be able to:
     stable version. You should to install the LTS version. I will use
     this version in the course.)
 
-**Note: On Windows machines, you may need to configure your PATH
+<b>Note: On Windows machines, you may need to configure your PATH
 environmental variable in case you forgot to turn on the add to PATH
-during the installation steps.**
+during the installation steps.</b>
 
 ### Verifying the Node Installation
 
 -   Open a terminal window on your machine. If you are using a Windows
-    machine, open a cmd window or PowerShell window with **admin**
+    machine, open a cmd window or PowerShell window with <b>admin</b>
     privileges.
 
 -   To ensure that your NodeJS setup is working correctly, type the
-    following at the command prompt to check for the version of **Node**
-    and **NPM**
+    following at the command prompt to check for the version of <b>Node</b>
+    and <b>NPM</b>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 01. hong kong university of science and technology logo (01) ------------------>
@@ -1032,7 +1025,7 @@ of this exercise, you will be able to:
 
 ### Initializing package.json
 
--   At the command prompt in your **git-test** folder, type
+-   At the command prompt in your <b>git-test</b> folder, type
 
 > npm init
 
@@ -1040,7 +1033,7 @@ of this exercise, you will be able to:
     the default values for most of the entries, except set the entry
     point to index.html
 
--   This should create a *package.json* file in your **git-test**
+-   This should create a <i>package.json</i> file in your <b>git-test</b>
     folder.
 
 ### Installing an NPM Module
@@ -1084,16 +1077,16 @@ of this exercise, you will be able to:
 
 > npm start
 
--   This should open your *index.html* page in your default browser.
+-   This should open your <i>index.html</i> page in your default browser.
 
--   If you now open the *index.html* page in an editor and make changes
+-   If you now open the <i>index.html</i> page in an editor and make changes
     and save, the browser should immediately refresh to reflect the
     changes.
 
 ### Setting up .gitignore
 
--   Next, create a file in your project directory named *.gitignore*
-    (**Note**: the name starts with a period)Then, add the following to
+-   Next, create a file in your project directory named <i>.gitignore</i>
+    (<b>Note</b>: the name starts with a period)Then, add the following to
     the .gitignore file
 
 > node_modules
@@ -1111,13 +1104,13 @@ package and start a development server.
 
 ### PDFs of Presentations
 
-**Git.pdf**
+<b>Git.pdf</b>
 
-**Git-Exercises.pdf**
+<b>Git-Exercises.pdf</b>
 
-**NodeJS.pdf**
+<b>NodeJS.pdf</b>
 
-**Exercises-Node-NPM.pdf**
+<b>Exercises-Node-NPM.pdf</b>
 
 ### Additional Resources (Git)
 
@@ -1161,7 +1154,7 @@ lesson, you will be able to:
 
 -   Understand the architecture of an React application
 
--   Scaffold out a starter React application using *create-react-app*,
+-   Scaffold out a starter React application using <i>create-react-app</i>,
     the command line tool
 
 ## Front-end JavaScript Frameworks and Libraries Overview
@@ -1174,14 +1167,14 @@ lesson, you will be able to:
 
 ### Objectives and Outcomes
 
-In this first React exercise, you will first install *create-react-app*,
+In this first React exercise, you will first install <i>create-react-app</i>,
 the command line tool for scaffolding React applications. You will then
 use the tool to scaffold out a basic React application. We will
 thereafter develop this application into a full-fledged React
 application in the process of doing the exercises in this course. At the
 end of this exercise you will be able to:
 
--   Install *create-react-app*
+-   Install <i>create-react-app</i>
 
 -   Scaffold out a basic React application
 
@@ -1199,17 +1192,17 @@ end of this exercise you will be able to:
 
 ### Installing create-react-app
 
-From the React documentation we learn that the *create-react-app* CLI
+From the React documentation we learn that the <i>create-react-app</i> CLI
 makes it easy to create an application that already works, right out of
 the box. It already follows the best practices suggested by the React
 community!
 
--   To install *create-react-app* globally, type the following at the
+-   To install <i>create-react-app</i> globally, type the following at the
     prompt:
 
 > yarn global add <create-react-app@1.5.2>
 
-Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
+Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 \"npm install -g create-react-app@1.5.2\".
 
 -   This will make the command line tool for creating React
@@ -1223,17 +1216,17 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 ### Generating and Serving a React Project using create-react-app
 
 -   At a convenient location on your computer, create a folder named
-    *React* and move into that folder.
+    <i>React</i> and move into that folder.
 
 -   Then type the following at the prompt to create a new React
-    application named *confusion*:
+    application named <i>confusion</i>:
 
 > create-react-app confusion
 
--   This should create a new folder named *confusion* within your
-    *React* folder and create the React application in that folder.
+-   This should create a new folder named <i>confusion</i> within your
+    <i>React</i> folder and create the React application in that folder.
 
--   Move to the *confusion* folder and type the following at the prompt:
+-   Move to the <i>confusion</i> folder and type the following at the prompt:
 
 > yarn start
 
@@ -1249,7 +1242,7 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
-    repository is a ***private*** repository.
+    repository is a <b><i>private</i></b> repository.
 
 ### Conclusions
 
@@ -1265,14 +1258,14 @@ browser.
 
 ### Software Requirements
 
-1.  **Text editor of your choice**: Any text editor that you are already
+1.  <b>Text editor of your choice</b>: Any text editor that you are already
     familiar with can be used for editing the project files. I will be
     using Visual Studio Code (<https://code.visualstudio.com/>) as the
     editor of choice in this specialization. You may also consider other
     editors such as Brackets (<http://brackets.io/>), Sublime Text
     (<http://www.sublimetext.com/)>, or Atom (<https://atom.io/>).
 
-2.  **Browser of your choice**: You may use your preferred browser. I
+2.  <b>Browser of your choice</b>: You may use your preferred browser. I
     will be using Chrome as the browser in all the exercises. All the
     exercises and assignments in this course have been tested using
     Chrome v. 46. Please note that not all browsers may support all the
@@ -1281,23 +1274,23 @@ browser.
     browser for the exercises and assignments in this course so that any
     problems are minimized.
 
-3.  **Command line shell**: Familiarity with the command-line shell will
+3.  <b>Command line shell</b>: Familiarity with the command-line shell will
     be essential for the exercises. In Windows a cmd window or power
     shell with admin privileges would be needed. On a Mac or in Linux, a
     terminal window can be used. Please get familiar with the \"sudo\"
     command in OS X and Linux.
 
-4.  **Files required for the exercises**: We will provide additional
+4.  <b>Files required for the exercises</b>: We will provide additional
     starter files for the exercises wherever needed. Links to download
-    the files will be provided inline in the **exercise instructions**
+    the files will be provided inline in the <b>exercise instructions</b>
     that follow each exercise video. Please download the files provided
     there, if any, before beginning the exercise. The links are also
-    available through the **Additional Resources** of the specific
+    available through the <b>Additional Resources</b> of the specific
     lesson.
 
 <h1>WEEK # 2</h1>
 
-**8 hours to complete**
+<b>8 hours to complete</b>
 
 ## React Router and Single Page Applications
 
@@ -1320,7 +1313,7 @@ a way of realizing the flux architecture.
 
 <h1>WEEK # 4</h1>
 
-**12 hours to complete**
+<b>12 hours to complete</b>
 
 ## More Redux and Client-Server Communication
 
@@ -1370,7 +1363,7 @@ Introduction to Webpack 7m
 
 Exercise (Video): Building and Deploying the React Application 11m
 
-**26 readings**
+<b>26 readings</b>
 
 Redux Actions: Objectives and Outcomes 10m
 
@@ -1509,11 +1502,11 @@ the end of this exercise you will be able to:
 ### Basic Git Commands
 
 -   At a convenient location on your computer, create a folder named
-    **git-test**.
+    <b>git-test</b>.
 
 -   Open this git-test folder in your favorite editor.
 
--   Add a file named *index.html* to this folder, and add the following
+-   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
 > \<!DOCTYPE html\>
@@ -1558,7 +1551,7 @@ the end of this exercise you will be able to:
 
 > git log \--oneline
 
--   Now, modify the *index.html* file as follows:
+-   Now, modify the <i>index.html</i> file as follows:
 
 > \<!DOCTYPE html\>
 > \<html\>
@@ -1569,16 +1562,16 @@ the end of this exercise you will be able to:
 >     \</body\>
 > \</html\>
 
--   Add a sub-folder named **templates** to your **git-test** folder,
-    and then add a file named *test.html* to the templates folder. Then
-    set the contents of this file to be the same as the *index.html*
+-   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
+    and then add a file named <i>test.html</i> to the templates folder. Then
+    set the contents of this file to be the same as the <i>index.html</i>
     file above.
 
 -   Then check the status and add all the files to the staging area.
 
 -   Then do the second commit to your repository
 
--   Now, modify the *index.html* file as follows:
+-   Now, modify the <i>index.html</i> file as follows:
 
 > \<!DOCTYPE html\>
 > \<html\>
@@ -1613,7 +1606,7 @@ the end of this exercise you will be able to:
 
 > git checkout \-- index.html
 
--   You can also use *git reset* to reset the staging area to the last
+-   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
 
 ## Conclusions
@@ -1645,7 +1638,7 @@ online repository. At the end of this exercise, you will be able to:
     ([https://bitbucket.org](https://bitbucket.org/)) or GitHub
     ([https://github.com](https://github.com/)).
 
--   Then set up an online Git repository named **git-test**. Note the
+-   Then set up an online Git repository named <b>git-test</b>. Note the
     URL of your online Git repository. Note that private repositories on
     GitHub requires a paid account, and is not available for free
     accounts.
@@ -1758,9 +1751,9 @@ the subsequent exercises.
 
 ## Exercise (Instructions): Setting up Node.js and NPM
 
-**Note: Make sure you have installed Git on your machine before you
+<b>Note: Make sure you have installed Git on your machine before you
 install Node.js. Please complete the previous Git installation exercise
-before proceeding with this exercise.**
+before proceeding with this exercise.</b>
 
 ### Objectives and Outcomes
 
@@ -1792,19 +1785,19 @@ will be able to:
     stable version. You should to install the LTS version. I will use
     this version in the course.)
 
-**Note: On Windows machines, you may need to configure your PATH
+<b>Note: On Windows machines, you may need to configure your PATH
 environmental variable in case you forgot to turn on the add to PATH
-during the installation steps.**
+during the installation steps.</b>
 
 ### Verifying the Node Installation
 
 -   Open a terminal window on your machine. If you are using a Windows
-    machine, open a cmd window or PowerShell window with **admin**
+    machine, open a cmd window or PowerShell window with <b>admin</b>
     privileges.
 
 -   To ensure that your NodeJS setup is working correctly, type the
-    following at the command prompt to check for the version of **Node**
-    and **NPM**
+    following at the command prompt to check for the version of <b>Node</b>
+    and <b>NPM</b>
 
 ![](./images/image002.png){width="6.5in" height="8.2875in"}
 
@@ -1830,7 +1823,7 @@ of this exercise, you will be able to:
 
 ### Initializing package.json
 
--   At the command prompt in your **git-test** folder, type
+-   At the command prompt in your <b>git-test</b> folder, type
 
 > npm init
 
@@ -1838,7 +1831,7 @@ of this exercise, you will be able to:
     the default values for most of the entries, except set the entry
     point to index.html
 
--   This should create a *package.json* file in your **git-test**
+-   This should create a <i>package.json</i> file in your <b>git-test</b>
     folder.
 
 Installing an NPM Module
@@ -1876,16 +1869,16 @@ Installing an NPM Module
 
 > npm start
 
--   This should open your *index.html* page in your default browser.
+-   This should open your <i>index.html</i> page in your default browser.
 
--   If you now open the *index.html* page in an editor and make changes
+-   If you now open the <i>index.html</i> page in an editor and make changes
     and save, the browser should immediately refresh to reflect the
     changes.
 
 ### Setting up .gitignore
 
--   Next, create a file in your project directory named *.gitignore*
-    (**Note**: the name starts with a period)Then, add the following to
+-   Next, create a file in your project directory named <i>.gitignore</i>
+    (<b>Note</b>: the name starts with a period)Then, add the following to
     the .gitignore file
 
 ```
@@ -1905,19 +1898,19 @@ package and start a development server.
 
 ### PDFs of Presentations
 
-**Git.pdf**
+<b>Git.pdf</b>
 
 PDF File
 
-**Git-Exercises.pdf**
+<b>Git-Exercises.pdf</b>
 
 PDF File
 
-**NodeJS.pdf**
+<b>NodeJS.pdf</b>
 
 PDF File
 
-**Exercises-Node-NPM.pdf**
+<b>Exercises-Node-NPM.pdf</b>
 
 PDF File
 
@@ -1963,7 +1956,7 @@ lesson, you will be able to:
 
 -   Understand the architecture of an React application
 
--   Scaffold out a starter React application using *create-react-app*,
+-   Scaffold out a starter React application using <i>create-react-app</i>,
     the command line tool
 
 ### Front-end JavaScript Frameworks and Libraries Overview
@@ -2141,14 +2134,14 @@ and you have access to NPM, the package manager that comes with Note.
 
 ### Objectives and Outcomes
 
-In this first React exercise, you will first install *create-react-app*,
+In this first React exercise, you will first install <i>create-react-app</i>,
 the command line tool for scaffolding React applications. You will then
 use the tool to scaffold out a basic React application. We will
 thereafter develop this application into a full-fledged React
 application in the process of doing the exercises in this course. At the
 end of this exercise you will be able to:
 
--   Install *create-react-app*
+-   Install <i>create-react-app</i>
 
 -   Scaffold out a basic React application
 
@@ -2164,21 +2157,21 @@ end of this exercise you will be able to:
 -   If you choose not to install Yarn, you can continue to use npm in
     place of yarn without any problem.
 
-### Installing *create-react-app*
+### Installing <i>create-react-app</i>
 
-From the React documentation we learn that the *create-react-app* CLI
+From the React documentation we learn that the <i>create-react-app</i> CLI
 makes it easy to create an application that already works, right out of
 the box. It already follows the best practices suggested by the React
 community!
 
--   To install *create-react-app* globally, type the following at the
+-   To install <i>create-react-app</i> globally, type the following at the
     prompt:
 
 ```
 yarn global add create-react-app@1.5.2
 ```
 
-Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
+Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 \"npm install -g create-react-app@1.5.2\".
 
 -   This will make the command line tool for creating React
@@ -2189,22 +2182,22 @@ Use *sudo* on a Mac and Linux. Alternately you can use npm, by typing
 create-react-app \--help
 ```
 
-### Generating and Serving a React Project using *create-react-app*
+### Generating and Serving a React Project using <i>create-react-app</i>
 
 -   At a convenient location on your computer, create a folder named
-    *React* and move into that folder.
+    <i>React</i> and move into that folder.
 
 -   Then type the following at the prompt to create a new React
-    application named *confusion*:
+    application named <i>confusion</i>:
 
 ```
 create-react-app confusion
 ```
 
--   This should create a new folder named *confusion* within your
-    *React* folder and create the React application in that folder.
+-   This should create a new folder named <i>confusion</i> within your
+    <i>React</i> folder and create the React application in that folder.
 
--   Move to the *confusion* folder and type the following at the prompt:
+-   Move to the <i>confusion</i> folder and type the following at the prompt:
 
 ```
 yarn start
@@ -2224,7 +2217,7 @@ git add .
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
-    repository is a ***private*** repository.
+    repository is a <b><i>private</i></b> repository.
 
 ### Conclusions
 
@@ -2262,7 +2255,7 @@ yarn add reactstrap@5.0.0
 yarn add react-popper@0.9.2
 ```
 
-**Note**: You can also install the same using npm using the \"npm
+<b>Note</b>: You can also install the same using npm using the \"npm
 install \<package\> \--save\" option if you are using npm instead of
 yarn.
 
@@ -2310,19 +2303,19 @@ Reactstrap.
 
 ### PDFs of Presentations
 
-**1-JavaScript-Frameworks.pdf**
+<b>1-JavaScript-Frameworks.pdf</b>
 
 PDF File
 
-**2-Intro-React.pdf**
+<b>2-Intro-React.pdf</b>
 
 PDF File
 
-**3-React-App-Overview.pdf**
+<b>3-React-App-Overview.pdf</b>
 
 PDF File
 
-**4-Intro-JSX.pdf**
+<b>4-Intro-JSX.pdf</b>
 
 PDF File
 
@@ -2402,7 +2395,7 @@ lesson you will be able to:
 
 ### Exercise Resources
 
-**images**
+<b>images</b>
 
 ZIP File
 
@@ -2418,16 +2411,16 @@ you will be able to:
 
 ### Adding a Menu Component
 
--   First, download the *images.zip* file provided above and then unzip
-    the file. Create a folder named *assets* in the *public* folder.
-    Move the resulting *images* folder containing some PNG files to the
-    React project\'s *public/assets* folder. These image files will be
+-   First, download the <i>images.zip</i> file provided above and then unzip
+    the file. Create a folder named <i>assets</i> in the <i>public</i> folder.
+    Move the resulting <i>images</i> folder containing some PNG files to the
+    React project\'s <i>public/assets</i> folder. These image files will be
     useful for our exercises.
 
--   Next, add a new folder named *components* in the *src* folder, and
-    create a new file named *MenuComponent.js* in this folder.
+-   Next, add a new folder named <i>components</i> in the <i>src</i> folder, and
+    create a new file named <i>MenuComponent.js</i> in this folder.
 
--   Add the following code to *MenuComponent.js*:
+-   Add the following code to <i>MenuComponent.js</i>:
 
 >         this.state = {
 >             dishes: \[
@@ -2473,7 +2466,7 @@ you will be able to:
 > import React, { Component } from \'react\';
 > import { Media } from \'reactstrap\';
 
--   Next, open *App.js* file and update it as follows:
+-   Next, open <i>App.js</i> file and update it as follows:
 
 > . . .
 > 
@@ -2485,7 +2478,7 @@ you will be able to:
 > 
 > . . .
 
--   Open *App.css* file and delete all its contents.
+-   Open <i>App.css</i> file and delete all its contents.
 
 -   Save all changes and do a Git commit with the message \"Components
     Part 1\".
@@ -2516,13 +2509,13 @@ this exercise you will be able to:
 
 ### Exercise Resources
 
-**dishes**
+<b>dishes</b>
 
 JS File
 
 ### Updating the Menu Component
 
--   Open *MenuComponent.js* and update its contents as follows. Note
+-   Open <i>MenuComponent.js</i> and update its contents as follows. Note
     that we have removed the dishes variable from the state of the
     component, and updated it to use the Card: 
 
@@ -2567,12 +2560,12 @@ JS File
 >  . . .
 ```
 
--   Add a folder named *shared* under the *src* folder.
+-   Add a folder named <i>shared</i> under the <i>src</i> folder.
 
--   In the *shared* folder, create a new file named *dishes.js* and add
-    the following content to it (**Note**: Alternately you can download
-    the *dishes.js* file given above in the Exercise Resources and move
-    it to the shared folder. Make sure the file is named *dishes.js*):
+-   In the <i>shared</i> folder, create a new file named <i>dishes.js</i> and add
+    the following content to it (<b>Note</b>: Alternately you can download
+    the <i>dishes.js</i> file given above in the Exercise Resources and move
+    it to the shared folder. Make sure the file is named <i>dishes.js</i>):
 
 ```
 > export const DISHES =
@@ -2618,7 +2611,7 @@ JS File
 >             {
 ```
 
--   Open *App.js* and update it as follows:
+-   Open <i>App.js</i> and update it as follows:
 
 ```
 > . . .
@@ -2656,15 +2649,15 @@ selected dish.
 
 ### PDFs of Presentations
 
-**5-Component-Part1.pdf**
+<b>5-Component-Part1.pdf</b>
 
 PDF File
 
-**6-Component-Part2.pdf**
+<b>6-Component-Part2.pdf</b>
 
 PDF File
 
-**7-Lifecycle-Methods.pdf**
+<b>7-Lifecycle-Methods.pdf</b>
 
 PDF File
 
@@ -2699,14 +2692,14 @@ PDF File
 
 ## Peer-graded Assignment: React Components
 
-**Deadline**Oct 23, 11:59 PM PDT
+<b>Deadline</b>Oct 23, 11:59 PM PDT
 
 i
 
 It looks like this is your first peer-graded assignment. [Learn
 more](https://learner.coursera.help/hc/articles/208279926-Submit-peer-reviewed-assignments)
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
@@ -2717,13 +2710,13 @@ new component.
 
 ## Step-By-Step Assignment Instructions
 
-**less **
+<b>less </b>
 
-**Objectives and Outcomes**
+<b>Objectives and Outcomes</b>
 
 In this assignment, you will continue to work with the React application
 that you have been developing in the exercises. You will add a new
-component named ***DishdetailComponent*** that will display the details
+component named <b><i>DishdetailComponent</i></b> that will display the details
 of a selected dish. You will then design the view for the component
 using the card component. At the end of this assignment, you should have
 completed the following tasks:
@@ -2738,16 +2731,16 @@ completed the following tasks:
     > comments about the dish using the Bootstrap unstyled list
     > component.
 
-**Assignment Requirements**
+<b>Assignment Requirements</b>
 
 This assignment requires you to complete the following tasks. Detailed
 instructions for each task are given below. The picture of the completed
 web page included below indicates the location within the web page that
 will be updated by the three tasks.
 
-**Task 1**
+<b>Task 1</b>
 
-In this task you will be adding a new ***DishdetailComponent*** to your
+In this task you will be adding a new <b><i>DishdetailComponent</i></b> to your
 React application and include the component into the menu component\'s
 view so that the details of a specific dish are displayed there:
 
@@ -2755,15 +2748,15 @@ view so that the details of a specific dish are displayed there:
     > with the DishdetailComponent, and make sure to pass the selected
     > dish information as props to the DishdetailComponent.
 
--   Create a new *DishDetail* class in a file named
-    > *DishdetailComponent.js* in the *components* folder
+-   Create a new <i>DishDetail</i> class in a file named
+    > <i>DishdetailComponent.js</i> in the <i>components</i> folder
 
--   Export the *DishDetail* class from this file so that it can be
-    > imported in *MenuComponent.js* and used to construct the view of
+-   Export the <i>DishDetail</i> class from this file so that it can be
+    > imported in <i>MenuComponent.js</i> and used to construct the view of
     > the selected dish.
 
 -   Return a \<div\> from the render() function. This \<div\> should use
-    > the Bootstrap *row* class to position the content within the
+    > the Bootstrap <i>row</i> class to position the content within the
     > \<div\>. This div will display both the details of the dish in a
     > Card and the list of comments side-by-side for medium to extra
     > large screens, but will stack them for xs and sm screens.
@@ -2780,10 +2773,10 @@ view so that the details of a specific dish are displayed there:
 
 -   If the dish is null then you should return an empty \<div\>
 
-**Task 2**
+<b>Task 2</b>
 
 In this task you will be adding a card component to the
-***DishdetailComponent*** view to display the details of the dish given
+<b><i>DishdetailComponent</i></b> view to display the details of the dish given
 above:
 
 -   Implement a function named renderDish() that takes the dish as a
@@ -2797,7 +2790,7 @@ above:
 -   Display the name of the dish as the Card title, and the description
     > as the Card text.
 
-**Task 3**
+<b>Task 3</b>
 
 In this task you will use the comments that are included in the dish
 object above to display a list of the comments for the dish. Please use
@@ -2831,34 +2824,28 @@ height="9.0in"}
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-**Task 1:**
+<b>Task 1:</b>
 
--   A new ***DishdetailComponent*** has been added to your React
-    > application.
+  -   A new <b><i>DishdetailComponent</i></b> has been added to your React application.
 
--   Included the DishDetail into your MenuComponent\'s view to show the
-    > selected dish.
+  -   Included the DishDetail into your MenuComponent\'s view to show the selected dish.
 
--   Passing the selected dish as props to the DishDetail Component.
+  -   Passing the selected dish as props to the DishDetail Component.
 
--   Used the appropriate Bootstrap classes to the card so that it
-    > occupies the entire row for xs and sm screen sizes, and 5 columns
-    > for md screens and above.
+  -   Used the appropriate Bootstrap classes to the card so that it occupies the entire row for xs and sm screen sizes, and 5 columns for md screens and above.
 
--   Used the appropriate Bootstrap classes to the div containing the
-    > list of comments so that it occupies the entire row for xs and sm
-    > screen sizes, and 5 columns for md screens and above.
+  -   Used the appropriate Bootstrap classes to the div containing the list of comments so that it occupies the entire row for xs and sm  screen sizes, and 5 columns for md screens and above.
 
-**Task 2:**
+<b>Task 2:</b>
 
 -   Used the Card component to display the details of the dish.
 
-**Task 3:**
+<b>Task 3:</b>
 
 -   Included a list of comments about the dish into the dishdetail view.
 
@@ -2936,25 +2923,21 @@ the end of this step you should be able to:
 
 ### 3. Market Survey
 
--   Do a survey of the Web to find about five web sites that might have
-    similar ideas as yours.
+  -   Do a survey of the Web to find about five web sites that might have similar ideas as yours.
 
--   Briefly compare the features of these applications with your
-    application idea.
+  -   Briefly compare the features of these applications with your application idea.
 
 ### 4. References
 
--   Give references to any material / websites / books etc. relevant to
-    your application idea
+  -   Give references to any material / websites / books etc. relevant to your application idea
 
--   Give the links to the websites relevant to your idea, that you
-    listed in the section above.
+  -   Give the links to the websites relevant to your idea, that you listed in the section above.
 
 ## Honors Peer-graded Assignment: Ideation
 
-**Deadline**Oct 23, 11:59 PM PDT
+<b>Deadline</b>Oct 23, 11:59 PM PDT
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
@@ -2969,7 +2952,7 @@ Letter/A4 sized pages.
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Your submission will be reviewed based on the following criteria by
 peers in order to provide you with constructive feedback on your project
@@ -3037,7 +3020,7 @@ data and behavior. At the end of this exercise you will learn about:
 
 ### Add a Container Component
 
--   Add a new component named *MainComponent.js* in the components
+-   Add a new component named <i>MainComponent.js</i> in the components
     folder and update its contents as follows:
 
 ```
@@ -3079,7 +3062,7 @@ data and behavior. At the end of this exercise you will learn about:
 > export default Main;
 ```
 
--   Update the *App.js* by removing the state related information, and
+-   Update the <i>App.js</i> by removing the state related information, and
     make use of Main Component to render the UI:
 
 ```
@@ -3227,11 +3210,11 @@ In this exercise we have learnt to implement our components as pure functional c
 
 ### PDFs of Presentations
 
-**1-Component-Types-Part1.pdf**
+<b>1-Component-Types-Part1.pdf</b>
 
 PDF File
 
-**2-Component-Types-Part2.pdf**
+<b>2-Component-Types-Part2.pdf</b>
 
 PDF File
 
@@ -3520,7 +3503,7 @@ this exercise you will be able to:
 
 > yarn add react-router-dom@4.2.2
 
--   Then, open *App.js* and update it as follows:
+-   Then, open <i>App.js</i> and update it as follows:
 
 ```
 > . . .
@@ -3581,7 +3564,7 @@ this exercise you will be able to:
 
 ### Configuring the Router
 
--   Open *MainComponent.js* file and update it as follows:
+-   Open <i>MainComponent.js</i> file and update it as follows:
 
 ```
 > . . .
@@ -3615,7 +3598,7 @@ this exercise you will be able to:
 >  
 ```
 
--   Open *HeaderComponent.js* and update its contents with the
+-   Open <i>HeaderComponent.js</i> and update its contents with the
     following:
 
 ```
@@ -3743,11 +3726,11 @@ React Router for navigation within your React app.
 
 ### PDFs of Presentations
 
-**3-VirtualDOM.pdf**
+<b>3-VirtualDOM.pdf</b>
 
 PDF File
 
-**4-React-Router.pdf**
+<b>4-React-Router.pdf</b>
 
 PDF File
 
@@ -3783,7 +3766,7 @@ able to:
 
 -   Design SPA using React
 
--   Use the *React router* to construct SPA
+-   Use the <i>React router</i> to construct SPA
 
 ## Single Page Applications (video)
 
@@ -3805,25 +3788,25 @@ of this exercise you will be able to:
 
 ### Exercise Resources
 
-**dishes**
+<b>dishes</b>
 
 JS File
 
-**promotions**
+<b>promotions</b>
 
 JS File
 
-**leaders**
+<b>leaders</b>
 
 JS File
 
-**comments**
+<b>comments</b>
 
 JS File
 
 ### Integrating the Contact Component
 
--   Add a new file named *ContactComponent.js* file and update its
+-   Add a new file named <i>ContactComponent.js</i> file and update its
     contents as follows:
 
 ```
@@ -3870,7 +3853,7 @@ JS File
 > export default Contact;
 ```
 
--   Update the *MainComponent.js* file to integrate the ContactComponent
+-   Update the <i>MainComponent.js</i> file to integrate the ContactComponent
     by adding in the following:
 
 ```
@@ -3893,9 +3876,9 @@ JS File
 
 ### Updating the Home Component
 
--   First update *dishes.js* file in the shared folder to update the
-    dishes as follows. (**NOTE**: Alternately you can download
-    *dishes.js, comments.js, promotions.js* and *leaders.js* given above
+-   First update <i>dishes.js</i> file in the shared folder to update the
+    dishes as follows. (<b>NOTE</b>: Alternately you can download
+    <i>dishes.js, comments.js, promotions.js</i> and <i>leaders.js</i> given above
     in Exercise resources and move them to the shared folder):
 
 ```
@@ -3943,7 +3926,7 @@ JS File
 >         featured: false,
 ```
 
--   Now add a new file named *comments.js* to the shared folder and
+-   Now add a new file named <i>comments.js</i> to the shared folder and
     update it as follows. We are now moving the comments about the
     dishes into its own file:
 
@@ -4028,7 +4011,7 @@ JS File
 >
 >         author: \"25 Cent\",
 
--   Next add a new file named *promotions.js* file to the shared folder
+-   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
 > export const PROMOTIONS = \[
@@ -4053,7 +4036,7 @@ JS File
 >
 >   \];
 
--   Next add a new file named *leaders.js* file to the shared folder and
+-   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
 > export const LEADERS = \[
@@ -4229,7 +4212,7 @@ the end of this exercise you will be able to:
 
 ### Updating to Use Parameters on Routes
 
--   Open *MenuComponent.js* and add the following changes to it to
+-   Open <i>MenuComponent.js</i> and add the following changes to it to
     enable the information about the selected dish to be passed to the
     DishdetailComponent:
 
@@ -4273,7 +4256,7 @@ the end of this exercise you will be able to:
 > . . .
 ```
 
--   Open *MainComponent.js* and update it as follows:
+-   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -4290,7 +4273,7 @@ the end of this exercise you will be able to:
 
 ### Updating DishDetail Component
 
--   Open *DishdetailComponent.js* and update it as follows:
+-   Open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -4357,11 +4340,11 @@ pass information to another component.
 
 ### PDFs of Presentations
 
-**5-Single-Page-Apps.pdf**
+<b>5-Single-Page-Apps.pdf</b>
 
 PDF File
 
-**6-React-Router-Parameters.pdf**
+<b>6-React-Router-Parameters.pdf</b>
 
 PDF File
 
@@ -4395,18 +4378,18 @@ PDF File
 
 ## Peer-graded Assignment: React Router and Single Page Applications
 
-**Deadline**Oct 30, 11:59 PM PDT
+<b>Deadline</b>Oct 30, 11:59 PM PDT
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
-1.  [**Instructions**](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications)
+1.  [<b>Instructions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications)
 
-2.  [**My
-    > submission**](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
+2.  [<b>My
+    > submission</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
 
-3.  [**Discussions**](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/discussions)
+3.  [<b>Discussions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/discussions)
 
 In this assignment you will continue working with the React application
 by adding a new component named AboutComponent to serve up the details
@@ -4415,15 +4398,15 @@ into the single page application.
 
 ## Step-By-Step Assignment Instructions
 
-**less **
+<b>less </b>
 
-**Assignment Resources**
+<b>Assignment Resources</b>
 
-**AboutComponent**
+<b>AboutComponent</b>
 
 JS File
 
-**Objectives and Outcomes**
+<b>Objectives and Outcomes</b>
 
 At the end of this assignment, you should have completed the following
 tasks:
@@ -4439,27 +4422,27 @@ tasks:
 -   Construct and render the list of leaders in the About Us page using
     > the \<RenderLeader\> component implemented above.
 
-**Assignment Requirements**
+<b>Assignment Requirements</b>
 
 This assignment requires you to complete the following tasks. Detailed
 instructions for each task are given below. The picture of the completed
 web page included below indicates the location within the web page that
 will be updated by the three tasks.
 
-**Task 1**
+<b>Task 1</b>
 
 In this task you will be integrating the AboutComponent into the single
 page application:
 
--   First, download the *AboutComponent.js* given above and move it to
+-   First, download the <i>AboutComponent.js</i> given above and move it to
     > the components folder, and
 
--   Update the *MainComponent.js* file to integrate the AboutComponent
+-   Update the <i>MainComponent.js</i> file to integrate the AboutComponent
     > into the single page application. You should be able to navigate
     > to the AboutComponent by clicking the links in the navigation bar
     > and the footer.
 
-**Task 2**
+<b>Task 2</b>
 
 In this task you will implement a new functional component named
 \<RenderLeader\> through the RenderLeader() function:
@@ -4479,7 +4462,7 @@ In this task you will implement a new functional component named
 -   This will make available the \<RenderLeader\> component for use
     > within your AboutComponent.
 
-**Task 3**
+<b>Task 3</b>
 
 In this task you will use the \<RenderLeader\> component created in the
 previous task to render a list of leaders within your AboutComponent:
@@ -4493,12 +4476,12 @@ height="9.0in"}
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-**Task 1:**
+<b>Task 1:</b>
 
 -   The AboutComponent.js file has been downloaded and integrated into
     > our React application.
@@ -4506,7 +4489,7 @@ based on the following criteria:
 -   The React application has been appropriately updated to enable
     > navigation to the About Us page of our application.
 
-**Task 2:**
+<b>Task 2:</b>
 
 -   Implemented a new \<RenderLeader\> functional component in your
     > application.
@@ -4517,7 +4500,7 @@ based on the following criteria:
 -   Used the reactstrap \<Media\> component to render the details of a
     > leader.
 
-**Task 3:**
+<b>Task 3:</b>
 
 -   Updated the leaders variable within the AboutComponent() function to
     > make use of the \<RenderLeader\> component to render the list of
@@ -4527,7 +4510,7 @@ based on the following criteria:
 
 ### Assignment Resources
 
-**AboutComponent**
+<b>AboutComponent</b>
 
 JS File
 
@@ -4606,18 +4589,18 @@ with your application At the end of this lesson, you should be able to:
 
 ## Honors Peer-graded Assignment: UI Design and Prototyping
 
-**Deadline**Oct 30, 11:59 PM PDT
+<b>Deadline</b>Oct 30, 11:59 PM PDT
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
-1.  [**Instructions**](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping)
+1.  [<b>Instructions</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping)
 
-2.  [**My
-    > submission**](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/submit)
+2.  [<b>My
+    > submission</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/submit)
 
-3.  [**Discussions**](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/discussions)
+3.  [<b>Discussions</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/discussions)
 
 In this assignment you will be submitting a written report that includes
 some user interface designs and the flow of your application and the
@@ -4626,7 +4609,7 @@ structure given earlier in this lesson.
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Your submission will be reviewed based on the following criteria by
 peers in order to provide you with constructive feedback on your project
@@ -4711,7 +4694,7 @@ exercise you will be able to:
 ### Importing the Necessary Components
 
 -   You will start out by importing the necessary components from
-    reactstrap into *ContactComponent.js* as follows:
+    reactstrap into <i>ContactComponent.js</i> as follows:
 
 ```
 > . . .
@@ -4721,7 +4704,7 @@ exercise you will be able to:
 >   . . .
 ```
 
--   You will then change the *ContactComponent* to a class-based
+-   You will then change the <i>ContactComponent</i> to a class-based
     component as follows:
 
 ```
@@ -4735,7 +4718,7 @@ exercise you will be able to:
 
 ### Creating the Controlled Form
 
--   Update the *ContactComponent.js* file as follows to set up the
+-   Update the <i>ContactComponent.js</i> file as follows to set up the
     Controlled Form:
 
 ```
@@ -4838,7 +4821,7 @@ to:
 
 ### Simple Form Validation
 
--   Open *ContactComponent.js* and update it as follows to introduce the
+-   Open <i>ContactComponent.js</i> and update it as follows to introduce the
     support to track form errors and perform validation:
 
 > . . .
@@ -5020,7 +5003,7 @@ controlled forms in React.
 
 ### PDFs of Presentations
 
-**1-Controlled-Components-Forms.pdf**
+<b>1-Controlled-Components-Forms.pdf</b>
 
 PDF File
 
@@ -5077,7 +5060,7 @@ this exercise you will be able to:
 
 ### Adding a Modal to Host the Form
 
--   Update *HeaderComponent.js* as follows to add a new Modal to the
+-   Update <i>HeaderComponent.js</i> as follows to add a new Modal to the
     application to host the form:
 
 > . . .
@@ -5267,7 +5250,7 @@ add a form to our React application.
 
 ### PDFs of Presentations
 
-**2-Uncontrolled-Components-Forms.pdf**
+<b>2-Uncontrolled-Components-Forms.pdf</b>
 
 PDF File
 
@@ -5338,8 +5321,8 @@ this exercise you will be able to:
 >
 > yarn add react-redux@5.0.7
 
--   Next, create a folder named *redux* in the *src* folder and then add
-    a file named *reducer.js* with the code below:
+-   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
+    a file named <i>reducer.js</i> with the code below:
 
 > import { DISHES } from \'../shared/dishes\';
 >
@@ -5371,7 +5354,7 @@ this exercise you will be able to:
 >
 > };
 
--   Then, add a file named *configureStore.js* in the *redux* folder and
+-   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
 > import {createStore} from \'redux\';
@@ -5396,7 +5379,7 @@ this exercise you will be able to:
 >
 > }
 
--   Next, open *App.js* and update it as follows:
+-   Next, open <i>App.js</i> and update it as follows:
 
 > . . .
 >
@@ -5533,15 +5516,15 @@ your React application.
 
 ### PDFs of Presentations
 
-**3-MVC.pdf**
+<b>3-MVC.pdf</b>
 
 PDF File
 
-**4-Flux-Arch.pdf**
+<b>4-Flux-Arch.pdf</b>
 
 PDF File
 
-**5-Intro-Redux.pdf**
+<b>5-Intro-Redux.pdf</b>
 
 PDF File
 
@@ -5596,11 +5579,11 @@ react-redux-form. At the end of this exercise you will be able to:
 
 ### Installing and Using react-redux-form
 
--   We first install the *react-redux-form* into our project as follows:
+-   We first install the <i>react-redux-form</i> into our project as follows:
 
 > yarn add <react-redux-form@1.16.8>
 
--   Then open *ContactComponent.js* and update the Feedback Form to use
+-   Then open <i>ContactComponent.js</i> and update the Feedback Form to use
     react-redux-form:
 
 > . . .
@@ -5705,7 +5688,7 @@ react-redux-form. At the end of this exercise you will be able to:
 
 ### Implementing Simple Form Validation
 
--   Open *ContactComponent.js* and update it as follows to implement
+-   Open <i>ContactComponent.js</i> and update it as follows to implement
     form validation:
 
 > . . . 
@@ -5800,7 +5783,7 @@ using react-redux-form.
 
 ### PDFs of Presentations
 
-**6-React-Redux-Form.pdf**
+<b>6-React-Redux-Form.pdf</b>
 
 PDF File
 
@@ -5824,9 +5807,9 @@ PDF File
 
 ## Peer-graded Assignment: React Forms and Redux
 
-**Deadline**Nov 6, 11:59 PM PST
+<b>Deadline</b>Nov 6, 11:59 PM PST
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
@@ -5835,25 +5818,25 @@ react-redux-form based local form and do the form validation in code.
 
 ## Step-By-Step Assignment Instructions
 
-**less **
+<b>less </b>
 
-**Assignment Overview**
+<b>Assignment Overview</b>
 
-In this assignment you will update the D*ishdetailComponent.js* to
+In this assignment you will update the D<i>ishdetailComponent.js</i> to
 include a form and do the form validation in code. At the end of this
 assignment, you should have completed the following tasks to update the
 page:
 
 -   Added a new class component named CommentForm to
-    > *DishdetailComponent.js*.
+    > <i>DishdetailComponent.js</i>.
 
 -   Provide a form to enable users to submit their comments
 
 -   Validate the information entered by the users in the form
 
-**Assignment Requirements**
+<b>Assignment Requirements</b>
 
-**Task 1**
+<b>Task 1</b>
 
 In this task you will add a new class component named CommentForm. You
 need to complete the following:
@@ -5867,7 +5850,7 @@ need to complete the following:
 -   The CommentForm component is used by the RenderComments function to
     > display the button for toggling the modal.
 
-**Task 2**
+<b>Task 2</b>
 
 In this task you will construct the form for users to submit their
 comments as shown in the image below. You need to complete the
@@ -5880,7 +5863,7 @@ following:
     > the author is implemented using a text field, while the comment
     > uses a textarea with six rows.
 
-**Task 3**
+<b>Task 3</b>
 
 In this task, you will enable form validation as shown in the images
 below. You need to complete the following:
@@ -5906,24 +5889,24 @@ height="3.7381944444444444in"}
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-**Task 1:**
+<b>Task 1:</b>
 
 -   A CommentForm component is implemented that adds a button to the
     > view, which when clicked will toggle a modal containing the form.
 
-**Task 2:**
+<b>Task 2:</b>
 
 -   The form is set up with the three fields correctly.
 
 -   A select is included in the form to enable users to submit the
     > rating, a text field for author and a text area for the comment.
 
-**Task 3:**
+<b>Task 3:</b>
 
 -   The author field is being properly validated. If incorrect, the user
     > is alerted.
@@ -6105,18 +6088,18 @@ store. At the end of this exercise you will be able to:
 
 ### Creating Actions
 
--   In the *redux* folder create a new file named *ActionTypes.js* and
+-   In the <i>redux</i> folder create a new file named <i>ActionTypes.js</i> and
     add the following to it:
 
 ```
 > export const ADD_COMMENT = \'ADD_COMMENT\';
 ```
 
--   Then, create a file named *ActionCreators.js* and add the following
+-   Then, create a file named <i>ActionCreators.js</i> and add the following
     to it:
 
 ```
-> import \* as ActionTypes from \'./ActionTypes\';
+> import \<i> as ActionTypes from \'./ActionTypes\';
 >
 >  
 >
@@ -6135,13 +6118,13 @@ store. At the end of this exercise you will be able to:
 > });
 ```
 
--   Next, update *comments.js* to initiate action when the action is
+-   Next, update <i>comments.js</i> to initiate action when the action is
     dispatched by the ActionCreator as follows:
 
 ```
 > import { COMMENTS } from \'../shared/comments\';
 >
-> import \* as ActionTypes from \'./ActionTypes\';
+> import \</i> as ActionTypes from \'./ActionTypes\';
 >
 > export const Comments = (state = COMMENTS, action) =\> {
 >     switch (action.type) {
@@ -6157,7 +6140,7 @@ store. At the end of this exercise you will be able to:
 > };
 ```
 
--   Now update *MainComponent.js* to make the action available for use
+-   Now update <i>MainComponent.js</i> to make the action available for use
     within the DishdetailComponent as follows:
 
 ```
@@ -6186,7 +6169,7 @@ store. At the end of this exercise you will be able to:
 > export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 ```
 
--   Finally, update *DishdetailComponent.js* as follows to initiate the
+-   Finally, update <i>DishdetailComponent.js</i> as follows to initiate the
     action upon the user submitting the comment form:
 
 ```
@@ -6305,7 +6288,7 @@ function. At the end of this exercise you will be able to:
 > yarn add redux-logger@3.0.6
 ```
 
--   Then open *configureStore.js* and update it to use the Thunk and
+-   Then open <i>configureStore.js</i> and update it to use the Thunk and
     Logger as follows:
 
 ```
@@ -6328,7 +6311,7 @@ function. At the end of this exercise you will be able to:
 > . . .
 ```
 
--   Next, open *ActionTypes.js* and add new action types as follows:
+-   Next, open <i>ActionTypes.js</i> and add new action types as follows:
 
 ```
 . . .
@@ -6404,7 +6387,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
     follows:
 
 ```
-> import \* as ActionTypes from \'./ActionTypes\';
+> import \</i> as ActionTypes from \'./ActionTypes\';
 >
 >  
 >
@@ -6443,7 +6426,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 > };
 ```
 
--   Add a new component named *LoadingComponent.js* to display a loading
+-   Add a new component named <i>LoadingComponent.js</i> to display a loading
     message as follows:
 
 ```
@@ -6469,7 +6452,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 ```
 
 -   Now we will update the remaining components to use the actions.
-    First, open *MainComponent.js* and update it as follows:
+    First, open <i>MainComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -6506,7 +6489,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 > . . .
 ```
 
--   Open *DishdetailComponent.js* and update it as follows:
+-   Open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -6534,7 +6517,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 > . . .
 ```
 
--   Open *HomeComponent.js* and update it as follows:
+-   Open <i>HomeComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -6573,7 +6556,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 > . . .
 ```
 
--   Finally, update *MenuComponent.js* as follows:
+-   Finally, update <i>MenuComponent.js</i> as follows:
 
 ```
 > . . .
@@ -6629,7 +6612,7 @@ store. At the end of this exercise you will be able to:
 
 ### Updating the Feedback Form
 
--   Add a new file named *forms.js* in the *redux* folder and add the
+-   Add a new file named <i>forms.js</i> in the <i>redux</i> folder and add the
     following to it:
 
 ```
@@ -6644,7 +6627,7 @@ store. At the end of this exercise you will be able to:
 > };
 ```
 
--   Then, open *configureStore.js* and update it to add the form to the
+-   Then, open <i>configureStore.js</i> and update it to add the form to the
     reducers:
 
 ```
@@ -6665,7 +6648,7 @@ store. At the end of this exercise you will be able to:
 > . . .
 ```
 
--   Next, open *MainComponent.js* and update it as follows:
+-   Next, open <i>MainComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -6710,7 +6693,7 @@ Redux to persist form state.
 
 ### PDFs of Presentations
 
-**2-Redux-Thunk.pdf**
+<b>2-Redux-Thunk.pdf</b>
 
 PDF File
 
@@ -6746,28 +6729,28 @@ json-server node module. At the end of this lesson, you will be able to:
 
 ### Exercise Resources
 
-**db**
+<b>db</b>
 
 JSON File
 
-**images**
+<b>images</b>
 
 ZIP File
 
 ### Objectives and Outcomes
 
-The Node module, *json-server*, provides a very simple way to set up a
+The Node module, <i>json-server</i>, provides a very simple way to set up a
 web server that supports a full-fledged REST API server. It can also
 serve up static web content from a folder. This lesson will leverage
 these two features to provide the back-end for your React application.
 In this exercise, you will configure and start a server using
-*json-server* to enable serving your application data to your Angular
+<i>json-server</i> to enable serving your application data to your Angular
 application. At the end of this exercise, you will be able to:
 
 -   Configure and start a simple server using the json-server module
 
 -   Configure your server to serve up static web content stored in a
-    folder named *public*.
+    folder named <i>public</i>.
 
 ### Installing json-server
 
@@ -6776,14 +6759,14 @@ application. At the end of this exercise, you will be able to:
 
      npm install json-server -g
 
-If you are using OSX or Linux, use **sudo** at the front of the command.
+If you are using OSX or Linux, use <b>sudo</b> at the front of the command.
 This will install json-server that can be started from the command line
 from any folder on your computer.
 
 ### Configuring the Server
 
 -   At any convenient location on your computer, create a new folder
-    named **json-server**, and move to this folder.
+    named <b>json-server</b>, and move to this folder.
 
 -   Download the db.json file provided above to this folder.
 
@@ -6796,7 +6779,7 @@ from any folder on your computer.
 
 -   This should start up a server at port number 3001 on your machine.
     The data from this server can be accessed by typing the following
-    addresses into your **browser address bar**:
+    addresses into your <b>browser address bar</b>:
 
 ```
 > [http://localhost:3001/dishes]{.underline}
@@ -6816,14 +6799,14 @@ from any folder on your computer.
 <!-- -->
 ```
 -   The json-server also provides a static web server. Any resources
-    that you put in a folder named **public** in the **json-server**
+    that you put in a folder named <b>public</b> in the <b>json-server</b>
     folder above, will be served by the server at the following address:
 
 ```
 >   <http://localhost:3001/>
 ```
 
--   Shut down the server by typing **ctrl-C** in the terminal window.
+-   Shut down the server by typing <b>ctrl-C</b> in the terminal window.
 
 ### Serving up the Images
 
@@ -6843,28 +6826,28 @@ from any folder on your computer.
 ### Conclusions
 
 In this exercise, you learnt how to configure and start a simple server
-using the **json-server** node module. You also learnt how the server
+using the <b>json-server</b> node module. You also learnt how the server
 can serve up static web content.
 
 ## Client-Server Communication: Additional Resources
 
 ### PDFs of Presentations
 
-**3-Networking-Essentials.pdf**
+<b>3-Networking-Essentials.pdf</b>
 
 PDF File
 
-**4-REST.pdf**
+<b>4-REST.pdf</b>
 
 PDF File
 
 ### Exercise Resources
 
-**db**
+<b>db</b>
 
 JSON File
 
-**images**
+<b>images</b>
 
 ZIP File
 
@@ -6913,8 +6896,8 @@ exercise you will be able to:
 > yarn add cross-fetch@2.1.0
 
 -   Now that we have installed Fetch, let us configure your application
-    to connect to the server. First, create a file named *baseUrl.js* in
-    the *shared* folder and add the following to it:
+    to connect to the server. First, create a file named <i>baseUrl.js</i> in
+    the <i>shared</i> folder and add the following to it:
 
 ```
 > export const baseUrl = \'[http://localhost:3001/]{.underline}\';
@@ -6924,7 +6907,7 @@ exercise you will be able to:
 
 -   ng up the data as illustrated in the previous exercise
 
--   Next, open *ActionTypes.js* and add the following:
+-   Next, open <i>ActionTypes.js</i> and add the following:
 
 ```
 . . .
@@ -6935,7 +6918,7 @@ export const ADD_PROMOS = \'ADD_PROMOS\';
 export const PROMOS_FAILED = \'PROMOS_FAILED\';
 ```
 
--   Then, open *ActionCreators.js* and update it as follows:
+-   Then, open <i>ActionCreators.js</i> and update it as follows:
 
 ```
 > . . .
@@ -6968,10 +6951,10 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >     type: ActionTypes.PROMOS_LOADING
 ```
 
--   Next, open *comments.js* and update it as follows:
+-   Next, open <i>comments.js</i> and update it as follows:
 
 ```
-> import \* as ActionTypes from \'./ActionTypes\';
+> import \</i> as ActionTypes from \'./ActionTypes\';
 >
 > export const Comments = (state = { errMess: null, comments:\[\]}, action) =\> {
 >   switch (action.type) {
@@ -6990,10 +6973,10 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 > };
 ```
 
--   Similarly, open *promotions.js* and update it as follows:
+-   Similarly, open <i>promotions.js</i> and update it as follows:
 
 ```
-> import \* as ActionTypes from \'./ActionTypes\';
+> import \</i> as ActionTypes from \'./ActionTypes\';
 > export const Promotions = (state  = { isLoading: true,
 >                                         errMess: null,
 >                                         promotions:\[\]}, action) =\> {
@@ -7013,7 +6996,7 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 -   Now that the Redux actions are all updated, it\'s time to update the
     components.
 
--   Open *MainComponent.js* and update it as follows:
+-   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
 > . . . 
@@ -7049,7 +7032,7 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >             errMess={this.props.dishes.errMess}
 ```
 
--   Then, open *MenuComponent.js* and update it as follows:
+-   Then, open <i>MenuComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7059,7 +7042,7 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 > . . .
 ```
 
--   Then, open *HomeComponent.js* and update it as follows:
+-   Then, open <i>HomeComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7073,7 +7056,7 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 > . . .
 ```
 
--   Then, open *DishdetailComponent.js* and update it as follows:
+-   Then, open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7107,7 +7090,7 @@ able to:
 
 ### Handling Errors
 
--   Open *ActionCreators.j*s and update it as follows:
+-   Open <i>ActionCreators.j</i>s and update it as follows:
 
 ```
 > . . .
@@ -7174,7 +7157,7 @@ to:
 
 ### Posting a Comment
 
--   Open *ActionCreators.js* and update it as follows:
+-   Open <i>ActionCreators.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7217,7 +7200,7 @@ to:
 >    .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
 ```
 
--   Open *comment.js* and **remove** the following two lines from it:
+-   Open <i>comment.js</i> and <b>remove</b> the following two lines from it:
 
 ```
 > . . .
@@ -7228,7 +7211,7 @@ to:
 >  . . .
 ```
 
--   Open *MainComponent.js* and update it as follows:
+-   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7244,7 +7227,7 @@ to:
 > . . .
 ```
 
--   Finally, open *DishdetailComponent.js* and update it as follows:
+-   Finally, open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
 > . . .
@@ -7269,11 +7252,11 @@ In this exercise you learnt to use Fetch to post data to the server.
 
 ### PDFs of Presentations
 
-**5-Promises.pdf**
+<b>5-Promises.pdf</b>
 
 PDF File
 
-**6-Fetch.pdf**
+<b>6-Fetch.pdf</b>
 
 PDF File
 
@@ -7338,7 +7321,7 @@ be able to:
 
 yarn add react-transition-group@2.3.0
 
--   Configure CSS classes for use in animation. Open *App.css* and add
+-   Configure CSS classes for use in animation. Open <i>App.css</i> and add
     the following classes:
 
 ```
@@ -7403,7 +7386,7 @@ react-transition-group.
 
 ## Exercise (Video): React Animation Components
 
-## **Exercise (Instructions): React Animation** Components
+## <b>Exercise (Instructions): React Animation</b> Components
 
 ### Objectives and Outcomes
 
@@ -7426,7 +7409,7 @@ you will be able to:
 
 ### Adding Animations
 
--   Open *HomeComponents.js* and update as follows:
+-   Open <i>HomeComponents.js</i> and update as follows:
 
 ```
 > . . .
@@ -7506,7 +7489,7 @@ using react-animation-components.
 
 ### PDFs of Presentations
 
-**7-Animations.pdf**
+<b>7-Animations.pdf</b>
 
 PDF File
 
@@ -7542,9 +7525,9 @@ PDF File
 
 ## Peer-graded Assignment: Redux, Client-Server Communication and Fetch
 
-**Deadline** Nov 13, 11:59 PM PST
+<b>Deadline</b> Nov 13, 11:59 PM PST
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
@@ -7555,9 +7538,9 @@ feedback form by posting the feedback to the server.
 
 ## Step-By-Step Assignment Instructions
 
-**less **
+<b>less </b>
 
-**Assignment Overview**
+<b>Assignment Overview</b>
 
 At the end of this assignment, you should have completed the following:
 
@@ -7575,34 +7558,34 @@ At the end of this assignment, you should have completed the following:
     > creating a new feedback service that accepts the form data and
     > uses Restangular to record their feedback on the server.
 
-**Assignment Requirements**
+<b>Assignment Requirements</b>
 
-**Task 1**
+<b>Task 1</b>
 
 In this task, you will update the Redux actions and the Home and About
 components to use the data from the server for rendering the leader
 information:
 
--   Add new action types in *ActionTypes.js* to support the fetching of
+-   Add new action types in <i>ActionTypes.js</i> to support the fetching of
     > the leaders information from the server
 
--   Add new action creators in *ActionCreators.js* to enable the
+-   Add new action creators in <i>ActionCreators.js</i> to enable the
     > fetching of the leaders information from the server and update the
     > Redux store
 
--   Update the code in *leaders.js* to respond to the dispatched Redux
+-   Update the code in <i>leaders.js</i> to respond to the dispatched Redux
     > actions and update the Redux store and appropriately handle the
     > loading and errors.
 
--   Update the code in *MainComponent.js* to fetch and use the leaders
+-   Update the code in <i>MainComponent.js</i> to fetch and use the leaders
     > information.
 
--   Update *HomeComponent.js* to render the leader information.
+-   Update <i>HomeComponent.js</i> to render the leader information.
 
--   Update *AboutComponent.js* to render the leaders information. You
+-   Update <i>AboutComponent.js</i> to render the leaders information. You
     > should handle the loading and error condition appropriately.
 
-**Task 2**
+<b>Task 2</b>
 
 In this task, you will enable the saving of the feedback data submitted
 using the feedback form in the Contact component. You will save the
@@ -7613,13 +7596,13 @@ feedback form data submitted by the user to the server:
     > server using Fetch. Recall that the feedback data is accessible at
     > <http://localhost:3001/feedback> on the json-server.
 
--   Update *MainComponent.j*s to make the new dispatch method
+-   Update <i>MainComponent.j</i>s to make the new dispatch method
     > postFeedback() available to ContactComponent.
 
--   Update the *ContactComponent.js* to submit the form data using the
+-   Update the <i>ContactComponent.js</i> to submit the form data using the
     > postFeedback() method by passing the feedback form data.
 
-**Task 3**
+<b>Task 3</b>
 
 In this task you will use simple animation using
 react-animation-components to enable a staggered rendering of the list
@@ -7629,7 +7612,7 @@ of leaders in AboutComponent:
     > judiciously apply animation to the various stages of the form
     > submission.
 
-**Screenshots**
+<b>Screenshots</b>
 
 ![](./images/image010.png){width="6.5in"
 height="7.308333333333334in"}
@@ -7642,11 +7625,11 @@ height="9.0in"}
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Your assignment will be assessed based on the following criteria:
 
-**Task 1**
+<b>Task 1</b>
 
 -   Appropriate action types and action creators have been added.
 
@@ -7656,7 +7639,7 @@ Your assignment will be assessed based on the following criteria:
 -   The About component is correctly using the leader data, and handling
     > any errors that might arise.
 
-**Task 2**
+<b>Task 2</b>
 
 -   A new postFeedback() action creator is correctly implemented to post
     > the feedback data to the server.
@@ -7664,7 +7647,7 @@ Your assignment will be assessed based on the following criteria:
 -   The Contact component has been correctly updated to use
     > postFeedback() to post the form data to the server.
 
-**Task 3**
+<b>Task 3</b>
 
 -   Appropriate animation has been added to stagger the rendering of the
     > leaders in the AboutComponent.
@@ -7738,7 +7721,7 @@ exercise you will be able to:
 
 npm run build
 
--   This should build a distribution folder named *build* containing all
+-   This should build a distribution folder named <i>build</i> containing all
     your application files.
 
 ### Deploying your React Application
@@ -7768,7 +7751,7 @@ your React application.
 
 ### PDFs of Presentations
 
-**8-Webpack.pdf**
+<b>8-Webpack.pdf</b>
 
 PDF File
 
@@ -7853,9 +7836,9 @@ In particular, this section should contain:
 
 ## Honors Peer-graded Assignment: Project Implementation and Final Report
 
-**Deadline** Nov 13, 11:59 PM PST
+<b>Deadline</b> Nov 13, 11:59 PM PST
 
-**Ready for the assignment?**
+<b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
 
@@ -7872,7 +7855,7 @@ server, please submit the URL of the site
 
 ## Review criteria
 
-**less **
+<b>less </b>
 
 Your final project submission will be evaluated by your peers
 considering the following items:
@@ -7890,4 +7873,4 @@ considering the following items:
 
 ..the end.
 
-Last updated 2-14-23 12:55am
+Last updated 2-15-23 10:37pm
