@@ -5453,90 +5453,52 @@ react-redux-form. At the end of this exercise you will be able to:
 
 -   We first install the <i>react-redux-form</i> into our project as follows:
 
+```
 > yarn add <react-redux-form@1.16.8>
+```
 
 -   Then open <i>ContactComponent.js</i> and update the Feedback Form to use
     react-redux-form:
 
+```
 > . . .
->
->  
 >
 > import { Breadcrumb, BreadcrumbItem,
->
 >             Button, Row, Col, Label } from \'reactstrap\';
->
 > import { Control, LocalForm, Errors } from \'react-redux-form\';
->
->  
->
 > . . .
->
->  
->
->  
 >
 >     handleSubmit(values) {
->
 >         console.log(\'Current State is: \' + JSON.stringify(values));
->
 >         alert(\'Current State is: \' + JSON.stringify(values));
->
 >         // event.preventDefault();
->
 >     }
 >
->     
->
 > . . .
->
->  
->
 >                         \<LocalForm onSubmit={(values) =\> this.handleSubmit(values)}\>
->
 >                             \<Row className=\"form-group\"\>
->
 >                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
->
 >                                         placeholder=\"First Name\"
->
 >                                         className=\"form-control\"
->
 >                                          /\>
->
 >                                 \</Col\>
->
 >                             \</Row\>
->
 >                             \<Row className=\"form-group\"\>
->
 >                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
->
 >                                         placeholder=\"Last Name\"
->
 >                                         className=\"form-control\"
->
 >                                          /\>
->
 >                                 \</Col\>
->
 >                             \</Row\>
->
 >                             \<Row className=\"form-group\"\>
->
 >                                 \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Control.text model=\".telnum\" id=\"telnum\" name=\"telnum\"
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form\".
@@ -5563,85 +5525,47 @@ react-redux-form. At the end of this exercise you will be able to:
 -   Open <i>ContactComponent.js</i> and update it as follows to implement
     form validation:
 
+```
 > . . . 
 >
->  
->
->  
->
 > const required = (val) =\> val && val.length;
->
 > const maxLength = (len) =\> (val) =\> !(val) \|\| (val.length \<= len);
->
 > const minLength = (len) =\> (val) =\> val && (val.length \>= len);
->
 > const isNumber = (val) =\> !isNaN(Number(val));
->
 > const validEmail = (val) =\> /\^\[A-Z0-9.\_%+-\]+@\[A-Z0-9.-\]+\\.\[A-Z\]{2,4}\$/i.test(val);
->
->  
 >
 > . . .
 >
->  
->
 >                             \<Row className=\"form-group\"\>
->
 >                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
->
 >                                         placeholder=\"First Name\"
->
 >                                         className=\"form-control\"
->
 >                                         validators={{
->
 >                                             required, minLength: minLength(3), maxLength: maxLength(15)
->
 >                                         }}
->
 >                                          /\>
->
 >                                     \<Errors
->
 >                                         className=\"text-danger\"
->
 >                                         model=\".firstname\"
->
 >                                         show=\"touched\"
->
 >                                         messages={{
->
 >                                             required: \'Required\',
->
 >                                             minLength: \'Must be greater than 2 characters\',
->
 >                                             maxLength: \'Must be 15 characters or less\'
->
 >                                         }}
->
 >                                      /\>
->
 >                                 \</Col\>
->
 >                             \</Row\>
->
 >                             \<Row className=\"form-group\"\>
->
 >                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->
 >                                 \<Col md={10}\>
->
 >                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
->
 >                                         placeholder=\"Last Name\"
->
 >                                         className=\"form-control\"
->
 >                                         validators={{
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form Validation\"
@@ -5801,6 +5725,7 @@ height="3.7381944444444444in"}
 ```{=html}
 <!-- -->
 ```
+
 -   [React Redux Form
     Documentation](https://davidkpiano.github.io/react-redux-form/docs.html)
 
@@ -6047,51 +5972,22 @@ store. At the end of this exercise you will be able to:
 ```
 > . . .
 >
->  
->
 >   function RenderComments({comments, addComment, dishId}) {
 >
->  
->
->  
->
->  
->
 > . . .
->
->  
 >
 >       \<CommentForm dishId={dishId} addComment={addComment} /\>
 >
->  
->
->  
->
 > . . .
->
->  
 >
 >         this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
 >
->  
->
->  
->
->  
->
 > . . .
 >
->  
->
 >       \<RenderComments comments={props.comments}
->
 >         addComment={props.addComment}
->
 >         dishId={props.dish.id}
->
 >       /\>
->
->  
 >
 > . . .
 ```
@@ -6198,60 +6094,29 @@ export const ADD_DISHES = \'ADD_DISHES\';
 ```
 > . . .
 >
->  
->
 > import { DISHES } from \'../shared/dishes\';
->
->  
 >
 > . . .
 >
->  
->
->  
->
 > export const fetchDishes = () =\> (dispatch) =\> {
 >
->  
->
 >     dispatch(dishesLoading(true));
->
->  
->
 >     setTimeout(() =\> {
->
 >         dispatch(addDishes(DISHES));
 >
 >     }, 2000);
->
 > }
 >
->  
->
 > export const dishesLoading = () =\> ({
->
 >     type: ActionTypes.DISHES_LOADING
->
 > });
->
->  
->
 > export const dishesFailed = (errmess) =\> ({
->
 >     type: ActionTypes.DISHES_FAILED,
->
 >     payload: errmess
->
 > });
->
->  
->
 > export const addDishes = (dishes) =\> ({
->
 >     type: ActionTypes.ADD_DISHES,
->
 >     payload: dishes
->
 > });
 ```
 
@@ -6261,40 +6126,19 @@ export const ADD_DISHES = \'ADD_DISHES\';
 ```
 > import \<i> as ActionTypes from \'./ActionTypes\';
 >
->  
->
 > export const Dishes = (state = { isLoading: true,
->
 >     errMess: null,
->
 >     dishes:\[\]}, action) =\> {
->
 >     switch (action.type) {
->
 >         case ActionTypes.ADD_DISHES:
->
 >             return {\...state, isLoading: false, errMess: null, dishes: action.payload};
->
->  
->
 >         case ActionTypes.DISHES_LOADING:
->
 >             return {\...state, isLoading: true, errMess: null, dishes: \[\]}
->
->  
->
 >         case ActionTypes.DISHES_FAILED:
->
 >             return {\...state, isLoading: false, errMess: action.payload};
->
->  
->
 >         default:
->
 >             return state;
->
 >     }
->
 > };
 ```
 
@@ -6304,22 +6148,13 @@ export const ADD_DISHES = \'ADD_DISHES\';
 ```
 > import React from \'react\';
 >
->  
->
 > export const Loading = () =\> {
->
 >     return(
->
 >         \<div className=\"col-12\"\>
->
 >             \<span className=\"fa fa-spinner fa-pulse fa-3x fa-fw text-primary\"\>\</span\>
->
 >             \<p\>Loading . . .\</p\>
->
 >         \</div\>
->
 >     );
->
 > };
 ```
 
@@ -6396,7 +6231,6 @@ export const ADD_DISHES = \'ADD_DISHES\';
 > import { Loading } from \'./LoadingComponent\';
 > . . .
 >  
->
 > function RenderCard({item, isLoading, errMess}) {
 >
 >     if (isLoading) {
@@ -6548,7 +6382,6 @@ store. At the end of this exercise you will be able to:
 > . . .
 >                         \<Form model=\"feedback\" onSubmit={(values) =\> this.handleSubmit(values)}\>
 >                           . . .
->
 >                         \</Form\>
 > . . .
 ```
@@ -6670,6 +6503,7 @@ from any folder on your computer.
 ```{=html}
 <!-- -->
 ```
+
 -   The json-server also provides a static web server. Any resources
     that you put in a folder named <b>public</b> in the <b>json-server</b>
     folder above, will be served by the server at the following address:
@@ -6707,11 +6541,7 @@ can serve up static web content.
 
 <b>3-Networking-Essentials.pdf</b>
 
-PDF File
-
 <b>4-REST.pdf</b>
-
-PDF File
 
 <h3>Exercise Resources</h3>
 
@@ -7126,11 +6956,7 @@ In this exercise you learnt to use Fetch to post data to the server.
 
 <b>5-Promises.pdf</b>
 
-PDF File
-
 <b>6-Fetch.pdf</b>
-
-PDF File
 
 <h3>Fetch Resources</h3>
 
@@ -7244,7 +7070,6 @@ yarn add react-transition-group@2.3.0
 >               \</Switch\>
 >             \</CSSTransition\>
 >           \</TransitionGroup\>
->
 > . . .
 ```
 
@@ -7362,8 +7187,6 @@ using react-animation-components.
 <h3>PDFs of Presentations</h3>
 
 <b>7-Animations.pdf</b>
-
-PDF File
 
 <h3>React Animations</h3>
 
@@ -7626,8 +7449,6 @@ your React application.
 
 <b>8-Webpack.pdf</b>
 
-PDF File
-
 <h3>React Resources</h3>
 
 <ul>
@@ -7712,7 +7533,7 @@ any suitable site like Github, Bitbucket or others that can be publicly
 accessed by providing the URL of the site.<br>
 Make sure that you have sufficiently documented the implementation of your project code by
 adding appropriate comments within the code so that reviewers can easily
-understand the code. <br>
+understand the code.<br>
 If your server is running on any publicly hosted server, please submit the URL of the site.</p>
 
 <h2>Review criteria</h2>
@@ -7731,3 +7552,5 @@ If your server is running on any publicly hosted server, please submit the URL o
 ..the end.
 
 Last updated 2-15-23 8:40am
+
+</html>
