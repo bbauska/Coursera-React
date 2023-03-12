@@ -1,14 +1,14 @@
 ---
 Coursera-React: "Build Your First React Website"
 ---
-<!---
+<!--
 [link](URL){:target="_blank"}
 [Hello, world!](http://example.com/){target="_blank"}
 [Go to this page](http://somelink.com/?target=_blank)
 > :memo: <b>Memo or Note:</b>
 $ npm 
---->
-<!---
+-->
+<!--
 🐱‍👤 View this course in full now - without ads - on Net Ninja Pro:
 https://netninja.dev/p/bootstrap-5-cr...
 
@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=St5B7...
 Facebook - https://www.facebook.com/thenetninjauk
 Twitter - https://twitter.com/thenetninjauk
 Instagram - https://www.instagram.com/thenetninja/
---->
+-->
 
 <h2 align="center">Coursera - React</h2>
 <br/>
@@ -40,7 +40,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Coursera logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p text-align="center">
+<p align="center" width="100%">
 <img src="./images/coursera-logo.png?raw=true"
    width="35%"
    alt="Coursera logo." />
@@ -53,9 +53,7 @@ Instagram - https://www.instagram.com/thenetninja/
    width="65%"
    alt="Hong Kong University of Science and Technology logo." />
 </p>
-<!-----------
-{width="5.0in" height="2.202991032370954in"}
------------->
+<!-- {width="5.0in" height="2.202991032370954in"} -->
 
 <h3>Project Structure</h3>
 The hands-on project on Build Your First React Website is divided into following tasks:
