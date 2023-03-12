@@ -105,7 +105,7 @@ on Bootstrap 4, or have a working knowledge of Bootstrap 4 to be able to
 navigate this course. Also, a good working knowledge of JavaScript,
 especially ES 5 is strongly recommended.
 
-<h2>At the end of this course, you will: </h2>
+<h2>At the end of this course, you will:</h2>
 
   - Be familiar with client-side Javascript application development and the React library
 
