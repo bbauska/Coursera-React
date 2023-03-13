@@ -4,10 +4,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of coursera-react.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--
-$ npm 
---->
-<!--
-<!---
 🐱‍👤 View this course in full now - without ads - on Net Ninja Pro:
 https://netninja.dev/p/bootstrap-5-cr...
 🐱‍💻 Access the course files on GitHub:
@@ -24,23 +20,23 @@ https://www.youtube.com/watch?v=St5B7...
 Facebook - https://www.facebook.com/thenetninjauk
 Twitter - https://twitter.com/thenetninjauk
 Instagram - https://www.instagram.com/thenetninja/
---->
+-->
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Coursera-React</title>
- <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
 
   <style>
   img.displayed {
     display: block;
 	margin: 0 auto;	}
 
-.border {
-  border-width: 1px;
-  border-color: #778899;
-  border-style: solid; }
+  .border {
+    border-width: 1px;
+    border-color: #778899;
+    border-style: solid; }
   
   p.em1 {
     margin-left: 1em; }
@@ -55,31 +51,31 @@ Instagram - https://www.instagram.com/thenetninja/
   a[href]:hover {
     text-decoration: underline; }
 
-	  details {
-  font: 15px "Bahnschrift", Calibri, sans-serif;
-  width: 620px;
-}
+	details {
+      font: 15px "Bahnschrift", Calibri, sans-serif;
+      width: 620px;
+    }
 
-details > summary {
-  padding: 2px 6px;
-  width: 15em;
-  background-color: #eee;
-  border: none;
-  box-shadow: 3px 3px 4px black;
-  cursor: pointer;
-}
+  details > summary {
+    padding: 2px 6px;
+    width: 15em;
+    background-color: #eee;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+  }
 
-details > p {
-  border-radius: 0 0 10px 10px;
-  background-color: #fff;
-  padding: 2px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px darkgreen;
-}
+  details > p {
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px darkgreen;
+  }
 
-details[open] > summary {
-  background-color: lightorange;
-}
+  details[open] > summary {
+    background-color: lightorange;
+  }
 </style>
 
 <h2 align="center">Coursera - React</h2>
@@ -92,7 +88,7 @@ details[open] > summary {
   style="width:15%;"
   alt="Coursera logo." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
+<!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image001.png?raw=true"
@@ -629,7 +625,7 @@ would be able to:
     prompt:
 
 ```
-> git config \--global user.email \<your email address\>
+> git config \--global user.email \<your email address&gt;
 ```
 
 -   You can check your default Git global configuration, you can type
@@ -714,14 +710,14 @@ Checking the log of Git commits
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->     \</body\>
-> \</html\>
+> &lt;!DOCTYPE html&gt;
+> &lt;html&gt;
+>     &lt;head&gt;&lt;/head&gt;
+>     &lt;body&gt;
+>         &lt;h1&gt;This is a Header&lt;/h1&gt;
+>         &lt;p&gt;This is a paragraph&lt;/p&gt;
+>     &lt;/body&gt;
+> &lt;/html&gt;
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
     and then add a file named <i>test.html</i> to the templates folder. Then
@@ -734,15 +730,17 @@ Checking the log of Git commits
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->         \<p\>This is a second paragraph\</p\>
->     \</body\>
-> \</html\>
+```
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>         <p>This is a second paragraph</p>
+>     &lt;/body&gt;
+> &lt;/html&gt;
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -753,18 +751,24 @@ Checking the log of Git commits
     of the second commit using the git log, and then type the following
     at the prompt:
 
-> git checkout \<second commit\'s number\> index.html
+```
+>  $ git checkout &lt;second commit&apos;s number&gt; index.html
+```
 
 <h3>Resetting the Git repository</h3>
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
 
-> git reset HEAD index.html
+```
+>  $ git reset HEAD index.html
+```
 
 -   Then type the following at the prompt:
 
-> git checkout \-- index.html
+```
+>  $ git checkout -- index.html
+```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
@@ -808,21 +812,23 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin \<repository URL\>
+git remote add origin <repository URL>
 
 <h3>Pushing your commits to the online repository</h3>
 
 -   At the prompt, type the following to push the commits to the online
     repository:
 
-git push -u origin master
+```
+>  $ git push -u origin master
+```
 
 <h3>Cloning an online repository</h3>
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone \<repository URL\>
+> git clone <repository URL>
 
 <h3>Conclusions</h3>
 
@@ -884,9 +890,9 @@ during the installation steps.</b>
     following at the command prompt to check for the version of <b>Node</b>
     and <b>NPM</b>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image002.png?raw=true"
    width="65%"
@@ -939,7 +945,7 @@ of this exercise, you will be able to:
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-> npm install lite-server \--save-dev
+> npm install lite-server --save-dev
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -948,24 +954,24 @@ of this exercise, you will be able to:
     Note the addition of two lines, line 7 and line 9.
 
 > {
->   \"name\": \"git-test\",
->   \"version\": \"1.0.0\",
->   \"description\": \"This is the Git and Node basic learning project\",
->   \"main\": \"index.html\",
->   \"scripts\": {
->     \"start\": \"npm run lite\",
->     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
->     \"lite\": \"lite-server\"
+>   "name": "git-test",
+>   "version": "1.0.0",
+>   "description": "This is the Git and Node basic learning project",
+>   "main": "index.html",
+>   "scripts": {
+>     "start": "npm run lite",
+>     "test": "echo "Error: no test specified" && exit 1",
+>     "lite": "lite-server"
 >   },
->   \"repository\": {
->     \"type\": \"git\",
->     \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
+>   "repository": {
+>     "type": "git",
+>     "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
 >   },
->   \"author\": \"\",
->   \"license\": \"ISC\",
->   \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
->   \"devDependencies\": {
->     \"lite-server\": \"\^2.2.2\"
+>   "author": "",
+>   "license": "ISC",
+>   "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
+>   "devDependencies": {
+>     "lite-server": "^2.2.2"
 >   }
 > }
 
@@ -1128,14 +1134,14 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 > yarn start
 
 -   This will compile the project and then open a tab in your default
-    browser at the address \<Your Computer\'s Name\>:3000.
+    browser at the address &lt;Your Computer\'s Name&gt;:3000.
 
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
 > git init
 > git add .
-> git commit -m \"Initial Setup\"
+> git commit -m "Initial Setup"
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -1366,17 +1372,17 @@ would be able to:
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
-> git config \--global user.name \"Your Name\"
+> git config --global user.name "Your Name"
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-> git config \--global user.email \<your email address\>
+> git config --global user.email <your email address>
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
-> git config \--list
+> git config --list
 
 <h3>Conclusions</h3>
 
@@ -1406,14 +1412,14 @@ the end of this exercise you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
 >
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->     \</body\>
-> \</html\>
+>     <body>
+>         <h1>This is a Header</h1>
+>     </body>
+> </html>
 
 <h3>Initializing the folder as a Git repository</h3>
 
@@ -1440,24 +1446,24 @@ the end of this exercise you will be able to:
 
 -   To commit the current staging area to your Git repository, type:
 
-> git commit -m \"first commit\"
+> git commit -m "first commit"
 
 <h3>Checking the log of Git commits</h3>
 
 -   To check the log of the commits to your Git repository, type
 
-> git log \--oneline
+> git log --oneline
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->     \</body\>
-> \</html\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>     </body>
+> </html>
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
     and then add a file named <i>test.html</i> to the templates folder. Then
@@ -1470,16 +1476,16 @@ the end of this exercise you will be able to:
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
 >
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->         \<p\>This is a second paragraph\</p\>
->     \</body\>
-> \</html\>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>         <p>This is a second paragraph</p>
+>     </body>
+> </html>
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1490,7 +1496,7 @@ the end of this exercise you will be able to:
     of the second commit using the git log, and then type the following
     at the prompt:
 
-> git checkout \<second commit\'s number\> index.html
+> git checkout <second commit's number> index.html
 
 <h3>Resetting the Git repository</h3>
 
@@ -1501,7 +1507,7 @@ the end of this exercise you will be able to:
 
 -   Then type the following at the prompt:
 
-> git checkout \-- index.html
+> git checkout -- index.html
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
@@ -1545,7 +1551,7 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin \<repository URL\>
+git remote add origin <repository URL>
 
 <h3>Pushing your commits to the online repository</h3>
 
@@ -1559,7 +1565,7 @@ git remote add origin \<repository URL\>
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone \<repository URL\>
+> git clone <repository URL>
 
 <h3>Conclusions</h3>
 
@@ -1696,6 +1702,10 @@ during the installation steps.</b>
     following at the command prompt to check for the version of <b>Node</b>
     and <b>NPM</b>
 
+<img class="displayed"
+  src="./images/image002.png?raw=true"
+  style="width:65%;"
+  alt="." />
 ![](./images/image002.png){width="6.5in" height="8.2875in"}
 
 > npm -v
@@ -1722,7 +1732,9 @@ of this exercise, you will be able to:
 
 -   At the command prompt in your <b>git-test</b> folder, type
 
-> npm init
+```
+>  $ npm init
+```
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -1737,7 +1749,9 @@ Installing an NPM Module
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-> npm install lite-server \--save-dev
+```
+>  $ npm install lite-server --save-dev
+```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -1745,21 +1759,23 @@ Installing an NPM Module
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
->    \"start\": \"npm run lite\",
->    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
->    \"lite\": \"lite-server\"
+```
+>    "start": "npm run lite",
+>    "test": "echo "Error: no test specified" && exit 1",
+>    "lite": "lite-server"
 >  },
->  \"repository\": {
->    \"type\": \"git\",
->    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
+>  "repository": {
+>    "type": "git",
+>    "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
 >  },
->  \"author\": \"\",
->  \"license\": \"ISC\",
->  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
->  \"devDependencies\": {
->    \"lite-server\": \"\^2.2.2\"
+>  "author": "",
+>  "license": "ISC",
+>  "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
+>  "devDependencies": {
+>    "lite-server": "^2.2.2"
 >  }
 >}
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
@@ -2065,7 +2081,7 @@ community!
     prompt:
 
 ```
-yarn global add create-react-app@1.5.2
+>  $ yarn global add create-react-app@1.5.2
 ```
 
 Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
@@ -2076,7 +2092,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
-create-react-app \--help
+>  $ create-react-app --help
 ```
 
 <h3>Generating and Serving a React Project using <i>create-react-app</i></h3>
@@ -2088,7 +2104,7 @@ create-react-app \--help
     application named <i>confusion</i>:
 
 ```
-create-react-app confusion
+>  $ create-react-app confusion
 ```
 
 -   This should create a new folder named <i>confusion</i> within your
@@ -2097,19 +2113,19 @@ create-react-app confusion
 -   Move to the <i>confusion</i> folder and type the following at the prompt:
 
 ```
-yarn start
+>  $ yarn start
 ```
 
 -   This will compile the project and then open a tab in your default
-    browser at the address \<Your Computer\'s Name\>:3000.
+    browser at the address &lt;Your Computer\'s Name&gt;:3000.
 
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
 ```
-git commit -m \"Initial Setup\"
-git init
-git add .
+>  $ git commit -m "Initial Setup"
+>  $ git init
+>  $ git add .
 ```
 
 -   Thereafter you can set up an online Git repository and synchronize
@@ -2147,13 +2163,13 @@ end of this exercise you will be able to:
     the prompt to install reactstrap, and Bootstrap 4:
 
 ```
-yarn add bootstrap@4.0.0
-yarn add reactstrap@5.0.0
-yarn add react-popper@0.9.2
+>  $ yarn add bootstrap@4.0.0
+>  $ yarn add reactstrap@5.0.0
+>  $ yarn add react-popper@0.9.2
 ```
 
 <b>Note</b>: You can also install the same using npm using the \"npm
-install \<package\> \--save\" option if you are using npm instead of
+install &lt;package&gt; \--save\" option if you are using npm instead of
 yarn.
 
 <h3>Configure to use Bootstrap 4</h3>
@@ -2161,33 +2177,37 @@ yarn.
 -   Next, open index.js file in the src folder and add the following
     line into the imports:
 
+```
 > . . .
-> import \'bootstrap/dist/css/bootstrap.min.css\';
+> import 'bootstrap/dist/css/bootstrap.min.css';
 > . . .
+```
 
 <h3>Adding a Navigation Bar:</h3>
 
 -   Open App.js in the src folder and update it as follows:
- 
+
+``` 
 > class App extends Component {
 >   render() {
 >     return (
->       \<div className=\"App\"\>
->         \<Navbar dark color=\"primary\"\>
->           \<div className=\"container\"\>
->             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->           \</div\>
->         \</Navbar\>
->       \</div\>
+>       <div className="App">
+>         <Navbar dark color="primary">
+>           <div className="container">
+>             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+>           </div>
+>         </Navbar>
+>       </div>
 >     );
 >   }
 > }
 > 
 > . . .
 > 
-> import { Navbar, NavbarBrand } from \'reactstrap\';
+> import { Navbar, NavbarBrand } from 'reactstrap';
 > 
 > . . .
+```
 
 -   Do a Git commit with the message \"Configuring React\"
 
@@ -2319,61 +2339,63 @@ you will be able to:
 
 -   Add the following code to <i>MenuComponent.js</i>:
 
+```
 >         this.state = {
->             dishes: \[
+>             dishes: [
 >                 {
 >                   id: 0,
->                   name:\'Uthappizza\',
->                   image: \'assets/images/uthappizza.png\',
->                   category: \'mains\',
->                   label:\'Hot\',
->                   price:\'4.99\',
+>                   name:'Uthappizza',
+>                   image: 'assets/images/uthappizza.png',
+>                   category: 'mains',
+>                   label:'Hot',
+>                   price:'4.99',
 > 
 > 
->               description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                  >      },
+>               description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                  >      },
 >               {
 >                   id: 1,
->                   name:\'Zucchipakoda\',
->                   image: \'assets/images/zucchipakoda.png\',
->                   category: \'appetizer\',
->                   label:\'\',
->                   price:\'1.99\',
->                   description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce\'                        },
+>                   name:'Zucchipakoda',
+>                   image: 'assets/images/zucchipakoda.png',
+>                   category: 'appetizer',
+>                   label:'',
+>                   price:'1.99',
+> description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
+> },
 >                {
 >                   id: 2,
->                   name:\'Vadonut\',
->                   image: \'assets/images/vadonut.png\',
->                   category: \'appetizer\',
->                   label:\'New\',
->                   price:\'1.99\',
+>                   name:'Vadonut',
+>                   image: 'assets/images/vadonut.png',
+>                   category: 'appetizer',
+>                   label:'New',
+>                   price:'1.99',
 > 
->                   description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'          >               },
+>                   description:'A quintessential ConFusion experience, is it a vada or is it a donut?'          >               },
 >                {
 >                   id: 3,
->                   name:\'ElaiCheese Cake\',
->                   image: \'assets/images/elaicheesecake.png\',
->                   category: \'dessert\',
->                   label:\'\',
->                   price:\'2.99\',
->                   description:\'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust an> d spiced with Indian cardamoms\'                        }
+>                   name:'ElaiCheese Cake',
+>                   image: 'assets/images/elaicheesecake.png',
+>                   category: 'dessert',
+>                   label:'',
+>                   price:'2.99',
+> description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
+> }
 > 
 > class Menu extends Component {
 >     constructor(props) {
 >        super(props);
-> import React, { Component } from \'react\';
-> import { Media } from \'reactstrap\';
+> import React, { Component } from 'react';
+> import { Media } from 'reactstrap';
+```
 
 -   Next, open <i>App.js</i> file and update it as follows:
 
+```
 > . . .
-> 
-> import Menu from \'./components/MenuComponent\';
-> 
+> import Menu from './components/MenuComponent';
 > . . .
-> 
->     \<Menu /\>
-> 
+>     <Menu />
 > . . .
+```
 
 -   Open <i>App.css</i> file and delete all its contents.
 
@@ -2419,41 +2441,36 @@ JS File
 ```
 >     constructor(props) {
 >         super(props);
->
 >         this.state = {
 >             selectedDish: null
 >         }
 >     }
->
 >     onDishSelect(dish) {
 >         this.setState({ selectedDish: dish});
 >     }
->
 >     renderDish(dish) {
 >         if (dish != null)
 >             return(
->                 \<Card\>
->                     \<CardImg top src={dish.image} alt={dish.name} /\>
->                     \<CardBody\>
->                       \<CardTitle\>{dish.name}\</CardTitle\>
->                       \<CardText\>{dish.description}\</CardText\>
->                     \</CardBody\>
->                 \</Card\>
+>                 <Card>
+>                     <CardImg top src={dish.image} alt={dish.name} />
+>                     <CardBody>
+>                       <CardTitle>{dish.name}</CardTitle>
+>                       <CardText>{dish.description}</CardText>
+>                     </CardBody>
+>                 </Card>
 >             );
 >         else
 >             return(
->                 \<div\>\</div\>
+>                 <div></div>
 >             );
 >     }
->
 >     render() {
->         const menu = this.props.dishes.map((dish) =\> {
+>         const menu = this.props.dishes.map((dish) => {
 >             return (
->               \<div  className=\"col-12 col-md-5 m-1\"\>
+>               <div  className="col-12 col-md-5 m-1">
 > class Menu extends Component {
->
 > import { Card, CardImg, CardImgOverlay, CardText, CardBody,
->     CardTitle } from \'reactstrap\';
+>     CardTitle } from 'reactstrap';
 >  . . .
 ```
 
@@ -2512,11 +2529,8 @@ JS File
 
 ```
 > . . .
->
 > import { DISHES } from './shared/dishes';
->
 > . . .
->
 > class App extends Component {
 >   constructor(props) {
 >     super(props);
@@ -2524,11 +2538,8 @@ JS File
 >       dishes: DISHES
 >     };
 >   }
->
 > . . .
->
 >   <Menu dishes={this.state.dishes} />
->
 > . . .
 ```
 
@@ -2591,8 +2602,6 @@ PDF File
 
 <b>Deadline</b>Oct 23, 11:59 PM PDT
 
-i
-
 It looks like this is your first peer-graded assignment. [Learn
 more](https://learner.coursera.help/hc/articles/208279926-Submit-peer-reviewed-assignments)
 
@@ -2618,15 +2627,13 @@ of a selected dish. You will then design the view for the component
 using the card component. At the end of this assignment, you should have
 completed the following tasks:
 
--   Created a new DishdetailComponent and added it to your React
-    > application.
+-   Created a new DishdetailComponent and added it to your React application.
 
 -   Updated the view of the DishdetailComponent to display the details
-    > of the selected dish using an reactstrap card component.
+    of the selected dish using an reactstrap card component.
 
 -   Updated the view of the DishdetailComponent to display the list of
-    > comments about the dish using the Bootstrap unstyled list
-    > component.
+    comments about the dish using the Bootstrap unstyled list component.
 
 <b>Assignment Requirements</b>
 
@@ -2642,33 +2649,33 @@ React application and include the component into the menu component\'s
 view so that the details of a specific dish are displayed there:
 
 -   Replace the card showing the selected dish in MenuComponent\'s view
-    > with the DishdetailComponent, and make sure to pass the selected
-    > dish information as props to the DishdetailComponent.
+    with the DishdetailComponent, and make sure to pass the selected
+    dish information as props to the DishdetailComponent.
 
 -   Create a new <i>DishDetail</i> class in a file named
-    > <i>DishdetailComponent.js</i> in the <i>components</i> folder
+    <i>DishdetailComponent.js</i> in the <i>components</i> folder
 
 -   Export the <i>DishDetail</i> class from this file so that it can be
-    > imported in <i>MenuComponent.js</i> and used to construct the view of
-    > the selected dish.
+    imported in <i>MenuComponent.js</i> and used to construct the view of
+    the selected dish.
 
--   Return a \<div\> from the render() function. This \<div\> should use
-    > the Bootstrap <i>row</i> class to position the content within the
-    > \<div\>. This div will display both the details of the dish in a
-    > Card and the list of comments side-by-side for medium to extra
-    > large screens, but will stack them for xs and sm screens.
+-   Return a &lt;div&gt; from the render() function. This &lt;div&gt; should use
+    the Bootstrap <i>row</i> class to position the content within the
+    &lt;div&gt;. This div will display both the details of the dish in a
+    Card and the list of comments side-by-side for medium to extra
+    large screens, but will stack them for xs and sm screens.
 
--   The card should be enclosed inside a \<div\> appropriate Bootstrap
-    > column classes so that it occupies the entire 12 columns for the
-    > xs and sm screen sizes, and 5 columns for md screens and above.
-    > Also apply a class of m-1 to this div.
+-   The card should be enclosed inside a &lt;div&gt; appropriate Bootstrap
+    column classes so that it occupies the entire 12 columns for the
+    xs and sm screen sizes, and 5 columns for md screens and above.
+    Also apply a class of m-1 to this div.
 
--   The comments should be enclosed in a \<div\> to which you apply
-    > appropriate column classes so that it occupies the entire 12
-    > columns for the xs and sm screen sizes, and 5 columns for md
-    > screens and above. Also apply a class of m-1 to this div.
+-   The comments should be enclosed in a &lt;div&gt; to which you apply
+    appropriate column classes so that it occupies the entire 12
+    columns for the xs and sm screen sizes, and 5 columns for md
+    screens and above. Also apply a class of m-1 to this div.
 
--   If the dish is null then you should return an empty \<div\>
+-   If the dish is null then you should return an empty &lt;div&gt;
 
 <b>Task 2</b>
 
@@ -2704,14 +2711,14 @@ JavaScript objects (comments). This task involves the following steps:
     > the comment, and the second line showing the comment author\'s
     > name and the date.
 
--   The comments should contain a \<h4\> header with the word
+-   The comments should contain a &lt;h4&gt; header with the word
     > \"Comments\".
 
--   Remember to enclose the header and comments inside a \<div\> before
+-   Remember to enclose the header and comments inside a &lt;div&gt; before
     > returning the JSX code. Otherwise React will not do the layout
     > correctly.
 
--   If the comments are null, then you should return an empty \<div\>.
+-   If the comments are null, then you should return an empty &lt;div&gt;.
 
 ![](./images/image003.png){width="6.5in"
 height="8.436111111111112in"}
@@ -3006,7 +3013,7 @@ data and behavior. At the end of this exercise you will learn about:
 
 -   The DishdetailComponent is already structured as a presentational
     component and hence needs no further update, except wrapping the
-    return value from render() within a \<div\> with the className as
+    return value from render() within a &lt;div&gt; with the className as
     container.
 
 -   To print out the date for a comment in a format more suitable for
@@ -3187,8 +3194,8 @@ your application. At the end of this exercise you will be able to:
 ```
 > . . .
 >  
-> import \'font-awesome/css/font-awesome.css\';
-> import \'bootstrap-social/bootstrap-social.css\';
+> import 'font-awesome/css/font-awesome.css';
+> import 'bootstrap-social/bootstrap-social.css';
 >  
 > . . .
 ```
@@ -3239,8 +3246,8 @@ your application. At the end of this exercise you will be able to:
 >     return(
 >     <div className="footer">
 >         <div className="container">
->             <div className="row justify-content-center\"\>             
->                 <div className="col-4 offset-1 col-sm-2\"\>
+>             <div className="row justify-content-center">             
+>                 <div className="col-4 offset-1 col-sm-2">
 >                     <h5>Links</h5>
 >                     <ul className="list-unstyled">
 >                         <li><a href="#">Home</a></li>
@@ -3255,24 +3262,24 @@ your application. At the end of this exercise you will be able to:
 >                       121, Clear Water Bay Road<br />
 >                       Clear Water Bay, Kowloon<br />
 >                       HONG KONG<br />
->                       <i className="fa fa-phone fa-lg\"\>\</i\>: +852 1234 5678\<br /\>
->                       <i className="fa fa-fax fa-lg\"\>\</i\>: +852 8765 4321\<br /\>
->                       <i className="fa fa-envelope fa-lg\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>
+>                       <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+>                       <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+>                       <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
 >                          confusion@food.net</a>
 >                     </address>
 >                 </div>
 >                 <div className="col-12 col-sm-4 align-self-center">
 >                     <div className="text-center">
 >  <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
-> <a className="btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className="fa fa-facebook"></i></a>
-> <a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
->                     \</div\>
->                 \</div\>
->             \</div\>
->             \<div className=\"row justify-content-center\"\>             
+> <a className="btn btn-social-icon btn-facebook" href="[http://www.facebook.com/profile.php?id=]{.underline}"><i className="fa fa-facebook"></i></a>
+> <a className="btn btn-social-icon btn-linkedin" href="[http://www.linkedin.com/in/]{.underline}"><i className="fa fa-linkedin"></i></a>
+><a className="btn btn-social-icon btn-twitter" href="[http://twitter.com/]{.underline}"><i className="fa fa-twitter"></i></a>
+><a className="btn btn-social-icon btn-google" href="[http://youtube.com/]{.underline}"><i className="fa fa-youtube"></i></a>
+><a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+>                     </div>
+>                 </div>
+>             </div>
+>             <div className="row justify-content-center">             
 ```
 
 <h3>Integrating Header and Footer into the React Application</h3>
@@ -3285,9 +3292,9 @@ your application. At the end of this exercise you will be able to:
 >
 >  
 >
-> import Header from \'./HeaderComponent\';
+> import Header from './HeaderComponent';
 >
-> import Footer from \'./FooterComponent\';
+> import Footer from './FooterComponent';
 >
 >  
 >
@@ -3295,13 +3302,13 @@ your application. At the end of this exercise you will be able to:
 >
 >  
 >
->         \<Header /\>
+>         <Header />
 >
->         \<Menu dishes={this.state.dishes} onClick={(dishId) =\> this.onDishSelect(dishId)} /\>
+>         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
 >
->         \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === this.state.selectedDish)\[0\]} /\>
+>         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
 >
->         \<Footer /\>
+>         <Footer />
 >
 >         
 >
@@ -3417,7 +3424,7 @@ this exercise you will be able to:
 >
 >  
 >
-> import { BrowserRouter } from \'react-router-dom\';
+> import { BrowserRouter } from 'react-router-dom';
 >
 >  
 >
@@ -3425,15 +3432,15 @@ this exercise you will be able to:
 >
 >  
 >
->     \<BrowserRouter\>
+>     <BrowserRouter>
 >
->       \<div className=\"App\"\>
+>       <div className="App">
 >
->         \<Main /\>
+>         <Main />
 >
->       \</div\>
+>       </div>
 >
->     \</BrowserRouter\>
+>     </BrowserRouter>
 >
 >     
 >
@@ -3446,7 +3453,7 @@ this exercise you will be able to:
     and add the following to it:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >
 >  
 >
@@ -3454,11 +3461,11 @@ this exercise you will be able to:
 >
 >     return(
 >
->       \<div className=\"container\"\>
+>       <div className="container">
 >
->         \<h4\>Home\</h4\>
+>         <h4>Home</h4>
 >
->       \</div\>
+>       </div>
 >
 >     );
 >
@@ -3476,29 +3483,29 @@ this exercise you will be able to:
 ```
 > . . .
 >
-> import Home from \'./HomeComponent\';
+> import Home from './HomeComponent';
 >
 > . . .
 >
-> import { Switch, Route, Redirect } from \'react-router-dom\';
+> import { Switch, Route, Redirect } from 'react-router-dom';
 >
 > . . .
 >
 >   render() {
 >
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->           /\>
+>           <Home 
+>           />
 >       );
 >     }
 >
 > . . .
->           \<Switch\>
->               \<Route path=\'/home\' component={HomePage} /\>
->               \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.state.dishes} /\>} /\>
->               \<Redirect to=\"/home\" /\>
->           \</Switch\>
+>           <Switch>
+>               <Route path='/home' component={HomePage} />
+>               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+>               <Redirect to="/home" />
+>           </Switch>
 >
 > . . .
 >
@@ -3509,9 +3516,9 @@ this exercise you will be able to:
     following:
 
 ```
-> import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from \'reactstrap\';
+> import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 >
-> import { NavLink } from \'react-router-dom\';
+> import { NavLink } from 'react-router-dom';
 >
 >  
 >
@@ -3551,43 +3558,43 @@ this exercise you will be able to:
 >
 >         return(
 >
->             \<div\>
+>             <div>
 >
->                 \<Navbar dark expand=\"md\"\>
+>                 <Navbar dark expand="md">
 >
->                     \<div className=\"container\"\>
+>                     <div className="container">
 >
->                         \<NavbarToggler onClick={this.toggleNav} /\>
+>                         <NavbarToggler onClick={this.toggleNav} />
 >
-> \<NavbarBrand className=\"mr-auto\" href=\"/\"\>\<img src=\'assets/images/logo.png\' height=\"30\" width=\"41\" alt=\'Ristorante Con Fusion\' /\>\</NavbarBrand\>
+> <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
 >
->                         \<Collapse isOpen={this.state.isNavOpen} navbar\>
+>                         <Collapse isOpen={this.state.isNavOpen} navbar>
 >
->                             \<Nav navbar\>
+>                             <Nav navbar>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\"  to=\'/home\'\>\<span className=\"fa fa-home fa-lg\"\>\</span\> Home\</NavLink\>
+> <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\" to=\'/aboutus\'\>\<span className=\"fa fa-info fa-lg\"\>\</span\> About Us\</NavLink\>
+> <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
->  \<NavLink className=\"nav-link\"  to=\'/menu\'\>\<span className=\"fa fa-list fa-lg\"\>\</span\> Menu\</NavLink\>
+>  <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\" to=\'/contactus\'\>\<span className=\"fa fa-address-card fa-lg\"\>\</span\> Contact Us\</NavLink\>
+> <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 ```
 
 -   Then, open FooterComponent.js and update it as follows:
@@ -3597,7 +3604,7 @@ this exercise you will be able to:
 >
 >  
 >
-> import { Link } from \'react-router-dom\';
+> import { Link } from 'react-router-dom';
 >
 >  
 >
@@ -3605,13 +3612,13 @@ this exercise you will be able to:
 >
 >  
 >
->                         \<li\>\<Link to=\'/home\'\>Home\</Link\>\</li\>
+>                         <li><Link to='/home'>Home</Link></li>
 >
->                         \<li\>\<Link to=\'/aboutus\'\>About Us\</Link\>\</li\>
+>                         <li><Link to='/aboutus'>About Us</Link></li>
 >
->                         \<li\>\<Link to=\'/menu\'\>Menu\</Link\>\</li\>
+>                         <li><Link to='/menu'>Menu</Link></li>
 >
->                         \<li\>\<Link to=\'/contactus\'\>Contact Us\</Link\>\</li\>
+>                         <li><Link to='/contactus'>Contact Us</Link></li>
 >
 >                         
 >
@@ -3717,43 +3724,43 @@ JS File
     contents as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >
 > function Contact(props) {
 >     return(
->         \<div className=\"container\"\>
->             \<div className=\"row row-content\"\>
->                 \<div className=\"col-12\"\>
->                 \<h3\>Location Information\</h3\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-4 offset-sm-1\"\>
->                         \<h5\>Our Address\</h5\>
->                         \<address\>
->                         121, Clear Water Bay Road\<br /\>
->                         Clear Water Bay, Kowloon\<br /\>
->                         HONG KONG\<br /\>
->                         \<i className=\"fa fa-phone\"\>\</i\>: +852 1234 5678\<br /\>
->                         \<i className=\"fa fa-fax\"\>\</i\>: +852 8765 4321\<br /\>
->  \<i className=\"fa fa-envelope\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>confusion@food.net\</a\>
+>         <div className="container">
+>             <div className="row row-content">
+>                 <div className="col-12">
+>                 <h3>Location Information</h3>
+>                 </div>
+>                 <div className="col-12 col-sm-4 offset-sm-1">
+>                         <h5>Our Address</h5>
+>                         <address>
+>                         121, Clear Water Bay Road<br />
+>                         Clear Water Bay, Kowloon<br />
+>                         HONG KONG<br />
+>                         <i className="fa fa-phone"></i>: +852 1234 5678<br />
+>                         <i className="fa fa-fax"></i>: +852 8765 4321<br />
+>  <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 >
->                         \</address\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-6 offset-sm-1\"\>
->                     \<h5\>Map of our Location\</h5\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-11 offset-sm-1\"\>
->                     \<div className=\"btn-group\" role=\"group\"\>
+>                         </address>
+>                 </div>
+>                 <div className="col-12 col-sm-6 offset-sm-1">
+>                     <h5>Map of our Location</h5>
+>                 </div>
+>                 <div className="col-12 col-sm-11 offset-sm-1">
+>                     <div className="btn-group" role="group">
 >
->\<a role=\"button\" className=\"btn btn-primary\" href=\"tel:+85212345678\"\>\<i className=\"fa fa-phone\"\>\</i\> Call\</a\>
+><a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
 >
->\<a role=\"button\" className=\"btn btn-info\"\>\<i className=\"fa fa-skype\"\>\</i\> Skype\</a\>
+><a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
 >
->\<a role=\"button\" className=\"btn btn-success\" href=\"mailto:confusion@food.net\"\>\<i className=\"fa fa-envelope-o\"\>\</i\> Email\</a\>
+><a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
 >
->                     \</div\>
->                 \</div\>
->             \</div\>
->         \</div\>
+>                     </div>
+>                 </div>
+>             </div>
+>         </div>
 >     );
 > }
 >
@@ -3768,7 +3775,7 @@ JS File
 >
 >  
 >
-> import Contact from \'./ContactComponent\';
+> import Contact from './ContactComponent';
 >
 >  
 >
@@ -3776,7 +3783,7 @@ JS File
 >
 >  
 >
->               \<Route exact path=\'/contactus\' component={Contact} /\>} /\>
+>               <Route exact path='/contactus' component={Contact} />} />
 >
 >  
 ```
@@ -3790,46 +3797,46 @@ JS File
 
 ```
 > export const DISHES =
->     \[
+>     [
 >         {
 >         id: 0,
->         name:\'Uthappizza\',
->         image: \'/assets/images/uthappizza.png\',
->         category: \'mains\',
->         label:\'Hot\',
->         price:\'4.99\',
+>         name:'Uthappizza',
+>         image: '/assets/images/uthappizza.png',
+>         category: 'mains',
+>         label:'Hot',
+>         price:'4.99',
 >         featured: true,
 >
->  description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                    
+>  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
 >         },
 >         {
 >         id: 1,
->         name:\'Zucchipakoda\',
->         image: \'/assets/images/zucchipakoda.png\',
->         category: \'appetizer\',
->         label:\'\',
->         price:\'1.99\',
+>         name:'Zucchipakoda',
+>         image: '/assets/images/zucchipakoda.png',
+>         category: 'appetizer',
+>         label:'',
+>         price:'1.99',
 >         featured: false,
->description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'
+>description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
 >
 >         },
 >         {
 >         id: 2,
->         name:\'Vadonut\',
->         image: \'/assets/images/vadonut.png\',
->         category: \'appetizer\',
->         label:\'New\',
->         price:\'1.99\',
+>         name:'Vadonut',
+>         image: '/assets/images/vadonut.png',
+>         category: 'appetizer',
+>         label:'New',
+>         price:'1.99',
 >         featured: false,
->         description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'
+>         description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
 >         },
 >         {
 >         id: 3,
->         name:\'ElaiCheese Cake\',
->         image: \'/assets/images/elaicheesecake.png\',
->         category: \'dessert\',
->         label:\'\',
->         price:\'2.99\',
+>         name:'ElaiCheese Cake',
+>         image: '/assets/images/elaicheesecake.png',
+>         category: 'dessert',
+>         label:'',
+>         price:'2.99',
 >         featured: false,
 ```
 
@@ -3840,7 +3847,7 @@ JS File
 ```
 > export const COMMENTS = 
 >
-> \[
+> [
 >
 >     {
 >
@@ -3850,11 +3857,11 @@ JS File
 >
 >         rating: 5,
 >
->         comment: \"Imagine all the eatables, living in conFusion!\",
+>         comment: "Imagine all the eatables, living in conFusion!",
 >
->         author: \"John Lemon\",
+>         author: "John Lemon",
 >
->         date: \"2012-10-16T17:57:28.556094Z\"
+>         date: "2012-10-16T17:57:28.556094Z"
 >
 >     },
 >
@@ -3866,11 +3873,11 @@ JS File
 >
 >         rating: 4,
 >
->         comment: \"Sends anyone to heaven, I wish I could get my mother-in-law to eat it!\",
+>         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
 >
->         author: \"Paul McVites\",
+>         author: "Paul McVites",
 >
->         date: \"2014-09-05T17:57:28.556094Z\"
+>         date: "2014-09-05T17:57:28.556094Z"
 >
 >     },
 >
@@ -3882,11 +3889,11 @@ JS File
 >
 >         rating: 3,
 >
->         comment: \"Eat it, just eat it!\",
+>         comment: "Eat it, just eat it!",
 >
->         author: \"Michael Jaikishan\",
+>         author: "Michael Jaikishan",
 >
->         date: \"2015-02-13T17:57:28.556094Z\"
+>         date: "2015-02-13T17:57:28.556094Z"
 >
 >     },
 >
@@ -3898,11 +3905,11 @@ JS File
 >
 >         rating: 4,
 >
->         comment: \"Ultimate, Reaching for the stars!\",
+>         comment: "Ultimate, Reaching for the stars!",
 >
->         author: \"Ringo Starry\",
+>         author: "Ringo Starry",
 >
->         date: \"2013-12-02T17:57:28.556094Z\"
+>         date: "2013-12-02T17:57:28.556094Z"
 >
 >     },
 >
@@ -3914,55 +3921,55 @@ JS File
 >
 >         rating: 2,
 >
->         comment: \"It\'s your birthday, we\'re gonna party!\",
+>         comment: "It's your birthday, we're gonna party!",
 >
->         author: \"25 Cent\",
+>         author: "25 Cent",
 
 -   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
-> export const PROMOTIONS = \[
+> export const PROMOTIONS = [
 >
 >     {
 >
 >       id: 0,
 >
->       name: \'Weekend Grand Buffet\',
+>       name: 'Weekend Grand Buffet',
 >
->       image: \'/assets/images/buffet.png\',
+>       image: '/assets/images/buffet.png',
 >
->       label: \'New\',
+>       label: 'New',
 >
->       price: \'19.99\',
+>       price: '19.99',
 >
 >       featured: true,
 >
->       description: \'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just \$19.99 per person\'
+>       description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
 >
 >     }
 >
->   \];
+>   ];
 
 -   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
-> export const LEADERS = \[
+> export const LEADERS = [
 >
 >     {
 >
 >       id: 0,
 >
->       name: \'Peter Pan\',
+>       name: 'Peter Pan',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Epicurious Officer\',
+>       designation: 'Chief Epicurious Officer',
 >
->       abbr: \'CEO\',
+>       abbr: 'CEO',
 >
 >       featured: false,
 >
->       description: \"Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother\'s wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.\"
+>       description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
 >
 >     },
 >
@@ -3970,17 +3977,17 @@ JS File
 >
 >       id: 1,
 >
->       name: \'Dhanasekaran Witherspoon\',
+>       name: 'Dhanasekaran Witherspoon',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Food Officer\',
+>       designation: 'Chief Food Officer',
 >
->       abbr: \'CFO\',
+>       abbr: 'CFO',
 >
 >         featured: false,
 >
->       description: \'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!\'
+>       description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
 >
 >     },
 >
@@ -3988,17 +3995,17 @@ JS File
 >
 >       id: 2,
 >
->       name: \'Agumbe Tang\',
+>       name: 'Agumbe Tang',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Taste Officer\',
+>       designation: 'Chief Taste Officer',
 >
->       abbr: \'CTO\',
+>       abbr: 'CTO',
 >
 >         featured: false,
 >
->       description: \'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.\'
+>       description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
 >
 >     },
 >
@@ -4006,56 +4013,56 @@ JS File
 >
 >       id: 3,
 >
->       name: \'Alberto Somayya\',
+>       name: 'Alberto Somayya',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Executive Chef\',
+>       designation: 'Executive Chef',
 >
->       abbr: \'EC\',
+>       abbr: 'EC',
 >
 >       featured: true,
 >
->       description: \'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!\'
+>       description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
 >
 >     }
 >
->   \];
+>   ];
 
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 > import { Card, CardImg, CardText, CardBody,
->     CardTitle, CardSubtitle} from \'reactstrap\';
+>     CardTitle, CardSubtitle} from 'reactstrap';
 > function RenderCard({item}) {
 >     return(
->         \<Card\>
->             \<CardImg src={item.image} alt={item.name} /\>
->             \<CardBody\>
->             \<CardTitle\>{item.name}\</CardTitle\>
->             {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->             \<CardText\>{item.description}\</CardText\>
->             \</CardBody\>
->         \</Card\>
+>         <Card>
+>             <CardImg src={item.image} alt={item.name} />
+>             <CardBody>
+>             <CardTitle>{item.name}</CardTitle>
+>             {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>             <CardText>{item.description}</CardText>
+>             </CardBody>
+>         </Card>
 >     );
 > }
 > function Home(props) {
 >     return(
->         \<div className=\"container\"\>
->             \<div className=\"row align-items-start\"\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.dish} /\>
->                 \</div\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.promotion} /\>
->                 \</div\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.leader} /\>
->                 \</div\>
->             \</div\>
->         \</div\>
+>         <div className="container">
+>             <div className="row align-items-start">
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.dish} />
+>                 </div>
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.promotion} />
+>                 </div>
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.leader} />
+>                 </div>
+>             </div>
+>         </div>
 >     );
 > }
 > export default Home;
@@ -4065,9 +4072,9 @@ JS File
 
 ```
 > . . .
-> import { COMMENTS } from \'../shared/comments\';
-> import { PROMOTIONS } from \'../shared/promotions\';
-> import { LEADERS } from \'../shared/leaders\';
+> import { COMMENTS } from '../shared/comments';
+> import { PROMOTIONS } from '../shared/promotions';
+> import { LEADERS } from '../shared/leaders';
 > . . .
 > class Main extends Component {
 >   constructor(props) {
@@ -4080,13 +4087,13 @@ JS File
 >     };
 >   }
 >   . . .
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->               dish={this.state.dishes.filter((dish) =\> dish.featured)\[0\]}
->               promotion={this.state.promotions.filter((promo) =\> promo.featured)\[0\]}
->               leader={this.state.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>           <Home 
+>               dish={this.state.dishes.filter((dish) => dish.featured)[0]}
+>               promotion={this.state.promotions.filter((promo) => promo.featured)[0]}
+>               leader={this.state.leaders.filter((leader) => leader.featured)[0]}
+>           />
 >       );
 >     }
 > . . .
@@ -4127,38 +4134,38 @@ the end of this exercise you will be able to:
 . . .
 >  
 > import { Card, CardImg, CardImgOverlay,
->     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+>     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 >
 >     function RenderMenuItem ({dish, onClick}) {
 >         return (
->             \<Card\>
->                 \<Link to={\`/menu/\${dish.id}\`} \>
->                     \<CardImg width=\"100%\" src={dish.image} alt={dish.name} /\>
->                     \<CardImgOverlay\>
->                         \<CardTitle\>{dish.name}\</CardTitle\>
->                     \</CardImgOverlay\>
->                 \</Link\>
->             \</Card\>
+>             <Card>
+>                 <Link to={`/menu/${dish.id}`} >
+>                     <CardImg width="100%" src={dish.image} alt={dish.name} />
+>                     <CardImgOverlay>
+>                         <CardTitle>{dish.name}</CardTitle>
+>                     </CardImgOverlay>
+>                 </Link>
+>             </Card>
 >         );
 >     }
 > . . .
 >         return (
->             \<div className=\"container\"\>
->                 \<div className=\"row\"\>
->                     \<Breadcrumb\>
->                         \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->                         \<BreadcrumbItem active\>Menu\</BreadcrumbItem\>
->                     \</Breadcrumb\>
->                     \<div className=\"col-12\"\>
->                         \<h3\>Menu\</h3\>
->                         \<hr /\>
->                     \</div\>                
->                 \</div\>
->                 \<div className=\"row\"\>
+>             <div className="container">
+>                 <div className="row">
+>                     <Breadcrumb>
+>                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+>                         <BreadcrumbItem active>Menu</BreadcrumbItem>
+>                     </Breadcrumb>
+>                     <div className="col-12">
+>                         <h3>Menu</h3>
+>                         <hr />
+>                     </div>                
+>                 </div>
+>                 <div className="row">
 >                     {menu}
->                 \</div\>
->             \</div\>
+>                 </div>
+>             </div>
 >         );
 > . . .
 ```
@@ -4167,14 +4174,14 @@ the end of this exercise you will be able to:
 
 ```
 > . . .
->     const DishWithId = ({match}) =\> {
+>     const DishWithId = ({match}) => {
 >       return(
->           \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]} 
->             comments={this.state.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))} /\>
+>           <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+>             comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
 >       );
 >     };
 > . . .
->               \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
+>               <Route path='/menu/:dishId' component={DishWithId} />
 > . . .
 ```
 
@@ -4185,30 +4192,30 @@ the end of this exercise you will be able to:
 ```
 > . . .
 > import { Card, CardImg, CardText, CardBody,
->     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+>     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 > . . .
 >             return (
->                 \<div className=\"container\"\>
->                 \<div className=\"row\"\>
->                     \<Breadcrumb\>
->                         \<BreadcrumbItem\>\<Link to=\"/menu\"\>Menu\</Link\>\</BreadcrumbItem\>
->                         \<BreadcrumbItem active\>{props.dish.name}\</BreadcrumbItem\>
->                     \</Breadcrumb\>
->                     \<div className=\"col-12\"\>
->                         \<h3\>{props.dish.name}\</h3\>
->                         \<hr /\>
->                     \</div\>                
->                 \</div\>
->                 \<div className=\"row\"\>
->                     \<div className=\"col-12 col-md-5 m-1\"\>
->                         \<RenderDish dish={props.dish} /\>
->                     \</div\>
->                     \<div className=\"col-12 col-md-5 m-1\"\>
->                         \<RenderComments comments={props.comments} /\>
->                     \</div\>
->                 \</div\>
->                 \</div\>
+>                 <div className="container">
+>                 <div className="row">
+>                     <Breadcrumb>
+>                         <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+>                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+>                     </Breadcrumb>
+>                     <div className="col-12">
+>                         <h3>{props.dish.name}</h3>
+>                         <hr />
+>                     </div>                
+>                 </div>
+>                 <div className="row">
+>                     <div className="col-12 col-md-5 m-1">
+>                         <RenderDish dish={props.dish} />
+>                     </div>
+>                     <div className="col-12 col-md-5 m-1">
+>                         <RenderComments comments={props.comments} />
+>                     </div>
+>                 </div>
+>                 </div>
 >             );
 > . . .
 ```
@@ -4219,19 +4226,19 @@ the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+> import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 > . . .
->             \<div className=\"row\"\>
->                 \<Breadcrumb\>
->                     \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->                     \<BreadcrumbItem active\>Contact Us\</BreadcrumbItem\>
->                 \</Breadcrumb\>
->                 \<div className=\"col-12\"\>
->                     \<h3\>Contact Us\</h3\>
->                     \<hr /\>
->                 \</div\>                
->             \</div\>
+>             <div className="row">
+>                 <Breadcrumb>
+>                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+>                     <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+>                 </Breadcrumb>
+>                 <div className="col-12">
+>                     <h3>Contact Us</h3>
+>                     <hr />
+>                 </div>                
+>             </div>
 > . . .
 ```
 
@@ -4321,13 +4328,13 @@ tasks:
 -   Integrated the AboutComponent given above into the single page
     > application.
 
--   Added a new functional component named \<RenderLeader\> through the
+-   Added a new functional component named &lt;RenderLeader&gt; through the
     > RenderLeader() function to AboutComponent.js that renders the
-    > details of a given leader using the reactstrap \<Media\>
+    > details of a given leader using the reactstrap &lt;Media&gt;
     > component.
 
 -   Construct and render the list of leaders in the About Us page using
-    > the \<RenderLeader\> component implemented above.
+    > the &lt;RenderLeader&gt; component implemented above.
 
 <b>Assignment Requirements</b>
 
@@ -4352,7 +4359,7 @@ page application:
 <b>Task 2</b>
 
 In this task you will implement a new functional component named
-\<RenderLeader\> through the RenderLeader() function:
+&lt;RenderLeader&gt; through the RenderLeader() function:
 
 -   The RenderLeader() function receives the details of a leader as its
     > parameter,
@@ -4362,20 +4369,20 @@ In this task you will implement a new functional component named
 ```
 -   Implement RenderLeader() function to use the Leader information
     > received as a parameter and render the leader information as shown
-    > in the screenshot below using the reactstrap \<Media\> component.
-    > Recall how we used the \<Media\> component in the first module to
+    > in the screenshot below using the reactstrap &lt;Media&gt; component.
+    > Recall how we used the &lt;Media&gt; component in the first module to
     > render the details of a dish in the MenuComponent.
 
--   This will make available the \<RenderLeader\> component for use
+-   This will make available the &lt;RenderLeader&gt; component for use
     > within your AboutComponent.
 
 <b>Task 3</b>
 
-In this task you will use the \<RenderLeader\> component created in the
+In this task you will use the &lt;RenderLeader&gt; component created in the
 previous task to render a list of leaders within your AboutComponent:
 
 -   Update the leaders variable within the AboutComponent() function to
-    > make use of the \<RenderLeader\> component to render the list of
+    > make use of the &lt;RenderLeader&gt; component to render the list of
     > leaders.
 
 ![](./images/image005.png){width="4.361805555555556in"
@@ -4398,19 +4405,19 @@ based on the following criteria:
 
 <b>Task 2:</b>
 
--   Implemented a new \<RenderLeader\> functional component in your
+-   Implemented a new &lt;RenderLeader&gt; functional component in your
     > application.
 
 ```{=html}
 <!-- -->
 ```
--   Used the reactstrap \<Media\> component to render the details of a
+-   Used the reactstrap &lt;Media&gt; component to render the details of a
     > leader.
 
 <b>Task 3:</b>
 
 -   Updated the leaders variable within the AboutComponent() function to
-    > make use of the \<RenderLeader\> component to render the list of
+    > make use of the &lt;RenderLeader&gt; component to render the list of
     > leaders.
 
 <h2>Assignment 2: React Router and Single Page Applications: Additional Resources</h2>
@@ -4438,7 +4445,7 @@ height="9.0in"}
 -   [React Router Dom
     Documentation](https://reacttraining.com/react-router/web/guides/philosophy)
 
--   [reactstrap \<Media\>
+-   [reactstrap &lt;Media&gt;
     component](https://reactstrap.github.io/components/media/)
 
 <h2>UI Design and Prototyping: Objectives and Outcomes</h2>
@@ -4605,9 +4612,9 @@ exercise you will be able to:
 
 ```
 > . . .
-> import React, { Component } from \'react\';
+> import React, { Component } from 'react';
 > import { Breadcrumb, BreadcrumbItem,
->             Button, Form, FormGroup, Label, Input, Col } from \'reactstrap\';
+>             Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 >   . . .
 ```
 
@@ -4633,28 +4640,28 @@ exercise you will be able to:
 >     constructor(props) {
 >         super(props);
 >         this.state = {
->             firstname: \'\',
->             lastname: \'\',
->             telnum: \'\',
->             email: \'\',
+>             firstname: '',
+>             lastname: '',
+>             telnum: '',
+>             email: '',
 >             agree: false,
->             contactType: \'Tel.\',
->             message: \'\'
+>             contactType: 'Tel.',
+>             message: ''
 >         };
 >         this.handleInputChange = this.handleInputChange.bind(this);
 >         this.handleSubmit = this.handleSubmit.bind(this);
 >     }
 >     handleInputChange(event) {
 >         const target = event.target;
->         const value = target.type === \'checkbox\' ? target.checked : target.value;
+>         const value = target.type === 'checkbox' ? target.checked : target.value;
 >         const name = target.name;
 >         this.setState({
->           \[name\]: value
+>           [name]: value
 >         });
 >     }
 >     handleSubmit(event) {
->         console.log(\'Current State is: \' + JSON.stringify(this.state));
->         alert(\'Current State is: \' + JSON.stringify(this.state));
+>         console.log('Current State is: ' + JSON.stringify(this.state));
+>         alert('Current State is: ' + JSON.stringify(this.state));
 >         event.preventDefault();
 >     }
 > . . .
@@ -4665,45 +4672,46 @@ exercise you will be able to:
 
 ```
 > . . .
->                 \<div className=\"row row-content\"\>
->                    \<div className=\"col-12\"\>
->                       \<h3\>Send us your Feedback\</h3\>
->                    \</div\>
->                     \<div className=\"col-12 col-md-9\"\>
->                         \<Form onSubmit={this.handleSubmit}\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"text\" id=\"firstname\" name=\"firstname\"
->                                         placeholder=\"First Name\"
+>                 <div className="row row-content">
+>                    <div className="col-12">
+>                       <h3>Send us your Feedback</h3>
+>                    </div>
+>                     <div className="col-12 col-md-9">
+>                         <Form onSubmit={this.handleSubmit}>
+>                             <FormGroup row>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
+>                                 <Col md={10}>
+>                                     <Input type="text" id="firstname" name="firstname"
+>                                         placeholder="First Name"
 >                                         value={this.state.firstname}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"text\" id=\"lastname\" name=\"lastname\"
->                                         placeholder=\"Last Name\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>
+>                             </FormGroup>
+>                             <FormGroup row>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
+>                                 <Col md={10}>
+>                                     <Input type="text" id="lastname" name="lastname"
+>                                         placeholder="Last Name"
 >                                         value={this.state.lastname}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>                        
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                             \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"tel\" id=\"telnum\" name=\"telnum\"
->                                         placeholder=\"Tel. number\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>                        
+>                             </FormGroup>
+>                             <FormGroup row>
+>                             <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+>                                 <Col md={10}>
+>                                     <Input type="tel" id="telnum" name="telnum"
+>                                         placeholder="Tel. number"
 >                                         value={this.state.telnum}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"email\" md={2}\>Email\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"email\" id=\"email\" name=\"email\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>
+>                             </FormGroup>
+>                             <FormGroup row>
+>                                 <Label htmlFor="email" md={2}>Email</Label>
+>                                 <Col md={10}>
+>                                     <Input type="email" id="email" name="email"
 >
->                                         placeholder=\"Email\"
+>                                         placeholder="Email"
+```
 
 -   Save all changes and do a Git commit with the message \"Controlled
     Forms\".
@@ -4731,9 +4739,10 @@ to:
 -   Open <i>ContactComponent.js</i> and update it as follows to introduce the
     support to track form errors and perform validation:
 
+```
 > . . .
 >
-> import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from \'reactstrap\';
+> import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
 >
 > . . .
 >
@@ -4751,19 +4760,19 @@ to:
 >
 >         this.state = {
 >
->             firstname: \'\',
+>             firstname: '',
 >
->             lastname: \'\',
+>             lastname: '',
 >
->             telnum: \'\',
+>             telnum: '',
 >
->             email: \'\',
+>             email: '',
 >
 >             agree: false,
 >
->             contactType: \'Tel.\',
+>             contactType: 'Tel.',
 >
->             message: \'\',
+>             message: '',
 >
 >             touched: {
 >
@@ -4793,11 +4802,11 @@ to:
 >
 >     
 >
->     handleBlur = (field) =\> (evt) =\> {
+>     handleBlur = (field) => (evt) => {
 >
 >         this.setState({
 >
->             touched: { \...this.state.touched, \[field\]: true }
+>             touched: { ...this.state.touched, [field]: true }
 >
 >         });
 >
@@ -4809,91 +4818,94 @@ to:
 >
 >         const errors = {
 >
->             firstname: \'\',
+>             firstname: '',
+```
 
 -   Now that we have introduced some functions that can be used for form
     validation, let us update the form itself to make use of these as
     follows:
 
+```
 > . . .
 >
 >  
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"text\" id=\"firstname\" name=\"firstname\"
+>                                     <Input type="text" id="firstname" name="firstname"
 >
->                                         placeholder=\"First Name\"
+>                                         placeholder="First Name"
 >
 >                                         value={this.state.firstname}
 >
->                                         valid={errors.firstname === \'\'}
+>                                         valid={errors.firstname === ''}
 >
->                                         invalid={errors.firstname !== \'\'}
+>                                         invalid={errors.firstname !== ''}
 >
->                                         onBlur={this.handleBlur(\'firstname\')}
+>                                         onBlur={this.handleBlur('firstname')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.firstname}\</FormFeedback\>
+>                                     <FormFeedback>{errors.firstname}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"text\" id=\"lastname\" name=\"lastname\"
+>                                     <Input type="text" id="lastname" name="lastname"
 >
->                                         placeholder=\"Last Name\"
+>                                         placeholder="Last Name"
 >
 >                                         value={this.state.lastname}
 >
->                                         valid={errors.lastname === \'\'}
+>                                         valid={errors.lastname === ''}
 >
->                                         invalid={errors.lastname !== \'\'}
+>                                         invalid={errors.lastname !== ''}
 >
->                                         onBlur={this.handleBlur(\'lastname\')}
+>                                         onBlur={this.handleBlur('lastname')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.lastname}\</FormFeedback\>
+>                                     <FormFeedback>{errors.lastname}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
+>                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"tel\" id=\"telnum\" name=\"telnum\"
+>                                     <Input type="tel" id="telnum" name="telnum"
 >
->                                         placeholder=\"Tel. Number\"
+>                                         placeholder="Tel. Number"
 >
 >                                         value={this.state.telnum}
 >
->                                         valid={errors.telnum === \'\'}
+>                                         valid={errors.telnum === ''}
 >
->                                         invalid={errors.telnum !== \'\'}
+>                                         invalid={errors.telnum !== ''}
 >
->                                         onBlur={this.handleBlur(\'telnum\')}
+>                                         onBlur={this.handleBlur('telnum')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.telnum}\</FormFeedback\>
+>                                     <FormFeedback>{errors.telnum}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
+```
 
 -   You can now test your form by typing in invalid input and check how
     the form validation works.
@@ -4970,97 +4982,44 @@ this exercise you will be able to:
 -   Update <i>HeaderComponent.js</i> as follows to add a new Modal to the
     application to host the form:
 
+```
 > . . .
->
->  
->
 > import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
->
 >     Button, Modal, ModalHeader, ModalBody,
->
->     Form, FormGroup, Input, Label } from \'reactstrap\';
->
->             
->
+>     Form, FormGroup, Input, Label } from 'reactstrap';
 > . . .
->
->  
->
 >         this.state = {
->
 >             isNavOpen: false,
->
 >             isModalOpen: false
->
 >         };
->
->         
->
 > . . .
->
->  
->
 >         this.toggleModal = this.toggleModal.bind(this);
->
->  
->
 > . . .
->
->  
->
->  
->
 >       toggleModal() {
->
 >         this.setState({
->
 >           isModalOpen: !this.state.isModalOpen
->
 >         });
->
 >       }
->
->       
->
 > . . .
->
->  
->
->                 \<Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}\>
->
->                     \<ModalHeader toggle={this.toggleModal}\>Login\</ModalHeader\>
->
->                     \<ModalBody\>
->
->                     
->
->                     \</ModalBody\>
->
->                 \</Modal\>
->
->                 
->
+>                 &lt;Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}&gt;
+>                     &lt;ModalHeader toggle={this.toggleModal}&gt;Login&lt;/ModalHeader&gt;
+>                     <ModalBody>
+>                     </ModalBody>
+>                 </Modal>
 > . . .
+```
 
 -   Then, add a button to the Navbar to enable toggling the modal:
 
+```
 > . . .
->
->  
->
->                             \<Nav className=\"ml-auto\" navbar\>
->
->                                 \<NavItem\>
->
->                                     \<Button outline onClick={this.toggleModal}\>\<span className=\"fa fa-sign-in fa-lg\"\>\</span\> Login\</Button\>
->
->                                 \</NavItem\>
->
->                             \</Nav\>
->
->                             
->
+>                             <Nav className="ml-auto" navbar>
+>                                 <NavItem>
+>                                     <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
+>                                 </NavItem>
+>                             </Nav>
 > . . .
+```
 
 <h3>Adding the Uncontrolled Form</h3>
 
@@ -5068,82 +5027,45 @@ this exercise you will be able to:
 
 . . .
 
->  
->
->                         \<Form onSubmit={this.handleLogin}\>
->
->                             \<FormGroup\>
->
->                                 \<Label htmlFor=\"username\"\>Username\</Label\>
->
->                                 \<Input type=\"text\" id=\"username\" name=\"username\"
->
->                                     innerRef={(input) =\> this.username = input} /\>
->
->                             \</FormGroup\>
->
->                             \<FormGroup\>
->
->                                 \<Label htmlFor=\"password\"\>Password\</Label\>
->
->                                 \<Input type=\"password\" id=\"password\" name=\"password\"
->
->                                     innerRef={(input) =\> this.password = input}  /\>
->
->                             \</FormGroup\>
->
->                             \<FormGroup check\>
->
->                                 \<Label check\>
->
->                                     \<Input type=\"checkbox\" name=\"remember\"
->
->                                     innerRef={(input) =\> this.remember = input}  /\>
->
+```
+>                         <Form onSubmit={this.handleLogin}>
+>                             <FormGroup>
+>                                 <Label htmlFor="username">Username</Label>
+>                                 <Input type="text" id="username" name="username"
+>                                     innerRef={(input) => this.username = input} />
+>                             </FormGroup>
+>                             <FormGroup>
+>                                 <Label htmlFor="password">Password</Label>
+>                                 <Input type="password" id="password" name="password"
+>                                     innerRef={(input) => this.password = input}  />
+>                             </FormGroup>
+>                             <FormGroup check>
+>                                 <Label check>
+>                                     <Input type="checkbox" name="remember"
+>                                     innerRef={(input) => this.remember = input}  />
 >                                     Remember me
->
->                                 \</Label\>
->
->                             \</FormGroup\>
->
->                             \<Button type=\"submit\" value=\"submit\" color=\"primary\"\>Login\</Button\>
->
->                         \</Form\>
->
->                         
->
+>                                 </Label>
+>                             </FormGroup>
+>                             <Button type="submit" value="submit" color="primary">Login</Button>
+>                         </Form>
 > . . .
+```
 
 -   Then, add the following function to the class to handle the form
     submission:
 
+```
 > . . .
->
->  
->
 >         this.handleLogin = this.handleLogin.bind(this);
->
 > . . .
->
->  
->
 >     handleLogin(event) {
->
 >         this.toggleModal();
->
->         alert(\"Username: \" + this.username.value + \" Password: \" + this.password.value
->
->             + \" Remember: \" + this.remember.checked);
->
+>         alert("Username: " + this.username.value + " Password: " + this.password.value
+>             + " Remember: " + this.remember.checked);
 >         event.preventDefault();
->
->  
->
 >     }
->
->       
->
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message
     \"Uncontrolled Form\"
@@ -5224,192 +5146,111 @@ this exercise you will be able to:
 -   As a first step you will install Redux and React-Redux into your
     application as follows:
 
-> yarn add redux@3.7.2
+```
+>  $ yarn add redux@3.7.2
 >
-> yarn add react-redux@5.0.7
+>  $ yarn add react-redux@5.0.7
+```
 
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
     a file named <i>reducer.js</i> with the code below:
 
-> import { DISHES } from \'../shared/dishes\';
->
-> import { COMMENTS } from \'../shared/comments\';
->
-> import { PROMOTIONS } from \'../shared/promotions\';
->
-> import { LEADERS } from \'../shared/leaders\';
->
->  
+```
+> import { DISHES } from '../shared/dishes';
+> import { COMMENTS } from '../shared/comments';
+> import { PROMOTIONS } from '../shared/promotions';
+> import { LEADERS } from '../shared/leaders';
 >
 > export const initialState = {
->
 >     dishes: DISHES,
->
 >     comments: COMMENTS,
->
 >     promotions: PROMOTIONS,
->
 >     leaders: LEADERS
->
 > };
 >
->  
->
-> export const Reducer = (state = initialState, action) =\> {
->
+> export const Reducer = (state = initialState, action) => {
 >     return state;
->
 > };
+```
 
 -   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
-> import {createStore} from \'redux\';
+```
+> import {createStore} from 'redux';
 >
-> import { Reducer, initialState } from \'./reducer\'
+> import { Reducer, initialState } from './reducer'
 >
->  
->
-> export const ConfigureStore = () =\> {
->
+> export const ConfigureStore = () => {
 >     const store = createStore(
->
 >         Reducer, // reducer
->
 >         initialState, // our initialState
->
 >     );
 >
->  
->
 >     return store;
->
 > }
+```
 
 -   Next, open <i>App.js</i> and update it as follows:
 
+```
 > . . .
 >
->  
->
->  
->
-> import { Provider } from \'react-redux\';
->
-> import { ConfigureStore } from \'./redux/configureStore\';
->
->  
+> import { Provider } from 'react-redux';
+> import { ConfigureStore } from './redux/configureStore';
 >
 > const store = ConfigureStore();
 >
->  
->
->  
->
 > . . .
 >
->  
->
->       \<Provider store={store}\>
->
->         \<BrowserRouter\>
->
->           \<div className=\"App\"\>
->
->             \<Main /\>
->
->           \</div\>
->
->         \</BrowserRouter\>
->
->       \</Provider\>
->
->  
->
+>       <Provider store={store}>
+>         <BrowserRouter>
+>           <div className="App">
+>             <Main />
+>           </div>
+>         </BrowserRouter>
+>       </Provider>
 > . . .
+```
 
 -   Finally, update MainComponent.js to connect it to Redux store and
     use it:
 
+```
 > . . .
->
->  
->
-> import { Switch, Route, Redirect, withRouter } from \'react-router-dom\'
->
-> import { connect } from \'react-redux\';
->
->  
->
->  
->
-> const mapStateToProps = state =\> {
->
+> import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+> import { connect } from 'react-redux';
+> const mapStateToProps = state => {
 >   return {
->
 >     dishes: state.dishes,
->
 >     comments: state.comments,
->
 >     promotions: state.promotions,
->
 >     leaders: state.leaders
->
 >   }
->
 > }
->
->  
->
 > . . .
->
->  
->
->     const HomePage = () =\> {
->
+>     const HomePage = () => {
 >       return(
->
->           \<Home 
->
->               dish={this.props.dishes.filter((dish) =\> dish.featured)\[0\]}
->
->               promotion={this.props.promotions.filter((promo) =\> promo.featured)\[0\]}
->
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->
->           /\>
->
+>           <Home 
+>               dish={this.props.dishes.filter((dish) => dish.featured)[0]}
+>               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+>           />
 >       );
->
 >     }
->
->  
->
->     const DishWithId = ({match}) =\> {
->
+>     const DishWithId = ({match}) => {
 >       return(
->
->           \<DishDetail dish={this.props.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]} 
->
->             comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))} /\>
->
+>           <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+>             comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
 >       );
->
 >     };
->
->  
->
 >     return (
->
->       \<div\>
->
->         \<Header /\>
->
->         \<div\>
->
->           \<Switch\>
->
->               \<Route path=\'/home\' component={HomePage} /\>
+>       <div>
+>         <Header />
+>         <div>
+>           <Switch>
+>               <Route path='/home' component={HomePage} />
+```
 
 -   Save all the changes and do a Git commit with the message \"Intro.
     to Redux\".
@@ -5497,42 +5338,39 @@ react-redux-form. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
 > import { Breadcrumb, BreadcrumbItem,
->             Button, Row, Col, Label } from \'reactstrap\';
-> import { Control, LocalForm, Errors } from \'react-redux-form\';
+>             Button, Row, Col, Label } from 'reactstrap';
+> import { Control, LocalForm, Errors } from 'react-redux-form';
 > . . .
->
 >     handleSubmit(values) {
->         console.log(\'Current State is: \' + JSON.stringify(values));
->         alert(\'Current State is: \' + JSON.stringify(values));
+>         console.log('Current State is: ' + JSON.stringify(values));
+>         alert('Current State is: ' + JSON.stringify(values));
 >         // event.preventDefault();
 >     }
->
 > . . .
->                         \<LocalForm onSubmit={(values) =\> this.handleSubmit(values)}\>
->                             \<Row className=\"form-group\"\>
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
->                                         placeholder=\"First Name\"
->                                         className=\"form-control\"
->                                          /\>
->                                 \</Col\>
->                             \</Row\>
->                             \<Row className=\"form-group\"\>
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
->                                         placeholder=\"Last Name\"
->                                         className=\"form-control\"
->                                          /\>
->                                 \</Col\>
->                             \</Row\>
->                             \<Row className=\"form-group\"\>
->                                 \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
->                                 \<Col md={10}\>
->                                     \<Control.text model=\".telnum\" id=\"telnum\" name=\"telnum\"
+>                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+>                             <Row className="form-group">
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
+>                                 <Col md={10}>
+>                                     <Control.text model=".firstname" id="firstname" name="firstname"
+>                                         placeholder="First Name"
+>                                         className="form-control"
+>                                          />
+>                                 </Col>
+>                             </Row>
+>                             <Row className="form-group">
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
+>                                 <Col md={10}>
+>                                     <Control.text model=".lastname" id="lastname" name="lastname"
+>                                         placeholder="Last Name"
+>                                         className="form-control"
+>                                          />
+>                                 </Col>
+>                             </Row>
+>                             <Row className="form-group">
+>                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+>                                 <Col md={10}>
+>                                     <Control.text model=".telnum" id="telnum" name="telnum"
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -5562,43 +5400,40 @@ react-redux-form. At the end of this exercise you will be able to:
 
 ```
 > . . . 
->
-> const required = (val) =\> val && val.length;
-> const maxLength = (len) =\> (val) =\> !(val) \|\| (val.length \<= len);
-> const minLength = (len) =\> (val) =\> val && (val.length \>= len);
-> const isNumber = (val) =\> !isNaN(Number(val));
-> const validEmail = (val) =\> /\^\[A-Z0-9.\_%+-\]+@\[A-Z0-9.-\]+\\.\[A-Z\]{2,4}\$/i.test(val);
->
+> const required = (val) => val && val.length;
+> const maxLength = (len) => (val) => !(val) || (val.length <= len);
+> const minLength = (len) => (val) => val && (val.length >= len);
+> const isNumber = (val) => !isNaN(Number(val));
+> const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
 > . . .
->
->                             \<Row className=\"form-group\"\>
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
->                                         placeholder=\"First Name\"
->                                         className=\"form-control\"
+>                             <Row className="form-group">
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
+>                                 <Col md={10}>
+>                                     <Control.text model=".firstname" id="firstname" name="firstname"
+>                                         placeholder="First Name"
+>                                         className="form-control"
 >                                         validators={{
 >                                             required, minLength: minLength(3), maxLength: maxLength(15)
 >                                         }}
->                                          /\>
->                                     \<Errors
->                                         className=\"text-danger\"
->                                         model=\".firstname\"
->                                         show=\"touched\"
+>                                          />
+>                                     <Errors
+>                                         className="text-danger"
+>                                         model=".firstname"
+>                                         show="touched"
 >                                         messages={{
->                                             required: \'Required\',
->                                             minLength: \'Must be greater than 2 characters\',
->                                             maxLength: \'Must be 15 characters or less\'
+>                                             required: 'Required',
+>                                             minLength: 'Must be greater than 2 characters',
+>                                             maxLength: 'Must be 15 characters or less'
 >                                         }}
->                                      /\>
->                                 \</Col\>
->                             \</Row\>
->                             \<Row className=\"form-group\"\>
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
->                                         placeholder=\"Last Name\"
->                                         className=\"form-control\"
+>                                      />
+>                                 </Col>
+>                             </Row>
+>                             <Row className="form-group">
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
+>                                 <Col md={10}>
+>                                     <Control.text model=".lastname" id="lastname" name="lastname"
+>                                         placeholder="Last Name"
+>                                         className="form-control"
 >                                         validators={{
 ```
 
@@ -5801,9 +5636,8 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { DISHES } from \'../shared/dishes\';
->
-> export const Dishes = (state = DISHES, action) =\> {
+> import { DISHES } from '../shared/dishes';
+> export const Dishes = (state = DISHES, action) => {
 >     switch (action.type) {
 >         default:
 >           return state;
@@ -5814,22 +5648,12 @@ manage the whole state. At the end of this exercise you will be able to:
 -   Then, create a file named comments.js and add the following to it:
 
 ```
-> import { COMMENTS } from \'../shared/comments\';
->
->  
->
-> export const Comments = (state = COMMENTS, action) =\> {
->
+> import { COMMENTS } from '../shared/comments';
+> export const Comments = (state = COMMENTS, action) => {
 >     switch (action.type) {
->
->  
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
 ```
 
@@ -5837,20 +5661,12 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { PROMOTIONS } from \'../shared/promotions\';
->
->  
->
-> export const Promotions = (state = PROMOTIONS, action) =\> {
->
+> import { PROMOTIONS } from '../shared/promotions';
+> export const Promotions = (state = PROMOTIONS, action) => {
 >     switch (action.type) {
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
 ```
 
@@ -5858,9 +5674,8 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { LEADERS } from \'../shared/leaders\';
->
-> export const Leaders = (state = LEADERS, action) =\> {
+> import { LEADERS } from '../shared/leaders';
+> export const Leaders = (state = LEADERS, action) => {
 >     switch (action.type) {
 >         default:
 >           return state;
@@ -5873,13 +5688,13 @@ manage the whole state. At the end of this exercise you will be able to:
     together. Open configureStore.js and update it as follows:
 
 ```
-> import {createStore, combineReducers} from \'redux\';
-> import { Dishes } from \'./dishes\';
-> import { Comments } from \'./comments\';
-> import { Promotions } from \'./promotions\';
-> import { Leaders } from \'./leaders\';
+> import {createStore, combineReducers} from 'redux';
+> import { Dishes } from './dishes';
+> import { Comments } from './comments';
+> import { Promotions } from './promotions';
+> import { Leaders } from './leaders';
 >
-> export const ConfigureStore = () =\> {
+> export const ConfigureStore = () => {
 >     const store = createStore(
 >         combineReducers({
 >             dishes: Dishes,
@@ -5888,7 +5703,6 @@ manage the whole state. At the end of this exercise you will be able to:
 >             leaders: Leaders
 >         })
 >     );
->  
 >     return store;
 > }
 ```
@@ -5924,25 +5738,18 @@ store. At the end of this exercise you will be able to:
     add the following to it:
 
 ```
-> export const ADD_COMMENT = \'ADD_COMMENT\';
+> export const ADD_COMMENT = 'ADD_COMMENT';
 ```
 
 -   Then, create a file named <i>ActionCreators.js</i> and add the following
     to it:
 
 ```
-> import \<i> as ActionTypes from \'./ActionTypes\';
->
->  
->
-> export const addComment = (dishId, rating, author, comment) =\> ({
->
+> import <i> as ActionTypes from './ActionTypes';
+> export const addComment = (dishId, rating, author, comment) => ({
 >     type: ActionTypes.ADD_COMMENT,
->
 >     payload: {
->
 >         dishId: dishId,
->
 >         rating: rating,
 >         author: author,
 >         comment: comment
@@ -5954,17 +5761,15 @@ store. At the end of this exercise you will be able to:
     dispatched by the ActionCreator as follows:
 
 ```
-> import { COMMENTS } from \'../shared/comments\';
->
-> import \</i> as ActionTypes from \'./ActionTypes\';
->
-> export const Comments = (state = COMMENTS, action) =\> {
+> import { COMMENTS } from '../shared/comments';
+> import </i> as ActionTypes from './ActionTypes';
+> export const Comments = (state = COMMENTS, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_COMMENT:
 >             var comment = action.payload;
 >             comment.id = state.length;
 >             comment.date = new Date().toISOString();
->             console.log(\"Comment: \", comment);
+>             console.log("Comment: ", comment);
 >             return state.concat(comment);
 >         default:
 >           return state;
@@ -5977,25 +5782,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
-> import { addComment } from \'../redux/ActionCreators\';
->
+> import { addComment } from '../redux/ActionCreators';
 > . . .
->
->   const mapDispatchToProps = dispatch =\> ({
->
->     addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment))
->
+>   const mapDispatchToProps = dispatch => ({
+>     addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
 >   });
->
 > . . .
->
->       \<DishDetail dish={this.props.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
->         comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
+>       <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
+>         comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
 >         addComment={this.props.addComment}
->       /\>
->
+>       />
 > . . .
 >
 > export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
@@ -6006,24 +5802,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
 >   function RenderComments({comments, addComment, dishId}) {
->
 > . . .
->
->       \<CommentForm dishId={dishId} addComment={addComment} /\>
->
+>       <CommentForm dishId={dishId} addComment={addComment} />
 > . . .
->
 >         this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
->
 > . . .
->
->       \<RenderComments comments={props.comments}
+>       <RenderComments comments={props.comments}
 >         addComment={props.addComment}
 >         dishId={props.dish.id}
->       /\>
->
+>       />
 > . . .
 ```
 
@@ -6096,12 +5884,9 @@ function. At the end of this exercise you will be able to:
 
 ```
 > import {createStore, combineReducers, applyMiddleware } from \'redux\';
->
 > . . .
->
-> import thunk from \'redux-thunk\';
-> import logger from \'redux-logger\';
->
+> import thunk from 'redux-thunk';
+> import logger from 'redux-logger';
 > . . .
 >         combineReducers({
 >             dishes: Dishes,
@@ -6110,7 +5895,6 @@ function. At the end of this exercise you will be able to:
 >             leaders: Leaders
 >         }),
 >         applyMiddleware(thunk, logger)
->
 > . . .
 ```
 
@@ -6128,28 +5912,22 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
->
-> import { DISHES } from \'../shared/dishes\';
->
+> import { DISHES } from '../shared/dishes';
 > . . .
->
-> export const fetchDishes = () =\> (dispatch) =\> {
->
+> export const fetchDishes = () => (dispatch) => {
 >     dispatch(dishesLoading(true));
->     setTimeout(() =\> {
+>     setTimeout(() => {
 >         dispatch(addDishes(DISHES));
->
 >     }, 2000);
 > }
->
-> export const dishesLoading = () =\> ({
+> export const dishesLoading = () => ({
 >     type: ActionTypes.DISHES_LOADING
 > });
-> export const dishesFailed = (errmess) =\> ({
+> export const dishesFailed = (errmess) => ({
 >     type: ActionTypes.DISHES_FAILED,
 >     payload: errmess
 > });
-> export const addDishes = (dishes) =\> ({
+> export const addDishes = (dishes) => ({
 >     type: ActionTypes.ADD_DISHES,
 >     payload: dishes
 > });
@@ -6159,18 +5937,17 @@ export const ADD_DISHES = \'ADD_DISHES\';
     follows:
 
 ```
-> import \<i> as ActionTypes from \'./ActionTypes\';
->
+> import <i> as ActionTypes from './ActionTypes';
 > export const Dishes = (state = { isLoading: true,
 >     errMess: null,
->     dishes:\[\]}, action) =\> {
+>     dishes:[]}, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_DISHES:
->             return {\...state, isLoading: false, errMess: null, dishes: action.payload};
+>             return {...state, isLoading: false, errMess: null, dishes: action.payload};
 >         case ActionTypes.DISHES_LOADING:
->             return {\...state, isLoading: true, errMess: null, dishes: \[\]}
+>             return {...state, isLoading: true, errMess: null, dishes: []}
 >         case ActionTypes.DISHES_FAILED:
->             return {\...state, isLoading: false, errMess: action.payload};
+>             return {...state, isLoading: false, errMess: action.payload};
 >         default:
 >             return state;
 >     }
@@ -6181,14 +5958,13 @@ export const ADD_DISHES = \'ADD_DISHES\';
     message as follows:
 
 ```
-> import React from \'react\';
->
-> export const Loading = () =\> {
+> import React from 'react';
+> export const Loading = () => {
 >     return(
->         \<div className=\"col-12\"\>
->             \<span className=\"fa fa-spinner fa-pulse fa-3x fa-fw text-primary\"\>\</span\>
->             \<p\>Loading . . .\</p\>
->         \</div\>
+>         <div className="col-12">
+>             <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
+>             <p>Loading . . .</p>
+>         </div>
 >     );
 > };
 ```
@@ -6198,34 +5974,34 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { addComment, fetchDishes } from \'../redux/ActionCreators\';
+> import { addComment, fetchDishes } from '../redux/ActionCreators';
 > . . .
->   fetchDishes: () =\> { dispatch(fetchDishes())}
+>   fetchDishes: () => { dispatch(fetchDishes())}
 > . . .
 >   componentDidMount() {
 >     this.props.fetchDishes();
 >   }
 > . . .
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
+>           <Home 
+>               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
 >               dishesLoading={this.props.dishes.isLoading}
 >               dishesErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.filter((promo) =\> promo.featured)\[0\]}
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+>           />
 >       );
 >     }
->     const DishWithId = ({match}) =\> {
+>     const DishWithId = ({match}) => {
 >       return(
->\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
+><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >
 >             isLoading={this.props.dishes.isLoading}
 >             errMess={this.props.dishes.errMess}
-> comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
+> comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
 >             addComment={this.props.addComment}
->           /\>
+>           />
 >       );
 >     };
 > . . .
@@ -6235,24 +6011,24 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
 >         if (props.isLoading) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<Loading /\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <Loading />
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.errMess) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<h4\>{props.errMess}\</h4\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <h4>{props.errMess}</h4>
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.dish != null) 
@@ -6263,37 +6039,33 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
->  
 > function RenderCard({item, isLoading, errMess}) {
->
 >     if (isLoading) {
 >         return(
->                 \<Loading /\>
+>                 <Loading />
 >         );
 >     }
 >     else if (errMess) {
 >         return(
->                 \<h4\>{errMess}\</h4\>
+>                 <h4>{errMess}</h4>
 >         );
 >     }
 >     else 
 >         return(
->             \<Card\>
->
->                 \<CardImg src={item.image} alt={item.name} /\>
->                 \<CardBody\>
->                 \<CardTitle\>{item.name}\</CardTitle\>
->                 {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->                 \<CardText\>{item.description}\</CardText\>
->                 \</CardBody\>
->             \</Card\>
+>             <Card>
+>                 <CardImg src={item.image} alt={item.name} />
+>                 <CardBody>
+>                 <CardTitle>{item.name}</CardTitle>
+>                 {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>                 <CardText>{item.description}</CardText>
+>                 </CardBody>
+>             </Card>
 >         );
 > }
 > . . .
-> \<RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  /\>
->
+> <RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  />
 > . . .
 ```
 
@@ -6301,29 +6073,28 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
->         const menu = props.dishes.dishes.map((dish) =\> {
+>         const menu = props.dishes.dishes.map((dish) => {
 > . . .
->
 >         if (props.dishes.isLoading) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<Loading /\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <Loading />
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.dishes.errMess) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\> 
->                         \<div className=\"col-12\"\>
->                             \<h4\>{props.dishes.errMess}\</h4\>
->                         \</div\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row"> 
+>                         <div className="col-12">
+>                             <h4>{props.dishes.errMess}</h4>
+>                         </div>
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else
@@ -6358,13 +6129,13 @@ store. At the end of this exercise you will be able to:
 
 ```
 > export const InitialFeedback = {
->     firstname: \'\',
->     lastname: \'\',
->     telnum: \'\',
->     email: \'\',
+>     firstname: '',
+>     lastname: '',
+>     telnum: '',
+>     email: '',
 >     agree: false,
->     contactType: \'Tel.\',
->     message: \'\'
+>     contactType: 'Tel.',
+>     message: ''
 > };
 ```
 
@@ -6373,16 +6144,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { createForms } from \'react-redux-form\';
+> import { createForms } from 'react-redux-form';
 > . . .
-> import { InitialFeedback } from \'./forms\';
+> import { InitialFeedback } from './forms';
 > . . .
 >         combineReducers({
 >             dishes: Dishes,
 >             comments: Comments,
 >             promotions: Promotions,
 >             leaders: Leaders,
->             \...createForms({
+>             ...createForms({
 >                 feedback: InitialFeedback
 >             })
 >         }),
@@ -6393,11 +6164,11 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { actions } from \'react-redux-form\';
+> import { actions } from \'react-redux-form';
 > . . .
->   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))}
+>   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
 > . . .
-> \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
+> <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
 >
 > . . .
 ```
@@ -6406,18 +6177,18 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { Control, Form, Errors, actions } from \'react-redux-form\';
+> import { Control, Form, Errors, actions } from 'react-redux-form';
 > . . .
 >     handleSubmit(values) {
->         console.log(\'Current State is: \' + JSON.stringify(values));
->         alert(\'Current State is: \' + JSON.stringify(values));
+>         console.log('Current State is: ' + JSON.stringify(values));
+>         alert('Current State is: ' + JSON.stringify(values));
 >         this.props.resetFeedbackForm();
 >         // event.preventDefault();
 >     }
 > . . .
->                         \<Form model=\"feedback\" onSubmit={(values) =\> this.handleSubmit(values)}\>
+>                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
 >                           . . .
->                         \</Form\>
+>                         </Form>
 > . . .
 ```
 
@@ -6514,7 +6285,7 @@ from any folder on your computer.
     at the command prompt to start the server:
 
 ```
->      json-server \--watch db.json -p 3001 -d 2000
+>  json-server --watch db.json -p 3001 -d 2000
 ```
 
 -   This should start up a server at port number 3001 on your machine.
@@ -6535,16 +6306,12 @@ from any folder on your computer.
     being served up by the server. This data is obtained from the
     db.json file
 
-```{=html}
-<!-- -->
-```
-
 -   The json-server also provides a static web server. Any resources
     that you put in a folder named <b>public</b> in the <b>json-server</b>
     folder above, will be served by the server at the following address:
 
 ```
->   <http://localhost:3001/>
+>   &lt;http://localhost:3001/&gt;
 ```
 
 -   Shut down the server by typing <b>ctrl-C</b> in the terminal window.
@@ -6561,7 +6328,7 @@ from any folder on your computer.
     the following into your browser address bar:
 
 ```
-> [http://localhost:3001/images/]{.underline}\<image name\>.png
+> [http://localhost:3001/images/]{.underline}<image name>.png
 ```
 
 <h3>Conclusions</h3>
@@ -6637,7 +6404,7 @@ exercise you will be able to:
     the <i>shared</i> folder and add the following to it:
 
 ```
-> export const baseUrl = \'[http://localhost:3001/]{.underline}\';
+> export const baseUrl = '[http://localhost:3001/]{.underline}';
 ```
 
 -   Make sure that the json-server is running and servi
@@ -6648,62 +6415,61 @@ exercise you will be able to:
 
 ```
 . . .
-export const ADD_COMMENTS = \'ADD_COMMENTS\';
-export const COMMENTS_FAILED = \'COMMENTS_FAILED\';
-export const PROMOS_LOADING = \'PROMOS_LOADING\';
-export const ADD_PROMOS = \'ADD_PROMOS\';
-export const PROMOS_FAILED = \'PROMOS_FAILED\';
+export const ADD_COMMENTS = 'ADD_COMMENTS';
+export const COMMENTS_FAILED = 'COMMENTS_FAILED';
+export const PROMOS_LOADING = 'PROMOS_LOADING';
+export const ADD_PROMOS = 'ADD_PROMOS';
+export const PROMOS_FAILED = 'PROMOS_FAILED\';
 ```
 
 -   Then, open <i>ActionCreators.js</i> and update it as follows:
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->     return fetch(baseUrl + \'dishes\')
->     .then(response =\> response.json())
->     .then(dishes =\> dispatch(addDishes(dishes)));
+>     return fetch(baseUrl + 'dishes')
+>     .then(response => response.json())
+>     .then(dishes => dispatch(addDishes(dishes)));
 > . . .
-> export const fetchComments = () =\> (dispatch) =\> {    
->     return fetch(baseUrl + \'comments\')
->     .then(response =\> response.json())
->     .then(comments =\> dispatch(addComments(comments)));
+> export const fetchComments = () => (dispatch) => {    
+>     return fetch(baseUrl + 'comments')
+>     .then(response => response.json())
+>     .then(comments => dispatch(addComments(comments)));
 > };
-> export const commentsFailed = (errmess) =\> ({
+> export const commentsFailed = (errmess) => ({
 >     type: ActionTypes.COMMENTS_FAILED,
 >     payload: errmess
 > });
-> export const addComments = (comments) =\> ({
+> export const addComments = (comments) => ({
 >     type: ActionTypes.ADD_COMMENTS,
 >     payload: comments
 > });
-> export const fetchPromos = () =\> (dispatch) =\> {
+> export const fetchPromos = () => (dispatch) => {
 >     dispatch(promosLoading());
->     return fetch(baseUrl + \'promotions\')
->     .then(response =\> response.json())
->     .then(promos =\> dispatch(addPromos(promos)));
+>     return fetch(baseUrl + 'promotions')
+>     .then(response => response.json())
+>     .then(promos => dispatch(addPromos(promos)));
 > }
-> export const promosLoading = () =\> ({
+> export const promosLoading = () => ({
 >     type: ActionTypes.PROMOS_LOADING
 ```
 
 -   Next, open <i>comments.js</i> and update it as follows:
 
 ```
-> import \<i> as ActionTypes from \'./ActionTypes\';
->
-> export const Comments = (state = { errMess: null, comments:\[\]}, action) =\> {
+> import <i> as ActionTypes from './ActionTypes';
+> export const Comments = (state = { errMess: null, comments:[]}, action) => {
 >   switch (action.type) {
 >     case ActionTypes.ADD_COMMENTS:
->       return {\...state, errMess: null, comments: action.payload};
+>       return {...state, errMess: null, comments: action.payload};
 >     case ActionTypes.COMMENTS_FAILED:
->       return {\...state, errMess: action.payload};
+>       return {...state, errMess: action.payload};
 >     case ActionTypes.ADD_COMMENT:
 >         var comment = action.payload;
 >         comment.id = state.comments.length;
 >         comment.date = new Date().toISOString();
->         return { \...state, comments: state.comments.concat(comment)};
+>         return { ...state, comments: state.comments.concat(comment)};
 >     default:
 >       return state;
 >   }
@@ -6713,17 +6479,17 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 -   Similarly, open </i>promotions.js<i> and update it as follows:
 
 ```
-> import \</i> as ActionTypes from \'./ActionTypes\';
+> import </i> as ActionTypes from './ActionTypes';
 > export const Promotions = (state  = { isLoading: true,
 >                                         errMess: null,
->                                         promotions:\[\]}, action) =\> {
+>                                         promotions:[]}, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_PROMOS:
->         return {\...state, isLoading: false, errMess: null, promotions: action.payload};
+>         return {...state, isLoading: false, errMess: null, promotions: action.payload};
 >         case ActionTypes.PROMOS_LOADING:
->             return {\...state, isLoading: true, errMess: null, promotions: \[\]}
+>             return {...state, isLoading: true, errMess: null, promotions: []}
 >         case ActionTypes.PROMOS_FAILED:
->             return {\...state, isLoading: false, errMess: action.payload};
+>             return {...state, isLoading: false, errMess: action.payload};
 >         default:
 >           return state;
 >       }
@@ -6737,16 +6503,15 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . . 
-> import { addComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
+> import { addComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
 > . . .
-> const mapDispatchToProps = dispatch =\> ({
->   addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment)),
->   fetchDishes: () =\> { dispatch(fetchDishes())},
->   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))},
->   fetchComments: () =\> dispatch(fetchComments()),
->   fetchPromos: () =\> dispatch(fetchPromos())
+> const mapDispatchToProps = dispatch => ({
+>   addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
+>   fetchDishes: () => { dispatch(fetchDishes())},
+>   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
+>   fetchComments: () => dispatch(fetchComments()),
+>   fetchPromos: () => dispatch(fetchPromos())
 > });
->
 > . . .
 >   componentDidMount() {
 >     this.props.fetchDishes();
@@ -6754,17 +6519,17 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >     this.props.fetchPromos();
 >   }
 > . . .
->           \<Home 
->               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
+>           <Home 
+>               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
 >               dishesLoading={this.props.dishes.isLoading}
 >               dishErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.promotions.filter((promo) =\> promo.featured)\[0\]}
+>               promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
 >               promoLoading={this.props.promotions.isLoading}
 >               promoErrMess={this.props.promotions.errMess}
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+>           />
 > . . .
->\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
+><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >             isLoading={this.props.dishes.isLoading}
 >             errMess={this.props.dishes.errMess}
 ```
@@ -6773,9 +6538,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->                     \<CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} /\>
+>                     <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
 > . . .
 ```
 
@@ -6783,13 +6548,11 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->
->        \<CardImg src={baseUrl + item.image} alt={item.name} /\>
+>        <CardImg src={baseUrl + item.image} alt={item.name} />
 > . . .
->         \<RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} /\>
->
+>         <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
 > . . .
 ```
 
@@ -6797,10 +6560,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
->
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
+>                 <CardImg top src={baseUrl + dish.image} alt={dish.name} />
 > . . .
 ```
 
@@ -6831,42 +6593,39 @@ able to:
 
 ```
 > . . .
->
-> export const fetchDishes = () =\> (dispatch) =\> {
->
+> export const fetchDishes = () => (dispatch) => {
 >     dispatch(dishesLoading(true));
->
->     return fetch(baseUrl + \'dishes\')
->     .then(response =\> {
+>     return fetch(baseUrl + 'dishes')
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             var errmess = new Error(error.message);
 >             throw errmess;
 >       })
->     .then(response =\> response.json())
->     .then(dishes =\> dispatch(addDishes(dishes)))
->     .catch(error =\> dispatch(dishesFailed(error.message)));
+>     .then(response => response.json())
+>     .then(dishes => dispatch(addDishes(dishes)))
+>     .catch(error => dispatch(dishesFailed(error.message)));
 > }
 > . . .
-> export const fetchComments = () =\> (dispatch) =\> {    
->     return fetch(baseUrl + \'comments\')
->     .then(response =\> {
+> export const fetchComments = () => (dispatch) => {    
+>     return fetch(baseUrl + 'comments')
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             var errmess = new Error(error.message);
 ```
 
@@ -6898,13 +6657,11 @@ to:
 
 ```
 > . . .
->
-> export const addComment = (comment) =\> ({
+> export const addComment = (comment) => ({
 >     type: ActionTypes.ADD_COMMENT,
 >     payload: comment
 > });
->
-> export const postComment = (dishId, rating, author, comment) =\> (dispatch) =\> {
+> export const postComment = (dishId, rating, author, comment) => (dispatch) => {
 >     const newComment = {
 >         dishId: dishId,
 >         rating: rating,
@@ -6912,39 +6669,37 @@ to:
 >         comment: comment
 >     };
 >     newComment.date = new Date().toISOString();
->     return fetch(baseUrl + \'comments\', {
->         method: \"POST\",
+>     return fetch(baseUrl + 'comments', {
+>         method: "POST",
 >         body: JSON.stringify(newComment),
 >         headers: {
->           \"Content-Type\": \"application/json\"
+>           "Content-Type": "application/json"
 >         },
->         credentials: \"same-origin\"
+>         credentials: "same-origin"
 >     })
->     .then(response =\> {
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             throw error;
 >       })
->     .then(response =\> response.json())
->     .then(response =\> dispatch(addComment(response)))
->    .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
+>     .then(response => response.json())
+>     .then(response => dispatch(addComment(response)))
+>    .catch(error =>  { console.log('post comments', error.message); alert('Your comment could not be postednError: '+error.message); });
 ```
 
 -   Open <i>comment.js</i> and <b>remove</b> the following two lines from it:
 
 ```
 > . . .
->
 >        comment.id = state.comments.length;
 >        comment.date = new Date().toISOString();
->
 >  . . .
 ```
 
@@ -6952,13 +6707,10 @@ to:
 
 ```
 > . . .
->
-> import { postComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
->
+> import { postComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
 > . . .
 >
->   postComment: (dishId, rating, author, comment) =\> dispatch(postComment(dishId, rating, author, comment))
->
+>   postComment: (dishId, rating, author, comment) => dispatch(postComment(dishId, rating, author, comment))
 > . . .
 >             postComment={this.props.postComment}
 > . . .
@@ -6970,7 +6722,7 @@ to:
 > . . .
 >     function RenderComments({comments, postComment, dishId}) {
 > . . .
->                     \<CommentForm dishId={dishId} postComment={postComment} /\>
+>                     <CommentForm dishId={dishId} postComment={postComment} />
 > . . .
 >             this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
 > . . .
@@ -7052,25 +6804,24 @@ be able to:
 
 -   Install react-transition-group in your React project as follows:
 
+```
 yarn add react-transition-group@2.3.0
+```
 
 -   Configure CSS classes for use in animation. Open <i>App.css</i> and add
     the following classes:
 
 ```
 > . . .
->
 > .page-enter {
 >     opacity: 0.01;
 >     transform: translateX(-100%);
 > }
->
 > .page-enter-active {
 >     opacity: 1;
 >     transform: translateX(0%);
 >     transition: all 300ms ease-in;
 > }
->
 > .page-exit {
 >     opacity: 1;
 >     transform: translateX(0%);
@@ -7080,7 +6831,6 @@ yarn add react-transition-group@2.3.0
 >     transform: translateX(100%);
 >     transition: all 300ms ease-out;
 > }
->  
 ```
 
 -   Then, open MainComponent.js and add in the following to configure
@@ -7088,23 +6838,20 @@ yarn add react-transition-group@2.3.0
 
 ```
 > . . .
->
-> import { TransitionGroup, CSSTransition } from \'react-transition-group\';
->
+> import { TransitionGroup, CSSTransition } from 'react-transition-group';
 > . . .
->
->           \<TransitionGroup\>
->             \<CSSTransition key={this.props.location.key} classNames=\"page\" timeout={300}\>
->               \<Switch location={this.props.location}\>
->                   \<Route path=\'/home\' component={HomePage} /\>
->                   \<Route exact path=\'/aboutus\' component={() =\> \<About leaders={this.props.leaders} /\>} /\>} /\>
->                   \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.props.dishes} /\>} /\>
->                   \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
-                  \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
->                   \<Redirect to=\"/home\" /\>
->               \</Switch\>
->             \</CSSTransition\>
->           \</TransitionGroup\>
+>           <TransitionGroup>
+>             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+>               <Switch location={this.props.location}>
+>                   <Route path='/home' component={HomePage} />
+>                   <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
+>                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+>                   <Route path='/menu/:dishId' component={DishWithId} />
+                  <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
+>                   <Redirect to="/home" />
+>               </Switch>
+>             </CSSTransition>
+>           </TransitionGroup>
 > . . .
 ```
 
@@ -7146,25 +6893,22 @@ you will be able to:
 ```
 > . . .
 >
-> import { FadeTransform } from \'react-animation-components\';
->
+> import { FadeTransform } from 'react-animation-components';
 > . . .
->
->             \<FadeTransform
+>             <FadeTransform
 >                 in
 >                 transformProps={{
->                     exitTransform: \'scale(0.5) translateY(-50%)\'
->                 }}\>
->                 \<Card\>
->                     \<CardImg src={baseUrl + item.image} alt={item.name} /\>
->                     \<CardBody\>
->                     \<CardTitle\>{item.name}\</CardTitle\>
->                     {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->                     \<CardText\>{item.description}\</CardText\>
->                     \</CardBody\>
->                 \</Card\>
->             \</FadeTransform\>
->
+>                     exitTransform: 'scale(0.5) translateY(-50%)'
+>                 }}>
+>                 <Card>
+>                     <CardImg src={baseUrl + item.image} alt={item.name} />
+>                     <CardBody>
+>                     <CardTitle>{item.name}</CardTitle>
+>                     {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>                     <CardText>{item.description}</CardText>
+>                     </CardBody>
+>                 </Card>
+>             </FadeTransform>
 > . . .
 ```
 
@@ -7172,40 +6916,34 @@ you will be able to:
 
 ```
 > . . .
->
-> import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
->
+> import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 > . . .
->
->             \<FadeTransform
+>             <FadeTransform
 >                 in
 >                 transformProps={{
->                     exitTransform: \'scale(0.5) translateY(-50%)\'
->                 }}\>
->             \<Card\>
->                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
->                 \<CardBody\>
->                     \<CardTitle\>{dish.name}\</CardTitle\>
->                     \<CardText\>{dish.description}\</CardText\>
->                 \</CardBody\>
->             \</Card\>
->             \</FadeTransform\>
->
+>                     exitTransform: 'scale(0.5) translateY(-50%)'
+>                 }}>
+>             <Card>
+>                 <CardImg top src={baseUrl + dish.image} alt={dish.name} />
+>                 <CardBody>
+>                     <CardTitle>{dish.name}</CardTitle>
+>                     <CardText>{dish.description}</CardText>
+>                 </CardBody>
+>             </Card>
+>             </FadeTransform>
 > . . .
->
->                     \<Stagger in\>
->                         {comments.map((comment) =\> {
+>                     <Stagger in>
+>                         {comments.map((comment) => {
 >                             return (
->                                 \<Fade in\>
->                                 \<li key={comment.id}\>
->                                 \<p\>{comment.comment}\</p\>
->                                 \<p\>\-- {comment.author} , {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}\</p\>
->                                 \</li\>
->                                 \</Fade\>
+>                                 <Fade in>
+>                                 <li key={comment.id}>
+>                                 <p>{comment.comment}</p>
+> <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+>                                 </li>
+>                                 </Fade>
 >                             );
 >                         })}
->                         \</Stagger\>
->
+>                         </Stagger>
 > . . .
 ```
 
@@ -7386,6 +7124,16 @@ Your assignment will be assessed based on the following criteria:
 <h2>Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources</h2>
 
 <h3>Assignment Screenshots</h3>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 10.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 12.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ![](./images/image010.png){width="6.5in"
 height="7.308333333333334in"}![](./images/image011.png){width="6.5in"
@@ -7586,6 +7334,9 @@ If your server is running on any publicly hosted server, please submit the URL o
 
 ..the end.
 
-Last updated 2-15-23 8:40am
+<h6>Last updated 3-12-23 10:32pm</h6>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ ##.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 </html>
