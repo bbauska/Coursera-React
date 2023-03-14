@@ -2412,7 +2412,7 @@ you will be able to:
 -   First, download the <i>images.zip</i> file provided above and then unzip
     the file. Create a folder named <i>assets</i> in the <i>public</i> folder.
     Move the resulting <i>images</i> folder containing some PNG files to the
-    React project\'s <i>public/assets</i> folder. These image files will be
+    React project's <i>public/assets</i> folder. These image files will be
     useful for our exercises.
 
 -   Next, add a new folder named <i>components</i> in the <i>src</i> folder, and
@@ -2421,58 +2421,58 @@ you will be able to:
 -   Add the following code to <i>MenuComponent.js</i>:
 
 >         this.state = {
->             dishes: \[
+>             dishes: [
 >                 {
 >                   id: 0,
->                   name:\'Uthappizza\',
->                   image: \'assets/images/uthappizza.png\',
->                   category: \'mains\',
->                   label:\'Hot\',
->                   price:\'4.99\',
+>                   name:'Uthappizza',
+>                   image: 'assets/images/uthappizza.png',
+>                   category: 'mains',
+>                   label:'Hot',
+>                   price:'4.99',
 > 
 > 
->               description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                  >      },
+>               description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                  >      },
 >               {
 >                   id: 1,
->                   name:\'Zucchipakoda\',
->                   image: \'assets/images/zucchipakoda.png\',
->                   category: \'appetizer\',
->                   label:\'\',
->                   price:\'1.99\',
->                   description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce\'                        },
+>                   name:'Zucchipakoda',
+>                   image: 'assets/images/zucchipakoda.png',
+>                   category: 'appetizer',
+>                   label:'',
+>                   price:'1.99',
+>                   description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce'                        },
 >                {
 >                   id: 2,
->                   name:\'Vadonut\',
->                   image: \'assets/images/vadonut.png\',
->                   category: \'appetizer\',
->                   label:\'New\',
->                   price:\'1.99\',
+>                   name:'Vadonut',
+>                   image: 'assets/images/vadonut.png',
+>                   category: 'appetizer',
+>                   label:'New',
+>                   price:'1.99',
 > 
->                   description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'          >               },
+>                   description:'A quintessential ConFusion experience, is it a vada or is it a donut?'          >               },
 >                {
 >                   id: 3,
->                   name:\'ElaiCheese Cake\',
->                   image: \'assets/images/elaicheesecake.png\',
->                   category: \'dessert\',
->                   label:\'\',
->                   price:\'2.99\',
->                   description:\'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust an> d spiced with Indian cardamoms\'                        }
+>                   name:'ElaiCheese Cake',
+>                   image: 'assets/images/elaicheesecake.png',
+>                   category: 'dessert',
+>                   label:'',
+>                   price:'2.99',
+>                   description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust an> d spiced with Indian cardamoms'                        }
 > 
 > class Menu extends Component {
 >     constructor(props) {
 >        super(props);
-> import React, { Component } from \'react\';
-> import { Media } from \'reactstrap\';
+> import React, { Component } from 'react';
+> import { Media } from 'reactstrap';
 
 -   Next, open <i>App.js</i> file and update it as follows:
 
 > . . .
 > 
-> import Menu from \'./components/MenuComponent\';
+> import Menu from './components/MenuComponent';
 > 
 > . . .
 > 
->     \<Menu /\>
+>     <Menu />
 > 
 > . . .
 
@@ -2533,28 +2533,28 @@ JS File
 >     renderDish(dish) {
 >         if (dish != null)
 >             return(
->                 \<Card\>
->                     \<CardImg top src={dish.image} alt={dish.name} /\>
->                     \<CardBody\>
->                       \<CardTitle\>{dish.name}\</CardTitle\>
->                       \<CardText\>{dish.description}\</CardText\>
->                     \</CardBody\>
->                 \</Card\>
+>                 <Card>
+>                     <CardImg top src={dish.image} alt={dish.name} />
+>                     <CardBody>
+>                       <CardTitle>{dish.name}</CardTitle>
+>                       <CardText>{dish.description}</CardText>
+>                     </CardBody>
+>                 </Card>
 >             );
 >         else
 >             return(
->                 \<div\>\</div\>
+>                 <div></div>
 >             );
 >     }
 >
 >     render() {
->         const menu = this.props.dishes.map((dish) =\> {
+>         const menu = this.props.dishes.map((dish) => {
 >             return (
->               \<div  className=\"col-12 col-md-5 m-1\"\>
+>               <div  className="col-12 col-md-5 m-1">
 > class Menu extends Component {
 >
 > import { Card, CardImg, CardImgOverlay, CardText, CardBody,
->     CardTitle } from \'reactstrap\';
+>     CardTitle } from 'reactstrap';
 >  . . .
 ```
 
@@ -2743,31 +2743,31 @@ React application and include the component into the menu component\'s
 view so that the details of a specific dish are displayed there:
 
 -   Replace the card showing the selected dish in MenuComponent\'s view
-    > with the DishdetailComponent, and make sure to pass the selected
-    > dish information as props to the DishdetailComponent.
+    with the DishdetailComponent, and make sure to pass the selected
+    dish information as props to the DishdetailComponent.
 
 -   Create a new <i>DishDetail</i> class in a file named
-    > <i>DishdetailComponent.js</i> in the <i>components</i> folder
+    <i>DishdetailComponent.js</i> in the <i>components</i> folder
 
 -   Export the <i>DishDetail</i> class from this file so that it can be
-    > imported in <i>MenuComponent.js</i> and used to construct the view of
-    > the selected dish.
+    imported in <i>MenuComponent.js</i> and used to construct the view of
+    the selected dish.
 
 -   Return a \<div\> from the render() function. This \<div\> should use
-    > the Bootstrap <i>row</i> class to position the content within the
-    > \<div\>. This div will display both the details of the dish in a
-    > Card and the list of comments side-by-side for medium to extra
-    > large screens, but will stack them for xs and sm screens.
+    the Bootstrap <i>row</i> class to position the content within the
+    \<div\>. This div will display both the details of the dish in a
+    Card and the list of comments side-by-side for medium to extra
+    large screens, but will stack them for xs and sm screens.
 
 -   The card should be enclosed inside a \<div\> appropriate Bootstrap
-    > column classes so that it occupies the entire 12 columns for the
-    > xs and sm screen sizes, and 5 columns for md screens and above.
-    > Also apply a class of m-1 to this div.
+    column classes so that it occupies the entire 12 columns for the
+    xs and sm screen sizes, and 5 columns for md screens and above.
+    Also apply a class of m-1 to this div.
 
 -   The comments should be enclosed in a \<div\> to which you apply
-    > appropriate column classes so that it occupies the entire 12
-    > columns for the xs and sm screen sizes, and 5 columns for md
-    > screens and above. Also apply a class of m-1 to this div.
+    appropriate column classes so that it occupies the entire 12
+    columns for the xs and sm screen sizes, and 5 columns for md
+    screens and above. Also apply a class of m-1 to this div.
 
 -   If the dish is null then you should return an empty \<div\>
 
@@ -3278,8 +3278,8 @@ your application. At the end of this exercise you will be able to:
 ```
 > . . .
 >  
-> import \'font-awesome/css/font-awesome.css\';
-> import \'bootstrap-social/bootstrap-social.css\';
+> import 'font-awesome/css/font-awesome.css';
+> import 'bootstrap-social/bootstrap-social.css';
 >  
 > . . .
 ```
@@ -3330,8 +3330,8 @@ your application. At the end of this exercise you will be able to:
 >     return(
 >     <div className="footer">
 >         <div className="container">
->             <div className="row justify-content-center\"\>             
->                 <div className="col-4 offset-1 col-sm-2\"\>
+>             <div className="row justify-content-center">             
+>                 <div className="col-4 offset-1 col-sm-2">
 >                     <h5>Links</h5>
 >                     <ul className="list-unstyled">
 >                         <li><a href="#">Home</a></li>
@@ -3346,24 +3346,24 @@ your application. At the end of this exercise you will be able to:
 >                       121, Clear Water Bay Road<br />
 >                       Clear Water Bay, Kowloon<br />
 >                       HONG KONG<br />
->                       <i className="fa fa-phone fa-lg\"\>\</i\>: +852 1234 5678\<br /\>
->                       <i className="fa fa-fax fa-lg\"\>\</i\>: +852 8765 4321\<br /\>
->                       <i className="fa fa-envelope fa-lg\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>
+>                       <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+>                       <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+>                       <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
 >                          confusion@food.net</a>
 >                     </address>
 >                 </div>
 >                 <div className="col-12 col-sm-4 align-self-center">
 >                     <div className="text-center">
 >  <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
-> <a className="btn btn-social-icon btn-facebook\" href=\"[http://www.facebook.com/profile.php?id=]{.underline}\"\>\<i className="fa fa-facebook"></i></a>
-> <a className=\"btn btn-social-icon btn-linkedin\" href=\"[http://www.linkedin.com/in/]{.underline}\"\>\<i className=\"fa fa-linkedin\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon btn-twitter\" href=\"[http://twitter.com/]{.underline}\"\>\<i className=\"fa fa-twitter\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon btn-google\" href=\"[http://youtube.com/]{.underline}\"\>\<i className=\"fa fa-youtube\"\>\</i\>\</a\>
->\<a className=\"btn btn-social-icon\" href=\"mailto:\"\>\<i className=\"fa fa-envelope-o\"\>\</i\>\</a\>
->                     \</div\>
->                 \</div\>
->             \</div\>
->             \<div className=\"row justify-content-center\"\>             
+> <a className="btn btn-social-icon btn-facebook" href="[http://www.facebook.com/profile.php?id=]{.underline}"><i className="fa fa-facebook"></i></a>
+> <a className="btn btn-social-icon btn-linkedin" href="[http://www.linkedin.com/in/]{.underline}"><i className="fa fa-linkedin"></i></a>
+><a className="btn btn-social-icon btn-twitter" href="[http://twitter.com/]{.underline}"><i className="fa fa-twitter"></i></a>
+><a className="btn btn-social-icon btn-google" href="[http://youtube.com/]{.underline}"><i className="fa fa-youtube"></i></a>
+><a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+>                     </div>
+>                 </div>
+>             </div>
+>             <div className="row justify-content-center">             
 ```
 
 ### Integrating Header and Footer into the React Application
@@ -3376,9 +3376,9 @@ your application. At the end of this exercise you will be able to:
 >
 >  
 >
-> import Header from \'./HeaderComponent\';
+> import Header from './HeaderComponent';
 >
-> import Footer from \'./FooterComponent\';
+> import Footer from './FooterComponent';
 >
 >  
 >
@@ -3386,13 +3386,13 @@ your application. At the end of this exercise you will be able to:
 >
 >  
 >
->         \<Header /\>
+>         <Header />
 >
->         \<Menu dishes={this.state.dishes} onClick={(dishId) =\> this.onDishSelect(dishId)} /\>
+>         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
 >
->         \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === this.state.selectedDish)\[0\]} /\>
+>         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
 >
->         \<Footer /\>
+>         <Footer />
 >
 >         
 >
@@ -3508,7 +3508,7 @@ this exercise you will be able to:
 >
 >  
 >
-> import { BrowserRouter } from \'react-router-dom\';
+> import { BrowserRouter } from 'react-router-dom';
 >
 >  
 >
@@ -3516,15 +3516,15 @@ this exercise you will be able to:
 >
 >  
 >
->     \<BrowserRouter\>
+>     <BrowserRouter>
 >
->       \<div className=\"App\"\>
+>       <div className="App">
 >
->         \<Main /\>
+>         <Main />
 >
->       \</div\>
+>       </div>
 >
->     \</BrowserRouter\>
+>     </BrowserRouter>
 >
 >     
 >
@@ -3537,7 +3537,7 @@ this exercise you will be able to:
     and add the following to it:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >
 >  
 >
@@ -3545,11 +3545,11 @@ this exercise you will be able to:
 >
 >     return(
 >
->       \<div className=\"container\"\>
+>       <div className="container">
 >
->         \<h4\>Home\</h4\>
+>         <h4>Home</h4>
 >
->       \</div\>
+>       </div>
 >
 >     );
 >
@@ -3567,29 +3567,29 @@ this exercise you will be able to:
 ```
 > . . .
 >
-> import Home from \'./HomeComponent\';
+> import Home from './HomeComponent';
 >
 > . . .
 >
-> import { Switch, Route, Redirect } from \'react-router-dom\';
+> import { Switch, Route, Redirect } from 'react-router-dom';
 >
 > . . .
 >
 >   render() {
 >
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->           /\>
+>           <Home 
+>           />
 >       );
 >     }
 >
 > . . .
->           \<Switch\>
->               \<Route path=\'/home\' component={HomePage} /\>
->               \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.state.dishes} /\>} /\>
->               \<Redirect to=\"/home\" /\>
->           \</Switch\>
+>           <Switch>
+>               <Route path='/home' component={HomePage} />
+>               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+>               <Redirect to="/home" />
+>           </Switch>
 >
 > . . .
 >
@@ -3600,9 +3600,9 @@ this exercise you will be able to:
     following:
 
 ```
-> import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from \'reactstrap\';
+> import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 >
-> import { NavLink } from \'react-router-dom\';
+> import { NavLink } from 'react-router-dom';
 >
 >  
 >
@@ -3642,43 +3642,43 @@ this exercise you will be able to:
 >
 >         return(
 >
->             \<div\>
+>             <div>
 >
->                 \<Navbar dark expand=\"md\"\>
+>                 <Navbar dark expand="md">
 >
->                     \<div className=\"container\"\>
+>                     <div className="container">
 >
->                         \<NavbarToggler onClick={this.toggleNav} /\>
+>                         <NavbarToggler onClick={this.toggleNav} />
 >
-> \<NavbarBrand className=\"mr-auto\" href=\"/\"\>\<img src=\'assets/images/logo.png\' height=\"30\" width=\"41\" alt=\'Ristorante Con Fusion\' /\>\</NavbarBrand\>
+> <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
 >
->                         \<Collapse isOpen={this.state.isNavOpen} navbar\>
+>                         <Collapse isOpen={this.state.isNavOpen} navbar>
 >
->                             \<Nav navbar\>
+>                             <Nav navbar>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\"  to=\'/home\'\>\<span className=\"fa fa-home fa-lg\"\>\</span\> Home\</NavLink\>
+> <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\" to=\'/aboutus\'\>\<span className=\"fa fa-info fa-lg\"\>\</span\> About Us\</NavLink\>
+> <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
->  \<NavLink className=\"nav-link\"  to=\'/menu\'\>\<span className=\"fa fa-list fa-lg\"\>\</span\> Menu\</NavLink\>
+>  <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 >
->                             \<NavItem\>
+>                             <NavItem>
 >
-> \<NavLink className=\"nav-link\" to=\'/contactus\'\>\<span className=\"fa fa-address-card fa-lg\"\>\</span\> Contact Us\</NavLink\>
+> <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
 >
->                             \</NavItem\>
+>                             </NavItem>
 ```
 
 -   Then, open FooterComponent.js and update it as follows:
@@ -3688,7 +3688,7 @@ this exercise you will be able to:
 >
 >  
 >
-> import { Link } from \'react-router-dom\';
+> import { Link } from 'react-router-dom';
 >
 >  
 >
@@ -3696,13 +3696,13 @@ this exercise you will be able to:
 >
 >  
 >
->                         \<li\>\<Link to=\'/home\'\>Home\</Link\>\</li\>
+>                         <li><Link to='/home'>Home</Link></li>
 >
->                         \<li\>\<Link to=\'/aboutus\'\>About Us\</Link\>\</li\>
+>                         <li><Link to='/aboutus'>About Us</Link></li>
 >
->                         \<li\>\<Link to=\'/menu\'\>Menu\</Link\>\</li\>
+>                         <li><Link to='/menu'>Menu</Link></li>
 >
->                         \<li\>\<Link to=\'/contactus\'\>Contact Us\</Link\>\</li\>
+>                         <li><Link to='/contactus'>Contact Us</Link></li>
 >
 >                         
 >
@@ -3808,43 +3808,43 @@ JS File
     contents as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >
 > function Contact(props) {
 >     return(
->         \<div className=\"container\"\>
->             \<div className=\"row row-content\"\>
->                 \<div className=\"col-12\"\>
->                 \<h3\>Location Information\</h3\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-4 offset-sm-1\"\>
->                         \<h5\>Our Address\</h5\>
->                         \<address\>
->                         121, Clear Water Bay Road\<br /\>
->                         Clear Water Bay, Kowloon\<br /\>
->                         HONG KONG\<br /\>
->                         \<i className=\"fa fa-phone\"\>\</i\>: +852 1234 5678\<br /\>
->                         \<i className=\"fa fa-fax\"\>\</i\>: +852 8765 4321\<br /\>
->  \<i className=\"fa fa-envelope\"\>\</i\>: \<a href=\"mailto:confusion@food.net\"\>confusion@food.net\</a\>
+>         <div className="container">
+>             <div className="row row-content">
+>                 <div className="col-12">
+>                 <h3>Location Information</h3>
+>                 </div>
+>                 <div className="col-12 col-sm-4 offset-sm-1">
+>                         <h5>Our Address</h5>
+>                         <address>
+>                         121, Clear Water Bay Road<br />
+>                         Clear Water Bay, Kowloon<br />
+>                         HONG KONG<br />
+>                         <i className="fa fa-phone"></i>: +852 1234 5678<br />
+>                         <i className="fa fa-fax"></i>: +852 8765 4321<br />
+>  <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 >
->                         \</address\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-6 offset-sm-1\"\>
->                     \<h5\>Map of our Location\</h5\>
->                 \</div\>
->                 \<div className=\"col-12 col-sm-11 offset-sm-1\"\>
->                     \<div className=\"btn-group\" role=\"group\"\>
+>                         </address>
+>                 </div>
+>                 <div className="col-12 col-sm-6 offset-sm-1">
+>                     <h5>Map of our Location</h5>
+>                 </div>
+>                 <div className="col-12 col-sm-11 offset-sm-1">
+>                     <div className="btn-group" role="group">
 >
->\<a role=\"button\" className=\"btn btn-primary\" href=\"tel:+85212345678\"\>\<i className=\"fa fa-phone\"\>\</i\> Call\</a\>
+><a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
 >
->\<a role=\"button\" className=\"btn btn-info\"\>\<i className=\"fa fa-skype\"\>\</i\> Skype\</a\>
+><a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
 >
->\<a role=\"button\" className=\"btn btn-success\" href=\"mailto:confusion@food.net\"\>\<i className=\"fa fa-envelope-o\"\>\</i\> Email\</a\>
+><a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
 >
->                     \</div\>
->                 \</div\>
->             \</div\>
->         \</div\>
+>                     </div>
+>                 </div>
+>             </div>
+>         </div>
 >     );
 > }
 >
@@ -3859,7 +3859,7 @@ JS File
 >
 >  
 >
-> import Contact from \'./ContactComponent\';
+> import Contact from './ContactComponent';
 >
 >  
 >
@@ -3867,7 +3867,7 @@ JS File
 >
 >  
 >
->               \<Route exact path=\'/contactus\' component={Contact} /\>} /\>
+>               <Route exact path='/contactus' component={Contact} />} />
 >
 >  
 ```
@@ -3881,46 +3881,46 @@ JS File
 
 ```
 > export const DISHES =
->     \[
+>     [
 >         {
 >         id: 0,
->         name:\'Uthappizza\',
->         image: \'/assets/images/uthappizza.png\',
->         category: \'mains\',
->         label:\'Hot\',
->         price:\'4.99\',
+>         name:'Uthappizza',
+>         image: '/assets/images/uthappizza.png',
+>         category: 'mains',
+>         label:'Hot',
+>         price:'4.99',
 >         featured: true,
 >
->  description:\'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.\'                    
+>  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
 >         },
 >         {
 >         id: 1,
->         name:\'Zucchipakoda\',
->         image: \'/assets/images/zucchipakoda.png\',
->         category: \'appetizer\',
->         label:\'\',
->         price:\'1.99\',
+>         name:'Zucchipakoda',
+>         image: '/assets/images/zucchipakoda.png',
+>         category: 'appetizer',
+>         label:'',
+>         price:'1.99',
 >         featured: false,
->description:\'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\'
+>description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
 >
 >         },
 >         {
 >         id: 2,
->         name:\'Vadonut\',
->         image: \'/assets/images/vadonut.png\',
->         category: \'appetizer\',
->         label:\'New\',
->         price:\'1.99\',
+>         name:'Vadonut',
+>         image: '/assets/images/vadonut.png',
+>         category: 'appetizer',
+>         label:'New',
+>         price:'1.99',
 >         featured: false,
->         description:\'A quintessential ConFusion experience, is it a vada or is it a donut?\'
+>         description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
 >         },
 >         {
 >         id: 3,
->         name:\'ElaiCheese Cake\',
->         image: \'/assets/images/elaicheesecake.png\',
->         category: \'dessert\',
->         label:\'\',
->         price:\'2.99\',
+>         name:'ElaiCheese Cake',
+>         image: '/assets/images/elaicheesecake.png',
+>         category: 'dessert',
+>         label:'',
+>         price:'2.99',
 >         featured: false,
 ```
 
@@ -3931,7 +3931,7 @@ JS File
 ```
 > export const COMMENTS = 
 >
-> \[
+> [
 >
 >     {
 >
@@ -3941,11 +3941,11 @@ JS File
 >
 >         rating: 5,
 >
->         comment: \"Imagine all the eatables, living in conFusion!\",
+>         comment: "Imagine all the eatables, living in conFusion!",
 >
->         author: \"John Lemon\",
+>         author: "John Lemon",
 >
->         date: \"2012-10-16T17:57:28.556094Z\"
+>         date: "2012-10-16T17:57:28.556094Z"
 >
 >     },
 >
@@ -3957,11 +3957,11 @@ JS File
 >
 >         rating: 4,
 >
->         comment: \"Sends anyone to heaven, I wish I could get my mother-in-law to eat it!\",
+>         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
 >
->         author: \"Paul McVites\",
+>         author: "Paul McVites",
 >
->         date: \"2014-09-05T17:57:28.556094Z\"
+>         date: "2014-09-05T17:57:28.556094Z"
 >
 >     },
 >
@@ -3973,11 +3973,11 @@ JS File
 >
 >         rating: 3,
 >
->         comment: \"Eat it, just eat it!\",
+>         comment: "Eat it, just eat it!",
 >
->         author: \"Michael Jaikishan\",
+>         author: "Michael Jaikishan",
 >
->         date: \"2015-02-13T17:57:28.556094Z\"
+>         date: "2015-02-13T17:57:28.556094Z"
 >
 >     },
 >
@@ -3989,11 +3989,11 @@ JS File
 >
 >         rating: 4,
 >
->         comment: \"Ultimate, Reaching for the stars!\",
+>         comment: "Ultimate, Reaching for the stars!",
 >
->         author: \"Ringo Starry\",
+>         author: "Ringo Starry",
 >
->         date: \"2013-12-02T17:57:28.556094Z\"
+>         date: "2013-12-02T17:57:28.556094Z"
 >
 >     },
 >
@@ -4005,55 +4005,55 @@ JS File
 >
 >         rating: 2,
 >
->         comment: \"It\'s your birthday, we\'re gonna party!\",
+>         comment: "It's your birthday, we're gonna party!",
 >
->         author: \"25 Cent\",
+>         author: "25 Cent",
 
 -   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
-> export const PROMOTIONS = \[
+> export const PROMOTIONS = [
 >
 >     {
 >
 >       id: 0,
 >
->       name: \'Weekend Grand Buffet\',
+>       name: 'Weekend Grand Buffet',
 >
->       image: \'/assets/images/buffet.png\',
+>       image: '/assets/images/buffet.png',
 >
->       label: \'New\',
+>       label: 'New',
 >
->       price: \'19.99\',
+>       price: '19.99',
 >
 >       featured: true,
 >
->       description: \'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just \$19.99 per person\'
+>       description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
 >
 >     }
 >
->   \];
+>   ];
 
 -   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
-> export const LEADERS = \[
+> export const LEADERS = [
 >
 >     {
 >
 >       id: 0,
 >
->       name: \'Peter Pan\',
+>       name: 'Peter Pan',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Epicurious Officer\',
+>       designation: 'Chief Epicurious Officer',
 >
->       abbr: \'CEO\',
+>       abbr: 'CEO',
 >
 >       featured: false,
 >
->       description: \"Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother\'s wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.\"
+>       description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
 >
 >     },
 >
@@ -4061,17 +4061,17 @@ JS File
 >
 >       id: 1,
 >
->       name: \'Dhanasekaran Witherspoon\',
+>       name: 'Dhanasekaran Witherspoon',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Food Officer\',
+>       designation: 'Chief Food Officer',
 >
->       abbr: \'CFO\',
+>       abbr: 'CFO',
 >
 >         featured: false,
 >
->       description: \'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!\'
+>       description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
 >
 >     },
 >
@@ -4079,17 +4079,17 @@ JS File
 >
 >       id: 2,
 >
->       name: \'Agumbe Tang\',
+>       name: 'Agumbe Tang',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Chief Taste Officer\',
+>       designation: 'Chief Taste Officer',
 >
->       abbr: \'CTO\',
+>       abbr: 'CTO',
 >
 >         featured: false,
 >
->       description: \'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.\'
+>       description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
 >
 >     },
 >
@@ -4097,56 +4097,56 @@ JS File
 >
 >       id: 3,
 >
->       name: \'Alberto Somayya\',
+>       name: 'Alberto Somayya',
 >
->       image: \'/assets/images/alberto.png\',
+>       image: '/assets/images/alberto.png',
 >
->       designation: \'Executive Chef\',
+>       designation: 'Executive Chef',
 >
->       abbr: \'EC\',
+>       abbr: 'EC',
 >
 >       featured: true,
 >
->       description: \'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!\'
+>       description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
 >
 >     }
 >
->   \];
+>   ];
 
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 > import { Card, CardImg, CardText, CardBody,
->     CardTitle, CardSubtitle} from \'reactstrap\';
+>     CardTitle, CardSubtitle} from 'reactstrap';
 > function RenderCard({item}) {
 >     return(
->         \<Card\>
->             \<CardImg src={item.image} alt={item.name} /\>
->             \<CardBody\>
->             \<CardTitle\>{item.name}\</CardTitle\>
->             {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->             \<CardText\>{item.description}\</CardText\>
->             \</CardBody\>
->         \</Card\>
+>         <Card>
+>             <CardImg src={item.image} alt={item.name} />
+>             <CardBody>
+>             <CardTitle>{item.name}</CardTitle>
+>             {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>             <CardText>{item.description}</CardText>
+>             </CardBody>
+>         </Card>
 >     );
 > }
 > function Home(props) {
 >     return(
->         \<div className=\"container\"\>
->             \<div className=\"row align-items-start\"\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.dish} /\>
->                 \</div\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.promotion} /\>
->                 \</div\>
->                 \<div className=\"col-12 col-md m-1\"\>
->                     \<RenderCard item={props.leader} /\>
->                 \</div\>
->             \</div\>
->         \</div\>
+>         <div className="container">
+>             <div className="row align-items-start">
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.dish} />
+>                 </div>
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.promotion} />
+>                 </div>
+>                 <div className="col-12 col-md m-1">
+>                     <RenderCard item={props.leader} />
+>                 </div>
+>             </div>
+>         </div>
 >     );
 > }
 > export default Home;
@@ -4156,9 +4156,9 @@ JS File
 
 ```
 > . . .
-> import { COMMENTS } from \'../shared/comments\';
-> import { PROMOTIONS } from \'../shared/promotions\';
-> import { LEADERS } from \'../shared/leaders\';
+> import { COMMENTS } from '../shared/comments';
+> import { PROMOTIONS } from '../shared/promotions';
+> import { LEADERS } from '../shared/leaders';
 > . . .
 > class Main extends Component {
 >   constructor(props) {
@@ -4171,13 +4171,13 @@ JS File
 >     };
 >   }
 >   . . .
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->               dish={this.state.dishes.filter((dish) =\> dish.featured)\[0\]}
->               promotion={this.state.promotions.filter((promo) =\> promo.featured)\[0\]}
->               leader={this.state.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>           <Home 
+>               dish={this.state.dishes.filter((dish) => dish.featured)[0]}
+>               promotion={this.state.promotions.filter((promo) => promo.featured)[0]}
+>               leader={this.state.leaders.filter((leader) => leader.featured)[0]}
+>           />
 >       );
 >     }
 > . . .
@@ -4218,38 +4218,38 @@ the end of this exercise you will be able to:
 . . .
 >  
 > import { Card, CardImg, CardImgOverlay,
->     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+>     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 >
 >     function RenderMenuItem ({dish, onClick}) {
 >         return (
->             \<Card\>
->                 \<Link to={\`/menu/\${dish.id}\`} \>
->                     \<CardImg width=\"100%\" src={dish.image} alt={dish.name} /\>
->                     \<CardImgOverlay\>
->                         \<CardTitle\>{dish.name}\</CardTitle\>
->                     \</CardImgOverlay\>
->                 \</Link\>
->             \</Card\>
+>             <Card>
+>                 <Link to={`/menu/${dish.id}`} >
+>                     <CardImg width="100%" src={dish.image} alt={dish.name} />
+>                     <CardImgOverlay>
+>                         <CardTitle>{dish.name}</CardTitle>
+>                     </CardImgOverlay>
+>                 </Link>
+>             </Card>
 >         );
 >     }
 > . . .
 >         return (
->             \<div className=\"container\"\>
->                 \<div className=\"row\"\>
->                     \<Breadcrumb\>
->                         \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->                         \<BreadcrumbItem active\>Menu\</BreadcrumbItem\>
->                     \</Breadcrumb\>
->                     \<div className=\"col-12\"\>
->                         \<h3\>Menu\</h3\>
->                         \<hr /\>
->                     \</div\>                
->                 \</div\>
->                 \<div className=\"row\"\>
+>             <div className="container">
+>                 <div className="row">
+>                     <Breadcrumb>
+>                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+>                         <BreadcrumbItem active>Menu</BreadcrumbItem>
+>                     </Breadcrumb>
+>                     <div className="col-12">
+>                         <h3>Menu</h3>
+>                         <hr />
+>                     </div>                
+>                 </div>
+>                 <div className="row">
 >                     {menu}
->                 \</div\>
->             \</div\>
+>                 </div>
+>             </div>
 >         );
 > . . .
 ```
@@ -4258,14 +4258,14 @@ the end of this exercise you will be able to:
 
 ```
 > . . .
->     const DishWithId = ({match}) =\> {
+>     const DishWithId = ({match}) => {
 >       return(
->           \<DishDetail dish={this.state.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]} 
->             comments={this.state.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))} /\>
+>           <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+>             comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
 >       );
 >     };
 > . . .
->               \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
+>               <Route path='/menu/:dishId' component={DishWithId} />
 > . . .
 ```
 
@@ -4276,30 +4276,30 @@ the end of this exercise you will be able to:
 ```
 > . . .
 > import { Card, CardImg, CardText, CardBody,
->     CardTitle, Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+>     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 > . . .
 >             return (
->                 \<div className=\"container\"\>
->                 \<div className=\"row\"\>
->                     \<Breadcrumb\>
->                         \<BreadcrumbItem\>\<Link to=\"/menu\"\>Menu\</Link\>\</BreadcrumbItem\>
->                         \<BreadcrumbItem active\>{props.dish.name}\</BreadcrumbItem\>
->                     \</Breadcrumb\>
->                     \<div className=\"col-12\"\>
->                         \<h3\>{props.dish.name}\</h3\>
->                         \<hr /\>
->                     \</div\>                
->                 \</div\>
->                 \<div className=\"row\"\>
->                     \<div className=\"col-12 col-md-5 m-1\"\>
->                         \<RenderDish dish={props.dish} /\>
->                     \</div\>
->                     \<div className=\"col-12 col-md-5 m-1\"\>
->                         \<RenderComments comments={props.comments} /\>
->                     \</div\>
->                 \</div\>
->                 \</div\>
+>                 <div className="container">
+>                 <div className="row">
+>                     <Breadcrumb>
+>                         <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+>                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+>                     </Breadcrumb>
+>                     <div className="col-12">
+>                         <h3>{props.dish.name}</h3>
+>                         <hr />
+>                     </div>                
+>                 </div>
+>                 <div className="row">
+>                     <div className="col-12 col-md-5 m-1">
+>                         <RenderDish dish={props.dish} />
+>                     </div>
+>                     <div className="col-12 col-md-5 m-1">
+>                         <RenderComments comments={props.comments} />
+>                     </div>
+>                 </div>
+>                 </div>
 >             );
 > . . .
 ```
@@ -4310,19 +4310,19 @@ the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { Breadcrumb, BreadcrumbItem } from \'reactstrap\';
-> import { Link } from \'react-router-dom\';
+> import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+> import { Link } from 'react-router-dom';
 > . . .
->             \<div className=\"row\"\>
->                 \<Breadcrumb\>
->                     \<BreadcrumbItem\>\<Link to=\"/home\"\>Home\</Link\>\</BreadcrumbItem\>
->                     \<BreadcrumbItem active\>Contact Us\</BreadcrumbItem\>
->                 \</Breadcrumb\>
->                 \<div className=\"col-12\"\>
->                     \<h3\>Contact Us\</h3\>
->                     \<hr /\>
->                 \</div\>                
->             \</div\>
+>             <div className="row">
+>                 <Breadcrumb>
+>                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+>                     <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+>                 </Breadcrumb>
+>                 <div className="col-12">
+>                     <h3>Contact Us</h3>
+>                     <hr />
+>                 </div>                
+>             </div>
 > . . .
 ```
 
@@ -4410,15 +4410,15 @@ At the end of this assignment, you should have completed the following
 tasks:
 
 -   Integrated the AboutComponent given above into the single page
-    > application.
+    application.
 
 -   Added a new functional component named \<RenderLeader\> through the
-    > RenderLeader() function to AboutComponent.js that renders the
-    > details of a given leader using the reactstrap \<Media\>
-    > component.
+    RenderLeader() function to AboutComponent.js that renders the
+    details of a given leader using the reactstrap \<Media\>
+    component.
 
 -   Construct and render the list of leaders in the About Us page using
-    > the \<RenderLeader\> component implemented above.
+    the \<RenderLeader\> component implemented above.
 
 <b>Assignment Requirements</b>
 
@@ -4433,12 +4433,12 @@ In this task you will be integrating the AboutComponent into the single
 page application:
 
 -   First, download the <i>AboutComponent.js</i> given above and move it to
-    > the components folder, and
+    the components folder, and
 
 -   Update the <i>MainComponent.js</i> file to integrate the AboutComponent
-    > into the single page application. You should be able to navigate
-    > to the AboutComponent by clicking the links in the navigation bar
-    > and the footer.
+    into the single page application. You should be able to navigate
+    to the AboutComponent by clicking the links in the navigation bar
+    and the footer.
 
 <b>Task 2</b>
 
@@ -4446,19 +4446,16 @@ In this task you will implement a new functional component named
 \<RenderLeader\> through the RenderLeader() function:
 
 -   The RenderLeader() function receives the details of a leader as its
-    > parameter,
+    parameter,
 
-```{=html}
-<!-- -->
-```
 -   Implement RenderLeader() function to use the Leader information
-    > received as a parameter and render the leader information as shown
-    > in the screenshot below using the reactstrap \<Media\> component.
-    > Recall how we used the \<Media\> component in the first module to
-    > render the details of a dish in the MenuComponent.
+    received as a parameter and render the leader information as shown
+    in the screenshot below using the reactstrap \<Media\> component.
+    Recall how we used the \<Media\> component in the first module to
+    render the details of a dish in the MenuComponent.
 
 -   This will make available the \<RenderLeader\> component for use
-    > within your AboutComponent.
+    within your AboutComponent.
 
 <b>Task 3</b>
 
@@ -4466,8 +4463,7 @@ In this task you will use the \<RenderLeader\> component created in the
 previous task to render a list of leaders within your AboutComponent:
 
 -   Update the leaders variable within the AboutComponent() function to
-    > make use of the \<RenderLeader\> component to render the list of
-    > leaders.
+    make use of the \<RenderLeader> component to render the list of leaders.
 
 ![](./images/image005.png){width="4.361805555555556in"
 height="9.0in"}
@@ -4489,7 +4485,7 @@ based on the following criteria:
 
 <b>Task 2:</b>
 
--   Implemented a new \<RenderLeader\> functional component in your
+-   Implemented a new <RenderLeader> functional component in your
     > application.
 
 ```{=html}
@@ -4696,9 +4692,9 @@ exercise you will be able to:
 
 ```
 > . . .
-> import React, { Component } from \'react\';
+> import React, { Component } from 'react';
 > import { Breadcrumb, BreadcrumbItem,
->             Button, Form, FormGroup, Label, Input, Col } from \'reactstrap\';
+>             Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 >   . . .
 ```
 
@@ -4724,28 +4720,28 @@ exercise you will be able to:
 >     constructor(props) {
 >         super(props);
 >         this.state = {
->             firstname: \'\',
->             lastname: \'\',
->             telnum: \'\',
->             email: \'\',
+>             firstname: '',
+>             lastname: '',
+>             telnum: '',
+>             email: '',
 >             agree: false,
->             contactType: \'Tel.\',
->             message: \'\'
+>             contactType: 'Tel.',
+>             message: ''
 >         };
 >         this.handleInputChange = this.handleInputChange.bind(this);
 >         this.handleSubmit = this.handleSubmit.bind(this);
 >     }
 >     handleInputChange(event) {
 >         const target = event.target;
->         const value = target.type === \'checkbox\' ? target.checked : target.value;
+>         const value = target.type === 'checkbox' ? target.checked : target.value;
 >         const name = target.name;
 >         this.setState({
->           \[name\]: value
+>           [name]: value
 >         });
 >     }
 >     handleSubmit(event) {
->         console.log(\'Current State is: \' + JSON.stringify(this.state));
->         alert(\'Current State is: \' + JSON.stringify(this.state));
+>         console.log('Current State is: ' + JSON.stringify(this.state));
+>         alert('Current State is: ' + JSON.stringify(this.state));
 >         event.preventDefault();
 >     }
 > . . .
@@ -4756,48 +4752,48 @@ exercise you will be able to:
 
 ```
 > . . .
->                 \<div className=\"row row-content\"\>
->                    \<div className=\"col-12\"\>
->                       \<h3\>Send us your Feedback\</h3\>
->                    \</div\>
->                     \<div className=\"col-12 col-md-9\"\>
->                         \<Form onSubmit={this.handleSubmit}\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"text\" id=\"firstname\" name=\"firstname\"
->                                         placeholder=\"First Name\"
+>                 <div className="row row-content">
+>                    <div className="col-12">
+>                       <h3>Send us your Feedback</h3>
+>                    </div>
+>                     <div className="col-12 col-md-9">
+>                         <Form onSubmit={this.handleSubmit}>
+>                             <FormGroup row>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
+>                                 <Col md={10}>
+>                                     <Input type="text" id="firstname" name="firstname"
+>                                         placeholder="First Name"
 >                                         value={this.state.firstname}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"text\" id=\"lastname\" name=\"lastname\"
->                                         placeholder=\"Last Name\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>
+>                             </FormGroup>
+>                             <FormGroup row>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
+>                                 <Col md={10}>
+>                                     <Input type="text" id="lastname" name="lastname"
+>                                         placeholder="Last Name"
 >                                         value={this.state.lastname}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>                        
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                             \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"tel\" id=\"telnum\" name=\"telnum\"
->                                         placeholder=\"Tel. number\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>                        
+>                             </FormGroup>
+>                             <FormGroup row>
+>                             <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+>                                 <Col md={10}>
+>                                     <Input type="tel" id="telnum" name="telnum"
+>                                         placeholder="Tel. number"
 >                                         value={this.state.telnum}
->                                         onChange={this.handleInputChange} /\>
->                                 \</Col\>
->                             \</FormGroup\>
->                             \<FormGroup row\>
->                                 \<Label htmlFor=\"email\" md={2}\>Email\</Label\>
->                                 \<Col md={10}\>
->                                     \<Input type=\"email\" id=\"email\" name=\"email\"
+>                                         onChange={this.handleInputChange} />
+>                                 </Col>
+>                             </FormGroup>
+>                             <FormGroup row>
+>                                 <Label htmlFor="email" md={2}>Email</Label>
+>                                 <Col md={10}>
+>                                     <Input type="email" id="email" name="email"
 >
->                                         placeholder=\"Email\"
+>                                         placeholder="Email"
 
--   Save all changes and do a Git commit with the message \"Controlled
-    Forms\".
+-   Save all changes and do a Git commit with the message "Controlled
+    Forms".
 
 ### Conclusions
 
@@ -4824,7 +4820,7 @@ to:
 
 > . . .
 >
-> import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from \'reactstrap\';
+> import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
 >
 > . . .
 >
@@ -4842,19 +4838,19 @@ to:
 >
 >         this.state = {
 >
->             firstname: \'\',
+>             firstname: '',
 >
->             lastname: \'\',
+>             lastname: '',
 >
->             telnum: \'\',
+>             telnum: '',
 >
->             email: \'\',
+>             email: '',
 >
 >             agree: false,
 >
->             contactType: \'Tel.\',
+>             contactType: 'Tel.',
 >
->             message: \'\',
+>             message: '',
 >
 >             touched: {
 >
@@ -4884,11 +4880,11 @@ to:
 >
 >     
 >
->     handleBlur = (field) =\> (evt) =\> {
+>     handleBlur = (field) => (evt) => {
 >
 >         this.setState({
 >
->             touched: { \...this.state.touched, \[field\]: true }
+>             touched: { ...this.state.touched, [field]: true }
 >
 >         });
 >
@@ -4900,7 +4896,7 @@ to:
 >
 >         const errors = {
 >
->             firstname: \'\',
+>             firstname: '',
 
 -   Now that we have introduced some functions that can be used for form
     validation, let us update the form itself to make use of these as
@@ -4910,81 +4906,81 @@ to:
 >
 >  
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"text\" id=\"firstname\" name=\"firstname\"
+>                                     <Input type="text" id="firstname" name="firstname"
 >
->                                         placeholder=\"First Name\"
+>                                         placeholder="First Name"
 >
 >                                         value={this.state.firstname}
 >
->                                         valid={errors.firstname === \'\'}
+>                                         valid={errors.firstname === ''}
 >
->                                         invalid={errors.firstname !== \'\'}
+>                                         invalid={errors.firstname !== ''}
 >
->                                         onBlur={this.handleBlur(\'firstname\')}
+>                                         onBlur={this.handleBlur('firstname')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.firstname}\</FormFeedback\>
+>                                     <FormFeedback>{errors.firstname}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"text\" id=\"lastname\" name=\"lastname\"
+>                                     <Input type="text" id="lastname" name="lastname"
 >
->                                         placeholder=\"Last Name\"
+>                                         placeholder="Last Name"
 >
 >                                         value={this.state.lastname}
 >
->                                         valid={errors.lastname === \'\'}
+>                                         valid={errors.lastname === ''}
 >
->                                         invalid={errors.lastname !== \'\'}
+>                                         invalid={errors.lastname !== ''}
 >
->                                         onBlur={this.handleBlur(\'lastname\')}
+>                                         onBlur={this.handleBlur('lastname')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.lastname}\</FormFeedback\>
+>                                     <FormFeedback>{errors.lastname}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup row\>
+>                             <FormGroup row>
 >
->                                 \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
+>                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Input type=\"tel\" id=\"telnum\" name=\"telnum\"
+>                                     <Input type="tel" id="telnum" name="telnum"
 >
->                                         placeholder=\"Tel. Number\"
+>                                         placeholder="Tel. Number"
 >
 >                                         value={this.state.telnum}
 >
->                                         valid={errors.telnum === \'\'}
+>                                         valid={errors.telnum === ''}
 >
->                                         invalid={errors.telnum !== \'\'}
+>                                         invalid={errors.telnum !== ''}
 >
->                                         onBlur={this.handleBlur(\'telnum\')}
+>                                         onBlur={this.handleBlur('telnum')}
 >
->                                         onChange={this.handleInputChange} /\>
+>                                         onChange={this.handleInputChange} />
 >
->                                     \<FormFeedback\>{errors.telnum}\</FormFeedback\>
+>                                     <FormFeedback>{errors.telnum}</FormFeedback>
 >
->                                 \</Col\>
+>                                 </Col>
 
 -   You can now test your form by typing in invalid input and check how
     the form validation works.
@@ -5028,7 +5024,7 @@ PDF File
 -   [Some Thoughts On Forms in
     React](https://medium.com/javascript-inside/some-thoughts-on-forms-in-react-9ca2d9078c20)
 
--   [Instant form field validation with React\'s controlled
+-   [Instant form field validation with React's controlled
     inputs](https://goshakkk.name/instant-form-fields-validation-react/)
 
 ## Module 8: Uncontrolled Forms: Objectives and Outcomes
@@ -5069,7 +5065,7 @@ this exercise you will be able to:
 >
 >     Button, Modal, ModalHeader, ModalBody,
 >
->     Form, FormGroup, Input, Label } from \'reactstrap\';
+>     Form, FormGroup, Input, Label } from 'reactstrap';
 >
 >             
 >
@@ -5117,17 +5113,17 @@ this exercise you will be able to:
 >
 >  
 >
->                 \<Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}\>
+>                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
 >
->                     \<ModalHeader toggle={this.toggleModal}\>Login\</ModalHeader\>
+>                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
 >
->                     \<ModalBody\>
+>                     <ModalBody>
 >
 >                     
 >
->                     \</ModalBody\>
+>                     </ModalBody>
 >
->                 \</Modal\>
+>                 </Modal>
 >
 >                 
 >
@@ -5139,15 +5135,15 @@ this exercise you will be able to:
 >
 >  
 >
->                             \<Nav className=\"ml-auto\" navbar\>
+>                             <Nav className="ml-auto" navbar>
 >
->                                 \<NavItem\>
+>                                 <NavItem>
 >
->                                     \<Button outline onClick={this.toggleModal}\>\<span className=\"fa fa-sign-in fa-lg\"\>\</span\> Login\</Button\>
+>                                     <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
 >
->                                 \</NavItem\>
+>                                 </NavItem>
 >
->                             \</Nav\>
+>                             </Nav>
 >
 >                             
 >
@@ -5161,45 +5157,45 @@ this exercise you will be able to:
 
 >  
 >
->                         \<Form onSubmit={this.handleLogin}\>
+>                         <Form onSubmit={this.handleLogin}>
 >
->                             \<FormGroup\>
+>                             <FormGroup>
 >
->                                 \<Label htmlFor=\"username\"\>Username\</Label\>
+>                                 <Label htmlFor="username">Username</Label>
 >
->                                 \<Input type=\"text\" id=\"username\" name=\"username\"
+>                                 <Input type="text" id="username" name="username"
 >
->                                     innerRef={(input) =\> this.username = input} /\>
+>                                     innerRef={(input) => this.username = input} />
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup\>
+>                             <FormGroup>
 >
->                                 \<Label htmlFor=\"password\"\>Password\</Label\>
+>                                 <Label htmlFor="password">Password</Label>
 >
->                                 \<Input type=\"password\" id=\"password\" name=\"password\"
+>                                 <Input type="password" id="password" name="password"
 >
->                                     innerRef={(input) =\> this.password = input}  /\>
+>                                     innerRef={(input) => this.password = input}  />
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<FormGroup check\>
+>                             <FormGroup check>
 >
->                                 \<Label check\>
+>                                 <Label check>
 >
->                                     \<Input type=\"checkbox\" name=\"remember\"
+>                                     <Input type="checkbox" name="remember"
 >
->                                     innerRef={(input) =\> this.remember = input}  /\>
+>                                     innerRef={(input) => this.remember = input}  />
 >
 >                                     Remember me
 >
->                                 \</Label\>
+>                                 </Label>
 >
->                             \</FormGroup\>
+>                             </FormGroup>
 >
->                             \<Button type=\"submit\" value=\"submit\" color=\"primary\"\>Login\</Button\>
+>                             <Button type="submit" value="submit" color="primary">Login</Button>
 >
->                         \</Form\>
+>                         </Form>
 >
 >                         
 >
@@ -5222,9 +5218,9 @@ this exercise you will be able to:
 >
 >         this.toggleModal();
 >
->         alert(\"Username: \" + this.username.value + \" Password: \" + this.password.value
+>         alert("Username: " + this.username.value + " Password: " + this.password.value
 >
->             + \" Remember: \" + this.remember.checked);
+>             + " Remember: " + this.remember.checked);
 >
 >         event.preventDefault();
 >
@@ -5322,13 +5318,13 @@ this exercise you will be able to:
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
     a file named <i>reducer.js</i> with the code below:
 
-> import { DISHES } from \'../shared/dishes\';
+> import { DISHES } from '../shared/dishes';
 >
-> import { COMMENTS } from \'../shared/comments\';
+> import { COMMENTS } from '../shared/comments';
 >
-> import { PROMOTIONS } from \'../shared/promotions\';
+> import { PROMOTIONS } from '../shared/promotions';
 >
-> import { LEADERS } from \'../shared/leaders\';
+> import { LEADERS } from '../shared/leaders';
 >
 >  
 >
@@ -5346,7 +5342,7 @@ this exercise you will be able to:
 >
 >  
 >
-> export const Reducer = (state = initialState, action) =\> {
+> export const Reducer = (state = initialState, action) => {
 >
 >     return state;
 >
@@ -5355,13 +5351,13 @@ this exercise you will be able to:
 -   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
-> import {createStore} from \'redux\';
+> import {createStore} from 'redux';
 >
-> import { Reducer, initialState } from \'./reducer\'
+> import { Reducer, initialState } from './reducer'
 >
 >  
 >
-> export const ConfigureStore = () =\> {
+> export const ConfigureStore = () => {
 >
 >     const store = createStore(
 >
@@ -5385,9 +5381,9 @@ this exercise you will be able to:
 >
 >  
 >
-> import { Provider } from \'react-redux\';
+> import { Provider } from 'react-redux';
 >
-> import { ConfigureStore } from \'./redux/configureStore\';
+> import { ConfigureStore } from './redux/configureStore';
 >
 >  
 >
@@ -5401,19 +5397,19 @@ this exercise you will be able to:
 >
 >  
 >
->       \<Provider store={store}\>
+>       <Provider store={store}>
 >
->         \<BrowserRouter\>
+>         <BrowserRouter>
 >
->           \<div className=\"App\"\>
+>           <div className="App">
 >
->             \<Main /\>
+>             <Main />
 >
->           \</div\>
+>           </div>
 >
->         \</BrowserRouter\>
+>         </BrowserRouter>
 >
->       \</Provider\>
+>       </Provider>
 >
 >  
 >
@@ -5426,15 +5422,15 @@ this exercise you will be able to:
 >
 >  
 >
-> import { Switch, Route, Redirect, withRouter } from \'react-router-dom\'
+> import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 >
-> import { connect } from \'react-redux\';
->
->  
+> import { connect } from 'react-redux';
 >
 >  
 >
-> const mapStateToProps = state =\> {
+>  
+>
+> const mapStateToProps = state => {
 >
 >   return {
 >
@@ -5456,19 +5452,19 @@ this exercise you will be able to:
 >
 >  
 >
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >
 >       return(
 >
->           \<Home 
+>           <Home 
 >
->               dish={this.props.dishes.filter((dish) =\> dish.featured)\[0\]}
+>               dish={this.props.dishes.filter((dish) => dish.featured)[0]}
 >
->               promotion={this.props.promotions.filter((promo) =\> promo.featured)\[0\]}
+>               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
 >
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
 >
->           /\>
+>           />
 >
 >       );
 >
@@ -5476,13 +5472,13 @@ this exercise you will be able to:
 >
 >  
 >
->     const DishWithId = ({match}) =\> {
+>     const DishWithId = ({match}) => {
 >
 >       return(
 >
->           \<DishDetail dish={this.props.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]} 
+>           <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
 >
->             comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))} /\>
+>             comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
 >
 >       );
 >
@@ -5492,15 +5488,15 @@ this exercise you will be able to:
 >
 >     return (
 >
->       \<div\>
+>       <div>
 >
->         \<Header /\>
+>         <Header />
 >
->         \<div\>
+>         <div>
 >
->           \<Switch\>
+>           <Switch>
 >
->               \<Route path=\'/home\' component={HomePage} /\>
+>               <Route path='/home' component={HomePage} />
 
 -   Save all the changes and do a Git commit with the message \"Intro.
     to Redux\".
@@ -5590,9 +5586,9 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 > import { Breadcrumb, BreadcrumbItem,
 >
->             Button, Row, Col, Label } from \'reactstrap\';
+>             Button, Row, Col, Label } from 'reactstrap';
 >
-> import { Control, LocalForm, Errors } from \'react-redux-form\';
+> import { Control, LocalForm, Errors } from 'react-redux-form';
 >
 >  
 >
@@ -5604,9 +5600,9 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 >     handleSubmit(values) {
 >
->         console.log(\'Current State is: \' + JSON.stringify(values));
+>         console.log('Current State is: ' + JSON.stringify(values));
 >
->         alert(\'Current State is: \' + JSON.stringify(values));
+>         alert('Current State is: ' + JSON.stringify(values));
 >
 >         // event.preventDefault();
 >
@@ -5618,51 +5614,51 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 >  
 >
->                         \<LocalForm onSubmit={(values) =\> this.handleSubmit(values)}\>
+>                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
 >
->                             \<Row className=\"form-group\"\>
+>                             <Row className="form-group">
 >
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
+>                                     <Control.text model=".firstname" id="firstname" name="firstname"
 >
->                                         placeholder=\"First Name\"
+>                                         placeholder="First Name"
 >
->                                         className=\"form-control\"
+>                                         className="form-control"
 >
->                                          /\>
+>                                          />
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</Row\>
+>                             </Row>
 >
->                             \<Row className=\"form-group\"\>
+>                             <Row className="form-group">
 >
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
+>                                     <Control.text model=".lastname" id="lastname" name="lastname"
 >
->                                         placeholder=\"Last Name\"
+>                                         placeholder="Last Name"
 >
->                                         className=\"form-control\"
+>                                         className="form-control"
 >
->                                          /\>
+>                                          />
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</Row\>
+>                             </Row>
 >
->                             \<Row className=\"form-group\"\>
+>                             <Row className="form-group">
 >
->                                 \<Label htmlFor=\"telnum\" md={2}\>Contact Tel.\</Label\>
+>                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Control.text model=\".telnum\" id=\"telnum\" name=\"telnum\"
+>                                     <Control.text model=".telnum" id="telnum" name="telnum"
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form\".
@@ -5695,15 +5691,15 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 >  
 >
-> const required = (val) =\> val && val.length;
+> const required = (val) => val && val.length;
 >
-> const maxLength = (len) =\> (val) =\> !(val) \|\| (val.length \<= len);
+> const maxLength = (len) => (val) => !(val) || (val.length <= len);
 >
-> const minLength = (len) =\> (val) =\> val && (val.length \>= len);
+> const minLength = (len) => (val) => val && (val.length >= len);
 >
-> const isNumber = (val) =\> !isNaN(Number(val));
+> const isNumber = (val) => !isNaN(Number(val));
 >
-> const validEmail = (val) =\> /\^\[A-Z0-9.\_%+-\]+@\[A-Z0-9.-\]+\\.\[A-Z\]{2,4}\$/i.test(val);
+> const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
 >
 >  
 >
@@ -5711,17 +5707,17 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 >  
 >
->                             \<Row className=\"form-group\"\>
+>                             <Row className="form-group">
 >
->                                 \<Label htmlFor=\"firstname\" md={2}\>First Name\</Label\>
+>                                 <Label htmlFor="firstname" md={2}>First Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Control.text model=\".firstname\" id=\"firstname\" name=\"firstname\"
+>                                     <Control.text model=".firstname" id="firstname" name="firstname"
 >
->                                         placeholder=\"First Name\"
+>                                         placeholder="First Name"
 >
->                                         className=\"form-control\"
+>                                         className="form-control"
 >
 >                                         validators={{
 >
@@ -5729,43 +5725,43 @@ react-redux-form. At the end of this exercise you will be able to:
 >
 >                                         }}
 >
->                                          /\>
+>                                          />
 >
->                                     \<Errors
+>                                     <Errors
 >
->                                         className=\"text-danger\"
+>                                         className="text-danger"
 >
->                                         model=\".firstname\"
+>                                         model=".firstname"
 >
->                                         show=\"touched\"
+>                                         show="touched"
 >
 >                                         messages={{
 >
->                                             required: \'Required\',
+>                                             required: 'Required',
 >
->                                             minLength: \'Must be greater than 2 characters\',
+>                                             minLength: 'Must be greater than 2 characters',
 >
->                                             maxLength: \'Must be 15 characters or less\'
+>                                             maxLength: 'Must be 15 characters or less'
 >
 >                                         }}
 >
->                                      /\>
+>                                      />
 >
->                                 \</Col\>
+>                                 </Col>
 >
->                             \</Row\>
+>                             </Row>
 >
->                             \<Row className=\"form-group\"\>
+>                             <Row className="form-group">
 >
->                                 \<Label htmlFor=\"lastname\" md={2}\>Last Name\</Label\>
+>                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
 >
->                                 \<Col md={10}\>
+>                                 <Col md={10}>
 >
->                                     \<Control.text model=\".lastname\" id=\"lastname\" name=\"lastname\"
+>                                     <Control.text model=".lastname" id="lastname" name="lastname"
 >
->                                         placeholder=\"Last Name\"
+>                                         placeholder="Last Name"
 >
->                                         className=\"form-control\"
+>                                         className="form-control"
 >
 >                                         validators={{
 
@@ -5967,9 +5963,9 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { DISHES } from \'../shared/dishes\';
+> import { DISHES } from '../shared/dishes';
 >
-> export const Dishes = (state = DISHES, action) =\> {
+> export const Dishes = (state = DISHES, action) => {
 >     switch (action.type) {
 >         default:
 >           return state;
@@ -5980,11 +5976,11 @@ manage the whole state. At the end of this exercise you will be able to:
 -   Then, create a file named comments.js and add the following to it:
 
 ```
-> import { COMMENTS } from \'../shared/comments\';
+> import { COMMENTS } from '../shared/comments';
 >
 >  
 >
-> export const Comments = (state = COMMENTS, action) =\> {
+> export const Comments = (state = COMMENTS, action) => {
 >
 >     switch (action.type) {
 >
@@ -6003,11 +5999,11 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { PROMOTIONS } from \'../shared/promotions\';
+> import { PROMOTIONS } from '../shared/promotions';
 >
 >  
 >
-> export const Promotions = (state = PROMOTIONS, action) =\> {
+> export const Promotions = (state = PROMOTIONS, action) => {
 >
 >     switch (action.type) {
 >
@@ -6024,9 +6020,9 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { LEADERS } from \'../shared/leaders\';
+> import { LEADERS } from '../shared/leaders';
 >
-> export const Leaders = (state = LEADERS, action) =\> {
+> export const Leaders = (state = LEADERS, action) => {
 >     switch (action.type) {
 >         default:
 >           return state;
@@ -6039,13 +6035,13 @@ manage the whole state. At the end of this exercise you will be able to:
     together. Open configureStore.js and update it as follows:
 
 ```
-> import {createStore, combineReducers} from \'redux\';
-> import { Dishes } from \'./dishes\';
-> import { Comments } from \'./comments\';
-> import { Promotions } from \'./promotions\';
-> import { Leaders } from \'./leaders\';
+> import {createStore, combineReducers} from 'redux';
+> import { Dishes } from './dishes';
+> import { Comments } from './comments';
+> import { Promotions } from './promotions';
+> import { Leaders } from './leaders';
 >
-> export const ConfigureStore = () =\> {
+> export const ConfigureStore = () => {
 >     const store = createStore(
 >         combineReducers({
 >             dishes: Dishes,
@@ -6062,7 +6058,7 @@ manage the whole state. At the end of this exercise you will be able to:
 -   Now we can safely delete the reducer.js file from the project.
 
 -   Save all the changes and do a Git commit with the message
-    \"Combining Reducers\".
+    "Combining Reducers".
 
 ### Conclusions
 
@@ -6090,18 +6086,18 @@ store. At the end of this exercise you will be able to:
     add the following to it:
 
 ```
-> export const ADD_COMMENT = \'ADD_COMMENT\';
+> export const ADD_COMMENT = 'ADD_COMMENT';
 ```
 
 -   Then, create a file named <i>ActionCreators.js</i> and add the following
     to it:
 
 ```
-> import \<i> as ActionTypes from \'./ActionTypes\';
+> import <i> as ActionTypes from './ActionTypes';
 >
 >  
 >
-> export const addComment = (dishId, rating, author, comment) =\> ({
+> export const addComment = (dishId, rating, author, comment) => ({
 >
 >     type: ActionTypes.ADD_COMMENT,
 >
@@ -6120,17 +6116,17 @@ store. At the end of this exercise you will be able to:
     dispatched by the ActionCreator as follows:
 
 ```
-> import { COMMENTS } from \'../shared/comments\';
+> import { COMMENTS } from '../shared/comments';
 >
-> import \</i> as ActionTypes from \'./ActionTypes\';
+> import </i> as ActionTypes from './ActionTypes';
 >
-> export const Comments = (state = COMMENTS, action) =\> {
+> export const Comments = (state = COMMENTS, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_COMMENT:
 >             var comment = action.payload;
 >             comment.id = state.length;
 >             comment.date = new Date().toISOString();
->             console.log(\"Comment: \", comment);
+>             console.log("Comment: ", comment);
 >             return state.concat(comment);
 >         default:
 >           return state;
@@ -6145,22 +6141,22 @@ store. At the end of this exercise you will be able to:
 > . . .
 >
 >  
-> import { addComment } from \'../redux/ActionCreators\';
+> import { addComment } from '../redux/ActionCreators';
 >
 > . . .
 >
->   const mapDispatchToProps = dispatch =\> ({
+>   const mapDispatchToProps = dispatch => ({
 >
->     addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment))
+>     addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
 >
 >   });
 >
 > . . .
 >
->       \<DishDetail dish={this.props.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
->         comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
+>       <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
+>         comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
 >         addComment={this.props.addComment}
->       /\>
+>       />
 >
 > . . .
 >
@@ -6187,7 +6183,7 @@ store. At the end of this exercise you will be able to:
 >
 >  
 >
->       \<CommentForm dishId={dishId} addComment={addComment} /\>
+>       <CommentForm dishId={dishId} addComment={addComment} />
 >
 >  
 >
@@ -6209,13 +6205,13 @@ store. At the end of this exercise you will be able to:
 >
 >  
 >
->       \<RenderComments comments={props.comments}
+>       <RenderComments comments={props.comments}
 >
 >         addComment={props.addComment}
 >
 >         dishId={props.dish.id}
 >
->       /\>
+>       />
 >
 >  
 >
@@ -6290,12 +6286,12 @@ function. At the end of this exercise you will be able to:
     Logger as follows:
 
 ```
-> import {createStore, combineReducers, applyMiddleware } from \'redux\';
+> import {createStore, combineReducers, applyMiddleware } from 'redux';
 >
 > . . .
 >
-> import thunk from \'redux-thunk\';
-> import logger from \'redux-logger\';
+> import thunk from 'redux-thunk';
+> import logger from 'redux-logger';
 >
 > . . .
 >         combineReducers({
@@ -6314,9 +6310,9 @@ function. At the end of this exercise you will be able to:
 ```
 . . .
 
-export const DISHES_LOADING = \'DISHES_LOADING\';
-export const DISHES_FAILED = \'DISHES_FAILED\';
-export const ADD_DISHES = \'ADD_DISHES\';
+export const DISHES_LOADING = 'DISHES_LOADING';
+export const DISHES_FAILED = 'DISHES_FAILED';
+export const ADD_DISHES = 'ADD_DISHES';
 ```
 
 -   Then open ActionCreators.js and add new actions:
@@ -6326,7 +6322,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
-> import { DISHES } from \'../shared/dishes\';
+> import { DISHES } from '../shared/dishes';
 >
 >  
 >
@@ -6336,7 +6332,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
-> export const fetchDishes = () =\> (dispatch) =\> {
+> export const fetchDishes = () => (dispatch) => {
 >
 >  
 >
@@ -6344,7 +6340,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
->     setTimeout(() =\> {
+>     setTimeout(() => {
 >
 >         dispatch(addDishes(DISHES));
 >
@@ -6354,7 +6350,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
-> export const dishesLoading = () =\> ({
+> export const dishesLoading = () => ({
 >
 >     type: ActionTypes.DISHES_LOADING
 >
@@ -6362,7 +6358,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
-> export const dishesFailed = (errmess) =\> ({
+> export const dishesFailed = (errmess) => ({
 >
 >     type: ActionTypes.DISHES_FAILED,
 >
@@ -6372,7 +6368,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >  
 >
-> export const addDishes = (dishes) =\> ({
+> export const addDishes = (dishes) => ({
 >
 >     type: ActionTypes.ADD_DISHES,
 >
@@ -6385,7 +6381,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
     follows:
 
 ```
-> import \</i> as ActionTypes from \'./ActionTypes\';
+> import </i> as ActionTypes from './ActionTypes';
 >
 >  
 >
@@ -6393,25 +6389,25 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >     errMess: null,
 >
->     dishes:\[\]}, action) =\> {
+>     dishes:[]}, action) => {
 >
 >     switch (action.type) {
 >
 >         case ActionTypes.ADD_DISHES:
 >
->             return {\...state, isLoading: false, errMess: null, dishes: action.payload};
+>             return {...state, isLoading: false, errMess: null, dishes: action.payload};
 >
 >  
 >
 >         case ActionTypes.DISHES_LOADING:
 >
->             return {\...state, isLoading: true, errMess: null, dishes: \[\]}
+>             return {...state, isLoading: true, errMess: null, dishes: []}
 >
 >  
 >
 >         case ActionTypes.DISHES_FAILED:
 >
->             return {\...state, isLoading: false, errMess: action.payload};
+>             return {...state, isLoading: false, errMess: action.payload};
 >
 >  
 >
@@ -6428,21 +6424,21 @@ export const ADD_DISHES = \'ADD_DISHES\';
     message as follows:
 
 ```
-> import React from \'react\';
+> import React from 'react';
 >
 >  
 >
-> export const Loading = () =\> {
+> export const Loading = () => {
 >
 >     return(
 >
->         \<div className=\"col-12\"\>
+>         <div className="col-12">
 >
->             \<span className=\"fa fa-spinner fa-pulse fa-3x fa-fw text-primary\"\>\</span\>
+>             <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
 >
->             \<p\>Loading . . .\</p\>
+>             <p>Loading . . .</p>
 >
->         \</div\>
+>         </div>
 >
 >     );
 >
@@ -6454,34 +6450,34 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { addComment, fetchDishes } from \'../redux/ActionCreators\';
+> import { addComment, fetchDishes } from '../redux/ActionCreators';
 > . . .
->   fetchDishes: () =\> { dispatch(fetchDishes())}
+>   fetchDishes: () => { dispatch(fetchDishes())}
 > . . .
 >   componentDidMount() {
 >     this.props.fetchDishes();
 >   }
 > . . .
->     const HomePage = () =\> {
+>     const HomePage = () => {
 >       return(
->           \<Home 
->               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
+>           <Home 
+>               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
 >               dishesLoading={this.props.dishes.isLoading}
 >               dishesErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.filter((promo) =\> promo.featured)\[0\]}
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+>           />
 >       );
 >     }
->     const DishWithId = ({match}) =\> {
+>     const DishWithId = ({match}) => {
 >       return(
->\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
+><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >
 >             isLoading={this.props.dishes.isLoading}
 >             errMess={this.props.dishes.errMess}
-> comments={this.props.comments.filter((comment) =\> comment.dishId === parseInt(match.params.dishId,10))}
+> comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
 >             addComment={this.props.addComment}
->           /\>
+>           />
 >       );
 >     };
 > . . .
@@ -6491,24 +6487,24 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
 >         if (props.isLoading) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<Loading /\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <Loading />
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.errMess) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<h4\>{props.errMess}\</h4\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <h4>{props.errMess}</h4>
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.dish != null) 
@@ -6519,7 +6515,7 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
 >  
 >
@@ -6527,29 +6523,29 @@ export const ADD_DISHES = \'ADD_DISHES\';
 >
 >     if (isLoading) {
 >         return(
->                 \<Loading /\>
+>                 <Loading />
 >         );
 >     }
 >     else if (errMess) {
 >         return(
->                 \<h4\>{errMess}\</h4\>
+>                 <h4>{errMess}</h4>
 >         );
 >     }
 >     else 
 >         return(
->             \<Card\>
+>             <Card>
 >
->                 \<CardImg src={item.image} alt={item.name} /\>
->                 \<CardBody\>
->                 \<CardTitle\>{item.name}\</CardTitle\>
->                 {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->                 \<CardText\>{item.description}\</CardText\>
->                 \</CardBody\>
->             \</Card\>
+>                 <CardImg src={item.image} alt={item.name} />
+>                 <CardBody>
+>                 <CardTitle>{item.name}</CardTitle>
+>                 {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>                 <CardText>{item.description}</CardText>
+>                 </CardBody>
+>             </Card>
 >         );
 > }
 > . . .
-> \<RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  /\>
+> <RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  />
 >
 > . . .
 ```
@@ -6558,29 +6554,29 @@ export const ADD_DISHES = \'ADD_DISHES\';
 
 ```
 > . . .
-> import { Loading } from \'./LoadingComponent\';
+> import { Loading } from './LoadingComponent';
 > . . .
->         const menu = props.dishes.dishes.map((dish) =\> {
+>         const menu = props.dishes.dishes.map((dish) => {
 > . . .
 >
 >         if (props.dishes.isLoading) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\>            
->                         \<Loading /\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row">            
+>                         <Loading />
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else if (props.dishes.errMess) {
 >             return(
->                 \<div className=\"container\"\>
->                     \<div className=\"row\"\> 
->                         \<div className=\"col-12\"\>
->                             \<h4\>{props.dishes.errMess}\</h4\>
->                         \</div\>
->                     \</div\>
->                 \</div\>
+>                 <div className="container">
+>                     <div className="row"> 
+>                         <div className="col-12">
+>                             <h4>{props.dishes.errMess}</h4>
+>                         </div>
+>                     </div>
+>                 </div>
 >             );
 >         }
 >         else
@@ -6615,13 +6611,13 @@ store. At the end of this exercise you will be able to:
 
 ```
 > export const InitialFeedback = {
->     firstname: \'\',
->     lastname: \'\',
->     telnum: \'\',
->     email: \'\',
+>     firstname: '',
+>     lastname: '',
+>     telnum: '',
+>     email: '',
 >     agree: false,
->     contactType: \'Tel.\',
->     message: \'\'
+>     contactType: 'Tel.',
+>     message: ''
 > };
 ```
 
@@ -6630,16 +6626,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { createForms } from \'react-redux-form\';
+> import { createForms } from 'react-redux-form';
 > . . .
-> import { InitialFeedback } from \'./forms\';
+> import { InitialFeedback } from './forms';
 > . . .
 >         combineReducers({
 >             dishes: Dishes,
 >             comments: Comments,
 >             promotions: Promotions,
 >             leaders: Leaders,
->             \...createForms({
+>             ...createForms({
 >                 feedback: InitialFeedback
 >             })
 >         }),
@@ -6650,11 +6646,11 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { actions } from \'react-redux-form\';
+> import { actions } from 'react-redux-form';
 > . . .
->   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))}
+>   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
 > . . .
-> \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
+> <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
 >
 > . . .
 ```
@@ -6663,19 +6659,19 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
-> import { Control, Form, Errors, actions } from \'react-redux-form\';
+> import { Control, Form, Errors, actions } from 'react-redux-form';
 > . . .
 >     handleSubmit(values) {
->         console.log(\'Current State is: \' + JSON.stringify(values));
->         alert(\'Current State is: \' + JSON.stringify(values));
+>         console.log('Current State is: ' + JSON.stringify(values));
+>         alert('Current State is: ' + JSON.stringify(values));
 >         this.props.resetFeedbackForm();
 >         // event.preventDefault();
 >     }
 > . . .
->                         \<Form model=\"feedback\" onSubmit={(values) =\> this.handleSubmit(values)}\>
+>                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
 >                           . . .
 >
->                         \</Form\>
+>                         </Form>
 > . . .
 ```
 
@@ -6772,7 +6768,7 @@ from any folder on your computer.
     at the command prompt to start the server:
 
 ```
->      json-server \--watch db.json -p 3001 -d 2000
+>      json-server --watch db.json -p 3001 -d 2000
 ```
 
 -   This should start up a server at port number 3001 on your machine.
@@ -6818,7 +6814,7 @@ from any folder on your computer.
     the following into your browser address bar:
 
 ```
-> [http://localhost:3001/images/]{.underline}\<image name\>.png
+> [http://localhost:3001/images/]{.underline}<image name>.png
 ```
 
 ### Conclusions
@@ -6898,7 +6894,7 @@ exercise you will be able to:
     the <i>shared</i> folder and add the following to it:
 
 ```
-> export const baseUrl = \'[http://localhost:3001/]{.underline}\';
+> export const baseUrl = '[http://localhost:3001/]{.underline}';
 ```
 
 -   Make sure that the json-server is running and servi
@@ -6909,62 +6905,62 @@ exercise you will be able to:
 
 ```
 . . .
-export const ADD_COMMENTS = \'ADD_COMMENTS\';
-export const COMMENTS_FAILED = \'COMMENTS_FAILED\';
-export const PROMOS_LOADING = \'PROMOS_LOADING\';
-export const ADD_PROMOS = \'ADD_PROMOS\';
-export const PROMOS_FAILED = \'PROMOS_FAILED\';
+export const ADD_COMMENTS = 'ADD_COMMENTS';
+export const COMMENTS_FAILED = 'COMMENTS_FAILED';
+export const PROMOS_LOADING = 'PROMOS_LOADING';
+export const ADD_PROMOS = 'ADD_PROMOS';
+export const PROMOS_FAILED = 'PROMOS_FAILED';
 ```
 
 -   Then, open <i>ActionCreators.js</i> and update it as follows:
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->     return fetch(baseUrl + \'dishes\')
->     .then(response =\> response.json())
->     .then(dishes =\> dispatch(addDishes(dishes)));
+>     return fetch(baseUrl + 'dishes')
+>     .then(response => response.json())
+>     .then(dishes => dispatch(addDishes(dishes)));
 > . . .
-> export const fetchComments = () =\> (dispatch) =\> {    
->     return fetch(baseUrl + \'comments\')
->     .then(response =\> response.json())
->     .then(comments =\> dispatch(addComments(comments)));
+> export const fetchComments = () => (dispatch) => {    
+>     return fetch(baseUrl + 'comments')
+>     .then(response => response.json())
+>     .then(comments => dispatch(addComments(comments)));
 > };
-> export const commentsFailed = (errmess) =\> ({
+> export const commentsFailed = (errmess) => ({
 >     type: ActionTypes.COMMENTS_FAILED,
 >     payload: errmess
 > });
-> export const addComments = (comments) =\> ({
+> export const addComments = (comments) => ({
 >     type: ActionTypes.ADD_COMMENTS,
 >     payload: comments
 > });
-> export const fetchPromos = () =\> (dispatch) =\> {
+> export const fetchPromos = () => (dispatch) => {
 >     dispatch(promosLoading());
->     return fetch(baseUrl + \'promotions\')
->     .then(response =\> response.json())
->     .then(promos =\> dispatch(addPromos(promos)));
+>     return fetch(baseUrl + 'promotions')
+>     .then(response => response.json())
+>     .then(promos => dispatch(addPromos(promos)));
 > }
-> export const promosLoading = () =\> ({
+> export const promosLoading = () => ({
 >     type: ActionTypes.PROMOS_LOADING
 ```
 
 -   Next, open <i>comments.js</i> and update it as follows:
 
 ```
-> import \</i> as ActionTypes from \'./ActionTypes\';
+> import </i> as ActionTypes from './ActionTypes';
 >
-> export const Comments = (state = { errMess: null, comments:\[\]}, action) =\> {
+> export const Comments = (state = { errMess: null, comments:[]}, action) => {
 >   switch (action.type) {
 >     case ActionTypes.ADD_COMMENTS:
->       return {\...state, errMess: null, comments: action.payload};
+>       return {...state, errMess: null, comments: action.payload};
 >     case ActionTypes.COMMENTS_FAILED:
->       return {\...state, errMess: action.payload};
+>       return {...state, errMess: action.payload};
 >     case ActionTypes.ADD_COMMENT:
 >         var comment = action.payload;
 >         comment.id = state.comments.length;
 >         comment.date = new Date().toISOString();
->         return { \...state, comments: state.comments.concat(comment)};
+>         return { ...state, comments: state.comments.concat(comment)};
 >     default:
 >       return state;
 >   }
@@ -6974,17 +6970,17 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 -   Similarly, open <i>promotions.js</i> and update it as follows:
 
 ```
-> import \</i> as ActionTypes from \'./ActionTypes\';
+> import </i> as ActionTypes from './ActionTypes';
 > export const Promotions = (state  = { isLoading: true,
 >                                         errMess: null,
->                                         promotions:\[\]}, action) =\> {
+>                                         promotions:[]}, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_PROMOS:
->         return {\...state, isLoading: false, errMess: null, promotions: action.payload};
+>         return {...state, isLoading: false, errMess: null, promotions: action.payload};
 >         case ActionTypes.PROMOS_LOADING:
->             return {\...state, isLoading: true, errMess: null, promotions: \[\]}
+>             return {...state, isLoading: true, errMess: null, promotions: []}
 >         case ActionTypes.PROMOS_FAILED:
->             return {\...state, isLoading: false, errMess: action.payload};
+>             return {...state, isLoading: false, errMess: action.payload};
 >         default:
 >           return state;
 >       }
@@ -6998,14 +6994,14 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . . 
-> import { addComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
+> import { addComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
 > . . .
-> const mapDispatchToProps = dispatch =\> ({
->   addComment: (dishId, rating, author, comment) =\> dispatch(addComment(dishId, rating, author, comment)),
->   fetchDishes: () =\> { dispatch(fetchDishes())},
->   resetFeedbackForm: () =\> { dispatch(actions.reset(\'feedback\'))},
->   fetchComments: () =\> dispatch(fetchComments()),
->   fetchPromos: () =\> dispatch(fetchPromos())
+> const mapDispatchToProps = dispatch => ({
+>   addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
+>   fetchDishes: () => { dispatch(fetchDishes())},
+>   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
+>   fetchComments: () => dispatch(fetchComments()),
+>   fetchPromos: () => dispatch(fetchPromos())
 > });
 >
 > . . .
@@ -7015,17 +7011,17 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 >     this.props.fetchPromos();
 >   }
 > . . .
->           \<Home 
->               dish={this.props.dishes.dishes.filter((dish) =\> dish.featured)\[0\]}
+>           <Home 
+>               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
 >               dishesLoading={this.props.dishes.isLoading}
 >               dishErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.promotions.filter((promo) =\> promo.featured)\[0\]}
+>               promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
 >               promoLoading={this.props.promotions.isLoading}
 >               promoErrMess={this.props.promotions.errMess}
->               leader={this.props.leaders.filter((leader) =\> leader.featured)\[0\]}
->           /\>
+>               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+>           />
 > . . .
->\<DishDetail dish={this.props.dishes.dishes.filter((dish) =\> dish.id === parseInt(match.params.dishId,10))\[0\]}
+><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >             isLoading={this.props.dishes.isLoading}
 >             errMess={this.props.dishes.errMess}
 ```
@@ -7034,9 +7030,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->                     \<CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} /\>
+>                     <CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} />
 > . . .
 ```
 
@@ -7044,12 +7040,12 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 
 ```
 > . . .
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
 >
->        \<CardImg src={baseUrl + item.image} alt={item.name} /\>
+>        <CardImg src={baseUrl + item.image} alt={item.name} />
 > . . .
->         \<RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} /\>
+>         <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
 >
 > . . .
 ```
@@ -7059,9 +7055,9 @@ export const PROMOS_FAILED = \'PROMOS_FAILED\';
 ```
 > . . .
 >
-> import { baseUrl } from \'../shared/baseUrl\';
+> import { baseUrl } from '../shared/baseUrl';
 > . . .
->                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
+>                 <CardImg top src={baseUrl + dish.image} alt={dish.name} />
 > . . .
 ```
 
@@ -7093,41 +7089,41 @@ able to:
 ```
 > . . .
 >
-> export const fetchDishes = () =\> (dispatch) =\> {
+> export const fetchDishes = () => (dispatch) => {
 >
 >     dispatch(dishesLoading(true));
 >
->     return fetch(baseUrl + \'dishes\')
->     .then(response =\> {
+>     return fetch(baseUrl + 'dishes')
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             var errmess = new Error(error.message);
 >             throw errmess;
 >       })
->     .then(response =\> response.json())
->     .then(dishes =\> dispatch(addDishes(dishes)))
->     .catch(error =\> dispatch(dishesFailed(error.message)));
+>     .then(response => response.json())
+>     .then(dishes => dispatch(addDishes(dishes)))
+>     .catch(error => dispatch(dishesFailed(error.message)));
 > }
 > . . .
-> export const fetchComments = () =\> (dispatch) =\> {    
->     return fetch(baseUrl + \'comments\')
->     .then(response =\> {
+> export const fetchComments = () => (dispatch) => {    
+>     return fetch(baseUrl + 'comments')
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             var errmess = new Error(error.message);
 ```
 
@@ -7160,12 +7156,12 @@ to:
 ```
 > . . .
 >
-> export const addComment = (comment) =\> ({
+> export const addComment = (comment) => ({
 >     type: ActionTypes.ADD_COMMENT,
 >     payload: comment
 > });
 >
-> export const postComment = (dishId, rating, author, comment) =\> (dispatch) =\> {
+> export const postComment = (dishId, rating, author, comment) => (dispatch) => {
 >     const newComment = {
 >         dishId: dishId,
 >         rating: rating,
@@ -7173,29 +7169,29 @@ to:
 >         comment: comment
 >     };
 >     newComment.date = new Date().toISOString();
->     return fetch(baseUrl + \'comments\', {
->         method: \"POST\",
+>     return fetch(baseUrl + 'comments', {
+>         method: "POST",
 >         body: JSON.stringify(newComment),
 >         headers: {
->           \"Content-Type\": \"application/json\"
+>           "Content-Type": "application/json"
 >         },
->         credentials: \"same-origin\"
+>         credentials: "same-origin"
 >     })
->     .then(response =\> {
+>     .then(response => {
 >         if (response.ok) {
 >           return response;
 >         } else {
->           var error = new Error(\'Error \' + response.status + \': \' + response.statusText);
+>           var error = new Error('Error ' + response.status + ': ' + response.statusText);
 >           error.response = response;
 >           throw error;
 >         }
 >       },
->       error =\> {
+>       error => {
 >             throw error;
 >       })
->     .then(response =\> response.json())
->     .then(response =\> dispatch(addComment(response)))
->    .catch(error =\>  { console.log(\'post comments\', error.message); alert(\'Your comment could not be posted\\nError: \'+error.message); });
+>     .then(response => response.json())
+>     .then(response => dispatch(addComment(response)))
+>    .catch(error =>  { console.log('post comments', error.message); alert('Your comment could not be postednError: '+error.message); });
 ```
 
 -   Open <i>comment.js</i> and <b>remove</b> the following two lines from it:
@@ -7214,11 +7210,11 @@ to:
 ```
 > . . .
 >
-> import { postComment, fetchDishes, fetchComments, fetchPromos } from \'../redux/ActionCreators\';
+> import { postComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
 >
 > . . .
 >
->   postComment: (dishId, rating, author, comment) =\> dispatch(postComment(dishId, rating, author, comment))
+>   postComment: (dishId, rating, author, comment) => dispatch(postComment(dishId, rating, author, comment))
 >
 > . . .
 >             postComment={this.props.postComment}
@@ -7231,7 +7227,7 @@ to:
 > . . .
 >     function RenderComments({comments, postComment, dishId}) {
 > . . .
->                     \<CommentForm dishId={dishId} postComment={postComment} /\>
+>                     <CommentForm dishId={dishId} postComment={postComment} />
 > . . .
 >             this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
 > . . .
@@ -7354,22 +7350,22 @@ yarn add react-transition-group@2.3.0
 ```
 > . . .
 >
-> import { TransitionGroup, CSSTransition } from \'react-transition-group\';
+> import { TransitionGroup, CSSTransition } from 'react-transition-group';
 >
 > . . .
 >
->           \<TransitionGroup\>
->             \<CSSTransition key={this.props.location.key} classNames=\"page\" timeout={300}\>
->               \<Switch location={this.props.location}\>
->                   \<Route path=\'/home\' component={HomePage} /\>
->                   \<Route exact path=\'/aboutus\' component={() =\> \<About leaders={this.props.leaders} /\>} /\>} /\>
->                   \<Route exact path=\'/menu\' component={() =\> \<Menu dishes={this.props.dishes} /\>} /\>
->                   \<Route path=\'/menu/:dishId\' component={DishWithId} /\>
-                  \<Route exact path=\'/contactus\' component={() =\> \<Contact resetFeedbackForm={this.props.resetFeedbackForm} /\>} /\>
->                   \<Redirect to=\"/home\" /\>
->               \</Switch\>
->             \</CSSTransition\>
->           \</TransitionGroup\>
+>           <TransitionGroup>
+>             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+>               <Switch location={this.props.location}>
+>                   <Route path='/home' component={HomePage} />
+>                   <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
+>                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+>                   <Route path='/menu/:dishId' component={DishWithId} />
+                  <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
+>                   <Redirect to="/home" />
+>               </Switch>
+>             </CSSTransition>
+>           </TransitionGroup>
 >
 > . . .
 ```
@@ -7412,24 +7408,24 @@ you will be able to:
 ```
 > . . .
 >
-> import { FadeTransform } from \'react-animation-components\';
+> import { FadeTransform } from 'react-animation-components';
 >
 > . . .
 >
->             \<FadeTransform
+>             <FadeTransform
 >                 in
 >                 transformProps={{
->                     exitTransform: \'scale(0.5) translateY(-50%)\'
->                 }}\>
->                 \<Card\>
->                     \<CardImg src={baseUrl + item.image} alt={item.name} /\>
->                     \<CardBody\>
->                     \<CardTitle\>{item.name}\</CardTitle\>
->                     {item.designation ? \<CardSubtitle\>{item.designation}\</CardSubtitle\> : null }
->                     \<CardText\>{item.description}\</CardText\>
->                     \</CardBody\>
->                 \</Card\>
->             \</FadeTransform\>
+>                     exitTransform: 'scale(0.5) translateY(-50%)'
+>                 }}>
+>                 <Card>
+>                     <CardImg src={baseUrl + item.image} alt={item.name} />
+>                     <CardBody>
+>                     <CardTitle>{item.name}</CardTitle>
+>                     {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+>                     <CardText>{item.description}</CardText>
+>                     </CardBody>
+>                 </Card>
+>             </FadeTransform>
 >
 > . . .
 ```
@@ -7438,11 +7434,8 @@ you will be able to:
 
 ```
 > . . .
->
 > import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
->
 > . . .
->
 >             \<FadeTransform
 >                 in
 >                 transformProps={{
@@ -7456,9 +7449,7 @@ you will be able to:
 >                 \</CardBody\>
 >             \</Card\>
 >             \</FadeTransform\>
->
 > . . .
->
 >                     \<Stagger in\>
 >                         {comments.map((comment) =\> {
 >                             return (
@@ -7471,7 +7462,6 @@ you will be able to:
 >                             );
 >                         })}
 >                         \</Stagger\>
->
 > . . .
 ```
 
