@@ -723,21 +723,23 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-
-> git \--version
+```
+$ git \--version
 ```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
 ```
-> git config \--global user.name \"Your Name\"
+$ git config \--global user.name \"Your Name\"
 ```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-> git config \--global user.email \<your email address\>
+```
+$ git config \--global user.email \<your email address\>
+```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
@@ -772,28 +774,33 @@ the end of this exercise, you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->     \</body\>
-> \</html\>
+```
+&lt;!DOCTYPE html&gt;
+  &lt;html\&gt;
+    &lt;head&gt;&lt;/head&gt;
+      &lt;body\&gt;
+        &lt;h1&gt;This is a Header&lt;/h1&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;
+```
 
 Initializing the folder as a Git repository
 
 -   Go to the git-test folder in your cmd window/terminal and type the
     following at the prompt to initialize the folder as a Git
     repository:
-
-> git init
+```
+$ git init
+```
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-> git status
+```
+$ git status
+```
 
 Adding files to the staging area
 
@@ -815,14 +822,16 @@ Checking the log of Git commits
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->     \</body\>
-> \</html\>
+```
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+     &lt;head&gt;&lt;/head&gt;
+     &lt;body&gt;
+         &lt;h1&gt;This is a Header&lt;/h1&gt;
+         &lt;p&gt;This is a paragraph&lt;/p&gt;
+     &lt;/body&gt;
+  &lt;/html&gt;
+```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
     and then add a file named <i>test.html</i> to the templates folder. Then
@@ -835,6 +844,7 @@ Checking the log of Git commits
 
 -   Now, modify the <i>index.html</i> file as follows:
 
+```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -844,6 +854,7 @@ Checking the log of Git commits
 >         \<p\>This is a second paragraph\</p\>
 >     \</body\>
 > \</html\>
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -854,18 +865,24 @@ Checking the log of Git commits
     of the second commit using the git log, and then type the following
     at the prompt:
 
-> git checkout \<second commit\'s number\> index.html
+```
+$ git checkout \<second commit\'s number\> index.html
+```
 
 ### Resetting the Git repository
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
 
-> git reset HEAD index.html
+```
+$ git reset HEAD index.html
+```
 
 -   Then type the following at the prompt:
 
-> git checkout \-- index.html
+```
+$ git checkout \-- index.html
+```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
@@ -909,21 +926,27 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin \<repository URL\>
+```
+$ git remote add origin \<repository URL\>
+```
 
 ### Pushing your commits to the online repository
 
 -   At the prompt, type the following to push the commits to the online
     repository:
 
-git push -u origin master
+```
+$ git push -u origin master
+```
 
 ### Cloning an online repository
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone \<repository URL\>
+```
+$ git clone \<repository URL\>
+```
 
 ### Conclusions
 
@@ -995,11 +1018,11 @@ during the installation steps.</b>
 </p>
 <!-- width="4.235295275590551in" height="5.4in" --->
 
-> node -v
->
->       
->
-> npm -v
+```
+$ node -v
+
+$ npm -v
+```
 
 ### Conclusions
 
@@ -1025,7 +1048,9 @@ of this exercise, you will be able to:
 
 -   At the command prompt in your <b>git-test</b> folder, type
 
-> npm init
+```
+$ npm init
+```
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -1040,7 +1065,9 @@ of this exercise, you will be able to:
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-> npm install lite-server \--save-dev
+```
+$ npm install lite-server \--save-dev
+```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -1048,32 +1075,36 @@ of this exercise, you will be able to:
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-> {
->   \"name\": \"git-test\",
->   \"version\": \"1.0.0\",
->   \"description\": \"This is the Git and Node basic learning project\",
->   \"main\": \"index.html\",
->   \"scripts\": {
->     \"start\": \"npm run lite\",
->     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
->     \"lite\": \"lite-server\"
->   },
->   \"repository\": {
->     \"type\": \"git\",
->     \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
->   },
->   \"author\": \"\",
->   \"license\": \"ISC\",
->   \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
->   \"devDependencies\": {
->     \"lite-server\": \"\^2.2.2\"
->   }
-> }
+```
+{
+  &quot;name&quot;: &quot;git-test&quot;,
+  \"version\": \"1.0.0\",
+  \"description\": \"This is the Git and Node basic learning project\",
+  \"main\": \"index.html\",
+  \"scripts\": {
+    \"start\": \"npm run lite\",
+    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
+    \"lite\": \"lite-server\"
+  },
+  \"repository\": {
+    \"type\": \"git\",
+    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
+  },
+  \"author\": \"\",
+  \"license\": \"ISC\",
+  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
+  \"devDependencies\": {
+    \"lite-server\": \"\^2.2.2\"
+  }
+}
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
 
-> npm start
+```
+$ npm start
+```
 
 -   This should open your <i>index.html</i> page in your default browser.
 
@@ -1087,7 +1118,9 @@ of this exercise, you will be able to:
     (<b>Note</b>: the name starts with a period)Then, add the following to
     the .gitignore file
 
-> node_modules
+```
+$ node_modules
+```
 
 -   Then do a git commit and push the changes to the online repository.
     You will note that the node_modules folder will not be added to the
@@ -1198,7 +1231,9 @@ community!
 -   To install <i>create-react-app</i> globally, type the following at the
     prompt:
 
-> yarn global add <create-react-app@1.5.2>
+```
+$ yarn global add <create-react-app@1.5.2>
+```
 
 Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 \"npm install -g create-react-app@1.5.2\".
@@ -1208,7 +1243,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
-> create-react-app --help
+$ create-react-app --help
 ```
 
 ### Generating and Serving a React Project using create-react-app
@@ -1226,7 +1261,9 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 
 -   Move to the <i>confusion</i> folder and type the following at the prompt:
 
-> yarn start
+```
+$ yarn start
+```
 
 -   This will compile the project and then open a tab in your default
     browser at the address \<Your Computer\'s Name\>:3000.
@@ -1234,9 +1271,11 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
-> git init
-> git add .
-> git commit -m \"Initial Setup\"
+```
+$ git init
+$ git add .
+$ git commit -m \"Initial Setup\"
+```
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -1462,22 +1501,30 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-> git --version
+```
+$ git --version
+```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
-> git config \--global user.name \"Your Name\"
+```
+$ git config \--global user.name \"Your Name\"
+```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-> git config \--global user.email \<your email address\>
+```
+$ git config \--global user.email \<your email address\>
+```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
-> git config \--list
+```
+$ git config \--list
+```
 
 ### Conclusions
 
@@ -1507,6 +1554,7 @@ the end of this exercise you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
+```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -1515,6 +1563,7 @@ the end of this exercise you will be able to:
 >         \<h1\>This is a Header\</h1\>
 >     \</body\>
 > \</html\>
+```
 
 ### Initializing the folder as a Git repository
 
@@ -1522,35 +1571,46 @@ the end of this exercise you will be able to:
     following at the prompt to initialize the folder as a Git
     repository:
 
-> git init
+```
+$ git init
+```
 
 ### Checking your Git repository status
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-> git status
+```
+$ git status
+```
 
 ### Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
-> git add .
+```
+$ git add .
+```
 
 ### Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
-> git commit -m \"first commit\"
+```
+$ git commit -m \"first commit\"
+```
 
 ### Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
-> git log \--oneline
+```
+$ git log \--oneline
+```
 
 -   Now, modify the <i>index.html</i> file as follows:
 
+```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -1559,6 +1619,7 @@ the end of this exercise you will be able to:
 >         \<p\>This is a paragraph\</p\>
 >     \</body\>
 > \</html\>
+```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
     and then add a file named <i>test.html</i> to the templates folder. Then
@@ -1571,6 +1632,7 @@ the end of this exercise you will be able to:
 
 -   Now, modify the <i>index.html</i> file as follows:
 
+```
 > \<!DOCTYPE html\>
 > \<html\>
 >     \<head\>\</head\>
@@ -1581,6 +1643,7 @@ the end of this exercise you will be able to:
 >         \<p\>This is a second paragraph\</p\>
 >     \</body\>
 > \</html\>
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1591,18 +1654,24 @@ the end of this exercise you will be able to:
     of the second commit using the git log, and then type the following
     at the prompt:
 
-> git checkout \<second commit\'s number\> index.html
+```
+$ git checkout \<second commit\'s number\> index.html
+```
 
 ### Resetting the Git repository
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
 
-> git reset HEAD index.html
+```
+$ git reset HEAD index.html
+```
 
 -   Then type the following at the prompt:
 
-> git checkout \-- index.html
+```
+$ git checkout \-- index.html
+```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
@@ -1653,14 +1722,18 @@ git remote add origin \<repository URL\>
 -   At the prompt, type the following to push the commits to the online
     repository:
 
-> git push -u origin master
+```
+$ git push -u origin master
+```
 
 ### Cloning an online repository
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone \<repository URL\>
+```
+$ git clone \<repository URL\>
+```
 
 ### Conclusions
 
@@ -1799,7 +1872,9 @@ during the installation steps.</b>
 
 ![](./images/image002.png){width="6.5in" height="8.2875in"}
 
+```
 > npm -v
+```
 
 ### Conclusions
 
@@ -1823,7 +1898,7 @@ of this exercise, you will be able to:
 
 -   At the command prompt in your <b>git-test</b> folder, type
 
-> npm init
+$ npm init
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -1838,7 +1913,9 @@ Installing an NPM Module
     based development web server and serve up your project files. To do
     this, type the following at the prompt:
 
-> npm install lite-server \--save-dev
+```
+$ npm install lite-server \--save-dev
+```
 
 -   You can check out more documentation on lite-server
     [here](https://github.com/johnpapa/lite-server).
@@ -1846,6 +1923,7 @@ Installing an NPM Module
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
+```
 >    \"start\": \"npm run lite\",
 >    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
 >    \"lite\": \"lite-server\"
@@ -1861,6 +1939,7 @@ Installing an NPM Module
 >    \"lite-server\": \"\^2.2.2\"
 >  }
 >}
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
@@ -1880,7 +1959,7 @@ Installing an NPM Module
     the .gitignore file
 
 ```
-node_modules
+$ node_modules
 ```
 
 -   Then do a git commit and push the changes to the online repository.
@@ -1914,7 +1993,9 @@ PDF File
 
 ### Additional Resources (Git)
 
--   Git site [http://git-scm.com](http://git-scm.com/).
+```
+$ Git site [http://git-scm.com](http://git-scm.com/).
+```
 
 -   [Installing
     Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -2166,7 +2247,7 @@ community!
     prompt:
 
 ```
-yarn global add create-react-app@1.5.2
+$ yarn global add create-react-app@1.5.2
 ```
 
 Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
@@ -2177,7 +2258,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
-create-react-app \--help
+$ create-react-app \--help
 ```
 
 ### Generating and Serving a React Project using <i>create-react-app</i>
@@ -2189,7 +2270,7 @@ create-react-app \--help
     application named <i>confusion</i>:
 
 ```
-create-react-app confusion
+$ create-react-app confusion
 ```
 
 -   This should create a new folder named <i>confusion</i> within your
@@ -2198,7 +2279,7 @@ create-react-app confusion
 -   Move to the <i>confusion</i> folder and type the following at the prompt:
 
 ```
-yarn start
+$ yarn start
 ```
 
 -   This will compile the project and then open a tab in your default
@@ -2208,9 +2289,9 @@ yarn start
     following commands at the prompt:
 
 ```
-git commit -m \"Initial Setup\"
-git init
-git add .
+$ git commit -m \"Initial Setup\"
+$ git init
+$ git add .
 ```
 
 -   Thereafter you can set up an online Git repository and synchronize
@@ -2248,9 +2329,9 @@ end of this exercise you will be able to:
     the prompt to install reactstrap, and Bootstrap 4:
 
 ```
-yarn add bootstrap@4.0.0
-yarn add reactstrap@5.0.0
-yarn add react-popper@0.9.2
+$ yarn add bootstrap@4.0.0
+$ yarn add reactstrap@5.0.0
+$ yarn add react-popper@0.9.2
 ```
 
 <b>Note</b>: You can also install the same using npm using the \"npm
@@ -2262,14 +2343,17 @@ yarn.
 -   Next, open index.js file in the src folder and add the following
     line into the imports:
 
-> . . .
-> import \'bootstrap/dist/css/bootstrap.min.css\';
-> . . .
+```
+ . . .
+ import \'bootstrap/dist/css/bootstrap.min.css\';
+ . . .
+```
 
 ### Adding a Navigation Bar:
 
 -   Open App.js in the src folder and update it as follows:
- 
+
+```
 > class App extends Component {
 >   render() {
 >     return (
@@ -2289,6 +2373,7 @@ yarn.
 > import { Navbar, NavbarBrand } from \'reactstrap\';
 > 
 > . . .
+```
 
 -   Do a Git commit with the message \"Configuring React\"
 
@@ -2420,6 +2505,7 @@ you will be able to:
 
 -   Add the following code to <i>MenuComponent.js</i>:
 
+```
 >         this.state = {
 >             dishes: [
 >                 {
@@ -2475,6 +2561,7 @@ you will be able to:
 >     <Menu />
 > 
 > . . .
+```
 
 -   Open <i>App.css</i> file and delete all its contents.
 
@@ -2692,8 +2779,6 @@ PDF File
 
 <b>Deadline</b>Oct 23, 11:59 PM PDT
 
-i
-
 It looks like this is your first peer-graded assignment. [Learn
 more](https://learner.coursera.help/hc/articles/208279926-Submit-peer-reviewed-assignments)
 
@@ -2720,14 +2805,14 @@ using the card component. At the end of this assignment, you should have
 completed the following tasks:
 
 -   Created a new DishdetailComponent and added it to your React
-    > application.
+    application.
 
 -   Updated the view of the DishdetailComponent to display the details
-    > of the selected dish using an reactstrap card component.
+    of the selected dish using an reactstrap card component.
 
 -   Updated the view of the DishdetailComponent to display the list of
-    > comments about the dish using the Bootstrap unstyled list
-    > component.
+    comments about the dish using the Bootstrap unstyled list
+    component.
 
 <b>Assignment Requirements</b>
 
@@ -2778,15 +2863,12 @@ In this task you will be adding a card component to the
 above:
 
 -   Implement a function named renderDish() that takes the dish as a
-    > parameter and returns the JSX code for laying out the details of
-    > the dish in a reactstrap Card. You have already seen this as part
-    > of the MenuComponent class in the exercise earlier.
+    parameter and returns the JSX code for laying out the details of
+    the dish in a reactstrap Card. You have already seen this as part
+    of the MenuComponent class in the exercise earlier.
 
-```{=html}
-<!-- -->
-```
 -   Display the name of the dish as the Card title, and the description
-    > as the Card text.
+    as the Card text.
 
 <b>Task 3</b>
 
@@ -2797,20 +2879,20 @@ property in a JavaScript object that itself points to an array of
 JavaScript objects (comments). This task involves the following steps:
 
 -   Implement a function named renderComments() that takes the comments
-    > array as a parameter and lays out each comment as shown in the
-    > image below. You should use the Bootstrap list-unstyled class on
-    > the list.
+    array as a parameter and lays out each comment as shown in the
+    image below. You should use the Bootstrap list-unstyled class on
+    the list.
 
 -   Each comment should be displayed on two lines, the first one showing
-    > the comment, and the second line showing the comment author\'s
-    > name and the date.
+    the comment, and the second line showing the comment author\'s
+    name and the date.
 
 -   The comments should contain a \<h4\> header with the word
-    > \"Comments\".
+    \"Comments\".
 
 -   Remember to enclose the header and comments inside a \<div\> before
-    > returning the JSX code. Otherwise React will not do the layout
-    > correctly.
+    returning the JSX code. Otherwise React will not do the layout
+    correctly.
 
 -   If the comments are null, then you should return an empty \<div\>.
 
@@ -3401,6 +3483,7 @@ your application. At the end of this exercise you will be able to:
 -   Then update App.css to add some new CSS classes for use in our
     application:
 
+```
 > .row-header{
 >
 >     margin:0px auto;
@@ -3505,29 +3588,13 @@ this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 > import { BrowserRouter } from 'react-router-dom';
->
->  
->
 > . . .
->
->  
->
 >     <BrowserRouter>
->
 >       <div className="App">
->
 >         <Main />
->
 >       </div>
->
 >     </BrowserRouter>
->
->     
->
 > . . .
 ```
 
@@ -3538,25 +3605,13 @@ this exercise you will be able to:
 
 ```
 > import React from 'react';
->
->  
->
 > function Home(props) {
->
 >     return(
->
 >       <div className="container">
->
 >         <h4>Home</h4>
->
 >       </div>
->
 >     );
->
 > }
->
->  
->
 > export default Home;   
 ```
 
@@ -3566,33 +3621,24 @@ this exercise you will be able to:
 
 ```
 > . . .
->
 > import Home from './HomeComponent';
->
 > . . .
->
 > import { Switch, Route, Redirect } from 'react-router-dom';
->
 > . . .
->
 >   render() {
->
 >     const HomePage = () => {
 >       return(
 >           <Home 
 >           />
 >       );
 >     }
->
 > . . .
 >           <Switch>
 >               <Route path='/home' component={HomePage} />
 >               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
 >               <Redirect to="/home" />
 >           </Switch>
->
 > . . .
->
 >  
 ```
 
@@ -3601,83 +3647,40 @@ this exercise you will be able to:
 
 ```
 > import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
->
 > import { NavLink } from 'react-router-dom';
->
->  
->
 > class Header extends Component {
->
 >     constructor(props) {
->
 >         super(props);
->
->     
->
 >         this.toggleNav = this.toggleNav.bind(this);
->
 >         this.state = {
->
 >           isNavOpen: false
->
 >         };
->
 >       }
->
->  
->
 >       toggleNav() {
->
 >         this.setState({
->
 >           isNavOpen: !this.state.isNavOpen
->
 >         });
->
 >       }
->
->  
->
 >     render() {
->
 >         return(
->
 >             <div>
->
 >                 <Navbar dark expand="md">
->
 >                     <div className="container">
->
 >                         <NavbarToggler onClick={this.toggleNav} />
->
 > <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
->
 >                         <Collapse isOpen={this.state.isNavOpen} navbar>
->
 >                             <Nav navbar>
->
 >                             <NavItem>
->
 > <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
->
 >                             </NavItem>
->
 >                             <NavItem>
->
 > <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
->
 >                             </NavItem>
->
 >                             <NavItem>
->
 >  <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
->
 >                             </NavItem>
->
 >                             <NavItem>
->
 > <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
->
 >                             </NavItem>
 ```
 
@@ -3685,27 +3688,12 @@ this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 > import { Link } from 'react-router-dom';
->
->  
->
 > . . .
->
->  
->
 >                         <li><Link to='/home'>Home</Link></li>
->
 >                         <li><Link to='/aboutus'>About Us</Link></li>
->
 >                         <li><Link to='/menu'>Menu</Link></li>
->
 >                         <li><Link to='/contactus'>Contact Us</Link></li>
->
->                         
->
 > . . .
 ```
 
@@ -3826,7 +3814,6 @@ JS File
 >                         <i className="fa fa-phone"></i>: +852 1234 5678<br />
 >                         <i className="fa fa-fax"></i>: +852 8765 4321<br />
 >  <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
->
 >                         </address>
 >                 </div>
 >                 <div className="col-12 col-sm-6 offset-sm-1">
@@ -3834,20 +3821,15 @@ JS File
 >                 </div>
 >                 <div className="col-12 col-sm-11 offset-sm-1">
 >                     <div className="btn-group" role="group">
->
 ><a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
->
 ><a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
->
 ><a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
->
 >                     </div>
 >                 </div>
 >             </div>
 >         </div>
 >     );
 > }
->
 > export default Contact;
 ```
 
@@ -3856,20 +3838,9 @@ JS File
 
 ```
 > . . .
->
->  
->
 > import Contact from './ContactComponent';
->
->  
->
 > . . .
->
->  
->
 >               <Route exact path='/contactus' component={Contact} />} />
->
->  
 ```
 
 ### Updating the Home Component
@@ -3930,188 +3901,111 @@ JS File
 
 ```
 > export const COMMENTS = 
->
 > [
->
 >     {
->
 >         id: 0,
->
 >         dishId: 0,
->
 >         rating: 5,
->
 >         comment: "Imagine all the eatables, living in conFusion!",
->
 >         author: "John Lemon",
->
 >         date: "2012-10-16T17:57:28.556094Z"
->
 >     },
->
 >     {
->
 >         id: 1,
->
 >         dishId: 0,
->
 >         rating: 4,
->
 >         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
->
 >         author: "Paul McVites",
->
 >         date: "2014-09-05T17:57:28.556094Z"
->
 >     },
->
 >     {
->
 >         id: 2,
->
 >         dishId: 0,
->
 >         rating: 3,
->
 >         comment: "Eat it, just eat it!",
->
 >         author: "Michael Jaikishan",
->
 >         date: "2015-02-13T17:57:28.556094Z"
->
 >     },
->
 >     {
->
 >         id: 3,
->
 >         dishId: 0,
->
 >         rating: 4,
->
 >         comment: "Ultimate, Reaching for the stars!",
->
 >         author: "Ringo Starry",
->
 >         date: "2013-12-02T17:57:28.556094Z"
->
 >     },
->
 >     {
->
 >         id: 4,
->
 >         dishId: 0,
->
 >         rating: 2,
->
 >         comment: "It's your birthday, we're gonna party!",
->
 >         author: "25 Cent",
+```
 
 -   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
+```
 > export const PROMOTIONS = [
->
 >     {
->
 >       id: 0,
->
 >       name: 'Weekend Grand Buffet',
->
 >       image: '/assets/images/buffet.png',
->
 >       label: 'New',
->
 >       price: '19.99',
->
 >       featured: true,
->
->       description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
->
+>  description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
 >     }
->
 >   ];
+```
 
 -   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
+```
 > export const LEADERS = [
->
 >     {
->
 >       id: 0,
->
 >       name: 'Peter Pan',
->
 >       image: '/assets/images/alberto.png',
->
 >       designation: 'Chief Epicurious Officer',
->
 >       abbr: 'CEO',
->
 >       featured: false,
 >
 >       description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
 >
 >     },
->
 >     {
->
 >       id: 1,
->
 >       name: 'Dhanasekaran Witherspoon',
->
 >       image: '/assets/images/alberto.png',
->
 >       designation: 'Chief Food Officer',
->
 >       abbr: 'CFO',
->
 >         featured: false,
->
 >       description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
 >
 >     },
->
 >     {
->
 >       id: 2,
->
 >       name: 'Agumbe Tang',
->
 >       image: '/assets/images/alberto.png',
->
 >       designation: 'Chief Taste Officer',
->
 >       abbr: 'CTO',
->
 >         featured: false,
->
 >       description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
->
 >     },
->
 >     {
->
 >       id: 3,
->
 >       name: 'Alberto Somayya',
 >
 >       image: '/assets/images/alberto.png',
->
 >       designation: 'Executive Chef',
->
 >       abbr: 'EC',
->
 >       featured: true,
->
 >       description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
->
 >     }
->
 >   ];
+```
 
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
@@ -4216,11 +4110,9 @@ the end of this exercise you will be able to:
 
 ```
 . . .
->  
 > import { Card, CardImg, CardImgOverlay,
 >     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 > import { Link } from 'react-router-dom';
->
 >     function RenderMenuItem ({dish, onClick}) {
 >         return (
 >             <Card>
@@ -4592,7 +4484,7 @@ You will find instructions below to submit.
 1.  [<b>Instructions</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping)
 
 2.  [<b>My
-    > submission</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/submit)
+    submission</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/submit)
 
 3.  [<b>Discussions</b>](https://www.coursera.org/learn/front-end-react/peer/ivQry/ui-design-and-prototyping/discussions)
 
@@ -4610,16 +4502,16 @@ peers in order to provide you with constructive feedback on your project
 idea:
 
 1.  Does the report provide a brief overview of the project and the list
-    > of features ?
+    of features ?
 
 2.  Does the report contain some user interface designs that showcase
-    > the realization of the features listed above?
+    the realization of the features listed above?
 
 3.  Does the report contain information about the application flow and
-    > navigation structure?
+    navigation structure?
 
 4.  Does the report provide references to suitable sources in support of
-    > the project?
+    the project?
 
 ## UI Design and Prototyping: Additional Resources
 
@@ -4791,6 +4683,7 @@ exercise you will be able to:
 >                                     <Input type="email" id="email" name="email"
 >
 >                                         placeholder="Email"
+```
 
 -   Save all changes and do a Git commit with the message "Controlled
     Forms".
@@ -4818,169 +4711,88 @@ to:
 -   Open <i>ContactComponent.js</i> and update it as follows to introduce the
     support to track form errors and perform validation:
 
+```
 > . . .
->
 > import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
->
 > . . .
->
->  
->
 > class Contact extends Component {
->
->  
->
 >     constructor(props) {
->
 >         super(props);
->
->  
->
 >         this.state = {
->
 >             firstname: '',
->
 >             lastname: '',
->
 >             telnum: '',
->
 >             email: '',
->
 >             agree: false,
->
 >             contactType: 'Tel.',
->
 >             message: '',
->
 >             touched: {
->
 >                 firstname: false,
->
 >                 lastname: false,
->
 >                 telnum: false,
->
 >                 email: false
->
 >             }
->
 >         }
->
 >         this.handleSubmit = this.handleSubmit.bind(this);
->
 >         this.handleInputChange = this.handleInputChange.bind(this);
->
 >         this.handleBlur = this.handleBlur.bind(this);
->
 >     }
->
->     
->
 >     . . .
->
->     
->
 >     handleBlur = (field) => (evt) => {
->
 >         this.setState({
->
 >             touched: { ...this.state.touched, [field]: true }
->
 >         });
->
 >     }
->
->  
->
 >     validate(firstname, lastname, telnum, email) {
->
 >         const errors = {
->
 >             firstname: '',
+```
 
 -   Now that we have introduced some functions that can be used for form
     validation, let us update the form itself to make use of these as
     follows:
 
+```
 > . . .
->
->  
->
 >                             <FormGroup row>
->
 >                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Input type="text" id="firstname" name="firstname"
->
 >                                         placeholder="First Name"
->
 >                                         value={this.state.firstname}
->
 >                                         valid={errors.firstname === ''}
->
 >                                         invalid={errors.firstname !== ''}
->
 >                                         onBlur={this.handleBlur('firstname')}
->
 >                                         onChange={this.handleInputChange} />
->
 >                                     <FormFeedback>{errors.firstname}</FormFeedback>
->
 >                                 </Col>
->
 >                             </FormGroup>
->
 >                             <FormGroup row>
->
 >                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Input type="text" id="lastname" name="lastname"
->
 >                                         placeholder="Last Name"
->
 >                                         value={this.state.lastname}
->
 >                                         valid={errors.lastname === ''}
->
 >                                         invalid={errors.lastname !== ''}
->
 >                                         onBlur={this.handleBlur('lastname')}
->
 >                                         onChange={this.handleInputChange} />
->
 >                                     <FormFeedback>{errors.lastname}</FormFeedback>
->
 >                                 </Col>
->
 >                             </FormGroup>
->
 >                             <FormGroup row>
->
 >                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Input type="tel" id="telnum" name="telnum"
->
 >                                         placeholder="Tel. Number"
->
 >                                         value={this.state.telnum}
->
 >                                         valid={errors.telnum === ''}
->
 >                                         invalid={errors.telnum !== ''}
->
 >                                         onBlur={this.handleBlur('telnum')}
->
 >                                         onChange={this.handleInputChange} />
->
 >                                     <FormFeedback>{errors.telnum}</FormFeedback>
->
 >                                 </Col>
+```
 
 -   You can now test your form by typing in invalid input and check how
     the form validation works.
@@ -5057,97 +4869,45 @@ this exercise you will be able to:
 -   Update <i>HeaderComponent.js</i> as follows to add a new Modal to the
     application to host the form:
 
+```
 > . . .
->
->  
->
 > import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 >
 >     Button, Modal, ModalHeader, ModalBody,
->
 >     Form, FormGroup, Input, Label } from 'reactstrap';
->
->             
->
 > . . .
->
->  
->
 >         this.state = {
->
 >             isNavOpen: false,
->
 >             isModalOpen: false
->
 >         };
->
->         
->
 > . . .
->
->  
->
 >         this.toggleModal = this.toggleModal.bind(this);
->
->  
->
 > . . .
->
->  
->
->  
->
 >       toggleModal() {
->
 >         this.setState({
->
 >           isModalOpen: !this.state.isModalOpen
->
 >         });
->
 >       }
->
->       
->
 > . . .
->
->  
->
 >                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
->
 >                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
->
 >                     <ModalBody>
->
->                     
->
 >                     </ModalBody>
->
 >                 </Modal>
->
->                 
->
 > . . .
+```
 
 -   Then, add a button to the Navbar to enable toggling the modal:
 
+```
 > . . .
->
->  
->
 >                             <Nav className="ml-auto" navbar>
->
 >                                 <NavItem>
->
 >                                     <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
->
 >                                 </NavItem>
->
 >                             </Nav>
->
->                             
->
 > . . .
+```
 
 ### Adding the Uncontrolled Form
 
@@ -5155,82 +4915,47 @@ this exercise you will be able to:
 
 . . .
 
+```
 >  
->
 >                         <Form onSubmit={this.handleLogin}>
->
 >                             <FormGroup>
->
 >                                 <Label htmlFor="username">Username</Label>
->
 >                                 <Input type="text" id="username" name="username"
->
 >                                     innerRef={(input) => this.username = input} />
->
 >                             </FormGroup>
->
 >                             <FormGroup>
->
 >                                 <Label htmlFor="password">Password</Label>
->
 >                                 <Input type="password" id="password" name="password"
->
 >                                     innerRef={(input) => this.password = input}  />
->
 >                             </FormGroup>
->
 >                             <FormGroup check>
->
 >                                 <Label check>
->
 >                                     <Input type="checkbox" name="remember"
->
 >                                     innerRef={(input) => this.remember = input}  />
->
 >                                     Remember me
->
 >                                 </Label>
->
 >                             </FormGroup>
->
 >                             <Button type="submit" value="submit" color="primary">Login</Button>
->
 >                         </Form>
->
->                         
->
 > . . .
+```
 
 -   Then, add the following function to the class to handle the form
     submission:
 
+```
 > . . .
->
->  
 >
 >         this.handleLogin = this.handleLogin.bind(this);
->
 > . . .
->
->  
->
 >     handleLogin(event) {
->
 >         this.toggleModal();
->
 >         alert("Username: " + this.username.value + " Password: " + this.password.value
->
 >             + " Remember: " + this.remember.checked);
->
 >         event.preventDefault();
->
->  
->
 >     }
->
->       
->
 > . . .
+```
 
 -   Save all the changes and do a Git commit with the message
     \"Uncontrolled Form\"
@@ -5311,192 +5036,109 @@ this exercise you will be able to:
 -   As a first step you will install Redux and React-Redux into your
     application as follows:
 
+```
 > yarn add redux@3.7.2
 >
 > yarn add react-redux@5.0.7
+```
 
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
     a file named <i>reducer.js</i> with the code below:
 
+```
 > import { DISHES } from '../shared/dishes';
->
 > import { COMMENTS } from '../shared/comments';
->
 > import { PROMOTIONS } from '../shared/promotions';
->
 > import { LEADERS } from '../shared/leaders';
->
->  
->
 > export const initialState = {
->
 >     dishes: DISHES,
->
 >     comments: COMMENTS,
->
 >     promotions: PROMOTIONS,
->
 >     leaders: LEADERS
->
 > };
->
->  
 >
 > export const Reducer = (state = initialState, action) => {
->
 >     return state;
->
 > };
+```
 
 -   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
+```
 > import {createStore} from 'redux';
->
 > import { Reducer, initialState } from './reducer'
->
->  
->
 > export const ConfigureStore = () => {
->
 >     const store = createStore(
->
 >         Reducer, // reducer
->
 >         initialState, // our initialState
->
 >     );
->
->  
->
 >     return store;
->
 > }
+```
 
 -   Next, open <i>App.js</i> and update it as follows:
 
+```
 > . . .
->
 >  
->
->  
->
 > import { Provider } from 'react-redux';
->
 > import { ConfigureStore } from './redux/configureStore';
->
->  
 >
 > const store = ConfigureStore();
 >
->  
->
->  
->
 > . . .
->
->  
->
 >       <Provider store={store}>
->
 >         <BrowserRouter>
->
 >           <div className="App">
->
 >             <Main />
->
 >           </div>
->
 >         </BrowserRouter>
->
 >       </Provider>
->
->  
->
 > . . .
+```
 
 -   Finally, update MainComponent.js to connect it to Redux store and
     use it:
 
+```
 > . . .
->
->  
->
 > import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
->
 > import { connect } from 'react-redux';
 >
->  
->
->  
->
 > const mapStateToProps = state => {
->
 >   return {
->
 >     dishes: state.dishes,
->
 >     comments: state.comments,
->
 >     promotions: state.promotions,
->
 >     leaders: state.leaders
->
 >   }
->
 > }
->
->  
 >
 > . . .
 >
->  
->
 >     const HomePage = () => {
->
 >       return(
->
 >           <Home 
->
 >               dish={this.props.dishes.filter((dish) => dish.featured)[0]}
->
 >               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
->
 >               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
->
 >           />
->
 >       );
->
 >     }
->
->  
->
 >     const DishWithId = ({match}) => {
->
 >       return(
->
 >           <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
->
 >             comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
->
 >       );
->
 >     };
->
->  
->
 >     return (
->
 >       <div>
->
 >         <Header />
->
 >         <div>
->
 >           <Switch>
->
 >               <Route path='/home' component={HomePage} />
+```
 
 -   Save all the changes and do a Git commit with the message \"Intro.
     to Redux\".
@@ -5580,85 +5222,45 @@ react-redux-form. At the end of this exercise you will be able to:
 -   Then open <i>ContactComponent.js</i> and update the Feedback Form to use
     react-redux-form:
 
+```
 > . . .
->
->  
->
 > import { Breadcrumb, BreadcrumbItem,
->
 >             Button, Row, Col, Label } from 'reactstrap';
->
 > import { Control, LocalForm, Errors } from 'react-redux-form';
->
->  
->
 > . . .
->
->  
->
->  
 >
 >     handleSubmit(values) {
->
 >         console.log('Current State is: ' + JSON.stringify(values));
->
 >         alert('Current State is: ' + JSON.stringify(values));
->
 >         // event.preventDefault();
->
 >     }
->
->     
 >
 > . . .
 >
->  
->
 >                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
->
 >                             <Row className="form-group">
->
 >                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Control.text model=".firstname" id="firstname" name="firstname"
->
 >                                         placeholder="First Name"
->
 >                                         className="form-control"
->
 >                                          />
->
 >                                 </Col>
->
 >                             </Row>
->
 >                             <Row className="form-group">
->
 >                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Control.text model=".lastname" id="lastname" name="lastname"
->
 >                                         placeholder="Last Name"
->
 >                                         className="form-control"
->
 >                                          />
->
 >                                 </Col>
->
 >                             </Row>
->
 >                             <Row className="form-group">
->
 >                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Control.text model=".telnum" id="telnum" name="telnum"
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form\".
@@ -5685,85 +5287,45 @@ react-redux-form. At the end of this exercise you will be able to:
 -   Open <i>ContactComponent.js</i> and update it as follows to implement
     form validation:
 
+```
 > . . . 
 >
->  
->
->  
->
 > const required = (val) => val && val.length;
->
 > const maxLength = (len) => (val) => !(val) || (val.length <= len);
->
 > const minLength = (len) => (val) => val && (val.length >= len);
->
 > const isNumber = (val) => !isNaN(Number(val));
->
 > const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
->
->  
->
 > . . .
->
->  
->
 >                             <Row className="form-group">
->
 >                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Control.text model=".firstname" id="firstname" name="firstname"
->
 >                                         placeholder="First Name"
->
 >                                         className="form-control"
->
 >                                         validators={{
->
 >                                             required, minLength: minLength(3), maxLength: maxLength(15)
->
 >                                         }}
->
 >                                          />
->
 >                                     <Errors
->
 >                                         className="text-danger"
->
 >                                         model=".firstname"
->
 >                                         show="touched"
->
 >                                         messages={{
->
 >                                             required: 'Required',
->
 >                                             minLength: 'Must be greater than 2 characters',
->
 >                                             maxLength: 'Must be 15 characters or less'
->
 >                                         }}
->
 >                                      />
->
 >                                 </Col>
->
 >                             </Row>
->
 >                             <Row className="form-group">
->
 >                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->
 >                                 <Col md={10}>
->
 >                                     <Control.text model=".lastname" id="lastname" name="lastname"
->
 >                                         placeholder="Last Name"
->
 >                                         className="form-control"
->
 >                                         validators={{
+```
 
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form Validation\"
@@ -5822,7 +5384,7 @@ assignment, you should have completed the following tasks to update the
 page:
 
 -   Added a new class component named CommentForm to
-    > <i>DishdetailComponent.js</i>.
+    <i>DishdetailComponent.js</i>.
 
 -   Provide a form to enable users to submit their comments
 
@@ -5836,13 +5398,13 @@ In this task you will add a new class component named CommentForm. You
 need to complete the following:
 
 -   Add a new class component named CommentForm that will add a button
-    > to the view as shown in the image below.
+    to the view as shown in the image below.
 
 -   When the button is clicked, it toggles a modal that will display the
-    > comment form.
+    comment form.
 
 -   The CommentForm component is used by the RenderComments function to
-    > display the button for toggling the modal.
+    display the button for toggling the modal.
 
 <b>Task 2</b>
 
@@ -5851,11 +5413,11 @@ comments as shown in the image below. You need to complete the
 following:
 
 -   Set up the form as a local form using the react-redux-form with the
-    > three fields: author, rating and comment.
+    three fields: author, rating and comment.
 
 -   The rating field in the comment form is implemented using a select,
-    > the author is implemented using a text field, while the comment
-    > uses a textarea with six rows.
+    the author is implemented using a text field, while the comment
+    uses a textarea with six rows.
 
 <b>Task 3</b>
 
@@ -5867,7 +5429,7 @@ below. You need to complete the following:
 -   The author field should be less than or equal to 15 characters.
 
 -   The user should be alerted by showing the invalid message displayed
-    > at the bottom of the field.
+    at the bottom of the field.
 
 ![](./images/image006.png){width="6.5in"
 height="7.429861111111111in"}
@@ -5891,19 +5453,19 @@ based on the following criteria:
 <b>Task 1:</b>
 
 -   A CommentForm component is implemented that adds a button to the
-    > view, which when clicked will toggle a modal containing the form.
+    view, which when clicked will toggle a modal containing the form.
 
 <b>Task 2:</b>
 
 -   The form is set up with the three fields correctly.
 
 -   A select is included in the form to enable users to submit the
-    > rating, a text field for author and a text area for the comment.
+    rating, a text field for author and a text area for the comment.
 
 <b>Task 3:</b>
 
 -   The author field is being properly validated. If incorrect, the user
-    > is alerted.
+    is alerted.
 
 ## Assignment 3: React Forms and Redux: Additional Resources
 
@@ -5964,7 +5526,6 @@ manage the whole state. At the end of this exercise you will be able to:
 
 ```
 > import { DISHES } from '../shared/dishes';
->
 > export const Dishes = (state = DISHES, action) => {
 >     switch (action.type) {
 >         default:
@@ -5978,20 +5539,12 @@ manage the whole state. At the end of this exercise you will be able to:
 ```
 > import { COMMENTS } from '../shared/comments';
 >
->  
->
 > export const Comments = (state = COMMENTS, action) => {
->
 >     switch (action.type) {
 >
->  
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
 ```
 
@@ -6000,19 +5553,11 @@ manage the whole state. At the end of this exercise you will be able to:
 
 ```
 > import { PROMOTIONS } from '../shared/promotions';
->
->  
->
 > export const Promotions = (state = PROMOTIONS, action) => {
->
 >     switch (action.type) {
->
 >         default:
->
 >           return state;
->
 >       }
->
 > };
 ```
 
@@ -6021,7 +5566,6 @@ manage the whole state. At the end of this exercise you will be able to:
 
 ```
 > import { LEADERS } from '../shared/leaders';
->
 > export const Leaders = (state = LEADERS, action) => {
 >     switch (action.type) {
 >         default:
@@ -6050,7 +5594,6 @@ manage the whole state. At the end of this exercise you will be able to:
 >             leaders: Leaders
 >         })
 >     );
->  
 >     return store;
 > }
 ```
@@ -6094,17 +5637,10 @@ store. At the end of this exercise you will be able to:
 
 ```
 > import <i> as ActionTypes from './ActionTypes';
->
->  
->
 > export const addComment = (dishId, rating, author, comment) => ({
->
 >     type: ActionTypes.ADD_COMMENT,
->
 >     payload: {
->
 >         dishId: dishId,
->
 >         rating: rating,
 >         author: author,
 >         comment: comment
@@ -6117,9 +5653,7 @@ store. At the end of this exercise you will be able to:
 
 ```
 > import { COMMENTS } from '../shared/comments';
->
 > import </i> as ActionTypes from './ActionTypes';
->
 > export const Comments = (state = COMMENTS, action) => {
 >     switch (action.type) {
 >         case ActionTypes.ADD_COMMENT:
@@ -6139,25 +5673,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
 > import { addComment } from '../redux/ActionCreators';
->
 > . . .
->
 >   const mapDispatchToProps = dispatch => ({
->
 >     addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
->
 >   });
->
 > . . .
->
 >       <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >         comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
 >         addComment={this.props.addComment}
 >       />
->
 > . . .
 >
 > export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
@@ -6168,53 +5693,16 @@ store. At the end of this exercise you will be able to:
 
 ```
 > . . .
->
->  
->
 >   function RenderComments({comments, addComment, dishId}) {
->
->  
->
->  
->
->  
->
 > . . .
->
->  
->
 >       <CommentForm dishId={dishId} addComment={addComment} />
->
->  
->
->  
->
 > . . .
->
->  
->
 >         this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
->
->  
->
->  
->
->  
->
 > . . .
->
->  
->
 >       <RenderComments comments={props.comments}
->
 >         addComment={props.addComment}
->
 >         dishId={props.dish.id}
->
 >       />
->
->  
->
 > . . .
 ```
 
@@ -6287,12 +5775,9 @@ function. At the end of this exercise you will be able to:
 
 ```
 > import {createStore, combineReducers, applyMiddleware } from 'redux';
->
 > . . .
->
 > import thunk from 'redux-thunk';
 > import logger from 'redux-logger';
->
 > . . .
 >         combineReducers({
 >             dishes: Dishes,
@@ -6301,7 +5786,6 @@ function. At the end of this exercise you will be able to:
 >             leaders: Leaders
 >         }),
 >         applyMiddleware(thunk, logger)
->
 > . . .
 ```
 
@@ -6309,7 +5793,6 @@ function. At the end of this exercise you will be able to:
 
 ```
 . . .
-
 export const DISHES_LOADING = 'DISHES_LOADING';
 export const DISHES_FAILED = 'DISHES_FAILED';
 export const ADD_DISHES = 'ADD_DISHES';
@@ -6319,61 +5802,24 @@ export const ADD_DISHES = 'ADD_DISHES';
 
 ```
 > . . .
->
->  
->
 > import { DISHES } from '../shared/dishes';
->
->  
->
 > . . .
->
->  
->
->  
->
 > export const fetchDishes = () => (dispatch) => {
->
->  
->
 >     dispatch(dishesLoading(true));
->
->  
->
 >     setTimeout(() => {
->
 >         dispatch(addDishes(DISHES));
->
 >     }, 2000);
->
 > }
->
->  
->
 > export const dishesLoading = () => ({
->
 >     type: ActionTypes.DISHES_LOADING
->
 > });
->
->  
->
 > export const dishesFailed = (errmess) => ({
->
 >     type: ActionTypes.DISHES_FAILED,
->
 >     payload: errmess
->
 > });
->
->  
->
 > export const addDishes = (dishes) => ({
->
 >     type: ActionTypes.ADD_DISHES,
->
 >     payload: dishes
->
 > });
 ```
 
@@ -6382,41 +5828,19 @@ export const ADD_DISHES = 'ADD_DISHES';
 
 ```
 > import </i> as ActionTypes from './ActionTypes';
->
->  
->
 > export const Dishes = (state = { isLoading: true,
->
 >     errMess: null,
->
 >     dishes:[]}, action) => {
->
 >     switch (action.type) {
->
 >         case ActionTypes.ADD_DISHES:
->
 >             return {...state, isLoading: false, errMess: null, dishes: action.payload};
->
->  
->
 >         case ActionTypes.DISHES_LOADING:
->
 >             return {...state, isLoading: true, errMess: null, dishes: []}
->
->  
->
 >         case ActionTypes.DISHES_FAILED:
->
 >             return {...state, isLoading: false, errMess: action.payload};
->
->  
->
 >         default:
->
 >             return state;
->
 >     }
->
 > };
 ```
 
@@ -6425,23 +5849,13 @@ export const ADD_DISHES = 'ADD_DISHES';
 
 ```
 > import React from 'react';
->
->  
->
 > export const Loading = () => {
->
 >     return(
->
 >         <div className="col-12">
->
 >             <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
->
 >             <p>Loading . . .</p>
->
 >         </div>
->
 >     );
->
 > };
 ```
 
@@ -6651,7 +6065,6 @@ store. At the end of this exercise you will be able to:
 >   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
 > . . .
 > <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
->
 > . . .
 ```
 
@@ -6670,7 +6083,6 @@ store. At the end of this exercise you will be able to:
 > . . .
 >                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
 >                           . . .
->
 >                         </Form>
 > . . .
 ```
@@ -6887,7 +6299,9 @@ exercise you will be able to:
 
 -   As a first step, let us install Fetch into our project as follows:
 
+```
 > yarn add cross-fetch@2.1.0
+```
 
 -   Now that we have installed Fetch, let us configure your application
     to connect to the server. First, create a file named <i>baseUrl.js</i> in
