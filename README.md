@@ -87,20 +87,22 @@ Part II of Front-end web development from Coursera
 ## About this course:
 
 <p>This course explores Javascript based front-end application development, and in particular the React library (Currently Ver. 16.3). </p>
-<p>This course will use JavaScript ES6 for developing React application. You will also get an introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design. </p>
 <ul>
-<li><p>You will be introduced to various aspects of React components. </p></li>
-<li><p>You will learn about React router and its use in developing single-page applications. </p></li>
-<li><p>You will also learn about designing controlled forms. </p></li>
-<li><p>You will be introduced to the Flux architecture and Redux. </p></li>
-<li><p>You will explore various aspects of Redux and use it to develop React-Redux powered applications. </p></li>
-<li><p>You will then learn to use Fetch for client-server communication and the use of REST API on the server side. </p></li>
+  <li><p>This course will use JavaScript ES6 for developing React applications.</p></li>
+  <li><p>You will also get an introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design. </p></li>
+  <li><p>You will be introduced to various aspects of React components. </p></li>
+  <li><p>You will learn about React router and its use in developing single-page applications. </p></li>
+  <li><p>You will also learn about designing controlled forms. </p></li>
+  <li><p>You will be introduced to the Flux architecture and Redux. </p></li>
+  <li><p>You will explore various aspects of Redux and use it to develop React-Redux powered applications. </p></li>
+  <li><p>You will then learn to use Fetch for client-server communication and the use of REST API on the server side. </p></li>
+  <li><p>A quick tour through React animation support and testing rounds off the course.</p></li>
 </ul>
-
-<p>A quick tour through React animation support and testing rounds off the course. You must have preferably completed the previous course in the specialization on Bootstrap 4, or have a working knowledge of Bootstrap 4 to be able to navigate this course. Also, a good working knowledge of JavaScript, especially ES 5 is strongly recommended.
+<p>You must have preferably completed the previous course in the specialization on Bootstrap 4, or have a working knowledge of Bootstrap 4 to be able to navigate this course.</p>
+<p>Also, a good working knowledge of JavaScript, especially ES 5 is strongly recommended.</p>
 </p>
 
-<h2>At the end of this course, you will:</h2>
+<h3>At the end of this course, you will:</h3>
 
   - Be familiar with client-side Javascript application development and the React library
 
@@ -114,258 +116,151 @@ Part II of Front-end web development from Coursera
 
   - Be able to use Redux to design the architecture for a React-Redux application
 
-<b>Week 1 of 4 - Syllabus</b>
+<h4>Week 1 of 4 - Syllabus</h4>
 
-<b>Introduction to React</b> 10hrs
+<h3>Introduction to React</h3> 10hrs
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
 also learn about React components and JSX.
 
-<b>21 videos (Total 234 min), 23 readings</b>
-
+<!-- <b>21 videos (Total 234 min), 23 readings</b> -->
+<!--
 ## [Welcome to Front-End Web Development with React](https://www.coursera.org/lecture/front-end-react/welcome-to-front-end-web-development-with-react-zHA5u) 10m
-
 ## How to Use the Learning Resources 10m
-
 ## What is Full-Stack Web Development ?5m
-
 ## Exercise (Video): Setting up Git 6m
-
 ## Exercise (Video): Basic Git Commands 18m
-
 ## Exercise (Video): Online Git Repositories 12m
-
 ## Node.js and NPM 3m
-
 ## Exercise (Video): Setting up Node.js and NPM 2m
-
 ## Exercise (Video): Basics of Node.js and NPM 23m
-
 ## Front-end JavaScript Frameworks and Libraries Overview 12m
-
 ## Introduction to React 8m
-
 ## Exercise (Video): Getting Started with React 9m
-
 ## React App Overview 16m
-
 ## Introduction to JSX 5m
-
 ## Exercise (Video): Configuring your React Application 9m
-
 ## React Components 3m
-
 ## Exercise (Video): React Components Part 1 24m
-
 ## React Components: State and Props 9m
-
 ## Exercise (Video): React Components Part 2 22m
-
 ## React Components: Lifecycle Methods Part 1 14m
-
 ## Assignment 1 Requirements (Video): React Components 5m
-
 <b>23 readings -- Chapter 1</b>
-
 ## Welcome to Front-End Web Development with React: Additional Resources 10m
-
 ## Full-Stack Web Development: The Big Picture: Objectives and Outcomes 10m
-
 ## Full Stack Web Development: Additional Resources 10m
-
 ## Setting up Your Development Environment: Git and Node: Objectives and Outcomes 10m
-
 ## Setting up your Development Environment 10m
-
 ## Exercise (Instructions): Setting up Git 10m
-
 ## Exercise (Instructions): Basic Git Commands 10m
-
 ## Exercise (Instructions): Online Git Repositories 10m
-
 ## Exercise (Instructions): Setting up Node.js and NPM 10m
-
 ## Exercise (Instructions): Basics of Node.js and NPM 10m
-
 ## Setting up your Development Environment: Git and Node: Additional Resources 10m
-
 ## Introduction to React: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Getting Started with React 10m
-
 ## Exercise (Instructions): Configuring your React Application 10m
-
 ## Introduction to React: Additional Resources 10m
-
 ## React Components: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): React Components Part 1 10m
-
 ## Exercise (Instructions): React Components Part 2 10m
-
 ## React Components: Additional Resources 10m
-
 ## Assignment 1: React Components: Additional Resources 10m
-
 ## Ideation: Objectives and Outcomes 10m
-
 ## Ideation Report Template 10m
-
 ## Ideation: Additional Resources 10m
+-->
 
-<b>Week 2</b>
+<h4>Week 2</h4>
 
-<b>8 hours to complete</b>
+<h3>React Router and Single Page Applications</h3> 8 hours to complete
 
-### React Router and Single Page Applications
+In this week, you will learn about various component types. You will learn about React router and its use in designing single page applications. You will also learn about single page applications and use React Router to design single page applications.
 
-In this week, you will learn about various component types. You will
-learn about React router and its use in designing single page
-applications. You will also learn about single page applications and use
-React Router to design single page applications.
-
-<b>14 videos (Total 191 min), 16 readings</b>
-
+<!-- <b>14 videos (Total 191 min), 16 readings</b> -->
+<!--
 ## [Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m
-
 ## Exercise (Video): Presentational and Container Components 21m
-
 ## React Components: Lifecycle Methods Part 28m
-
 ## Functional Components 3m
-
 ## Exercise (Video): Functional Components 14m
-
 ## React Virtual DOM 6m
-
 ## Exercise (Video): Header and Footer 17m
-
 ## React Router 8m
-
 ## Exercise (Video): React Router 36m
-
 ## Single Page Applications 9m
-
 ## Exercise (Video): Single Page Applications Part 1 23m
-
 ## React Router: Parameters 6m
-
 ## Exercise (Video): Single Page Applications Part 2 23m
-
 ## Assignment 2: React Router and Single Page Applications 4m
-
 <b>16 readings</b>
-
 ## React Component Types: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Presentational and Container Components 10m
-
 ## Exercise (Instructions): Functional Components 10m
-
 ## React Component Types: Additional Resources 10m
-
 ## React Router: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Header and Footer 10m
-
 ## Exercise (Instructions): React Router 10m
-
 ## React Router: Additional Resources 10m
-
 ## Single Page Applications: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Single Page Applications Part 1 10m
-
 ## Exercise (Instructions): Single Page Applications Part 2 10m
-
 ## Single Page Applications: Additional Resources 10m
-
 ## Assignment 2: React Router and Single Page Applications: Additional Resources 10m
-
 ## UI Design and Prototyping: Objectives and Outcomes 10m
-
 ## UI Design and Prototyping Report Template 10m
-
 ## UI Design and Prototyping: Additional Resources 10m
+-->
 
-<b>Week 3</b>
+<h4>Week 3</h4>
 
-<b>\
-7 hours to complete</b>
-
-### React Forms, Flow Architecture and Introduction to Redux
+<h3>React Forms, Flow Architecture and Introduction to Redux</h3> 7 hours to complete
 
 In this module you will be introduced to uncontrolled and controlled
 forms and briefly examine form validation in React applications. You
 will get an overview of the Flux architecture and introduced to Redux as
 a way of realizing the flux architecture
 
+<!--
 <b>13 videos (Total 188 min), 15 readings</b>
-
 ## [Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m
-
 ## Exercise (Video): Controlled Forms 35m
-
 ## Exercise (Video): Controlled Form Validation 23m
-
 ## Uncontrolled Components 2m
-
 ## Exercise (Video): Uncontrolled Forms 17m
-
 ## The Model-View-Controller Framework 7m
-
 ## The Flux Architecture 11m
-
 ## Introduction to Redux 20m
-
 ## Exercise (Video): Introduction to Redux 23m
-
 ## React Redux Forms 4m
-
 ## Exercise (Video): React Redux Form 13m
-
 ## Exercise (Video): React Redux Form Validation 15m
-
 ## Assignment 3: React Forms and Redux 5m
-
 <b>15 readings</b>
-
 ## Controlled Forms: Objectives and Oute 10m
-
 ## Exercise (Instructions): Controlled Forms 10m
-
 ## Exercise (Instructions): Controlled Form Validation 10m
-
 ## Controlled Forms: Additional Resources 10m
-
 ## Uncontrolled Forms: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Uncontrolled Forms 10m
-
 ## Uncontrolled Forms: Additional Resources 10m
-
 ## Introduction to Redux: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Introduction to Redux 10m
-
 ## Introduction to Redux: Additional Resources 10m
-
 ## React Redux Form: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): React Redux Form 10m
-
 ## Exercise (Instructions): React Redux Form Validation 10m
-
 ## React Redux Form: Additional Resources 10m
-
 ## Assignment 3: React Forms and Redux: Additional Resources 10m
+-->
 
-<b>Week 4</b>
+<h4>Week 4</h4>
 
 <b>12 hours to complete</b>
 
-### More Redux and Client-Server Communication
+<h3>More Redux and Client-Server Communication</h3> 12 hours to complete
 
 In this module you will explore Redux further including Redux action,
 combining reducers, and Redux thunk, client-server communication using
@@ -373,101 +268,56 @@ Fetch and the REST API. You will get a brief introduction to animation
 in React. You will also learn about testing, building and deploying
 React applications.
 
+<!--
 <b>20 videos (Total 312 min), 26 readings</b>
-
 ## [Redux Actions](https://www.coursera.org/lecture/front-end-react/redux-actions-hUr1y) 8m
-
 ## Exercise (Video): Combining Reducers 9m
-
 ## Exercise (Video): Redux Actions 24m
-
 ## Redux Thunk 10m
-
 ## Exercise (Video): Redux Thunk 50m
-
 ## Exercise (Video): React-Redux-Form Revisited 12m
-
 ## Networking Essentials 17m
-
 ## Brief Representational State Transfer (REST) 16m
-
 ## Exercise (Video): Setting up a Server using json-server 6m
-
 ## Promises 10m
-
 ## Fetch 20m
-
 ## Exercise (Video): Fetch from Server 33m
-
 ## Exercise (Video): Fetch Handling Errors 15m
-
 ## Exercise (Video): Fetch Post Comment 18m
-
 ## React Animations 13m
-
 ## Exercise (Video): React Animations 9m
-
 ## Exercise (Video): React Animation Components 9m
-
 ## Assignment 4: Redux, Client-Server Communication and Fetch 4m
-
 ## Introduction to Webpack 7m
-
 ## Exercise (Video): Building and Deploying the React Application 11m
-
 <b>26 readings</b>
-
 ## Redux Actions: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Combining Reducers 10m
-
 ## Exercise (Instructions): Redux Actions 10m
-
 ## Redux Actions: Additional Resources 10m
-
 ## Redux Thunk: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Redux Thunk 10m
-
 ## Exercise (Instructions): React-Redux-Form Revisited 10m
-
 ## Redux Thunk: Additional Resources 10m
-
 ## Client-Server Communication: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Setting up a Server using json-server 10m
-
 ## Client-Server Communication: Additional Resources 10m
-
 ## Fetch: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Fetch from Server 10m
-
 ## Exercise (Instructions): Fetch Handling Errors 10m
-
 ## Exercise (Instructions): Fetch Post Comment 10m
-
 ## Fetch: Additional Resources 10m
-
 ## React Animations: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): React Animations 10m
-
 ## Exercise (Instructions): React Animation Components 10m
-
 ## React Animations: Additional Resources 10m
-
 ## Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources 10m
-
 ## Building and Deployment: Objectives and Outcomes 10m
-
 ## Exercise (Instructions): Building and Deploying the React Application 10m
-
 ## Building and Deployment: Additional Resources 10m
-
 ## Project Implementation: Objectives and Outcomes 10m
-
 ## Final Report Template 10m
+-->
 
 This course explores Javascript based front-end application development,
 and in particular the React library (Currently Ver. 16.3).
@@ -488,10 +338,6 @@ This course will use JavaScript ES6 for developing React application.
 
 -   You will explore various aspects of Redux and use it to develop
     React-Redux powered applications.
-
-```{=html}
-<!-- -->
-
 
 -   You will then learn to use Fetch for client-server communication and
     the use of REST API on the server side.
