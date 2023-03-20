@@ -58,22 +58,20 @@ Instagram - https://www.instagram.com/thenetninja/
 <h3>Project Structure</h3>
 The hands-on project on Build Your First React Website is divided into following tasks:
 
-Task 1: User interface orientation and finished product preview
-Task 2: React Overview
-Task 3: Create the starter website and start customising
-Task 4: Render the banner image with a functional component
-Task 5: Apply CSS to make the banner image responsive
-Task 6: Display a prototype photo with a class-based component
-Task 7: Make an album component and render all our photos
-Task 8: Dynamically generate the content for the album with JSON
-Task 9: Debugging React
+ 1. Task 1: User interface orientation and finished product preview
+ 2. Task 2: React Overview
+ 3. Task 3: Create the starter website and start customising
+ 4. Task 4: Render the banner image with a functional component
+ 5. Task 5: Apply CSS to make the banner image responsive
+ 6. Task 6: Display a prototype photo with a class-based component
+ 7. Task 7: Make an album component and render all our photos
+ 8. Task 8: Dynamically generate the content for the album with JSON
+ 9. Task 9: Debugging React
 
-# Front-End Web Development with React
+<h2>Front-End Web Development with React</h2>
+<h7>(by The Hong Kong University of Science and Technology)</h7>
 
-(by The Hong Kong University of Science and Technology)
-
-Part II of Front-end web development from Coursera
-
+<h3>Part II of Front-end web development from Coursera</h3>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 01. hong kong university of science and technology logo (01) ------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -84,7 +82,7 @@ Part II of Front-end web development from Coursera
 </p>
 <!-- width="5.0in" height="2.6180555555555554in" --->
 
-## About this course:
+<h3>About this course:</h3>
 
 <p>This course explores Javascript based front-end application development, and in particular the React library (Currently Ver. 16.3). </p>
 <ul>
@@ -118,7 +116,8 @@ Part II of Front-end web development from Coursera
 
 <h4>Week 1 of 4 - Syllabus</h4>
 
-<h3>Introduction to React</h3> 10hrs
+<h3>Introduction to React</h3>
+<h7>10 hrs</h7>
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
@@ -175,7 +174,8 @@ also learn about React components and JSX.
 
 <h4>Week 2</h4>
 
-<h3>React Router and Single Page Applications</h3> 8 hours to complete
+<h3>React Router and Single Page Applications</h3>
+<h7>8 hours to complete</h7>
 
 In this week, you will learn about various component types. You will learn about React router and its use in designing single page applications. You will also learn about single page applications and use React Router to design single page applications.
 
@@ -216,7 +216,8 @@ In this week, you will learn about various component types. You will learn about
 
 <h4>Week 3</h4>
 
-<h3>React Forms, Flow Architecture and Introduction to Redux</h3> 7 hours to complete
+<h3>React Forms, Flow Architecture and Introduction to Redux</h3>
+<h7>7 hours to complete</h7>
 
 In this module you will be introduced to uncontrolled and controlled
 forms and briefly examine form validation in React applications. You
@@ -257,10 +258,10 @@ a way of realizing the flux architecture
 -->
 
 <h4>Week 4</h4>
+<h7>12 hours to complete</h7>
 
-<b>12 hours to complete</b>
-
-<h3>More Redux and Client-Server Communication</h3> 12 hours to complete
+<h3>More Redux and Client-Server Communication</h3>
+<h7>12 hours to complete</h7>
 
 In this module you will explore Redux further including Redux action,
 combining reducers, and Redux thunk, client-server communication using
@@ -383,15 +384,15 @@ development. At the end of this lesson, you will be able to:
 -   Understand the position of this course in the context of this
     specialization
 
-<h1>WEEK # 1</h1>
+<h2>WEEK # 1</h2>
 
-<h2>Introduction to React</h2>
+<h3>Introduction to React</h3>
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
 also learn about React components and JSX.
 
-### Learning Objectives
+<h4>Learning Objectives</h4>
 
 -   Express the general characteristics of JavaScript frameworks and
     libraries
@@ -402,9 +403,10 @@ also learn about React components and JSX.
 
 -   Express what is meant by full-stack web development
 
-## Welcome to Front-End Web Development with React 10m
+<h3>Welcome to Front-End Web Development with React</h3>
+<h7>10m</h7>
 
-### PDFs of Presentations
+<h4>PDFs of Presentations</h4>
 
 <b>0-Course-Overview.pdf</b>
 
@@ -1837,7 +1839,7 @@ PDF File
 ### Additional Resources (Git)
 
 ```
-$ Git site [http://git-scm.com](http://git-scm.com/).
+$ git site [http://git-scm.com](http://git-scm.com/).
 ```
 
 -   [Installing
@@ -6964,7 +6966,9 @@ exercise you will be able to:
 -   To build the distribution folder containing your React application,
     type the following at the prompt:
 
+```
 npm run build
+```
 
 -   This should build a distribution folder named <i>build</i> containing all
     your application files.
@@ -6977,8 +6981,8 @@ npm run build
 -   Copy the contents of the build folder to the public folder of your
     json-server
 
--   Now your React application can be accessed at the link
-    <http://localhost:3001/>.
+-   Now your React application can be accessed at the link:
+    &lt;http://localhost:3001/&gt;.
 
 -   If you are setting up a server on the cloud or anywhere, all that
     you need to do is copy the contents of the build folder to the
@@ -7016,7 +7020,7 @@ PDF File
 
 ## Project Implementation: Objectives and Outcomes
 
-This is the final stretch before you complete your project. By this time
+<p>This is the final stretch before you complete your project. By this time
 you should already have a good scaffolding for your website. As you
 flesh out your project and race towards completion, it is time to pause
 and take stock of the current situation. Perhaps a critical look back at
@@ -7024,8 +7028,9 @@ the past, with the view of learning from our experience and
 consolidating this learning into an effective, organized and repeatable
 process is in order. Upon completion of the project it is important not
 only to demonstrate the working project, but also summarize the process
-of reaching the final goal. At the end of this lesson, you will be able
-to:
+of reaching the final goal. 
+
+At the end of this lesson, you will be able to:
 
 -   Document the process of starting from an idea and reaching the
     conclusion of the project, not just the implementation, but also
@@ -7100,21 +7105,18 @@ server, please submit the URL of the site
 
 ## Review criteria
 
-<b>less </b>
+<b>less</b>
 
 Your final project submission will be evaluated by your peers
 considering the following items:
 
--   Have the details of the implementation been briefly described in the
-    > final report?
+-   Have the details of the implementation been briefly described in the final report?
 
--   Have any justifications for the choices made been provided in the
-    > final report?
+-   Have any justifications for the choices made been provided in the final report?
 
 -   Has the source code been made available for review?
 
--   Has the URL to the server where the project is running been
-    > provided?
+-   Has the URL to the server where the project is running been provided?
 
 ..the end.
 
