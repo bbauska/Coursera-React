@@ -1769,21 +1769,21 @@ $ npm install lite-server \--save-dev
     Note the addition of two lines, line 7 and line 9.
 
 ```
->    \"start\": \"npm run lite\",
->    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
->    \"lite\": \"lite-server\"
->  },
->  \"repository\": {
->    \"type\": \"git\",
->    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
->  },
->  \"author\": \"\",
->  \"license\": \"ISC\",
->  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
->  \"devDependencies\": {
->    \"lite-server\": \"\^2.2.2\"
->  }
->}
+    &quot;start&quot;: &quot;npm run lite&quot;,
+    &quot;test&quot;: &quot;echo \\&quot;Error: no test specified\&quot; && exit 1&quot;,
+    &quot;lite&quot;: &quot;lite-server&quot;
+  },
+  &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;homepage&quot;: &quot;[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;lite-server&quot;: &quot;\^2.2.2&quot;
+  }
+}
 ```
 
 -   Next, start the development server by typing the following at the
@@ -2189,9 +2189,9 @@ yarn.
     line into the imports:
 
 ```
- . . .
- import \'bootstrap/dist/css/bootstrap.min.css\';
- . . .
+  . . .
+  import &apos;bootstrap/dist/css/bootstrap.min.css&apos;;
+  . . .
 ```
 
 ### Adding a Navigation Bar:
@@ -2199,25 +2199,25 @@ yarn.
 -   Open App.js in the src folder and update it as follows:
 
 ```
-> class App extends Component {
->   render() {
->     return (
->       \<div className=\"App\"\>
->         \<Navbar dark color=\"primary\"\>
->           \<div className=\"container\"\>
->             \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
->           \</div\>
->         \</Navbar\>
->       \</div\>
->     );
->   }
-> }
-> 
-> . . .
-> 
-> import { Navbar, NavbarBrand } from \'reactstrap\';
-> 
-> . . .
+class App extends Component {
+  render() {
+    return (
+      \<div className=\"App\"\>
+        \<Navbar dark color=\"primary\"\>
+          \<div className=\"container\"\>
+            \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
+          \</div\>
+        \</Navbar\>
+      \</div\>
+    );
+  }
+}
+
+. . .
+
+import { Navbar, NavbarBrand } from \'reactstrap\';
+
+. . .
 ```
 
 -   Do a Git commit with the message \"Configuring React\"
@@ -2351,61 +2351,61 @@ you will be able to:
 -   Add the following code to <i>MenuComponent.js</i>:
 
 ```
->         this.state = {
->             dishes: [
->                 {
->                   id: 0,
->                   name:'Uthappizza',
->                   image: 'assets/images/uthappizza.png',
->                   category: 'mains',
->                   label:'Hot',
->                   price:'4.99',
-> 
-> 
+        this.state = {
+            dishes: [
+                {
+                  id: 0,
+                  name:'Uthappizza',
+                  image: 'assets/images/uthappizza.png',
+                  category: 'mains',
+                  label:'Hot',
+                  price:'4.99',
+
+
 >               description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                  >      },
 >               {
->                   id: 1,
->                   name:'Zucchipakoda',
->                   image: 'assets/images/zucchipakoda.png',
->                   category: 'appetizer',
->                   label:'',
->                   price:'1.99',
->                   description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce'                        },
->                {
->                   id: 2,
->                   name:'Vadonut',
->                   image: 'assets/images/vadonut.png',
->                   category: 'appetizer',
->                   label:'New',
->                   price:'1.99',
-> 
->                   description:'A quintessential ConFusion experience, is it a vada or is it a donut?'          >               },
->                {
->                   id: 3,
->                   name:'ElaiCheese Cake',
->                   image: 'assets/images/elaicheesecake.png',
->                   category: 'dessert',
->                   label:'',
->                   price:'2.99',
->                   description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust an> d spiced with Indian cardamoms'                        }
-> 
-> class Menu extends Component {
->     constructor(props) {
->        super(props);
-> import React, { Component } from 'react';
-> import { Media } from 'reactstrap';
+                  id: 1,
+                  name:'Zucchipakoda',
+                  image: 'assets/images/zucchipakoda.png',
+                  category: 'appetizer',
+                  label:'',
+                  price:'1.99',
+                  description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce'                        },
+               {
+                  id: 2,
+                  name:'Vadonut',
+                  image: 'assets/images/vadonut.png',
+                  category: 'appetizer',
+                  label:'New',
+                  price:'1.99',
 
--   Next, open <i>App.js</i> file and update it as follows:
+                  description:'A quintessential ConFusion experience, is it a vada or is it a donut?'                        },
+               {
+                  id: 3,
+                  name:'ElaiCheese Cake',
+                  image: 'assets/images/elaicheesecake.png',
+                  category: 'dessert',
+                  label:'',
+                  price:'2.99',
+                  description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'                        }
 
-> . . .
-> 
-> import Menu from './components/MenuComponent';
-> 
-> . . .
-> 
->     <Menu />
-> 
-> . . .
+class Menu extends Component {
+    constructor(props) {
+       super(props);
+import React, { Component } from 'react';
+import { Media } from 'reactstrap';
+
+-   Next, open <i>App.js</ifile and update it as follows:
+
+. . .
+
+import Menu from './components/MenuComponent';
+
+. . .
+
+    <Menu />
+
+. . .
 ```
 
 -   Open <i>App.css</i> file and delete all its contents.
@@ -2450,44 +2450,44 @@ JS File
     component, and updated it to use the Card: 
 
 ```
->     constructor(props) {
->         super(props);
+    constructor(props) {
+        super(props);
 >
->         this.state = {
->             selectedDish: null
->         }
->     }
+        this.state = {
+            selectedDish: null
+        }
+    }
 >
->     onDishSelect(dish) {
->         this.setState({ selectedDish: dish});
->     }
+    onDishSelect(dish) {
+        this.setState({ selectedDish: dish});
+    }
 >
->     renderDish(dish) {
->         if (dish != null)
->             return(
->                 <Card>
->                     <CardImg top src={dish.image} alt={dish.name} />
->                     <CardBody>
->                       <CardTitle>{dish.name}</CardTitle>
->                       <CardText>{dish.description}</CardText>
->                     </CardBody>
->                 </Card>
->             );
->         else
->             return(
->                 <div></div>
->             );
->     }
+    renderDish(dish) {
+        if (dish != null)
+            return(
+                <Card>
+                    <CardImg top src={dish.image} alt={dish.name} />
+                    <CardBody>
+                      <CardTitle>{dish.name}</CardTitle>
+                      <CardText>{dish.description}</CardText>
+                    </CardBody>
+                </Card>
+            );
+        else
+            return(
+                <div></div>
+            );
+    }
 >
->     render() {
->         const menu = this.props.dishes.map((dish) => {
->             return (
->               <div  className="col-12 col-md-5 m-1">
-> class Menu extends Component {
+    render() {
+        const menu = this.props.dishes.map((dish) => {
+            return (
+              <div  className="col-12 col-md-5 m-1">
+class Menu extends Component {
 >
-> import { Card, CardImg, CardImgOverlay, CardText, CardBody,
->     CardTitle } from 'reactstrap';
->  . . .
+import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+    CardTitle } from 'reactstrap';
+ . . .
 ```
 
 -   Add a folder named <i>shared</i> under the <i>src</i> folder.
@@ -2498,71 +2498,71 @@ JS File
     it to the shared folder. Make sure the file is named <i>dishes.js</i>):
 
 ```
-> export const DISHES =
->     [
->         {
->         id: 0,
->         name:'Uthappizza',
->         image: 'assets/images/uthappizza.png',
->         category: 'mains',
->         label:'Hot',
->         price:'4.99',
+export const DISHES =
+    [
+        {
+        id: 0,
+        name:'Uthappizza',
+        image: 'assets/images/uthappizza.png',
+        category: 'mains',
+        label:'Hot',
+        price:'4.99',
 >        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
->         comments: [
->             {
->             id: 0,
->             rating: 5,
->             comment: "Imagine all the eatables, living in conFusion!",
->             author: "John Lemon",
->             date: "2012-10-16T17:57:28.556094Z"
->             },
->             {
->             id: 1,
->             rating: 4,
->             comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
->             author: "Paul McVites",
+        comments: [
+            {
+            id: 0,
+            rating: 5,
+            comment: "Imagine all the eatables, living in conFusion!",
+            author: "John Lemon",
+            date: "2012-10-16T17:57:28.556094Z"
+            },
+            {
+            id: 1,
+            rating: 4,
+            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+            author: "Paul McVites",
 >
->             date: "2014-09-05T17:57:28.556094Z"
->             },
->             {
->             id: 2,
->             rating: 3,
->             comment: "Eat it, just eat it!",
->             author: "Michael Jaikishan",
->             date: "2015-02-13T17:57:28.556094Z"
->             },
->             {
->             id: 3,
->             rating: 4,
->             comment: "Ultimate, Reaching for the stars!",
->             author: "Ringo Starry",
->             date: "2013-12-02T17:57:28.556094Z"
->             },
->             {
+            date: "2014-09-05T17:57:28.556094Z"
+            },
+            {
+            id: 2,
+            rating: 3,
+            comment: "Eat it, just eat it!",
+            author: "Michael Jaikishan",
+            date: "2015-02-13T17:57:28.556094Z"
+            },
+            {
+            id: 3,
+            rating: 4,
+            comment: "Ultimate, Reaching for the stars!",
+            author: "Ringo Starry",
+            date: "2013-12-02T17:57:28.556094Z"
+            },
+            {
 ```
 
 -   Open <i>App.js</i> and update it as follows:
 
 ```
-> . . .
+. . .
 >
-> import { DISHES } from './shared/dishes';
+import { DISHES } from './shared/dishes';
 >
-> . . .
+. . .
 >
-> class App extends Component {
->   constructor(props) {
->     super(props);
->     this.state = {
->       dishes: DISHES
->     };
->   }
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dishes: DISHES
+    };
+  }
 >
-> . . .
+. . .
 >
->   <Menu dishes={this.state.dishes} />
+  <Menu dishes={this.state.dishes} />
 >
-> . . .
+. . .
 ```
 
 -   Save the changes and do a Git commit with the message "Components Part 2".
@@ -2884,13 +2884,13 @@ peers in order to provide you with constructive feedback on your project
 idea:
 
 1.  Does the Ideation report clearly state the idea of the project and
-    > the primary aim and purpose of the proposed website ?
+    the primary aim and purpose of the proposed website ?
 
 2.  Does the Ideation report list the expected features that will be
-    > supported by the website?
+    supported by the website?
 
 3.  Did the user provide a survey of related ideas/projects/websites
-    > that have some similarities to the proposed idea?
+    that have some similarities to the proposed idea?
 
 4.  Does the Ideation report provide references to suitable sources in
     > support of the project idea?
@@ -2949,63 +2949,63 @@ data and behavior. At the end of this exercise you will learn about:
     folder and update its contents as follows:
 
 ```
-> import React, { Component } from 'react';
-> import { Navbar, NavbarBrand } from 'reactstrap';
-> import Menu from './MenuComponent';
-> import DishDetail from './DishdetailComponent';
-> import { DISHES } from '../shared/dishes';
->  
-> class Main extends Component {
->  
->   constructor(props) {
->     super(props);
->     this.state = {
->         dishes: DISHES,
->         selectedDish: null
->     };
->   }
->  
->   onDishSelect(dishId) {
->     this.setState({ selectedDish: dishId});
->   }
->  
->   render() {
->     return (
->       <div>
->         <Navbar dark color="primary">
->           <div className="container">
->             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
->           </div>
->         </Navbar>
->         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
->         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
->       </div>
->     );
->   }
-> }
->  
-> export default Main;
+import React, { Component } from 'react';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Menu from './MenuComponent';
+import DishDetail from './DishdetailComponent';
+import { DISHES } from '../shared/dishes';
+ 
+class Main extends Component {
+ 
+  constructor(props) {
+    super(props);
+    this.state = {
+        dishes: DISHES,
+        selectedDish: null
+    };
+  }
+ 
+  onDishSelect(dishId) {
+    this.setState({ selectedDish: dishId});
+  }
+ 
+  render() {
+    return (
+      <div>
+        <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+          </div>
+        </Navbar>
+        <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+      </div>
+    );
+  }
+}
+ 
+export default Main;
 ```
 
 -   Update the <i>App.js</i> by removing the state related information, and
     make use of Main Component to render the UI:
 
 ```
-> . . .
-> import Main from './components/MainComponent';
->  
-> class App extends Component {
->  
->   render() {
->     return (
->       <div className="App">
->         <Main />
->       </div>
->     );
->   }
-> }
->  
-> . . .
+. . .
+import Main from './components/MainComponent';
+ 
+class App extends Component {
+ 
+  render() {
+    return (
+      <div className="App">
+        <Main />
+      </div>
+    );
+  }
+}
+ 
+. . .
 ```
 
 ### Turn Menu Component into a Presentational Component
@@ -3016,10 +3016,10 @@ data and behavior. At the end of this exercise you will learn about:
     clicking of a menu item:
 
 ```
-> . . .
->                     <Card key={dish.id}
->                         onClick={() => this.props.onClick(dish.id)}>
-> . . .
+. . .
+                    <Card key={dish.id}
+                        onClick={() => this.props.onClick(dish.id)}>
+. . .
 ```
 
 -   The DishdetailComponent is already structured as a presentational
@@ -3032,7 +3032,7 @@ data and behavior. At the end of this exercise you will learn about:
     the code snippet shown below:
 
 ```
-> {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
+{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
 ```
 
 -   Save all the changes and do a Git commit with the message
@@ -3068,60 +3068,60 @@ to:
 -   Open MenuComponent.js and update it as follows:
 
 ```
-> import React from 'react';
-> import { Card, CardImg, CardImgOverlay,
->     CardTitle } from 'reactstrap';
->  
->     function RenderMenuItem ({dish, onClick}) {
->         return (
->             <Card
->                 onClick={() => onClick(dish.id)}>
->                 <CardImg width="100%" src={dish.image} alt={dish.name} />
->                 <CardImgOverlay>
->                     <CardTitle>{dish.name}</CardTitle>
->                 </CardImgOverlay>
->             </Card>
->         );
->     }
+import React from 'react';
+import { Card, CardImg, CardImgOverlay,
+    CardTitle } from 'reactstrap';
+ 
+    function RenderMenuItem ({dish, onClick}) {
+        return (
+            <Card
+                onClick={() => onClick(dish.id)}>
+                <CardImg width="100%" src={dish.image} alt={dish.name} />
+                <CardImgOverlay>
+                    <CardTitle>{dish.name}</CardTitle>
+                </CardImgOverlay>
+            </Card>
+        );
+    }
 >
->     const Menu = (props) => {
->  
->         const menu = props.dishes.map((dish) => {
->             return (
->                 <div className="col-12 col-md-5 m-1"  key={dish.id}>
->                     <RenderMenuItem dish={dish} onClick={props.onClick} />
->                 </div>
->             );
->         });
->  
->         return (
->             <div className="container">
->                 <div className="row">
->                     {menu}
->                 </div>
->             </div>
->         );
->     }
->  
-> export default Menu;
+    const Menu = (props) => {
+ 
+        const menu = props.dishes.map((dish) => {
+            return (
+                <div className="col-12 col-md-5 m-1"  key={dish.id}>
+                    <RenderMenuItem dish={dish} onClick={props.onClick} />
+                </div>
+            );
+        });
+ 
+        return (
+            <div className="container">
+                <div className="row">
+                    {menu}
+                </div>
+            </div>
+        );
+    }
+ 
+export default Menu;
 ```
 
 -   Then open DishdetailComponent.js and update it as follows:
 
 ```
-> import React from 'react';
-> import { Card, CardImg, CardText, CardBody,
->     CardTitle } from 'reactstrap';
->     function RenderDish({dish}) {
->       . . .
->     }
->     function RenderComments({comments}) {
->       . . .
->     }
->     const  DishDetail = (props) => {
->       . . .
->     }
-> export default DishDetail;
+import React from 'react';
+import { Card, CardImg, CardText, CardBody,
+    CardTitle } from 'reactstrap';
+    function RenderDish({dish}) {
+      . . .
+    }
+    function RenderComments({comments}) {
+      . . .
+    }
+    const  DishDetail = (props) => {
+      . . .
+    }
+export default DishDetail;
 ```
 
 -   Save all the changes and do a Git commit with the message
@@ -3195,20 +3195,20 @@ your application. At the end of this exercise you will be able to:
     the project by typing the following at the prompt:
 
 ```
-> yarn add font-awesome@4.7.0
-> yarn add bootstrap-social@5.1.1
+yarn add font-awesome@4.7.0
+yarn add bootstrap-social@5.1.1
 ```
 
 -   Then, open index.js file and update it as follows to enable your
     application to use Font Awesome and Bootstrap Social:
 
 ```
-> . . .
->  
-> import 'font-awesome/css/font-awesome.css';
-> import 'bootstrap-social/bootstrap-social.css';
->  
-> . . .
+. . .
+ 
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
+ 
+. . .
 ```
 
 ### Adding a Header and a Footer
@@ -3217,80 +3217,80 @@ your application. At the end of this exercise you will be able to:
     it:
 
 ```
-> import React, { Component } from 'react';
-> import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
->  
-> class Header extends Component {
->   render() {
->     return(
->     <React.Fragment>
->       <Navbar dark>
->         <div className="container">
->             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
->         </div>
->       </Navbar>
->       <Jumbotron>
->            <div className="container">
->                <div className="row row-header">
->                    <div className="col-12 col-sm-6">
->                        <h1>Ristorante con Fusion</h1>
+import React, { Component } from 'react';
+import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
+ 
+class Header extends Component {
+  render() {
+    return(
+    <React.Fragment>
+      <Navbar dark>
+        <div className="container">
+            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+        </div>
+      </Navbar>
+      <Jumbotron>
+           <div className="container">
+               <div className="row row-header">
+                   <div className="col-12 col-sm-6">
+                       <h1>Ristorante con Fusion</h1>
 >                       <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
->                    </div>
->                </div>
->            </div>
->        </Jumbotron>
->     </React.Fragment>
->     );
->   }
-> }
->  
-> export default Header;
+                   </div>
+               </div>
+           </div>
+       </Jumbotron>
+    </React.Fragment>
+    );
+  }
+}
+ 
+export default Header;
 ```
 
 -   Then, add another file named FooterComponent.js and add the
     following to it:
 
 ```
-> import React from 'react';
->  
-> function Footer(props) {
->     return(
->     <div className="footer">
->         <div className="container">
->             <div className="row justify-content-center">             
->                 <div className="col-4 offset-1 col-sm-2">
->                     <h5>Links</h5>
->                     <ul className="list-unstyled">
->                         <li><a href="#">Home</a></li>
->                         <li><a href="#">About</a></li>
->                         <li><a href="#">Menu</a></li>
->                         <li><a href="contactus.html">Contact</a></li>
->                     </ul>
->                 </div>
->                 <div className="col-7 col-sm-5">
->                     <h5>Our Address</h5>
->                     <address>
->                       121, Clear Water Bay Road<br />
->                       Clear Water Bay, Kowloon<br />
->                       HONG KONG<br />
->                       <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
->                       <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
->                       <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
->                          confusion@food.net</a>
->                     </address>
->                 </div>
->                 <div className="col-12 col-sm-4 align-self-center">
->                     <div className="text-center">
+import React from 'react';
+ 
+function Footer(props) {
+    return(
+    <div className="footer">
+        <div className="container">
+            <div className="row justify-content-center">             
+                <div className="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul className="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div className="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                      121, Clear Water Bay Road<br />
+                      Clear Water Bay, Kowloon<br />
+                      HONG KONG<br />
+                      <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+                      <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+                      <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
+                         confusion@food.net</a>
+                    </address>
+                </div>
+                <div className="col-12 col-sm-4 align-self-center">
+                    <div className="text-center">
 >  <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
 > <a className="btn btn-social-icon btn-facebook" href="[http://www.facebook.com/profile.php?id=]{.underline}"><i className="fa fa-facebook"></i></a>
 > <a className="btn btn-social-icon btn-linkedin" href="[http://www.linkedin.com/in/]{.underline}"><i className="fa fa-linkedin"></i></a>
 ><a className="btn btn-social-icon btn-twitter" href="[http://twitter.com/]{.underline}"><i className="fa fa-twitter"></i></a>
 ><a className="btn btn-social-icon btn-google" href="[http://youtube.com/]{.underline}"><i className="fa fa-youtube"></i></a>
 ><a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
->                     </div>
->                 </div>
->             </div>
->             <div className="row justify-content-center">             
+                    </div>
+                </div>
+            </div>
+            <div className="row justify-content-center">             
 ```
 
 ### Integrating Header and Footer into the React Application
@@ -3299,101 +3299,101 @@ your application. At the end of this exercise you will be able to:
     and footer into our application:
 
 ```
-> . . .
+. . .
 >
->  
+ 
 >
-> import Header from './HeaderComponent';
+import Header from './HeaderComponent';
 >
-> import Footer from './FooterComponent';
+import Footer from './FooterComponent';
 >
->  
+ 
 >
-> . . .
+. . .
 >
->  
+ 
 >
->         <Header />
+        <Header />
 >
->         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+        <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
 >
->         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
 >
->         <Footer />
+        <Footer />
 >
->         
+        
 >
-> . . .
+. . .
 
 -   Then update App.css to add some new CSS classes for use in our
     application:
 
 ```
-> .row-header{
+.row-header{
 >
->     margin:0px auto;
+    margin:0px auto;
 >
->     padding:0px auto;
+    padding:0px auto;
 >
-> }
+}
 >
->  
+ 
 >
-> .row-content {
+.row-content {
 >
->     margin:0px auto;
+    margin:0px auto;
 >
->     padding: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
 >
->     border-bottom: 1px ridge;
+    border-bottom: 1px ridge;
 >
->     min-height:400px;
+    min-height:400px;
 >
-> }
+}
 >
->  
+ 
 >
-> .footer{
+.footer{
 >
->     background-color: #D1C4E9;
+    background-color: #D1C4E9;
 >
->     margin:0px auto;
+    margin:0px auto;
 >
->     padding: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
 >
-> }
+}
 >
-> .jumbotron {
+.jumbotron {
 >
->     padding:70px 30px 70px 30px;
+    padding:70px 30px 70px 30px;
 >
->     margin:0px auto;
+    margin:0px auto;
 >
->     background: #9575CD ;
+    background: #9575CD ;
 >
->     color:floralwhite;
+    color:floralwhite;
 >
-> }
+}
 >
->  
+ 
 >
-> address{
+address{
 >
->     font-size:80%;
+    font-size:80%;
 >
->     margin:0px;
+    margin:0px;
 >
->     color:#0f0f0f;
+    color:#0f0f0f;
 >
-> }
+}
 >
->  
+ 
 >
-> .navbar-dark {
+.navbar-dark {
 >
->     background-color: #512DA8;
+    background-color: #512DA8;
 >
-> }
+}
 ```
 
 -   Save all the changes and do a Git commit with the message \"Header
@@ -3427,20 +3427,20 @@ this exercise you will be able to:
 -   First install React Router into your project by typing the following
     at the prompt:
 
-> yarn add react-router-dom@4.2.2
+yarn add react-router-dom@4.2.2
 
 -   Then, open <i>App.js</i> and update it as follows:
 
 ```
-> . . .
-> import { BrowserRouter } from 'react-router-dom';
-> . . .
->     <BrowserRouter>
->       <div className="App">
->         <Main />
->       </div>
->     </BrowserRouter>
-> . . .
+. . .
+import { BrowserRouter } from 'react-router-dom';
+. . .
+    <BrowserRouter>
+      <div className="App">
+        <Main />
+      </div>
+    </BrowserRouter>
+. . .
 ```
 
 ### Add a Home Component
@@ -3449,15 +3449,15 @@ this exercise you will be able to:
     and add the following to it:
 
 ```
-> import React from 'react';
-> function Home(props) {
->     return(
->       <div className="container">
->         <h4>Home</h4>
->       </div>
->     );
-> }
-> export default Home;   
+import React from 'react';
+function Home(props) {
+    return(
+      <div className="container">
+        <h4>Home</h4>
+      </div>
+    );
+}
+export default Home;   
 ```
 
 ### Configuring the Router
@@ -3465,81 +3465,81 @@ this exercise you will be able to:
 -   Open <i>MainComponent.js</i> file and update it as follows:
 
 ```
-> . . .
-> import Home from './HomeComponent';
-> . . .
-> import { Switch, Route, Redirect } from 'react-router-dom';
-> . . .
->   render() {
->     const HomePage = () => {
->       return(
->           <Home 
->           />
->       );
->     }
-> . . .
->           <Switch>
->               <Route path='/home' component={HomePage} />
->               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
->               <Redirect to="/home" />
->           </Switch>
-> . . .
->  
+. . .
+import Home from './HomeComponent';
+. . .
+import { Switch, Route, Redirect } from 'react-router-dom';
+. . .
+  render() {
+    const HomePage = () => {
+      return(
+          <Home 
+          />
+      );
+    }
+. . .
+          <Switch>
+              <Route path='/home' component={HomePage} />
+              <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+              <Redirect to="/home" />
+          </Switch>
+. . .
+ 
 ```
 
 -   Open <i>HeaderComponent.js</i> and update its contents with the
     following:
 
 ```
-> import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-> import { NavLink } from 'react-router-dom';
-> class Header extends Component {
->     constructor(props) {
->         super(props);
->         this.toggleNav = this.toggleNav.bind(this);
->         this.state = {
->           isNavOpen: false
->         };
->       }
->       toggleNav() {
->         this.setState({
->           isNavOpen: !this.state.isNavOpen
->         });
->       }
->     render() {
->         return(
->             <div>
->                 <Navbar dark expand="md">
->                     <div className="container">
->                         <NavbarToggler onClick={this.toggleNav} />
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.toggleNav = this.toggleNav.bind(this);
+        this.state = {
+          isNavOpen: false
+        };
+      }
+      toggleNav() {
+        this.setState({
+          isNavOpen: !this.state.isNavOpen
+        });
+      }
+    render() {
+        return(
+            <div>
+                <Navbar dark expand="md">
+                    <div className="container">
+                        <NavbarToggler onClick={this.toggleNav} />
 > <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
->                         <Collapse isOpen={this.state.isNavOpen} navbar>
->                             <Nav navbar>
->                             <NavItem>
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar>
+                            <NavItem>
 > <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
->                             </NavItem>
->                             <NavItem>
+                            </NavItem>
+                            <NavItem>
 > <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
->                             </NavItem>
->                             <NavItem>
+                            </NavItem>
+                            <NavItem>
 >  <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
->                             </NavItem>
->                             <NavItem>
+                            </NavItem>
+                            <NavItem>
 > <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
->                             </NavItem>
+                            </NavItem>
 ```
 
 -   Then, open FooterComponent.js and update it as follows:
 
 ```
-> . . .
-> import { Link } from 'react-router-dom';
-> . . .
->                         <li><Link to='/home'>Home</Link></li>
->                         <li><Link to='/aboutus'>About Us</Link></li>
->                         <li><Link to='/menu'>Menu</Link></li>
->                         <li><Link to='/contactus'>Contact Us</Link></li>
-> . . .
+. . .
+import { Link } from 'react-router-dom';
+. . .
+                        <li><Link to='/home'>Home</Link></li>
+                        <li><Link to='/aboutus'>About Us</Link></li>
+                        <li><Link to='/menu'>Menu</Link></li>
+                        <li><Link to='/contactus'>Contact Us</Link></li>
+. . .
 ```
 
 -   Open MenuComponent.js and remove the onClick() from the Card in the
@@ -3641,51 +3641,51 @@ JS File
     contents as follows:
 
 ```
-> import React from 'react';
+import React from 'react';
 >
-> function Contact(props) {
->     return(
->         <div className="container">
->             <div className="row row-content">
->                 <div className="col-12">
->                 <h3>Location Information</h3>
->                 </div>
->                 <div className="col-12 col-sm-4 offset-sm-1">
->                         <h5>Our Address</h5>
->                         <address>
->                         121, Clear Water Bay Road<br />
->                         Clear Water Bay, Kowloon<br />
->                         HONG KONG<br />
->                         <i className="fa fa-phone"></i>: +852 1234 5678<br />
->                         <i className="fa fa-fax"></i>: +852 8765 4321<br />
+function Contact(props) {
+    return(
+        <div className="container">
+            <div className="row row-content">
+                <div className="col-12">
+                <h3>Location Information</h3>
+                </div>
+                <div className="col-12 col-sm-4 offset-sm-1">
+                        <h5>Our Address</h5>
+                        <address>
+                        121, Clear Water Bay Road<br />
+                        Clear Water Bay, Kowloon<br />
+                        HONG KONG<br />
+                        <i className="fa fa-phone"></i>: +852 1234 5678<br />
+                        <i className="fa fa-fax"></i>: +852 8765 4321<br />
 >  <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
->                         </address>
->                 </div>
->                 <div className="col-12 col-sm-6 offset-sm-1">
->                     <h5>Map of our Location</h5>
->                 </div>
->                 <div className="col-12 col-sm-11 offset-sm-1">
->                     <div className="btn-group" role="group">
+                        </address>
+                </div>
+                <div className="col-12 col-sm-6 offset-sm-1">
+                    <h5>Map of our Location</h5>
+                </div>
+                <div className="col-12 col-sm-11 offset-sm-1">
+                    <div className="btn-group" role="group">
 ><a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
 ><a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
 ><a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
->                     </div>
->                 </div>
->             </div>
->         </div>
->     );
-> }
-> export default Contact;
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+export default Contact;
 ```
 
 -   Update the <i>MainComponent.js</i> file to integrate the ContactComponent
     by adding in the following:
 
 ```
-> . . .
-> import Contact from './ContactComponent';
-> . . .
->               <Route exact path='/contactus' component={Contact} />} />
+. . .
+import Contact from './ContactComponent';
+. . .
+              <Route exact path='/contactus' component={Contact} />} />
 ```
 
 ### Updating the Home Component
@@ -3696,48 +3696,48 @@ JS File
     in Exercise resources and move them to the shared folder):
 
 ```
-> export const DISHES =
->     [
->         {
->         id: 0,
->         name:'Uthappizza',
->         image: '/assets/images/uthappizza.png',
->         category: 'mains',
->         label:'Hot',
->         price:'4.99',
->         featured: true,
+export const DISHES =
+    [
+        {
+        id: 0,
+        name:'Uthappizza',
+        image: '/assets/images/uthappizza.png',
+        category: 'mains',
+        label:'Hot',
+        price:'4.99',
+        featured: true,
 >
 >  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
->         },
->         {
->         id: 1,
->         name:'Zucchipakoda',
->         image: '/assets/images/zucchipakoda.png',
->         category: 'appetizer',
->         label:'',
->         price:'1.99',
->         featured: false,
+        },
+        {
+        id: 1,
+        name:'Zucchipakoda',
+        image: '/assets/images/zucchipakoda.png',
+        category: 'appetizer',
+        label:'',
+        price:'1.99',
+        featured: false,
 >description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
 >
->         },
->         {
->         id: 2,
->         name:'Vadonut',
->         image: '/assets/images/vadonut.png',
->         category: 'appetizer',
->         label:'New',
->         price:'1.99',
->         featured: false,
->         description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
->         },
->         {
->         id: 3,
->         name:'ElaiCheese Cake',
->         image: '/assets/images/elaicheesecake.png',
->         category: 'dessert',
->         label:'',
->         price:'2.99',
->         featured: false,
+        },
+        {
+        id: 2,
+        name:'Vadonut',
+        image: '/assets/images/vadonut.png',
+        category: 'appetizer',
+        label:'New',
+        price:'1.99',
+        featured: false,
+        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
+        },
+        {
+        id: 3,
+        name:'ElaiCheese Cake',
+        image: '/assets/images/elaicheesecake.png',
+        category: 'dessert',
+        label:'',
+        price:'2.99',
+        featured: false,
 ```
 
 -   Now add a new file named <i>comments.js</i> to the shared folder and
@@ -3745,181 +3745,181 @@ JS File
     dishes into its own file:
 
 ```
-> export const COMMENTS = 
-> [
->     {
->         id: 0,
->         dishId: 0,
->         rating: 5,
->         comment: "Imagine all the eatables, living in conFusion!",
->         author: "John Lemon",
->         date: "2012-10-16T17:57:28.556094Z"
->     },
->     {
->         id: 1,
->         dishId: 0,
->         rating: 4,
->         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
->         author: "Paul McVites",
->         date: "2014-09-05T17:57:28.556094Z"
->     },
->     {
->         id: 2,
->         dishId: 0,
->         rating: 3,
->         comment: "Eat it, just eat it!",
->         author: "Michael Jaikishan",
->         date: "2015-02-13T17:57:28.556094Z"
->     },
->     {
->         id: 3,
->         dishId: 0,
->         rating: 4,
->         comment: "Ultimate, Reaching for the stars!",
->         author: "Ringo Starry",
->         date: "2013-12-02T17:57:28.556094Z"
->     },
->     {
->         id: 4,
->         dishId: 0,
->         rating: 2,
->         comment: "It's your birthday, we're gonna party!",
->         author: "25 Cent",
+export const COMMENTS = 
+[
+    {
+        id: 0,
+        dishId: 0,
+        rating: 5,
+        comment: "Imagine all the eatables, living in conFusion!",
+        author: "John Lemon",
+        date: "2012-10-16T17:57:28.556094Z"
+    },
+    {
+        id: 1,
+        dishId: 0,
+        rating: 4,
+        comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+        author: "Paul McVites",
+        date: "2014-09-05T17:57:28.556094Z"
+    },
+    {
+        id: 2,
+        dishId: 0,
+        rating: 3,
+        comment: "Eat it, just eat it!",
+        author: "Michael Jaikishan",
+        date: "2015-02-13T17:57:28.556094Z"
+    },
+    {
+        id: 3,
+        dishId: 0,
+        rating: 4,
+        comment: "Ultimate, Reaching for the stars!",
+        author: "Ringo Starry",
+        date: "2013-12-02T17:57:28.556094Z"
+    },
+    {
+        id: 4,
+        dishId: 0,
+        rating: 2,
+        comment: "It's your birthday, we're gonna party!",
+        author: "25 Cent",
 ```
 
 -   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
 ```
-> export const PROMOTIONS = [
->     {
->       id: 0,
->       name: 'Weekend Grand Buffet',
->       image: '/assets/images/buffet.png',
->       label: 'New',
->       price: '19.99',
->       featured: true,
+export const PROMOTIONS = [
+    {
+      id: 0,
+      name: 'Weekend Grand Buffet',
+      image: '/assets/images/buffet.png',
+      label: 'New',
+      price: '19.99',
+      featured: true,
 >  description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
->     }
->   ];
+    }
+  ];
 ```
 
 -   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
 ```
-> export const LEADERS = [
->     {
->       id: 0,
->       name: 'Peter Pan',
->       image: '/assets/images/alberto.png',
->       designation: 'Chief Epicurious Officer',
->       abbr: 'CEO',
->       featured: false,
+export const LEADERS = [
+    {
+      id: 0,
+      name: 'Peter Pan',
+      image: '/assets/images/alberto.png',
+      designation: 'Chief Epicurious Officer',
+      abbr: 'CEO',
+      featured: false,
 >
->       description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
+      description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
 >
->     },
->     {
->       id: 1,
->       name: 'Dhanasekaran Witherspoon',
->       image: '/assets/images/alberto.png',
->       designation: 'Chief Food Officer',
->       abbr: 'CFO',
+    },
+    {
+      id: 1,
+      name: 'Dhanasekaran Witherspoon',
+      image: '/assets/images/alberto.png',
+      designation: 'Chief Food Officer',
+      abbr: 'CFO',
 >         featured: false,
->       description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
+      description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
 >
->     },
->     {
->       id: 2,
->       name: 'Agumbe Tang',
->       image: '/assets/images/alberto.png',
->       designation: 'Chief Taste Officer',
->       abbr: 'CTO',
->         featured: false,
->       description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
->     },
->     {
->       id: 3,
->       name: 'Alberto Somayya',
+    },
+    {
+      id: 2,
+      name: 'Agumbe Tang',
+      image: '/assets/images/alberto.png',
+      designation: 'Chief Taste Officer',
+      abbr: 'CTO',
+        featured: false,
+      description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
+    },
+    {
+      id: 3,
+      name: 'Alberto Somayya',
 >
->       image: '/assets/images/alberto.png',
->       designation: 'Executive Chef',
->       abbr: 'EC',
->       featured: true,
->       description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
->     }
->   ];
+      image: '/assets/images/alberto.png',
+      designation: 'Executive Chef',
+      abbr: 'EC',
+      featured: true,
+      description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
+    }
+  ];
 ```
 
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
 
 ```
-> import React from 'react';
-> import { Card, CardImg, CardText, CardBody,
->     CardTitle, CardSubtitle} from 'reactstrap';
-> function RenderCard({item}) {
->     return(
->         <Card>
->             <CardImg src={item.image} alt={item.name} />
->             <CardBody>
->             <CardTitle>{item.name}</CardTitle>
->             {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
->             <CardText>{item.description}</CardText>
->             </CardBody>
->         </Card>
->     );
-> }
-> function Home(props) {
->     return(
->         <div className="container">
->             <div className="row align-items-start">
->                 <div className="col-12 col-md m-1">
->                     <RenderCard item={props.dish} />
->                 </div>
->                 <div className="col-12 col-md m-1">
->                     <RenderCard item={props.promotion} />
->                 </div>
->                 <div className="col-12 col-md m-1">
->                     <RenderCard item={props.leader} />
->                 </div>
->             </div>
->         </div>
->     );
-> }
-> export default Home;
+import React from 'react';
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle} from 'reactstrap';
+function RenderCard({item}) {
+    return(
+        <Card>
+            <CardImg src={item.image} alt={item.name} />
+            <CardBody>
+            <CardTitle>{item.name}</CardTitle>
+            {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+            <CardText>{item.description}</CardText>
+            </CardBody>
+        </Card>
+    );
+}
+function Home(props) {
+    return(
+        <div className="container">
+            <div className="row align-items-start">
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.dish} />
+                </div>
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.promotion} />
+                </div>
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.leader} />
+                </div>
+            </div>
+        </div>
+    );
+}
+export default Home;
 ```
 
 -   Next, update MainComponent.js as follows:
 
 ```
-> . . .
-> import { COMMENTS } from '../shared/comments';
-> import { PROMOTIONS } from '../shared/promotions';
-> import { LEADERS } from '../shared/leaders';
-> . . .
-> class Main extends Component {
->   constructor(props) {
->     super(props);
->     this.state = {
->       dishes: DISHES,
->       comments: COMMENTS,
->       promotions: PROMOTIONS,
->       leaders: LEADERS
->     };
->   }
->   . . .
->     const HomePage = () => {
->       return(
->           <Home 
->               dish={this.state.dishes.filter((dish) => dish.featured)[0]}
->               promotion={this.state.promotions.filter((promo) => promo.featured)[0]}
->               leader={this.state.leaders.filter((leader) => leader.featured)[0]}
->           />
->       );
->     }
-> . . .
+. . .
+import { COMMENTS } from '../shared/comments';
+import { PROMOTIONS } from '../shared/promotions';
+import { LEADERS } from '../shared/leaders';
+. . .
+class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dishes: DISHES,
+      comments: COMMENTS,
+      promotions: PROMOTIONS,
+      leaders: LEADERS
+    };
+  }
+  . . .
+    const HomePage = () => {
+      return(
+          <Home 
+              dish={this.state.dishes.filter((dish) => dish.featured)[0]}
+              promotion={this.state.promotions.filter((promo) => promo.featured)[0]}
+              leader={this.state.leaders.filter((leader) => leader.featured)[0]}
+          />
+      );
+    }
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Single
@@ -3955,55 +3955,55 @@ the end of this exercise you will be able to:
 
 ```
 . . .
-> import { Card, CardImg, CardImgOverlay,
->     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
-> import { Link } from 'react-router-dom';
->     function RenderMenuItem ({dish, onClick}) {
->         return (
->             <Card>
->                 <Link to={`/menu/${dish.id}`} >
->                     <CardImg width="100%" src={dish.image} alt={dish.name} />
->                     <CardImgOverlay>
->                         <CardTitle>{dish.name}</CardTitle>
->                     </CardImgOverlay>
->                 </Link>
->             </Card>
->         );
->     }
-> . . .
->         return (
->             <div className="container">
->                 <div className="row">
->                     <Breadcrumb>
->                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
->                         <BreadcrumbItem active>Menu</BreadcrumbItem>
->                     </Breadcrumb>
->                     <div className="col-12">
->                         <h3>Menu</h3>
->                         <hr />
->                     </div>                
->                 </div>
->                 <div className="row">
->                     {menu}
->                 </div>
->             </div>
->         );
-> . . .
+import { Card, CardImg, CardImgOverlay,
+    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+    function RenderMenuItem ({dish, onClick}) {
+        return (
+            <Card>
+                <Link to={`/menu/${dish.id}`} >
+                    <CardImg width="100%" src={dish.image} alt={dish.name} />
+                    <CardImgOverlay>
+                        <CardTitle>{dish.name}</CardTitle>
+                    </CardImgOverlay>
+                </Link>
+            </Card>
+        );
+    }
+. . .
+        return (
+            <div className="container">
+                <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Menu</BreadcrumbItem>
+                    </Breadcrumb>
+                    <div className="col-12">
+                        <h3>Menu</h3>
+                        <hr />
+                    </div>                
+                </div>
+                <div className="row">
+                    {menu}
+                </div>
+            </div>
+        );
+. . .
 ```
 
 -   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
-> . . .
->     const DishWithId = ({match}) => {
->       return(
->           <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
->             comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
->       );
->     };
-> . . .
->               <Route path='/menu/:dishId' component={DishWithId} />
-> . . .
+. . .
+    const DishWithId = ({match}) => {
+      return(
+          <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+            comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
+      );
+    };
+. . .
+              <Route path='/menu/:dishId' component={DishWithId} />
+. . .
 ```
 
 ### Updating DishDetail Component
@@ -4011,34 +4011,34 @@ the end of this exercise you will be able to:
 -   Open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { Card, CardImg, CardText, CardBody,
->     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
-> import { Link } from 'react-router-dom';
-> . . .
->             return (
->                 <div className="container">
->                 <div className="row">
->                     <Breadcrumb>
->                         <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
->                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
->                     </Breadcrumb>
->                     <div className="col-12">
->                         <h3>{props.dish.name}</h3>
->                         <hr />
->                     </div>                
->                 </div>
->                 <div className="row">
->                     <div className="col-12 col-md-5 m-1">
->                         <RenderDish dish={props.dish} />
->                     </div>
->                     <div className="col-12 col-md-5 m-1">
->                         <RenderComments comments={props.comments} />
->                     </div>
->                 </div>
->                 </div>
->             );
-> . . .
+. . .
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+. . .
+            return (
+                <div className="container">
+                <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+                    </Breadcrumb>
+                    <div className="col-12">
+                        <h3>{props.dish.name}</h3>
+                        <hr />
+                    </div>                
+                </div>
+                <div className="row">
+                    <div className="col-12 col-md-5 m-1">
+                        <RenderDish dish={props.dish} />
+                    </div>
+                    <div className="col-12 col-md-5 m-1">
+                        <RenderComments comments={props.comments} />
+                    </div>
+                </div>
+                </div>
+            );
+. . .
 ```
 
 ### Adding Breadcrumbs to ContactComponent
@@ -4046,21 +4046,21 @@ the end of this exercise you will be able to:
 -   Open ContactComponent.js and add Breadcrumbs to it as follows:
 
 ```
-> . . .
-> import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-> import { Link } from 'react-router-dom';
-> . . .
->             <div className="row">
->                 <Breadcrumb>
->                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
->                     <BreadcrumbItem active>Contact Us</BreadcrumbItem>
->                 </Breadcrumb>
->                 <div className="col-12">
->                     <h3>Contact Us</h3>
->                     <hr />
->                 </div>                
->             </div>
-> . . .
+. . .
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+. . .
+            <div className="row">
+                <Breadcrumb>
+                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                </Breadcrumb>
+                <div className="col-12">
+                    <h3>Contact Us</h3>
+                    <hr />
+                </div>                
+            </div>
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Single
@@ -4122,7 +4122,7 @@ You will find instructions below to submit.
 1.  [<b>Instructions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications)
 
 2.  [<b>My
-    > submission</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
+    submission</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
 
 3.  [<b>Discussions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/discussions)
 
@@ -4215,27 +4215,27 @@ based on the following criteria:
 <b>Task 1:</b>
 
 -   The AboutComponent.js file has been downloaded and integrated into
-    > our React application.
+    our React application.
 
 -   The React application has been appropriately updated to enable
-    > navigation to the About Us page of our application.
+    navigation to the About Us page of our application.
 
 <b>Task 2:</b>
 
 -   Implemented a new <RenderLeader> functional component in your
-    > application.
+    application.
 
 ```{=html}
 <!-- -->
 ```
 -   Used the reactstrap \<Media\> component to render the details of a
-    > leader.
+    leader.
 
 <b>Task 3:</b>
 
 -   Updated the leaders variable within the AboutComponent() function to
-    > make use of the \<RenderLeader\> component to render the list of
-    > leaders.
+    make use of the \<RenderLeader\> component to render the list of
+    leaders.
 
 ## Assignment 2: React Router and Single Page Applications: Additional Resources
 
@@ -4428,23 +4428,23 @@ exercise you will be able to:
     reactstrap into <i>ContactComponent.js</i> as follows:
 
 ```
-> . . .
-> import React, { Component } from 'react';
-> import { Breadcrumb, BreadcrumbItem,
->             Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
->   . . .
+. . .
+import React, { Component } from 'react';
+import { Breadcrumb, BreadcrumbItem,
+            Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
+  . . .
 ```
 
 -   You will then change the <i>ContactComponent</i> to a class-based
     component as follows:
 
 ```
-> . . .
-> class Contact extends Component {
->   render() {
->     . . .
->   }
-> }
+. . .
+class Contact extends Component {
+  render() {
+    . . .
+  }
+}
 ```
 
 ### Creating the Controlled Form
@@ -4453,81 +4453,81 @@ exercise you will be able to:
     Controlled Form:
 
 ```
-> . . .
->     constructor(props) {
->         super(props);
->         this.state = {
->             firstname: '',
->             lastname: '',
->             telnum: '',
->             email: '',
->             agree: false,
->             contactType: 'Tel.',
->             message: ''
->         };
->         this.handleInputChange = this.handleInputChange.bind(this);
->         this.handleSubmit = this.handleSubmit.bind(this);
->     }
->     handleInputChange(event) {
->         const target = event.target;
->         const value = target.type === 'checkbox' ? target.checked : target.value;
->         const name = target.name;
->         this.setState({
->           [name]: value
->         });
->     }
->     handleSubmit(event) {
->         console.log('Current State is: ' + JSON.stringify(this.state));
->         alert('Current State is: ' + JSON.stringify(this.state));
->         event.preventDefault();
->     }
-> . . .
->  
+. . .
+    constructor(props) {
+        super(props);
+        this.state = {
+            firstname: '',
+            lastname: '',
+            telnum: '',
+            email: '',
+            agree: false,
+            contactType: 'Tel.',
+            message: ''
+        };
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+        this.setState({
+          [name]: value
+        });
+    }
+    handleSubmit(event) {
+        console.log('Current State is: ' + JSON.stringify(this.state));
+        alert('Current State is: ' + JSON.stringify(this.state));
+        event.preventDefault();
+    }
+. . .
+ 
 ```
 
 -   Then add the controlled form to it as follows:
 
 ```
-> . . .
->                 <div className="row row-content">
->                    <div className="col-12">
->                       <h3>Send us your Feedback</h3>
->                    </div>
->                     <div className="col-12 col-md-9">
->                         <Form onSubmit={this.handleSubmit}>
->                             <FormGroup row>
->                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->                                 <Col md={10}>
->                                     <Input type="text" id="firstname" name="firstname"
->                                         placeholder="First Name"
->                                         value={this.state.firstname}
->                                         onChange={this.handleInputChange} />
->                                 </Col>
->                             </FormGroup>
->                             <FormGroup row>
->                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->                                 <Col md={10}>
->                                     <Input type="text" id="lastname" name="lastname"
->                                         placeholder="Last Name"
->                                         value={this.state.lastname}
->                                         onChange={this.handleInputChange} />
->                                 </Col>                        
->                             </FormGroup>
->                             <FormGroup row>
->                             <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
->                                 <Col md={10}>
->                                     <Input type="tel" id="telnum" name="telnum"
->                                         placeholder="Tel. number"
->                                         value={this.state.telnum}
->                                         onChange={this.handleInputChange} />
->                                 </Col>
->                             </FormGroup>
->                             <FormGroup row>
->                                 <Label htmlFor="email" md={2}>Email</Label>
->                                 <Col md={10}>
->                                     <Input type="email" id="email" name="email"
+. . .
+                <div className="row row-content">
+                   <div className="col-12">
+                      <h3>Send us your Feedback</h3>
+                   </div>
+                    <div className="col-12 col-md-9">
+                        <Form onSubmit={this.handleSubmit}>
+                            <FormGroup row>
+                                <Label htmlFor="firstname" md={2}>First Name</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="firstname" name="firstname"
+                                        placeholder="First Name"
+                                        value={this.state.firstname}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label htmlFor="lastname" md={2}>Last Name</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="lastname" name="lastname"
+                                        placeholder="Last Name"
+                                        value={this.state.lastname}
+                                        onChange={this.handleInputChange} />
+                                </Col>                        
+                            </FormGroup>
+                            <FormGroup row>
+                            <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+                                <Col md={10}>
+                                    <Input type="tel" id="telnum" name="telnum"
+                                        placeholder="Tel. number"
+                                        value={this.state.telnum}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label htmlFor="email" md={2}>Email</Label>
+                                <Col md={10}>
+                                    <Input type="email" id="email" name="email"
 >
->                                         placeholder="Email"
+                                        placeholder="Email"
 ```
 
 -   Save all changes and do a Git commit with the message "Controlled
@@ -4557,40 +4557,40 @@ to:
     support to track form errors and perform validation:
 
 ```
-> . . .
-> import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
-> . . .
-> class Contact extends Component {
->     constructor(props) {
->         super(props);
->         this.state = {
->             firstname: '',
->             lastname: '',
->             telnum: '',
->             email: '',
->             agree: false,
->             contactType: 'Tel.',
->             message: '',
->             touched: {
->                 firstname: false,
->                 lastname: false,
->                 telnum: false,
->                 email: false
->             }
->         }
->         this.handleSubmit = this.handleSubmit.bind(this);
->         this.handleInputChange = this.handleInputChange.bind(this);
->         this.handleBlur = this.handleBlur.bind(this);
->     }
->     . . .
->     handleBlur = (field) => (evt) => {
->         this.setState({
->             touched: { ...this.state.touched, [field]: true }
->         });
->     }
->     validate(firstname, lastname, telnum, email) {
->         const errors = {
->             firstname: '',
+. . .
+import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
+. . .
+class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            firstname: '',
+            lastname: '',
+            telnum: '',
+            email: '',
+            agree: false,
+            contactType: 'Tel.',
+            message: '',
+            touched: {
+                firstname: false,
+                lastname: false,
+                telnum: false,
+                email: false
+            }
+        }
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleBlur = this.handleBlur.bind(this);
+    }
+    . . .
+    handleBlur = (field) => (evt) => {
+        this.setState({
+            touched: { ...this.state.touched, [field]: true }
+        });
+    }
+    validate(firstname, lastname, telnum, email) {
+        const errors = {
+            firstname: '',
 ```
 
 -   Now that we have introduced some functions that can be used for form
@@ -4598,45 +4598,45 @@ to:
     follows:
 
 ```
-> . . .
->                             <FormGroup row>
->                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->                                 <Col md={10}>
->                                     <Input type="text" id="firstname" name="firstname"
->                                         placeholder="First Name"
->                                         value={this.state.firstname}
->                                         valid={errors.firstname === ''}
->                                         invalid={errors.firstname !== ''}
->                                         onBlur={this.handleBlur('firstname')}
->                                         onChange={this.handleInputChange} />
->                                     <FormFeedback>{errors.firstname}</FormFeedback>
->                                 </Col>
->                             </FormGroup>
->                             <FormGroup row>
->                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->                                 <Col md={10}>
->                                     <Input type="text" id="lastname" name="lastname"
->                                         placeholder="Last Name"
->                                         value={this.state.lastname}
->                                         valid={errors.lastname === ''}
->                                         invalid={errors.lastname !== ''}
->                                         onBlur={this.handleBlur('lastname')}
->                                         onChange={this.handleInputChange} />
->                                     <FormFeedback>{errors.lastname}</FormFeedback>
->                                 </Col>
->                             </FormGroup>
->                             <FormGroup row>
->                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
->                                 <Col md={10}>
->                                     <Input type="tel" id="telnum" name="telnum"
->                                         placeholder="Tel. Number"
->                                         value={this.state.telnum}
->                                         valid={errors.telnum === ''}
->                                         invalid={errors.telnum !== ''}
->                                         onBlur={this.handleBlur('telnum')}
->                                         onChange={this.handleInputChange} />
->                                     <FormFeedback>{errors.telnum}</FormFeedback>
->                                 </Col>
+. . .
+                            <FormGroup row>
+                                <Label htmlFor="firstname" md={2}>First Name</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="firstname" name="firstname"
+                                        placeholder="First Name"
+                                        value={this.state.firstname}
+                                        valid={errors.firstname === ''}
+                                        invalid={errors.firstname !== ''}
+                                        onBlur={this.handleBlur('firstname')}
+                                        onChange={this.handleInputChange} />
+                                    <FormFeedback>{errors.firstname}</FormFeedback>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label htmlFor="lastname" md={2}>Last Name</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="lastname" name="lastname"
+                                        placeholder="Last Name"
+                                        value={this.state.lastname}
+                                        valid={errors.lastname === ''}
+                                        invalid={errors.lastname !== ''}
+                                        onBlur={this.handleBlur('lastname')}
+                                        onChange={this.handleInputChange} />
+                                    <FormFeedback>{errors.lastname}</FormFeedback>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+                                <Col md={10}>
+                                    <Input type="tel" id="telnum" name="telnum"
+                                        placeholder="Tel. Number"
+                                        value={this.state.telnum}
+                                        valid={errors.telnum === ''}
+                                        invalid={errors.telnum !== ''}
+                                        onBlur={this.handleBlur('telnum')}
+                                        onChange={this.handleInputChange} />
+                                    <FormFeedback>{errors.telnum}</FormFeedback>
+                                </Col>
 ```
 
 -   You can now test your form by typing in invalid input and check how
@@ -4715,43 +4715,43 @@ this exercise you will be able to:
     application to host the form:
 
 ```
-> . . .
-> import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+. . .
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 >
->     Button, Modal, ModalHeader, ModalBody,
->     Form, FormGroup, Input, Label } from 'reactstrap';
-> . . .
->         this.state = {
->             isNavOpen: false,
->             isModalOpen: false
->         };
-> . . .
->         this.toggleModal = this.toggleModal.bind(this);
-> . . .
->       toggleModal() {
->         this.setState({
->           isModalOpen: !this.state.isModalOpen
->         });
->       }
-> . . .
->                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
->                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
->                     <ModalBody>
->                     </ModalBody>
->                 </Modal>
-> . . .
+    Button, Modal, ModalHeader, ModalBody,
+    Form, FormGroup, Input, Label } from 'reactstrap';
+. . .
+        this.state = {
+            isNavOpen: false,
+            isModalOpen: false
+        };
+. . .
+        this.toggleModal = this.toggleModal.bind(this);
+. . .
+      toggleModal() {
+        this.setState({
+          isModalOpen: !this.state.isModalOpen
+        });
+      }
+. . .
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+                    <ModalBody>
+                    </ModalBody>
+                </Modal>
+. . .
 ```
 
 -   Then, add a button to the Navbar to enable toggling the modal:
 
 ```
-> . . .
->                             <Nav className="ml-auto" navbar>
->                                 <NavItem>
->                                     <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
->                                 </NavItem>
->                             </Nav>
-> . . .
+. . .
+                            <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
+                                </NavItem>
+                            </Nav>
+. . .
 ```
 
 ### Adding the Uncontrolled Form
@@ -4761,45 +4761,45 @@ this exercise you will be able to:
 . . .
 
 ```
->  
->                         <Form onSubmit={this.handleLogin}>
->                             <FormGroup>
->                                 <Label htmlFor="username">Username</Label>
->                                 <Input type="text" id="username" name="username"
->                                     innerRef={(input) => this.username = input} />
->                             </FormGroup>
->                             <FormGroup>
->                                 <Label htmlFor="password">Password</Label>
->                                 <Input type="password" id="password" name="password"
->                                     innerRef={(input) => this.password = input}  />
->                             </FormGroup>
->                             <FormGroup check>
->                                 <Label check>
->                                     <Input type="checkbox" name="remember"
->                                     innerRef={(input) => this.remember = input}  />
->                                     Remember me
->                                 </Label>
->                             </FormGroup>
->                             <Button type="submit" value="submit" color="primary">Login</Button>
->                         </Form>
-> . . .
+ 
+                        <Form onSubmit={this.handleLogin}>
+                            <FormGroup>
+                                <Label htmlFor="username">Username</Label>
+                                <Input type="text" id="username" name="username"
+                                    innerRef={(input) => this.username = input} />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="password">Password</Label>
+                                <Input type="password" id="password" name="password"
+                                    innerRef={(input) => this.password = input}  />
+                            </FormGroup>
+                            <FormGroup check>
+                                <Label check>
+                                    <Input type="checkbox" name="remember"
+                                    innerRef={(input) => this.remember = input}  />
+                                    Remember me
+                                </Label>
+                            </FormGroup>
+                            <Button type="submit" value="submit" color="primary">Login</Button>
+                        </Form>
+. . .
 ```
 
 -   Then, add the following function to the class to handle the form
     submission:
 
 ```
-> . . .
+. . .
 >
->         this.handleLogin = this.handleLogin.bind(this);
-> . . .
->     handleLogin(event) {
->         this.toggleModal();
->         alert("Username: " + this.username.value + " Password: " + this.password.value
->             + " Remember: " + this.remember.checked);
->         event.preventDefault();
->     }
-> . . .
+        this.handleLogin = this.handleLogin.bind(this);
+. . .
+    handleLogin(event) {
+        this.toggleModal();
+        alert("Username: " + this.username.value + " Password: " + this.password.value
+            + " Remember: " + this.remember.checked);
+        event.preventDefault();
+    }
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message
@@ -4882,107 +4882,107 @@ this exercise you will be able to:
     application as follows:
 
 ```
-> yarn add redux@3.7.2
+yarn add redux@3.7.2
 >
-> yarn add react-redux@5.0.7
+yarn add react-redux@5.0.7
 ```
 
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
     a file named <i>reducer.js</i> with the code below:
 
 ```
-> import { DISHES } from '../shared/dishes';
-> import { COMMENTS } from '../shared/comments';
-> import { PROMOTIONS } from '../shared/promotions';
-> import { LEADERS } from '../shared/leaders';
-> export const initialState = {
->     dishes: DISHES,
->     comments: COMMENTS,
->     promotions: PROMOTIONS,
->     leaders: LEADERS
-> };
+import { DISHES } from '../shared/dishes';
+import { COMMENTS } from '../shared/comments';
+import { PROMOTIONS } from '../shared/promotions';
+import { LEADERS } from '../shared/leaders';
+export const initialState = {
+    dishes: DISHES,
+    comments: COMMENTS,
+    promotions: PROMOTIONS,
+    leaders: LEADERS
+};
 >
-> export const Reducer = (state = initialState, action) => {
->     return state;
-> };
+export const Reducer = (state = initialState, action) => {
+    return state;
+};
 ```
 
 -   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
 ```
-> import {createStore} from 'redux';
-> import { Reducer, initialState } from './reducer'
-> export const ConfigureStore = () => {
->     const store = createStore(
->         Reducer, // reducer
->         initialState, // our initialState
->     );
->     return store;
-> }
+import {createStore} from 'redux';
+import { Reducer, initialState } from './reducer'
+export const ConfigureStore = () => {
+    const store = createStore(
+        Reducer, // reducer
+        initialState, // our initialState
+    );
+    return store;
+}
 ```
 
 -   Next, open <i>App.js</i> and update it as follows:
 
 ```
-> . . .
->  
-> import { Provider } from 'react-redux';
-> import { ConfigureStore } from './redux/configureStore';
+. . .
+ 
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
 >
-> const store = ConfigureStore();
+const store = ConfigureStore();
 >
-> . . .
->       <Provider store={store}>
->         <BrowserRouter>
->           <div className="App">
->             <Main />
->           </div>
->         </BrowserRouter>
->       </Provider>
-> . . .
+. . .
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            <Main />
+          </div>
+        </BrowserRouter>
+      </Provider>
+. . .
 ```
 
 -   Finally, update MainComponent.js to connect it to Redux store and
     use it:
 
 ```
-> . . .
-> import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
-> import { connect } from 'react-redux';
+. . .
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
 >
-> const mapStateToProps = state => {
->   return {
->     dishes: state.dishes,
->     comments: state.comments,
->     promotions: state.promotions,
->     leaders: state.leaders
->   }
-> }
+const mapStateToProps = state => {
+  return {
+    dishes: state.dishes,
+    comments: state.comments,
+    promotions: state.promotions,
+    leaders: state.leaders
+  }
+}
 >
-> . . .
+. . .
 >
->     const HomePage = () => {
->       return(
->           <Home 
->               dish={this.props.dishes.filter((dish) => dish.featured)[0]}
->               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
->               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
->           />
->       );
->     }
->     const DishWithId = ({match}) => {
->       return(
->           <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
->             comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
->       );
->     };
->     return (
->       <div>
->         <Header />
->         <div>
->           <Switch>
->               <Route path='/home' component={HomePage} />
+    const HomePage = () => {
+      return(
+          <Home 
+              dish={this.props.dishes.filter((dish) => dish.featured)[0]}
+              promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+              leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+          />
+      );
+    }
+    const DishWithId = ({match}) => {
+      return(
+          <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+            comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
+      );
+    };
+    return (
+      <div>
+        <Header />
+        <div>
+          <Switch>
+              <Route path='/home' component={HomePage} />
 ```
 
 -   Save all the changes and do a Git commit with the message \"Intro.
@@ -5062,49 +5062,49 @@ react-redux-form. At the end of this exercise you will be able to:
 
 -   We first install the <i>react-redux-form</i> into our project as follows:
 
-> yarn add <react-redux-form@1.16.8>
+yarn add <react-redux-form@1.16.8>
 
 -   Then open <i>ContactComponent.js</i> and update the Feedback Form to use
     react-redux-form:
 
 ```
-> . . .
-> import { Breadcrumb, BreadcrumbItem,
->             Button, Row, Col, Label } from 'reactstrap';
-> import { Control, LocalForm, Errors } from 'react-redux-form';
-> . . .
+. . .
+import { Breadcrumb, BreadcrumbItem,
+            Button, Row, Col, Label } from 'reactstrap';
+import { Control, LocalForm, Errors } from 'react-redux-form';
+. . .
 >
->     handleSubmit(values) {
->         console.log('Current State is: ' + JSON.stringify(values));
->         alert('Current State is: ' + JSON.stringify(values));
->         // event.preventDefault();
->     }
+    handleSubmit(values) {
+        console.log('Current State is: ' + JSON.stringify(values));
+        alert('Current State is: ' + JSON.stringify(values));
+        // event.preventDefault();
+    }
 >
-> . . .
+. . .
 >
->                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
->                             <Row className="form-group">
->                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->                                 <Col md={10}>
->                                     <Control.text model=".firstname" id="firstname" name="firstname"
->                                         placeholder="First Name"
->                                         className="form-control"
->                                          />
->                                 </Col>
->                             </Row>
->                             <Row className="form-group">
->                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->                                 <Col md={10}>
->                                     <Control.text model=".lastname" id="lastname" name="lastname"
->                                         placeholder="Last Name"
->                                         className="form-control"
->                                          />
->                                 </Col>
->                             </Row>
->                             <Row className="form-group">
->                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
->                                 <Col md={10}>
->                                     <Control.text model=".telnum" id="telnum" name="telnum"
+                        <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                            <Row className="form-group">
+                                <Label htmlFor="firstname" md={2}>First Name</Label>
+                                <Col md={10}>
+                                    <Control.text model=".firstname" id="firstname" name="firstname"
+                                        placeholder="First Name"
+                                        className="form-control"
+                                         />
+                                </Col>
+                            </Row>
+                            <Row className="form-group">
+                                <Label htmlFor="lastname" md={2}>Last Name</Label>
+                                <Col md={10}>
+                                    <Control.text model=".lastname" id="lastname" name="lastname"
+                                        placeholder="Last Name"
+                                        className="form-control"
+                                         />
+                                </Col>
+                            </Row>
+                            <Row className="form-group">
+                                <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+                                <Col md={10}>
+                                    <Control.text model=".telnum" id="telnum" name="telnum"
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -5133,43 +5133,43 @@ react-redux-form. At the end of this exercise you will be able to:
     form validation:
 
 ```
-> . . . 
+. . . 
 >
-> const required = (val) => val && val.length;
-> const maxLength = (len) => (val) => !(val) || (val.length <= len);
-> const minLength = (len) => (val) => val && (val.length >= len);
-> const isNumber = (val) => !isNaN(Number(val));
-> const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
-> . . .
->                             <Row className="form-group">
->                                 <Label htmlFor="firstname" md={2}>First Name</Label>
->                                 <Col md={10}>
->                                     <Control.text model=".firstname" id="firstname" name="firstname"
->                                         placeholder="First Name"
->                                         className="form-control"
->                                         validators={{
->                                             required, minLength: minLength(3), maxLength: maxLength(15)
->                                         }}
->                                          />
->                                     <Errors
->                                         className="text-danger"
->                                         model=".firstname"
->                                         show="touched"
->                                         messages={{
->                                             required: 'Required',
->                                             minLength: 'Must be greater than 2 characters',
->                                             maxLength: 'Must be 15 characters or less'
->                                         }}
->                                      />
->                                 </Col>
->                             </Row>
->                             <Row className="form-group">
->                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
->                                 <Col md={10}>
->                                     <Control.text model=".lastname" id="lastname" name="lastname"
->                                         placeholder="Last Name"
->                                         className="form-control"
->                                         validators={{
+const required = (val) => val && val.length;
+const maxLength = (len) => (val) => !(val) || (val.length <= len);
+const minLength = (len) => (val) => val && (val.length >= len);
+const isNumber = (val) => !isNaN(Number(val));
+const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
+. . .
+                            <Row className="form-group">
+                                <Label htmlFor="firstname" md={2}>First Name</Label>
+                                <Col md={10}>
+                                    <Control.text model=".firstname" id="firstname" name="firstname"
+                                        placeholder="First Name"
+                                        className="form-control"
+                                        validators={{
+                                            required, minLength: minLength(3), maxLength: maxLength(15)
+                                        }}
+                                         />
+                                    <Errors
+                                        className="text-danger"
+                                        model=".firstname"
+                                        show="touched"
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be greater than 2 characters',
+                                            maxLength: 'Must be 15 characters or less'
+                                        }}
+                                     />
+                                </Col>
+                            </Row>
+                            <Row className="form-group">
+                                <Label htmlFor="lastname" md={2}>Last Name</Label>
+                                <Col md={10}>
+                                    <Control.text model=".lastname" id="lastname" name="lastname"
+                                        placeholder="Last Name"
+                                        className="form-control"
+                                        validators={{
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -5370,27 +5370,27 @@ manage the whole state. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> import { DISHES } from '../shared/dishes';
-> export const Dishes = (state = DISHES, action) => {
->     switch (action.type) {
->         default:
->           return state;
->       }
-> };
+import { DISHES } from '../shared/dishes';
+export const Dishes = (state = DISHES, action) => {
+    switch (action.type) {
+        default:
+          return state;
+      }
+};
 ```
 
 -   Then, create a file named comments.js and add the following to it:
 
 ```
-> import { COMMENTS } from '../shared/comments';
+import { COMMENTS } from '../shared/comments';
 >
-> export const Comments = (state = COMMENTS, action) => {
->     switch (action.type) {
+export const Comments = (state = COMMENTS, action) => {
+    switch (action.type) {
 >
->         default:
->           return state;
->       }
-> };
+        default:
+          return state;
+      }
+};
 ```
 
 -   Similarly, create a new file named promotions.js and add the
@@ -5398,25 +5398,25 @@ manage the whole state. At the end of this exercise you will be able to:
 
 ```
 > import { PROMOTIONS } from '../shared/promotions';
-> export const Promotions = (state = PROMOTIONS, action) => {
->     switch (action.type) {
->         default:
->           return state;
->       }
-> };
+export const Promotions = (state = PROMOTIONS, action) => {
+    switch (action.type) {
+        default:
+          return state;
+      }
+};
 ```
 
 -   And finally, create a new file named leaders.js and add the
     following to it:
 
 ```
-> import { LEADERS } from '../shared/leaders';
-> export const Leaders = (state = LEADERS, action) => {
->     switch (action.type) {
->         default:
->           return state;
->       }
-> };
+import { LEADERS } from '../shared/leaders';
+export const Leaders = (state = LEADERS, action) => {
+    switch (action.type) {
+        default:
+          return state;
+      }
+};
 ```
 
 -   Now that we have split the management of state into different
@@ -5424,23 +5424,23 @@ manage the whole state. At the end of this exercise you will be able to:
     together. Open configureStore.js and update it as follows:
 
 ```
-> import {createStore, combineReducers} from 'redux';
-> import { Dishes } from './dishes';
-> import { Comments } from './comments';
-> import { Promotions } from './promotions';
-> import { Leaders } from './leaders';
+import {createStore, combineReducers} from 'redux';
+import { Dishes } from './dishes';
+import { Comments } from './comments';
+import { Promotions } from './promotions';
+import { Leaders } from './leaders';
 >
-> export const ConfigureStore = () => {
->     const store = createStore(
->         combineReducers({
->             dishes: Dishes,
->             comments: Comments,
->             promotions: Promotions,
->             leaders: Leaders
->         })
->     );
->     return store;
-> }
+export const ConfigureStore = () => {
+    const store = createStore(
+        combineReducers({
+            dishes: Dishes,
+            comments: Comments,
+            promotions: Promotions,
+            leaders: Leaders
+        })
+    );
+    return store;
+}
 ```
 
 -   Now we can safely delete the reducer.js file from the project.
@@ -5474,81 +5474,81 @@ store. At the end of this exercise you will be able to:
     add the following to it:
 
 ```
-> export const ADD_COMMENT = 'ADD_COMMENT';
+export const ADD_COMMENT = 'ADD_COMMENT';
 ```
 
 -   Then, create a file named <i>ActionCreators.js</i> and add the following
     to it:
 
 ```
-> import <i> as ActionTypes from './ActionTypes';
-> export const addComment = (dishId, rating, author, comment) => ({
->     type: ActionTypes.ADD_COMMENT,
->     payload: {
->         dishId: dishId,
->         rating: rating,
->         author: author,
->         comment: comment
->     }
-> });
+import <i> as ActionTypes from './ActionTypes';
+export const addComment = (dishId, rating, author, comment) => ({
+    type: ActionTypes.ADD_COMMENT,
+    payload: {
+        dishId: dishId,
+        rating: rating,
+        author: author,
+        comment: comment
+    }
+});
 ```
 
 -   Next, update <i>comments.js</i> to initiate action when the action is
     dispatched by the ActionCreator as follows:
 
 ```
-> import { COMMENTS } from '../shared/comments';
-> import </i> as ActionTypes from './ActionTypes';
-> export const Comments = (state = COMMENTS, action) => {
->     switch (action.type) {
->         case ActionTypes.ADD_COMMENT:
->             var comment = action.payload;
->             comment.id = state.length;
->             comment.date = new Date().toISOString();
->             console.log("Comment: ", comment);
->             return state.concat(comment);
->         default:
->           return state;
->       }
-> };
+import { COMMENTS } from '../shared/comments';
+import </i> as ActionTypes from './ActionTypes';
+export const Comments = (state = COMMENTS, action) => {
+    switch (action.type) {
+        case ActionTypes.ADD_COMMENT:
+            var comment = action.payload;
+            comment.id = state.length;
+            comment.date = new Date().toISOString();
+            console.log("Comment: ", comment);
+            return state.concat(comment);
+        default:
+          return state;
+      }
+};
 ```
 
 -   Now update <i>MainComponent.js</i> to make the action available for use
     within the DishdetailComponent as follows:
 
 ```
-> . . .
-> import { addComment } from '../redux/ActionCreators';
-> . . .
->   const mapDispatchToProps = dispatch => ({
->     addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
->   });
-> . . .
->       <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
->         comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
->         addComment={this.props.addComment}
->       />
-> . . .
+. . .
+import { addComment } from '../redux/ActionCreators';
+. . .
+  const mapDispatchToProps = dispatch => ({
+    addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
+  });
+. . .
+      <DishDetail dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
+        comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
+        addComment={this.props.addComment}
+      />
+. . .
 >
-> export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 ```
 
 -   Finally, update <i>DishdetailComponent.js</i> as follows to initiate the
     action upon the user submitting the comment form:
 
 ```
-> . . .
->   function RenderComments({comments, addComment, dishId}) {
-> . . .
->       <CommentForm dishId={dishId} addComment={addComment} />
-> . . .
->         this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
-> . . .
->       <RenderComments comments={props.comments}
->         addComment={props.addComment}
->         dishId={props.dish.id}
->       />
-> . . .
+. . .
+  function RenderComments({comments, addComment, dishId}) {
+. . .
+      <CommentForm dishId={dishId} addComment={addComment} />
+. . .
+        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
+. . .
+      <RenderComments comments={props.comments}
+        addComment={props.addComment}
+        dishId={props.dish.id}
+      />
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Redux
@@ -5610,28 +5610,28 @@ function. At the end of this exercise you will be able to:
 -   Install Redux Thunk and Logger as shown below:
 
 ```
-> yarn add redux-thunk@2.2.0
+yarn add redux-thunk@2.2.0
 >
-> yarn add redux-logger@3.0.6
+yarn add redux-logger@3.0.6
 ```
 
 -   Then open <i>configureStore.js</i> and update it to use the Thunk and
     Logger as follows:
 
 ```
-> import {createStore, combineReducers, applyMiddleware } from 'redux';
-> . . .
-> import thunk from 'redux-thunk';
-> import logger from 'redux-logger';
-> . . .
->         combineReducers({
->             dishes: Dishes,
->             comments: Comments,
->             promotions: Promotions,
->             leaders: Leaders
->         }),
->         applyMiddleware(thunk, logger)
-> . . .
+import {createStore, combineReducers, applyMiddleware } from 'redux';
+. . .
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+. . .
+        combineReducers({
+            dishes: Dishes,
+            comments: Comments,
+            promotions: Promotions,
+            leaders: Leaders
+        }),
+        applyMiddleware(thunk, logger)
+. . .
 ```
 
 -   Next, open <i>ActionTypes.js</i> and add new action types as follows:
@@ -5646,200 +5646,194 @@ export const ADD_DISHES = 'ADD_DISHES';
 -   Then open ActionCreators.js and add new actions:
 
 ```
-> . . .
-> import { DISHES } from '../shared/dishes';
-> . . .
-> export const fetchDishes = () => (dispatch) => {
->     dispatch(dishesLoading(true));
->     setTimeout(() => {
->         dispatch(addDishes(DISHES));
->     }, 2000);
-> }
-> export const dishesLoading = () => ({
->     type: ActionTypes.DISHES_LOADING
-> });
-> export const dishesFailed = (errmess) => ({
->     type: ActionTypes.DISHES_FAILED,
->     payload: errmess
-> });
-> export const addDishes = (dishes) => ({
->     type: ActionTypes.ADD_DISHES,
->     payload: dishes
-> });
+. . .
+import { DISHES } from '../shared/dishes';
+. . .
+export const fetchDishes = () => (dispatch) => {
+    dispatch(dishesLoading(true));
+    setTimeout(() => {
+        dispatch(addDishes(DISHES));
+    }, 2000);
+}
+export const dishesLoading = () => ({
+    type: ActionTypes.DISHES_LOADING
+});
+export const dishesFailed = (errmess) => ({
+    type: ActionTypes.DISHES_FAILED,
+    payload: errmess
+});
+export const addDishes = (dishes) => ({
+    type: ActionTypes.ADD_DISHES,
+    payload: dishes
+});
 ```
 
 -   Next, open dishes.js and add the code to respond to actions as
     follows:
 
 ```
-> import </i> as ActionTypes from './ActionTypes';
-> export const Dishes = (state = { isLoading: true,
->     errMess: null,
->     dishes:[]}, action) => {
->     switch (action.type) {
->         case ActionTypes.ADD_DISHES:
->             return {...state, isLoading: false, errMess: null, dishes: action.payload};
->         case ActionTypes.DISHES_LOADING:
->             return {...state, isLoading: true, errMess: null, dishes: []}
->         case ActionTypes.DISHES_FAILED:
->             return {...state, isLoading: false, errMess: action.payload};
->         default:
->             return state;
->     }
-> };
+import </i> as ActionTypes from './ActionTypes';
+export const Dishes = (state = { isLoading: true,
+    errMess: null,
+    dishes:[]}, action) => {
+    switch (action.type) {
+        case ActionTypes.ADD_DISHES:
+            return {...state, isLoading: false, errMess: null, dishes: action.payload};
+        case ActionTypes.DISHES_LOADING:
+            return {...state, isLoading: true, errMess: null, dishes: []}
+        case ActionTypes.DISHES_FAILED:
+            return {...state, isLoading: false, errMess: action.payload};
+        default:
+            return state;
+    }
+};
 ```
 
 -   Add a new component named <i>LoadingComponent.js</i> to display a loading
     message as follows:
 
 ```
-> import React from 'react';
-> export const Loading = () => {
->     return(
->         <div className="col-12">
->             <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
->             <p>Loading . . .</p>
->         </div>
->     );
-> };
+import React from 'react';
+export const Loading = () => {
+    return(
+        <div className="col-12">
+            <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
+            <p>Loading . . .</p>
+        </div>
+    );
+};
 ```
 
 -   Now we will update the remaining components to use the actions.
     First, open <i>MainComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { addComment, fetchDishes } from '../redux/ActionCreators';
-> . . .
->   fetchDishes: () => { dispatch(fetchDishes())}
-> . . .
->   componentDidMount() {
->     this.props.fetchDishes();
->   }
-> . . .
->     const HomePage = () => {
->       return(
->           <Home 
->               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
->               dishesLoading={this.props.dishes.isLoading}
->               dishesErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
->               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
->           />
->       );
->     }
->     const DishWithId = ({match}) => {
->       return(
+. . .
+import { addComment, fetchDishes } from '../redux/ActionCreators';
+. . .
+  fetchDishes: () => { dispatch(fetchDishes())}
+. . .
+  componentDidMount() {
+    this.props.fetchDishes();
+  }
+. . .
+    const HomePage = () => {
+      return(
+          <Home 
+              dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
+              dishesLoading={this.props.dishes.isLoading}
+              dishesErrMess={this.props.dishes.errMess}
+              promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+              leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+          />
+      );
+    }
+    const DishWithId = ({match}) => {
+      return(
 ><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
 >
->             isLoading={this.props.dishes.isLoading}
->             errMess={this.props.dishes.errMess}
+            isLoading={this.props.dishes.isLoading}
+            errMess={this.props.dishes.errMess}
 > comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
->             addComment={this.props.addComment}
->           />
->       );
->     };
-> . . .
+            addComment={this.props.addComment}
+          />
+      );
+    };
+. . .
 ```
 
 -   Open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { Loading } from './LoadingComponent';
-> . . .
->         if (props.isLoading) {
->             return(
->                 <div className="container">
->                     <div className="row">            
->                         <Loading />
->                     </div>
->                 </div>
->             );
->         }
->         else if (props.errMess) {
->             return(
->                 <div className="container">
->                     <div className="row">            
->                         <h4>{props.errMess}</h4>
->                     </div>
->                 </div>
->             );
->         }
->         else if (props.dish != null) 
-> . . .
+. . .
+import { Loading } from './LoadingComponent';
+. . .
+        if (props.isLoading) {
+            return(
+                <div className="container">
+                    <div className="row">            
+                        <Loading />
+                    </div>
+                </div>
+            );
+        }
+        else if (props.errMess) {
+            return(
+                <div className="container">
+                    <div className="row">            
+                        <h4>{props.errMess}</h4>
+                    </div>
+                </div>
+            );
+        }
+        else if (props.dish != null) 
+. . .
 ```
 
 -   Open <i>HomeComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { Loading } from './LoadingComponent';
-> . . .
->  
->
-> function RenderCard({item, isLoading, errMess}) {
->
->     if (isLoading) {
->         return(
->                 <Loading />
->         );
->     }
->     else if (errMess) {
->         return(
->                 <h4>{errMess}</h4>
->         );
->     }
->     else 
->         return(
->             <Card>
->
->                 <CardImg src={item.image} alt={item.name} />
->                 <CardBody>
->                 <CardTitle>{item.name}</CardTitle>
->                 {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
->                 <CardText>{item.description}</CardText>
->                 </CardBody>
->             </Card>
->         );
-> }
-> . . .
-> <RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  />
->
-> . . .
+. . .
+import { Loading } from './LoadingComponent';
+. . .
+  function RenderCard({item, isLoading, errMess}) {
+    if (isLoading) {
+      return(
+        &lt;Loading /&gt;
+      );
+    }
+    else if (errMess) {
+      return(
+        &lt;h4&gt;{errMess}&lt;/h4&gt;
+        );
+    }
+    else 
+      return(
+        &lt;Card&gt;
+        &lt;CardImg src={item.image} alt={item.name} /&gt;
+        &lt;CardBody&gt;
+        &lt;CardTitle&gt;{item.name}&lt;/CardTitle&gt;
+        {item.designation ? &lt;CardSubtitle&gt;{item.designation}&lt;/CardSubtitle&gt; : null }
+        &lt;CardText&gt;{item.description}&lt;/CardText&gt;
+        &lt;/CardBody&gt;
+        &lt;/Card&gt;
+      );
+  }
+. . .
+  &lt;RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess} /&gt;
+. . .
 ```
 
 -   Finally, update <i>MenuComponent.js</i> as follows:
 
 ```
-> . . .
-> import { Loading } from './LoadingComponent';
-> . . .
->         const menu = props.dishes.dishes.map((dish) => {
-> . . .
->
->         if (props.dishes.isLoading) {
->             return(
->                 <div className="container">
->                     <div className="row">            
->                         <Loading />
->                     </div>
->                 </div>
->             );
->         }
->         else if (props.dishes.errMess) {
->             return(
->                 <div className="container">
->                     <div className="row"> 
->                         <div className="col-12">
->                             <h4>{props.dishes.errMess}</h4>
->                         </div>
->                     </div>
->                 </div>
->             );
->         }
->         else
-> . . .
+. . .
+import { Loading } from './LoadingComponent';
+. . .
+  const menu = props.dishes.dishes.map((dish) => {
+. . .
+  if (props.dishes.isLoading) {
+    return(
+      &lt;div className="container">
+        &lt;div className="row">            
+          &lt;Loading />
+        &lt;/div>
+      &lt;/div>
+      );
+    }
+    else if (props.dishes.errMess) {
+      return(
+        &lt;div className="container"&gt;
+          &lt;div className="row"&gt;
+          &lt;div className="col-12"&gt;
+            &lt;h4&gt;{props.dishes.errMess}&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      );
+    }
+    else
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Redux
@@ -5869,67 +5863,67 @@ store. At the end of this exercise you will be able to:
     following to it:
 
 ```
-> export const InitialFeedback = {
->     firstname: '',
->     lastname: '',
->     telnum: '',
->     email: '',
->     agree: false,
->     contactType: 'Tel.',
->     message: ''
-> };
+  export const InitialFeedback = {
+    firstname: '',
+    lastname: '',
+    telnum: '',
+    email: '',
+    agree: false,
+    contactType: 'Tel.',
+    message: ''
+  };
 ```
 
 -   Then, open <i>configureStore.js</i> and update it to add the form to the
     reducers:
 
 ```
-> . . .
-> import { createForms } from 'react-redux-form';
-> . . .
-> import { InitialFeedback } from './forms';
-> . . .
->         combineReducers({
->             dishes: Dishes,
->             comments: Comments,
->             promotions: Promotions,
->             leaders: Leaders,
->             ...createForms({
->                 feedback: InitialFeedback
->             })
->         }),
-> . . .
+. . .
+import { createForms } from 'react-redux-form';
+. . .
+import { InitialFeedback } from './forms';
+. . .
+        combineReducers({
+            dishes: Dishes,
+            comments: Comments,
+            promotions: Promotions,
+            leaders: Leaders,
+            ...createForms({
+                feedback: InitialFeedback
+            })
+        }),
+. . .
 ```
 
 -   Next, open <i>MainComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { actions } from 'react-redux-form';
-> . . .
->   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
-> . . .
-> <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
-> . . .
+  . . .
+  import { actions } from 'react-redux-form';
+  . . .
+    resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
+  . . .
+ <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} /  } />
+ . . .
 ```
 
 -   Open CommentComponent.js and update it as follows:
 
 ```
-> . . .
-> import { Control, Form, Errors, actions } from 'react-redux-form';
-> . . .
->     handleSubmit(values) {
->         console.log('Current State is: ' + JSON.stringify(values));
->         alert('Current State is: ' + JSON.stringify(values));
->         this.props.resetFeedbackForm();
->         // event.preventDefault();
->     }
-> . . .
->                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
->                           . . .
->                         </Form>
-> . . .
+  . . .
+  import { Control, Form, Errors, actions } from 'react-redux-form';
+  . . .
+    handleSubmit(values) {
+      console.log('Current State is: ' + JSON.stringify(values));
+      alert('Current State is: ' + JSON.stringify(values));
+      this.props.resetFeedbackForm();
+      // event.preventDefault();
+    }
+  . . .
+    &lt;Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}&gt;
+    . . .
+    &lt;/Form&gt;
+    . . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -6025,7 +6019,7 @@ from any folder on your computer.
     at the command prompt to start the server:
 
 ```
->      json-server --watch db.json -p 3001 -d 2000
+     json-server --watch db.json -p 3001 -d 2000
 ```
 
 -   This should start up a server at port number 3001 on your machine.
@@ -6033,28 +6027,25 @@ from any folder on your computer.
     addresses into your <b>browser address bar</b>:
 
 ```
-> [http://localhost:3001/dishes]{.underline}
->
-> [http://localhost:3001/promotions]{.underline}
->
-> [http://localhost:3001/leaders]{.underline}
->
-> [http://localhost:3001/feedback]{.underline}
+  [http://localhost:3001/dishes]{.underline}
+
+  [http://localhost:3001/promotions]{.underline}
+
+  [http://localhost:3001/leaders]{.underline}
+
+  [http://localhost:3001/feedback]{.underline}
 ```
 
 -   Type these addresses into the browser address and see the JSON data
     being served up by the server. This data is obtained from the
     db.json file
 
-```{=html}
-<!-- -->
-```
 -   The json-server also provides a static web server. Any resources
     that you put in a folder named <b>public</b> in the <b>json-server</b>
     folder above, will be served by the server at the following address:
 
-```
->   <http://localhost:3001/>
+```{=html}
+  &lt;http://localhost:3001/&gt;
 ```
 
 -   Shut down the server by typing <b>ctrl-C</b> in the terminal window.
@@ -6071,7 +6062,7 @@ from any folder on your computer.
     the following into your browser address bar:
 
 ```
-> [http://localhost:3001/images/]{.underline}<image name>.png
+  [http://localhost:3001/images/]{.underline}&lt;image name&gt;.png
 ```
 
 ### Conclusions
@@ -6145,7 +6136,7 @@ exercise you will be able to:
 -   As a first step, let us install Fetch into our project as follows:
 
 ```
-> yarn add cross-fetch@2.1.0
+  yarn add cross-fetch@2.1.0
 ```
 
 -   Now that we have installed Fetch, let us configure your application
@@ -6153,7 +6144,7 @@ exercise you will be able to:
     the <i>shared</i> folder and add the following to it:
 
 ```
-> export const baseUrl = '[http://localhost:3001/]{.underline}';
+  export const baseUrl = '[http://localhost:3001/]{.underline}';
 ```
 
 -   Make sure that the json-server is running and servi
@@ -6163,87 +6154,87 @@ exercise you will be able to:
 -   Next, open <i>ActionTypes.js</i> and add the following:
 
 ```
-. . .
-export const ADD_COMMENTS = 'ADD_COMMENTS';
-export const COMMENTS_FAILED = 'COMMENTS_FAILED';
-export const PROMOS_LOADING = 'PROMOS_LOADING';
-export const ADD_PROMOS = 'ADD_PROMOS';
-export const PROMOS_FAILED = 'PROMOS_FAILED';
+  . . .
+  export const ADD_COMMENTS = 'ADD_COMMENTS';
+  export const COMMENTS_FAILED = 'COMMENTS_FAILED';
+  export const PROMOS_LOADING = 'PROMOS_LOADING';
+  export const ADD_PROMOS = 'ADD_PROMOS';
+  export const PROMOS_FAILED = 'PROMOS_FAILED';
 ```
 
 -   Then, open <i>ActionCreators.js</i> and update it as follows:
 
 ```
-> . . .
-> import { baseUrl } from '../shared/baseUrl';
-> . . .
->     return fetch(baseUrl + 'dishes')
->     .then(response => response.json())
->     .then(dishes => dispatch(addDishes(dishes)));
-> . . .
-> export const fetchComments = () => (dispatch) => {    
->     return fetch(baseUrl + 'comments')
->     .then(response => response.json())
->     .then(comments => dispatch(addComments(comments)));
-> };
-> export const commentsFailed = (errmess) => ({
->     type: ActionTypes.COMMENTS_FAILED,
->     payload: errmess
-> });
-> export const addComments = (comments) => ({
->     type: ActionTypes.ADD_COMMENTS,
->     payload: comments
-> });
-> export const fetchPromos = () => (dispatch) => {
->     dispatch(promosLoading());
->     return fetch(baseUrl + 'promotions')
->     .then(response => response.json())
->     .then(promos => dispatch(addPromos(promos)));
-> }
-> export const promosLoading = () => ({
->     type: ActionTypes.PROMOS_LOADING
+  . . .
+  import { baseUrl } from '../shared/baseUrl';
+  . . .
+    return fetch(baseUrl + 'dishes')
+    .then(response => response.json())
+    .then(dishes => dispatch(addDishes(dishes)));
+  . . .
+  export const fetchComments = () => (dispatch) => {    
+    return fetch(baseUrl + 'comments')
+    .then(response => response.json())
+    .then(comments => dispatch(addComments(comments)));
+  };
+  export const commentsFailed = (errmess) => ({
+    type: ActionTypes.COMMENTS_FAILED,
+    payload: errmess
+  });
+  export const addComments = (comments) => ({
+    type: ActionTypes.ADD_COMMENTS,
+    payload: comments
+  });
+  export const fetchPromos = () => (dispatch) => {
+    dispatch(promosLoading());
+    return fetch(baseUrl + 'promotions')
+    .then(response => response.json())
+    .then(promos => dispatch(addPromos(promos)));
+  }
+  export const promosLoading = () => ({
+    type: ActionTypes.PROMOS_LOADING
 ```
 
 -   Next, open <i>comments.js</i> and update it as follows:
 
 ```
-> import </i> as ActionTypes from './ActionTypes';
->
-> export const Comments = (state = { errMess: null, comments:[]}, action) => {
->   switch (action.type) {
->     case ActionTypes.ADD_COMMENTS:
->       return {...state, errMess: null, comments: action.payload};
->     case ActionTypes.COMMENTS_FAILED:
->       return {...state, errMess: action.payload};
->     case ActionTypes.ADD_COMMENT:
->         var comment = action.payload;
->         comment.id = state.comments.length;
->         comment.date = new Date().toISOString();
->         return { ...state, comments: state.comments.concat(comment)};
->     default:
->       return state;
->   }
-> };
+  import </i> as ActionTypes from './ActionTypes';
+
+  export const Comments = (state = { errMess: null, comments:[]}, action) => {
+    switch (action.type) {
+      case ActionTypes.ADD_COMMENTS:
+        return {...state, errMess: null, comments: action.payload};
+      case ActionTypes.COMMENTS_FAILED:
+        return {...state, errMess: action.payload};
+      case ActionTypes.ADD_COMMENT:
+        var comment = action.payload;
+        comment.id = state.comments.length;
+        comment.date = new Date().toISOString();
+        return { ...state, comments: state.comments.concat(comment)};
+      default:
+        return state;
+      }
+    };
 ```
 
 -   Similarly, open <i>promotions.js</i> and update it as follows:
 
 ```
-> import </i> as ActionTypes from './ActionTypes';
-> export const Promotions = (state  = { isLoading: true,
->                                         errMess: null,
->                                         promotions:[]}, action) => {
->     switch (action.type) {
->         case ActionTypes.ADD_PROMOS:
->         return {...state, isLoading: false, errMess: null, promotions: action.payload};
->         case ActionTypes.PROMOS_LOADING:
->             return {...state, isLoading: true, errMess: null, promotions: []}
->         case ActionTypes.PROMOS_FAILED:
->             return {...state, isLoading: false, errMess: action.payload};
->         default:
->           return state;
->       }
-> };
+import </i> as ActionTypes from './ActionTypes';
+export const Promotions = (state  = { isLoading: true,
+                                        errMess: null,
+                                        promotions:[]}, action) => {
+    switch (action.type) {
+        case ActionTypes.ADD_PROMOS:
+        return {...state, isLoading: false, errMess: null, promotions: action.payload};
+        case ActionTypes.PROMOS_LOADING:
+            return {...state, isLoading: true, errMess: null, promotions: []}
+        case ActionTypes.PROMOS_FAILED:
+            return {...state, isLoading: false, errMess: action.payload};
+        default:
+          return state;
+      }
+};
 ```
 
 -   Now that the Redux actions are all updated, it\'s time to update the
@@ -6252,72 +6243,72 @@ export const PROMOS_FAILED = 'PROMOS_FAILED';
 -   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
-> . . . 
-> import { addComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
-> . . .
-> const mapDispatchToProps = dispatch => ({
->   addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
->   fetchDishes: () => { dispatch(fetchDishes())},
->   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
->   fetchComments: () => dispatch(fetchComments()),
->   fetchPromos: () => dispatch(fetchPromos())
-> });
+. . . 
+import { addComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
+. . .
+const mapDispatchToProps = dispatch => ({
+  addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
+  fetchDishes: () => { dispatch(fetchDishes())},
+  resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
+  fetchComments: () => dispatch(fetchComments()),
+  fetchPromos: () => dispatch(fetchPromos())
+});
 >
-> . . .
->   componentDidMount() {
->     this.props.fetchDishes();
->     this.props.fetchComments();
->     this.props.fetchPromos();
->   }
-> . . .
->           <Home 
->               dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
->               dishesLoading={this.props.dishes.isLoading}
->               dishErrMess={this.props.dishes.errMess}
->               promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
->               promoLoading={this.props.promotions.isLoading}
->               promoErrMess={this.props.promotions.errMess}
->               leader={this.props.leaders.filter((leader) => leader.featured)[0]}
->           />
-> . . .
+. . .
+  componentDidMount() {
+    this.props.fetchDishes();
+    this.props.fetchComments();
+    this.props.fetchPromos();
+  }
+. . .
+          <Home 
+              dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
+              dishesLoading={this.props.dishes.isLoading}
+              dishErrMess={this.props.dishes.errMess}
+              promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
+              promoLoading={this.props.promotions.isLoading}
+              promoErrMess={this.props.promotions.errMess}
+              leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+          />
+. . .
 ><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
->             isLoading={this.props.dishes.isLoading}
->             errMess={this.props.dishes.errMess}
+            isLoading={this.props.dishes.isLoading}
+            errMess={this.props.dishes.errMess}
 ```
 
 -   Then, open <i>MenuComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { baseUrl } from '../shared/baseUrl';
-> . . .
->                     <CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} />
-> . . .
+. . .
+import { baseUrl } from '../shared/baseUrl';
+. . .
+                    <CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} />
+. . .
 ```
 
 -   Then, open <i>HomeComponent.js</i> and update it as follows:
 
 ```
-> . . .
-> import { baseUrl } from '../shared/baseUrl';
-> . . .
+. . .
+import { baseUrl } from '../shared/baseUrl';
+. . .
 >
 >        <CardImg src={baseUrl + item.image} alt={item.name} />
-> . . .
+. . .
 >         <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
 >
-> . . .
+. . .
 ```
 
 -   Then, open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
-> . . .
+. . .
 >
-> import { baseUrl } from '../shared/baseUrl';
-> . . .
->                 <CardImg top src={baseUrl + dish.image} alt={dish.name} />
-> . . .
+import { baseUrl } from '../shared/baseUrl';
+. . .
+                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
@@ -6346,44 +6337,44 @@ able to:
 -   Open <i>ActionCreators.j</i>s and update it as follows:
 
 ```
-> . . .
+. . .
 >
-> export const fetchDishes = () => (dispatch) => {
+export const fetchDishes = () => (dispatch) => {
 >
->     dispatch(dishesLoading(true));
+    dispatch(dishesLoading(true));
 >
->     return fetch(baseUrl + 'dishes')
->     .then(response => {
->         if (response.ok) {
->           return response;
->         } else {
->           var error = new Error('Error ' + response.status + ': ' + response.statusText);
->           error.response = response;
->           throw error;
->         }
->       },
->       error => {
->             var errmess = new Error(error.message);
->             throw errmess;
->       })
->     .then(response => response.json())
->     .then(dishes => dispatch(addDishes(dishes)))
->     .catch(error => dispatch(dishesFailed(error.message)));
-> }
-> . . .
-> export const fetchComments = () => (dispatch) => {    
->     return fetch(baseUrl + 'comments')
->     .then(response => {
->         if (response.ok) {
->           return response;
->         } else {
->           var error = new Error('Error ' + response.status + ': ' + response.statusText);
->           error.response = response;
->           throw error;
->         }
->       },
->       error => {
->             var errmess = new Error(error.message);
+    return fetch(baseUrl + 'dishes')
+    .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error('Error ' + response.status + ': ' + response.statusText);
+          error.response = response;
+          throw error;
+        }
+      },
+      error => {
+            var errmess = new Error(error.message);
+            throw errmess;
+      })
+    .then(response => response.json())
+    .then(dishes => dispatch(addDishes(dishes)))
+    .catch(error => dispatch(dishesFailed(error.message)));
+}
+. . .
+export const fetchComments = () => (dispatch) => {    
+    return fetch(baseUrl + 'comments')
+    .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error('Error ' + response.status + ': ' + response.statusText);
+          error.response = response;
+          throw error;
+        }
+      },
+      error => {
+            var errmess = new Error(error.message);
 ```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
@@ -6413,85 +6404,79 @@ to:
 -   Open <i>ActionCreators.js</i> and update it as follows:
 
 ```
-> . . .
->
-> export const addComment = (comment) => ({
->     type: ActionTypes.ADD_COMMENT,
->     payload: comment
-> });
->
-> export const postComment = (dishId, rating, author, comment) => (dispatch) => {
->     const newComment = {
->         dishId: dishId,
->         rating: rating,
->         author: author,
->         comment: comment
->     };
->     newComment.date = new Date().toISOString();
->     return fetch(baseUrl + 'comments', {
->         method: "POST",
->         body: JSON.stringify(newComment),
->         headers: {
->           "Content-Type": "application/json"
->         },
->         credentials: "same-origin"
->     })
->     .then(response => {
->         if (response.ok) {
->           return response;
->         } else {
->           var error = new Error('Error ' + response.status + ': ' + response.statusText);
->           error.response = response;
->           throw error;
->         }
->       },
->       error => {
->             throw error;
->       })
->     .then(response => response.json())
->     .then(response => dispatch(addComment(response)))
->    .catch(error =>  { console.log('post comments', error.message); alert('Your comment could not be postednError: '+error.message); });
+. . .
+
+  export const addComment = (comment) => ({
+    type: ActionTypes.ADD_COMMENT,
+    payload: comment
+  });
+
+  export const postComment = (dishId, rating, author, comment) => (dispatch) => {
+    const newComment = {
+      dishId: dishId,
+      rating: rating,
+      author: author,
+      comment: comment
+    };
+    newComment.date = new Date().toISOString();
+    return fetch(baseUrl + 'comments', {
+      method: "POST",
+      body: JSON.stringify(newComment),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "same-origin"
+    })
+    .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error('Error ' + response.status + ': ' + response.statusText);
+          error.response = response;
+          throw error;
+        }
+      },
+      error => {
+            throw error;
+      })
+    .then(response => response.json())
+    .then(response => dispatch(addComment(response)))
+    .catch(error =>  { console.log('post comments', error.message); alert('Your comment could not be postednError: '+error.message); });
 ```
 
 -   Open <i>comment.js</i> and <b>remove</b> the following two lines from it:
 
 ```
-> . . .
->
->        comment.id = state.comments.length;
->        comment.date = new Date().toISOString();
->
->  . . .
+  . . .
+  comment.id = state.comments.length;
+  comment.date = new Date().toISOString();
+  . . .
 ```
 
 -   Open <i>MainComponent.js</i> and update it as follows:
 
 ```
-> . . .
->
-> import { postComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
->
-> . . .
->
->   postComment: (dishId, rating, author, comment) => dispatch(postComment(dishId, rating, author, comment))
->
-> . . .
->             postComment={this.props.postComment}
-> . . .
+. . .
+  import { postComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
+. . .
+  postComment: (dishId, rating, author, comment) => dispatch(postComment(dishId, rating, author, comment))
+. . .
+  postComment={this.props.postComment}
+. . .
 ```
 
 -   Finally, open <i>DishdetailComponent.js</i> and update it as follows:
 
 ```
-> . . .
->     function RenderComments({comments, postComment, dishId}) {
-> . . .
->                     <CommentForm dishId={dishId} postComment={postComment} />
-> . . .
->             this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
-> . . .
->                             postComment={props.postComment}
-> . . .
+. . .
+  function RenderComments({comments, postComment, dishId}) {
+. . .
+    <CommentForm dishId={dishId} postComment={postComment} />
+. . .
+      this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
+. . .
+        postComment={props.postComment}
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"Fetch
@@ -6578,55 +6563,55 @@ yarn add react-transition-group@2.3.0
     the following classes:
 
 ```
-> . . .
+. . .
 >
-> .page-enter {
->     opacity: 0.01;
->     transform: translateX(-100%);
-> }
+.page-enter {
+    opacity: 0.01;
+    transform: translateX(-100%);
+}
 >
-> .page-enter-active {
->     opacity: 1;
->     transform: translateX(0%);
->     transition: all 300ms ease-in;
-> }
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 300ms ease-in;
+}
 >
-> .page-exit {
->     opacity: 1;
->     transform: translateX(0%);
-> }
-> .page-exit-active {
->     opacity: 0.01;
->     transform: translateX(100%);
->     transition: all 300ms ease-out;
-> }
->  
+.page-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.page-exit-active {
+    opacity: 0.01;
+    transform: translateX(100%);
+    transition: all 300ms ease-out;
+}
+ 
 ```
 
 -   Then, open MainComponent.js and add in the following to configure
     the animation:
 
 ```
-> . . .
+. . .
 >
-> import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 >
-> . . .
+. . .
 >
->           <TransitionGroup>
->             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
->               <Switch location={this.props.location}>
->                   <Route path='/home' component={HomePage} />
->                   <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
->                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
->                   <Route path='/menu/:dishId' component={DishWithId} />
+          <TransitionGroup>
+            <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+              <Switch location={this.props.location}>
+                  <Route path='/home' component={HomePage} />
+                  <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
+                  <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+                  <Route path='/menu/:dishId' component={DishWithId} />
                   <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
->                   <Redirect to="/home" />
->               </Switch>
->             </CSSTransition>
->           </TransitionGroup>
+                  <Redirect to="/home" />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
 >
-> . . .
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -6655,9 +6640,9 @@ you will be able to:
 -   Install react-animation-components into your React app as follows:
 
 ```
-> yarn add react-animation-components@3.0.0
+yarn add react-animation-components@3.0.0
 >
-> yarn add prop-types@15.6.0
+yarn add prop-types@15.6.0
 ```
 
 ### Adding Animations
@@ -6665,63 +6650,63 @@ you will be able to:
 -   Open <i>HomeComponents.js</i> and update as follows:
 
 ```
-> . . .
+. . .
 >
-> import { FadeTransform } from 'react-animation-components';
+import { FadeTransform } from 'react-animation-components';
 >
-> . . .
+. . .
 >
->             <FadeTransform
->                 in
->                 transformProps={{
->                     exitTransform: 'scale(0.5) translateY(-50%)'
->                 }}>
->                 <Card>
->                     <CardImg src={baseUrl + item.image} alt={item.name} />
->                     <CardBody>
->                     <CardTitle>{item.name}</CardTitle>
->                     {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
->                     <CardText>{item.description}</CardText>
->                     </CardBody>
->                 </Card>
->             </FadeTransform>
+            <FadeTransform
+                in
+                transformProps={{
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }}>
+                <Card>
+                    <CardImg src={baseUrl + item.image} alt={item.name} />
+                    <CardBody>
+                    <CardTitle>{item.name}</CardTitle>
+                    {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+                    <CardText>{item.description}</CardText>
+                    </CardBody>
+                </Card>
+            </FadeTransform>
 >
-> . . .
+. . .
 ```
 
 -   Open DishdetailComponents.js and update it as follows:
 
 ```
-> . . .
-> import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
-> . . .
->             \<FadeTransform
->                 in
->                 transformProps={{
->                     exitTransform: \'scale(0.5) translateY(-50%)\'
->                 }}\>
->             \<Card\>
->                 \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
->                 \<CardBody\>
->                     \<CardTitle\>{dish.name}\</CardTitle\>
->                     \<CardText\>{dish.description}\</CardText\>
->                 \</CardBody\>
->             \</Card\>
->             \</FadeTransform\>
-> . . .
->                     \<Stagger in\>
->                         {comments.map((comment) =\> {
->                             return (
->                                 \<Fade in\>
->                                 \<li key={comment.id}\>
->                                 \<p\>{comment.comment}\</p\>
->                                 \<p\>\-- {comment.author} , {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}\</p\>
->                                 \</li\>
->                                 \</Fade\>
->                             );
->                         })}
->                         \</Stagger\>
-> . . .
+. . .
+import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
+. . .
+            \<FadeTransform
+                in
+                transformProps={{
+                    exitTransform: \'scale(0.5) translateY(-50%)\'
+                }}\>
+            \<Card\>
+                \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
+                \<CardBody\>
+                    \<CardTitle\>{dish.name}\</CardTitle\>
+                    \<CardText\>{dish.description}\</CardText\>
+                \</CardBody\>
+            \</Card\>
+            \</FadeTransform\>
+. . .
+                    \<Stagger in\>
+                        {comments.map((comment) =\> {
+                            return (
+                                \<Fade in\>
+                                \<li key={comment.id}\>
+                                \<p\>{comment.comment}\</p\>
+                                \<p\>\-- {comment.author} , {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}\</p\>
+                                \</li\>
+                                \</Fade\>
+                            );
+                        })}
+                        \</Stagger\>
+. . .
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -6792,18 +6777,18 @@ feedback form by posting the feedback to the server.
 At the end of this assignment, you should have completed the following:
 
 -   Introduced new action types and action creators to support the
-    > fetching of the leaders information from the server and update the
-    > Redux store.
+    fetching of the leaders information from the server and update the
+    Redux store.
 
 -   Updated the Home and the About component to render the information
-    > about the leaders using the downloaded data from the server
+    about the leaders using the downloaded data from the server
 
 -   Add simple animations to the About component where the leaders
-    > information is displayed.
+    information is displayed.
 
 -   Enabled the users to submit feedback through the feedback form by
-    > creating a new feedback service that accepts the form data and
-    > uses Restangular to record their feedback on the server.
+    creating a new feedback service that accepts the form data and
+    uses Restangular to record their feedback on the server.
 
 <b>Assignment Requirements</b>
 
@@ -6814,23 +6799,23 @@ components to use the data from the server for rendering the leader
 information:
 
 -   Add new action types in <i>ActionTypes.js</i> to support the fetching of
-    > the leaders information from the server
+    the leaders information from the server
 
 -   Add new action creators in <i>ActionCreators.js</i> to enable the
-    > fetching of the leaders information from the server and update the
-    > Redux store
+    fetching of the leaders information from the server and update the
+    Redux store
 
 -   Update the code in <i>leaders.js</i> to respond to the dispatched Redux
-    > actions and update the Redux store and appropriately handle the
-    > loading and errors.
+    actions and update the Redux store and appropriately handle the
+    loading and errors.
 
 -   Update the code in <i>MainComponent.js</i> to fetch and use the leaders
-    > information.
+    information.
 
 -   Update <i>HomeComponent.js</i> to render the leader information.
 
 -   Update <i>AboutComponent.js</i> to render the leaders information. You
-    > should handle the loading and error condition appropriately.
+    should handle the loading and error condition appropriately.
 
 <b>Task 2</b>
 
@@ -6839,15 +6824,15 @@ using the feedback form in the Contact component. You will save the
 feedback form data submitted by the user to the server:
 
 -   Implement a new action creator named postFeedback() that takes a
-    > Feedback object as a parameter and submits the feedback to the
-    > server using Fetch. Recall that the feedback data is accessible at
-    > <http://localhost:3001/feedback> on the json-server.
+    Feedback object as a parameter and submits the feedback to the
+    server using Fetch. Recall that the feedback data is accessible at
+    <http://localhost:3001/feedback> on the json-server.
 
 -   Update <i>MainComponent.j</i>s to make the new dispatch method
-    > postFeedback() available to ContactComponent.
+    postFeedback() available to ContactComponent.
 
 -   Update the <i>ContactComponent.js</i> to submit the form data using the
-    > postFeedback() method by passing the feedback form data.
+    postFeedback() method by passing the feedback form data.
 
 <b>Task 3</b>
 
@@ -6856,8 +6841,8 @@ react-animation-components to enable a staggered rendering of the list
 of leaders in AboutComponent:
 
 -   Use the expand animation that we have already used earlier to
-    > judiciously apply animation to the various stages of the form
-    > submission.
+    judiciously apply animation to the various stages of the form
+    submission.
 
 <b>Screenshots</b>
 
@@ -6881,23 +6866,23 @@ Your assignment will be assessed based on the following criteria:
 -   Appropriate action types and action creators have been added.
 
 -   The Home component is correctly using the leader data, and handling
-    > any errors that might arise.
+    any errors that might arise.
 
 -   The About component is correctly using the leader data, and handling
-    > any errors that might arise.
+    any errors that might arise.
 
 <b>Task 2</b>
 
 -   A new postFeedback() action creator is correctly implemented to post
-    > the feedback data to the server.
+    the feedback data to the server.
 
 -   The Contact component has been correctly updated to use
-    > postFeedback() to post the form data to the server.
+    postFeedback() to post the form data to the server.
 
 <b>Task 3</b>
 
 -   Appropriate animation has been added to stagger the rendering of the
-    > leaders in the AboutComponent.
+    leaders in the AboutComponent.
 
 ## Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources
 
