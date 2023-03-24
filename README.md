@@ -258,7 +258,6 @@ a way of realizing the flux architecture
 -->
 
 <h4>Week 4</h4>
-<h7>12 hours to complete</h7>
 
 <h3>More Redux and Client-Server Communication</h3>
 <h7>12 hours to complete</h7>
@@ -368,6 +367,8 @@ strongly recommended.
   - Be able to use Redux to design the architecture for a React-Redux application.
 
 <https://reactjs.org/>
+
+# React ...the beginning...
 
 ## Module 1: Full Stack Web Development: The Big Picture: Objectives and Outcomes
 
