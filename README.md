@@ -569,22 +569,22 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-```
-$ git \--version
+```dos
+$ git --version
 ```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
-```
-$ git config \--global user.name \"Your Name\"
+```dos
+$ git config --global user.name "Your Name"
 ```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-```
-$ git config \--global user.email \<your email address\>
+```dos
+$ git config --global user.email <your email address>
 ```
 
 -   You can check your default Git global configuration, you can type
@@ -592,7 +592,9 @@ $ git config \--global user.email \<your email address\>
 
 ## Exercise (Video): Basic Git Commands
 
-> git config \--list
+```dos
+$ git config --list
+```
 
 ### Conclusions
 
@@ -620,14 +622,14 @@ the end of this exercise, you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
-```
-&lt;!DOCTYPE html&gt;
-  &lt;html\&gt;
-    &lt;head&gt;&lt;/head&gt;
-      &lt;body\&gt;
-        &lt;h1&gt;This is a Header&lt;/h1&gt;
-      &lt;/body&gt;
-  &lt;/html&gt;
+```html5
+<!DOCTYPE html>
+  <html>
+    <head></head>
+      <body>
+        <h1>This is a Header</h1>
+      </body>
+  </html>
 ```
 
 Initializing the folder as a Git repository
@@ -635,7 +637,8 @@ Initializing the folder as a Git repository
 -   Go to the git-test folder in your cmd window/terminal and type the
     following at the prompt to initialize the folder as a Git
     repository:
-```
+
+```dos
 $ git init
 ```
 
@@ -644,7 +647,7 @@ $ git init
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-```
+```dos
 $ git status
 ```
 
@@ -652,31 +655,37 @@ Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
-> git add .
+```
+$ git add .
+```
 
 Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
-> git commit -m \"first commit\"
+```dos
+$ git commit -m "first commit"
+```
 
 Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
-> git log --oneline
+```dos
+$ git log --oneline
+```
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-```
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-     &lt;head&gt;&lt;/head&gt;
-     &lt;body&gt;
-         &lt;h1&gt;This is a Header&lt;/h1&gt;
-         &lt;p&gt;This is a paragraph&lt;/p&gt;
-     &lt;/body&gt;
-  &lt;/html&gt;
+```html5
+  <!DOCTYPE html>
+  <html>
+     <head></head>
+     <body>
+         <h1>This is a Header</h1>
+         <p>This is a paragraph</p>
+     </body>
+  </html>
 ```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
@@ -691,15 +700,15 @@ Checking the log of Git commits
 -   Now, modify the <i>index.html</i> file as follows:
 
 ```
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->         \<p\>This is a second paragraph\</p\>
->     \</body\>
-> \</html\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>         <p>This is a second paragraph</p>
+>     </body>
+> </html>
 ```
 
 -   Now add the modified index.html file to the staging area and then do
@@ -712,7 +721,7 @@ Checking the log of Git commits
     at the prompt:
 
 ```
-$ git checkout \<second commit\'s number\> index.html
+$ git checkout <second commit's number> index.html
 ```
 
 ### Resetting the Git repository
@@ -727,7 +736,7 @@ $ git reset HEAD index.html
 -   Then type the following at the prompt:
 
 ```
-$ git checkout \-- index.html
+$ git checkout -- index.html
 ```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
@@ -773,7 +782,7 @@ online repository. At the end of this exercise, you will be able to:
     link to your online Git repository:
 
 ```
-$ git remote add origin \<repository URL\>
+$ git remote add origin <repository URL>
 ```
 
 ### Pushing your commits to the online repository
@@ -791,7 +800,7 @@ $ git push -u origin master
     at the prompt:
 
 ```
-$ git clone \<repository URL\>
+$ git clone <repository URL>
 ```
 
 ### Conclusions
@@ -912,7 +921,7 @@ $ npm init
     this, type the following at the prompt:
 
 ```
-$ npm install lite-server \--save-dev
+$ npm install lite-server --save-dev
 ```
 
 -   You can check out more documentation on lite-server
@@ -921,26 +930,26 @@ $ npm install lite-server \--save-dev
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-```
+```javascript
 {
   &quot;name&quot;: &quot;git-test&quot;,
-  \"version\": \"1.0.0\",
-  \"description\": \"This is the Git and Node basic learning project\",
-  \"main\": \"index.html\",
-  \"scripts\": {
-    \"start\": \"npm run lite\",
-    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
-    \"lite\": \"lite-server\"
+  "version": "1.0.0",
+  "description": "This is the Git and Node basic learning project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo "Error: no test specified" && exit 1",
+    "lite": "lite-server"
   },
-  \"repository\": {
-    \"type\": \"git\",
-    \"url\": \"git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}\"
+  "repository": {
+    "type": "git",
+    "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
   },
-  \"author\": \"\",
-  \"license\": \"ISC\",
-  \"homepage\": \"[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}\",
-  \"devDependencies\": {
-    \"lite-server\": \"\^2.2.2\"
+  "author": "",
+  "license": "ISC",
+  "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
   }
 }
 ```
@@ -1120,7 +1129,7 @@ $ yarn start
 ```
 $ git init
 $ git add .
-$ git commit -m \"Initial Setup\"
+$ git commit -m "Initial Setup"
 ```
 
 -   Thereafter you can set up an online Git repository and synchronize
@@ -1355,21 +1364,21 @@ $ git --version
     the prompt:
 
 ```
-$ git config \--global user.name \"Your Name\"
+$ git config --global user.name "Your Name"
 ```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
 ```
-$ git config \--global user.email \<your email address\>
+$ git config --global user.email <your email address>
 ```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
 ```
-$ git config \--list
+$ git config --list
 ```
 
 ### Conclusions
@@ -1400,15 +1409,14 @@ the end of this exercise you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
-```
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->     \</body\>
-> \</html\>
+```html5
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>This is a Header</h1>
+  </body>
+</html>
 ```
 
 ### Initializing the folder as a Git repository
@@ -1443,7 +1451,7 @@ $ git add .
 -   To commit the current staging area to your Git repository, type:
 
 ```
-$ git commit -m \"first commit\"
+$ git commit -m "first commit"
 ```
 
 ### Checking the log of Git commits
@@ -1451,20 +1459,20 @@ $ git commit -m \"first commit\"
 -   To check the log of the commits to your Git repository, type
 
 ```
-$ git log \--oneline
+$ git log --oneline
 ```
 
 -   Now, modify the <i>index.html</i> file as follows:
 
 ```
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->     \</body\>
-> \</html\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>     </body>
+> </html>
 ```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
@@ -1479,16 +1487,16 @@ $ git log \--oneline
 -   Now, modify the <i>index.html</i> file as follows:
 
 ```
-> \<!DOCTYPE html\>
-> \<html\>
->     \<head\>\</head\>
+> <!DOCTYPE html>
+> <html>
+>     <head></head>
 >
->     \<body\>
->         \<h1\>This is a Header\</h1\>
->         \<p\>This is a paragraph\</p\>
->         \<p\>This is a second paragraph\</p\>
->     \</body\>
-> \</html\>
+>     <body>
+>         <h1>This is a Header</h1>
+>         <p>This is a paragraph</p>
+>         <p>This is a second paragraph</p>
+>     </body>
+> </html>
 ```
 
 -   Now add the modified index.html file to the staging area and then do
@@ -1501,7 +1509,7 @@ $ git log \--oneline
     at the prompt:
 
 ```
-$ git checkout \<second commit\'s number\> index.html
+$ git checkout <second commit's number> index.html
 ```
 
 ### Resetting the Git repository
@@ -1516,7 +1524,7 @@ $ git reset HEAD index.html
 -   Then type the following at the prompt:
 
 ```
-$ git checkout \-- index.html
+$ git checkout -- index.html
 ```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
@@ -1561,7 +1569,9 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin \<repository URL\>
+```
+$ git remote add origin <repository URL>
+```
 
 ### Pushing your commits to the online repository
 
@@ -1578,7 +1588,7 @@ $ git push -u origin master
     at the prompt:
 
 ```
-$ git clone \<repository URL\>
+$ git clone <repository URL>
 ```
 
 ### Conclusions
@@ -1760,7 +1770,7 @@ Installing an NPM Module
     this, type the following at the prompt:
 
 ```
-$ npm install lite-server \--save-dev
+$ npm install lite-server --save-dev
 ```
 
 -   You can check out more documentation on lite-server
@@ -1771,18 +1781,18 @@ $ npm install lite-server \--save-dev
 
 ```
     &quot;start&quot;: &quot;npm run lite&quot;,
-    &quot;test&quot;: &quot;echo \\&quot;Error: no test specified\&quot; && exit 1&quot;,
+    &quot;test&quot;: &quot;echo &quot;Error: no test specified&quot; && exit 1&quot;,
     &quot;lite&quot;: &quot;lite-server&quot;
   },
   &quot;repository&quot;: {
     &quot;type&quot;: &quot;git&quot;,
-    &quot;url&quot;: &quot;git+[https://jogesh_k\_muppala@bitbucket.org/jogesh_k\_muppala/git-test.git]{.underline}&quot;
+    &quot;url&quot;: &quot;git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}&quot;
   },
   &quot;author&quot;: &quot;&quot;,
   &quot;license&quot;: &quot;ISC&quot;,
-  &quot;homepage&quot;: &quot;[https://bitbucket.org/jogesh_k\_muppala/git-test#readme]{.underline}&quot;,
+  &quot;homepage&quot;: &quot;[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}&quot;,
   &quot;devDependencies&quot;: {
-    &quot;lite-server&quot;: &quot;\^2.2.2&quot;
+    &quot;lite-server&quot;: &quot;^2.2.2&quot;
   }
 }
 ```
@@ -2104,7 +2114,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
-$ create-react-app \--help
+$ create-react-app --help
 ```
 
 ### Generating and Serving a React Project using <i>create-react-app</i>
@@ -2135,7 +2145,7 @@ $ yarn start
     following commands at the prompt:
 
 ```
-$ git commit -m \"Initial Setup\"
+$ git commit -m "Initial Setup"
 $ git init
 $ git add .
 ```
@@ -2199,25 +2209,22 @@ yarn.
 
 -   Open App.js in the src folder and update it as follows:
 
-```
+```javascript
 class App extends Component {
   render() {
     return (
-      \<div className=\"App\"\>
-        \<Navbar dark color=\"primary\"\>
-          \<div className=\"container\"\>
-            \<NavbarBrand href=\"/\"\>Ristorante Con Fusion\</NavbarBrand\>
-          \</div\>
-        \</Navbar\>
-      \</div\>
+      <div className="App">
+        <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+          </div>
+        </Navbar>
+      </div>
     );
   }
 }
-
 . . .
-
-import { Navbar, NavbarBrand } from \'reactstrap\';
-
+import { Navbar, NavbarBrand } from 'reactstrap';
 . . .
 ```
 
@@ -3018,8 +3025,8 @@ class App extends Component {
 
 ```
 . . .
-                    <Card key={dish.id}
-                        onClick={() => this.props.onClick(dish.id)}>
+   <Card key={dish.id}
+   onClick={() => this.props.onClick(dish.id)}>
 . . .
 ```
 
@@ -3282,12 +3289,12 @@ function Footer(props) {
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
                     <div className="text-center">
->  <a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
-> <a className="btn btn-social-icon btn-facebook" href="[http://www.facebook.com/profile.php?id=]{.underline}"><i className="fa fa-facebook"></i></a>
-> <a className="btn btn-social-icon btn-linkedin" href="[http://www.linkedin.com/in/]{.underline}"><i className="fa fa-linkedin"></i></a>
-><a className="btn btn-social-icon btn-twitter" href="[http://twitter.com/]{.underline}"><i className="fa fa-twitter"></i></a>
-><a className="btn btn-social-icon btn-google" href="[http://youtube.com/]{.underline}"><i className="fa fa-youtube"></i></a>
-><a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+<a className="btn btn-social-icon btn-google" href="[http://google.com/+]{.underline}"><i className="fa fa-google-plus"></i></a>
+<a className="btn btn-social-icon btn-facebook" href="[http://www.facebook.com/profile.php?id=]{.underline}"><i className="fa fa-facebook"></i></a>
+<a className="btn btn-social-icon btn-linkedin" href="[http://www.linkedin.com/in/]{.underline}"><i className="fa fa-linkedin"></i</a>
+<a className="btn btn-social-icon btn-twitter" href="[http://twitter.com/]{.underline}"><i className="fa fa-twitter"></i></a>
+<a className="btn btn-social-icon btn-google" href="[http://youtube.com/]{.underline}"><i className="fa fa-youtube"></i></a>
+<a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
@@ -3299,101 +3306,51 @@ function Footer(props) {
 -   Now we open MainComponent.js and update it to integrate the header
     and footer into our application:
 
-```
+```js{:copy}
 . . .
->
- 
->
 import Header from './HeaderComponent';
->
 import Footer from './FooterComponent';
->
- 
->
 . . .
->
- 
->
-        <Header />
->
-        <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
->
-        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
->
-        <Footer />
->
-        
->
+  <Header />
+  <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+  <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+  <Footer />
 . . .
+```
 
 -   Then update App.css to add some new CSS classes for use in our
     application:
 
-```
+```css{:copy}
 .row-header{
->
     margin:0px auto;
->
     padding:0px auto;
->
 }
->
- 
->
 .row-content {
->
     margin:0px auto;
->
     padding: 50px 0px 50px 0px;
->
     border-bottom: 1px ridge;
->
     min-height:400px;
->
 }
->
- 
->
 .footer{
->
     background-color: #D1C4E9;
->
     margin:0px auto;
->
     padding: 20px 0px 20px 0px;
->
 }
->
 .jumbotron {
->
+
     padding:70px 30px 70px 30px;
->
     margin:0px auto;
->
     background: #9575CD ;
->
     color:floralwhite;
->
 }
->
- 
->
 address{
->
     font-size:80%;
->
     margin:0px;
->
     color:#0f0f0f;
->
 }
->
- 
->
 .navbar-dark {
->
     background-color: #512DA8;
->
 }
 ```
 
@@ -3536,10 +3493,10 @@ class Header extends Component {
 . . .
 import { Link } from 'react-router-dom';
 . . .
-                        <li><Link to='/home'>Home</Link></li>
-                        <li><Link to='/aboutus'>About Us</Link></li>
-                        <li><Link to='/menu'>Menu</Link></li>
-                        <li><Link to='/contactus'>Contact Us</Link></li>
+    <li><Link to='/home'>Home</Link></li>
+    <li><Link to='/aboutus'>About Us</Link></li>
+    <li><Link to='/menu'>Menu</Link></li>
+    <li><Link to='/contactus'>Contact Us</Link></li>
 . . .
 ```
 
@@ -3641,35 +3598,35 @@ JS File
 -   Add a new file named <i>ContactComponent.js</i> file and update its
     contents as follows:
 
-```
+```js{:copy}
 import React from 'react';
->
+
 function Contact(props) {
-    return(
-        <div className="container">
-            <div className="row row-content">
-                <div className="col-12">
-                <h3>Location Information</h3>
-                </div>
-                <div className="col-12 col-sm-4 offset-sm-1">
-                        <h5>Our Address</h5>
-                        <address>
-                        121, Clear Water Bay Road<br />
-                        Clear Water Bay, Kowloon<br />
-                        HONG KONG<br />
-                        <i className="fa fa-phone"></i>: +852 1234 5678<br />
-                        <i className="fa fa-fax"></i>: +852 8765 4321<br />
->  <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                        </address>
-                </div>
-                <div className="col-12 col-sm-6 offset-sm-1">
-                    <h5>Map of our Location</h5>
-                </div>
-                <div className="col-12 col-sm-11 offset-sm-1">
-                    <div className="btn-group" role="group">
-><a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
-><a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
-><a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
+  return(
+    <div className="container">
+    <div className="row row-content">
+    <div className="col-12">
+      <h3>Location Information</h3>
+    </div>
+    <div className="col-12 col-sm-4 offset-sm-1">
+    <h5>Our Address</h5>
+      <address>
+        121, Clear Water Bay Road<br />
+        Clear Water Bay, Kowloon<br />
+        HONG KONG<br />
+        <i className="fa fa-phone"></i>: +852 1234 5678<br />
+        <i className="fa fa-fax"></i>: +852 8765 4321<br />
+        <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+      </address>
+    </div>
+    <div className="col-12 col-sm-6 offset-sm-1">
+      <h5>Map of our Location</h5>
+    </div>
+    <div className="col-12 col-sm-11 offset-sm-1">
+    <div className="btn-group" role="group">
+    <a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>
+    <a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
+    <a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
                     </div>
                 </div>
             </div>
@@ -3682,7 +3639,7 @@ export default Contact;
 -   Update the <i>MainComponent.js</i> file to integrate the ContactComponent
     by adding in the following:
 
-```
+```js{:copy}
 . . .
 import Contact from './ContactComponent';
 . . .
@@ -3696,7 +3653,7 @@ import Contact from './ContactComponent';
     <i>dishes.js, comments.js, promotions.js</i> and <i>leaders.js</i> given above
     in Exercise resources and move them to the shared folder):
 
-```
+```js{:copy}
 export const DISHES =
     [
         {
@@ -3745,7 +3702,7 @@ export const DISHES =
     update it as follows. We are now moving the comments about the
     dishes into its own file:
 
-```
+```js{:copy}
 export const COMMENTS = 
 [
     {
@@ -3791,7 +3748,7 @@ export const COMMENTS = 
 -   Next add a new file named <i>promotions.js</i> file to the shared folder
     and update its contents as follows:
 
-```
+```js{:copy}
 export const PROMOTIONS = [
     {
       id: 0,
@@ -3808,7 +3765,7 @@ export const PROMOTIONS = [
 -   Next add a new file named <i>leaders.js</i> file to the shared folder and
     update its contents as follows:
 
-```
+```js{:copy}
 export const LEADERS = [
     {
       id: 0,
@@ -3856,7 +3813,7 @@ export const LEADERS = [
 -   Now update the HomeComponent.ts file to fetch and display the
     featured dish, promotion and leader as follows:
 
-```
+```js{:copy}
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle} from 'reactstrap';
@@ -3894,7 +3851,7 @@ export default Home;
 
 -   Next, update MainComponent.js as follows:
 
-```
+```js{:copy}
 . . .
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
@@ -3954,7 +3911,7 @@ the end of this exercise you will be able to:
     enable the information about the selected dish to be passed to the
     DishdetailComponent:
 
-```
+```js{:copy}
 . . .
 import { Card, CardImg, CardImgOverlay,
     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
@@ -3994,7 +3951,7 @@ import { Link } from 'react-router-dom';
 
 -   Open <i>MainComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
     const DishWithId = ({match}) => {
       return(
@@ -4011,7 +3968,7 @@ import { Link } from 'react-router-dom';
 
 -   Open <i>DishdetailComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
 import { Card, CardImg, CardText, CardBody,
     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
@@ -4046,7 +4003,7 @@ import { Link } from 'react-router-dom';
 
 -   Open ContactComponent.js and add Breadcrumbs to it as follows:
 
-```
+```js{:copy}
 . . .
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -4226,9 +4183,6 @@ based on the following criteria:
 -   Implemented a new <RenderLeader> functional component in your
     application.
 
-```{=html}
-<!-- -->
-```
 -   Used the reactstrap \<Media\> component to render the details of a
     leader.
 
@@ -4453,7 +4407,7 @@ class Contact extends Component {
 -   Update the <i>ContactComponent.js</i> file as follows to set up the
     Controlled Form:
 
-```
+```js{:copy}
 . . .
     constructor(props) {
         super(props);
@@ -4488,7 +4442,7 @@ class Contact extends Component {
 
 -   Then add the controlled form to it as follows:
 
-```
+```js{:copy}
 . . .
                 <div className="row row-content">
                    <div className="col-12">
@@ -4527,7 +4481,6 @@ class Contact extends Component {
                                 <Label htmlFor="email" md={2}>Email</Label>
                                 <Col md={10}>
                                     <Input type="email" id="email" name="email"
->
                                         placeholder="Email"
 ```
 
@@ -4557,7 +4510,7 @@ to:
 -   Open <i>ContactComponent.js</i> and update it as follows to introduce the
     support to track form errors and perform validation:
 
-```
+```js{:copy}
 . . .
 import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
 . . .
@@ -4598,46 +4551,46 @@ class Contact extends Component {
     validation, let us update the form itself to make use of these as
     follows:
 
-```
+```js{:copy}
 . . .
-                            <FormGroup row>
-                                <Label htmlFor="firstname" md={2}>First Name</Label>
-                                <Col md={10}>
-                                    <Input type="text" id="firstname" name="firstname"
-                                        placeholder="First Name"
-                                        value={this.state.firstname}
-                                        valid={errors.firstname === ''}
-                                        invalid={errors.firstname !== ''}
-                                        onBlur={this.handleBlur('firstname')}
-                                        onChange={this.handleInputChange} />
-                                    <FormFeedback>{errors.firstname}</FormFeedback>
-                                </Col>
-                            </FormGroup>
-                            <FormGroup row>
-                                <Label htmlFor="lastname" md={2}>Last Name</Label>
-                                <Col md={10}>
-                                    <Input type="text" id="lastname" name="lastname"
-                                        placeholder="Last Name"
-                                        value={this.state.lastname}
-                                        valid={errors.lastname === ''}
-                                        invalid={errors.lastname !== ''}
-                                        onBlur={this.handleBlur('lastname')}
-                                        onChange={this.handleInputChange} />
-                                    <FormFeedback>{errors.lastname}</FormFeedback>
-                                </Col>
-                            </FormGroup>
-                            <FormGroup row>
-                                <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
-                                <Col md={10}>
-                                    <Input type="tel" id="telnum" name="telnum"
-                                        placeholder="Tel. Number"
-                                        value={this.state.telnum}
-                                        valid={errors.telnum === ''}
-                                        invalid={errors.telnum !== ''}
-                                        onBlur={this.handleBlur('telnum')}
-                                        onChange={this.handleInputChange} />
-                                    <FormFeedback>{errors.telnum}</FormFeedback>
-                                </Col>
+    <FormGroup row>
+    <Label htmlFor="firstname" md={2}>First Name</Label>
+      <Col md={10}>
+        <Input type="text" id="firstname" name="firstname"
+          placeholder="First Name"
+          value={this.state.firstname}
+          valid={errors.firstname === ''}
+          invalid={errors.firstname !== ''}
+          onBlur={this.handleBlur('firstname')}
+          onChange={this.handleInputChange} />
+        <FormFeedback>{errors.firstname}</FormFeedback>
+      </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label htmlFor="lastname" md={2}>Last Name</Label>
+        <Col md={10}>
+          <Input type="text" id="lastname" name="lastname"
+            placeholder="Last Name"
+            value={this.state.lastname}
+            valid={errors.lastname === ''}
+            invalid={errors.lastname !== ''}
+            onBlur={this.handleBlur('lastname')}
+            onChange={this.handleInputChange} />
+          <FormFeedback>{errors.lastname}</FormFeedback>
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+        <Col md={10}>
+        <Input type="tel" id="telnum" name="telnum"
+          placeholder="Tel. Number"
+          value={this.state.telnum}
+          valid={errors.telnum === ''}
+          invalid={errors.telnum !== ''}
+          onBlur={this.handleBlur('telnum')}
+          onChange={this.handleInputChange} />
+        <FormFeedback>{errors.telnum}</FormFeedback>
+      </Col>
 ```
 
 -   You can now test your form by typing in invalid input and check how
@@ -4715,10 +4668,9 @@ this exercise you will be able to:
 -   Update <i>HeaderComponent.js</i> as follows to add a new Modal to the
     application to host the form:
 
-```
+```js{:copy}
 . . .
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
->
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
 . . .
@@ -4745,7 +4697,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 
 -   Then, add a button to the Navbar to enable toggling the modal:
 
-```
+```js{:copy}
 . . .
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
@@ -4759,39 +4711,37 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 
 -   Add the form to the modal body as shown below:
 
-. . .
 
-```
- 
-                        <Form onSubmit={this.handleLogin}>
-                            <FormGroup>
-                                <Label htmlFor="username">Username</Label>
-                                <Input type="text" id="username" name="username"
-                                    innerRef={(input) => this.username = input} />
-                            </FormGroup>
-                            <FormGroup>
-                                <Label htmlFor="password">Password</Label>
-                                <Input type="password" id="password" name="password"
-                                    innerRef={(input) => this.password = input}  />
-                            </FormGroup>
-                            <FormGroup check>
-                                <Label check>
-                                    <Input type="checkbox" name="remember"
-                                    innerRef={(input) => this.remember = input}  />
-                                    Remember me
-                                </Label>
-                            </FormGroup>
-                            <Button type="submit" value="submit" color="primary">Login</Button>
-                        </Form>
+```js{:copy}
+. . .
+    <Form onSubmit={this.handleLogin}>
+      <FormGroup>
+        <Label htmlFor="username">Username</Label>
+        <Input type="text" id="username" name="username"
+          innerRef={(input) => this.username = input} />
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="password">Password</Label>
+          <Input type="password" id="password" name="password"
+            innerRef={(input) => this.password = input}  />
+        </FormGroup>
+        <FormGroup check>
+          <Label check>
+            <Input type="checkbox" name="remember"
+            innerRef={(input) => this.remember = input}  />
+            Remember me
+          </Label>
+        </FormGroup>
+        <Button type="submit" value="submit" color="primary">Login</Button>
+      </Form>
 . . .
 ```
 
 -   Then, add the following function to the class to handle the form
     submission:
 
-```
+```js{:copy}
 . . .
->
         this.handleLogin = this.handleLogin.bind(this);
 . . .
     handleLogin(event) {
@@ -4883,15 +4833,15 @@ this exercise you will be able to:
     application as follows:
 
 ```
-yarn add redux@3.7.2
->
-yarn add react-redux@5.0.7
+$ yarn add redux@3.7.2
+
+$ yarn add react-redux@5.0.7
 ```
 
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
     a file named <i>reducer.js</i> with the code below:
 
-```
+```js{:copy}
 import { DISHES } from '../shared/dishes';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
@@ -4902,7 +4852,7 @@ export const initialState = {
     promotions: PROMOTIONS,
     leaders: LEADERS
 };
->
+
 export const Reducer = (state = initialState, action) => {
     return state;
 };
@@ -4911,7 +4861,7 @@ export const Reducer = (state = initialState, action) => {
 -   Then, add a file named <i>configureStore.js</i> in the <i>redux</i> folder and
     add the following code to it:
 
-```
+```js{:copy}
 import {createStore} from 'redux';
 import { Reducer, initialState } from './reducer'
 export const ConfigureStore = () => {
@@ -4925,14 +4875,12 @@ export const ConfigureStore = () => {
 
 -   Next, open <i>App.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
- 
 import { Provider } from 'react-redux';
 import { ConfigureStore } from './redux/configureStore';
->
+
 const store = ConfigureStore();
->
 . . .
       <Provider store={store}>
         <BrowserRouter>
@@ -4947,11 +4895,11 @@ const store = ConfigureStore();
 -   Finally, update MainComponent.js to connect it to Redux store and
     use it:
 
-```
+```js{:copy}
 . . .
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
->
+
 const mapStateToProps = state => {
   return {
     dishes: state.dishes,
@@ -4960,9 +4908,7 @@ const mapStateToProps = state => {
     leaders: state.leaders
   }
 }
->
 . . .
->
     const HomePage = () => {
       return(
           <Home 
@@ -5020,9 +4966,6 @@ PDF File
 
 -   [Redux Basics Documentation](https://redux.js.org/basics)
 
-```{=html}
-<!-- -->
-```
 -   [The Flux Architecture](https://facebook.github.io/flux/)
 
 ### Other Resources
@@ -5063,26 +5006,25 @@ react-redux-form. At the end of this exercise you will be able to:
 
 -   We first install the <i>react-redux-form</i> into our project as follows:
 
-yarn add <react-redux-form@1.16.8>
+```
+$ yarn add <react-redux-form@1.16.8>
+```
 
 -   Then open <i>ContactComponent.js</i> and update the Feedback Form to use
     react-redux-form:
 
-```
+```js{:copy}
 . . .
 import { Breadcrumb, BreadcrumbItem,
             Button, Row, Col, Label } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 . . .
->
     handleSubmit(values) {
         console.log('Current State is: ' + JSON.stringify(values));
         alert('Current State is: ' + JSON.stringify(values));
         // event.preventDefault();
     }
->
 . . .
->
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
@@ -5133,44 +5075,43 @@ react-redux-form. At the end of this exercise you will be able to:
 -   Open <i>ContactComponent.js</i> and update it as follows to implement
     form validation:
 
-```
+```js{:copy}
 . . . 
->
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test(val);
 . . .
-                            <Row className="form-group">
-                                <Label htmlFor="firstname" md={2}>First Name</Label>
-                                <Col md={10}>
-                                    <Control.text model=".firstname" id="firstname" name="firstname"
-                                        placeholder="First Name"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15)
-                                        }}
-                                         />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".firstname"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 characters',
-                                            maxLength: 'Must be 15 characters or less'
-                                        }}
-                                     />
-                                </Col>
-                            </Row>
-                            <Row className="form-group">
-                                <Label htmlFor="lastname" md={2}>Last Name</Label>
-                                <Col md={10}>
-                                    <Control.text model=".lastname" id="lastname" name="lastname"
-                                        placeholder="Last Name"
-                                        className="form-control"
-                                        validators={{
+    <Row className="form-group">
+      <Label htmlFor="firstname" md={2}>First Name</Label>
+      <Col md={10}>
+        <Control.text model=".firstname" id="firstname" name="firstname"
+          placeholder="First Name"
+          className="form-control"
+          validators={{
+            required, minLength: minLength(3), maxLength: maxLength(15)
+          }}
+          />
+        <Errors
+          className="text-danger"
+          model=".firstname"
+          show="touched"
+          messages={{
+            required: 'Required',
+            minLength: 'Must be greater than 2 characters',
+            maxLength: 'Must be 15 characters or less'
+          }}
+          />
+      </Col>
+    </Row>
+    <Row className="form-group">
+      <Label htmlFor="lastname" md={2}>Last Name</Label>
+    <Col md={10}>
+      <Control.text model=".lastname" id="lastname" name="lastname"
+        placeholder="Last Name"
+        className="form-control"
+        validators={{
 ```
 
 -   Save all the changes and do a Git commit with the message \"React
@@ -5328,9 +5269,6 @@ height="3.7381944444444444in"}
 -   [reactstrap Modal
     Component](https://reactstrap.github.io/components/modals/)
 
-```{=html}
-<!-- -->
-```
 -   [React Redux Form
     Documentation](https://davidkpiano.github.io/react-redux-form/docs.html)
 
@@ -5370,7 +5308,7 @@ manage the whole state. At the end of this exercise you will be able to:
 -   In the redux folder, create a new file named dishes.js and add the
     following to it:
 
-```
+```js{:copy}
 import { DISHES } from '../shared/dishes';
 export const Dishes = (state = DISHES, action) => {
     switch (action.type) {
@@ -5397,8 +5335,8 @@ export const Comments = (state = COMMENTS, action) => {
 -   Similarly, create a new file named promotions.js and add the
     following to it:
 
-```
-> import { PROMOTIONS } from '../shared/promotions';
+```js{:copy}
+import { PROMOTIONS } from '../shared/promotions';
 export const Promotions = (state = PROMOTIONS, action) => {
     switch (action.type) {
         default:
@@ -5410,7 +5348,7 @@ export const Promotions = (state = PROMOTIONS, action) => {
 -   And finally, create a new file named leaders.js and add the
     following to it:
 
-```
+```js{:copy}
 import { LEADERS } from '../shared/leaders';
 export const Leaders = (state = LEADERS, action) => {
     switch (action.type) {
@@ -5424,13 +5362,13 @@ export const Leaders = (state = LEADERS, action) => {
     reducers that manage partial state, we need to combine them
     together. Open configureStore.js and update it as follows:
 
-```
+```js{:copy}
 import {createStore, combineReducers} from 'redux';
 import { Dishes } from './dishes';
 import { Comments } from './comments';
 import { Promotions } from './promotions';
 import { Leaders } from './leaders';
->
+
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
@@ -5481,7 +5419,7 @@ export const ADD_COMMENT = 'ADD_COMMENT';
 -   Then, create a file named <i>ActionCreators.js</i> and add the following
     to it:
 
-```
+```js{:copy}
 import <i> as ActionTypes from './ActionTypes';
 export const addComment = (dishId, rating, author, comment) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -5497,7 +5435,7 @@ export const addComment = (dishId, rating, author, comment) => ({
 -   Next, update <i>comments.js</i> to initiate action when the action is
     dispatched by the ActionCreator as follows:
 
-```
+```js{:copy}
 import { COMMENTS } from '../shared/comments';
 import </i> as ActionTypes from './ActionTypes';
 export const Comments = (state = COMMENTS, action) => {
@@ -5517,7 +5455,7 @@ export const Comments = (state = COMMENTS, action) => {
 -   Now update <i>MainComponent.js</i> to make the action available for use
     within the DishdetailComponent as follows:
 
-```
+```js{:copy}
 . . .
 import { addComment } from '../redux/ActionCreators';
 . . .
@@ -5530,14 +5468,13 @@ import { addComment } from '../redux/ActionCreators';
         addComment={this.props.addComment}
       />
 . . .
->
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 ```
 
 -   Finally, update <i>DishdetailComponent.js</i> as follows to initiate the
     action upon the user submitting the comment form:
 
-```
+```js{:copy}
 . . .
   function RenderComments({comments, addComment, dishId}) {
 . . .
@@ -5611,15 +5548,15 @@ function. At the end of this exercise you will be able to:
 -   Install Redux Thunk and Logger as shown below:
 
 ```
-yarn add redux-thunk@2.2.0
->
-yarn add redux-logger@3.0.6
+$ yarn add redux-thunk@2.2.0
+
+$ yarn add redux-logger@3.0.6
 ```
 
 -   Then open <i>configureStore.js</i> and update it to use the Thunk and
     Logger as follows:
 
-```
+```js{:copy}
 import {createStore, combineReducers, applyMiddleware } from 'redux';
 . . .
 import thunk from 'redux-thunk';
@@ -5646,7 +5583,7 @@ export const ADD_DISHES = 'ADD_DISHES';
 
 -   Then open ActionCreators.js and add new actions:
 
-```
+```js{:copy}
 . . .
 import { DISHES } from '../shared/dishes';
 . . .
@@ -5672,7 +5609,7 @@ export const addDishes = (dishes) => ({
 -   Next, open dishes.js and add the code to respond to actions as
     follows:
 
-```
+```js{:copy}
 import </i> as ActionTypes from './ActionTypes';
 export const Dishes = (state = { isLoading: true,
     errMess: null,
@@ -5693,7 +5630,7 @@ export const Dishes = (state = { isLoading: true,
 -   Add a new component named <i>LoadingComponent.js</i> to display a loading
     message as follows:
 
-```
+```js{:copy}
 import React from 'react';
 export const Loading = () => {
     return(
@@ -5708,7 +5645,7 @@ export const Loading = () => {
 -   Now we will update the remaining components to use the actions.
     First, open <i>MainComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
 import { addComment, fetchDishes } from '../redux/ActionCreators';
 . . .
@@ -5731,11 +5668,11 @@ import { addComment, fetchDishes } from '../redux/ActionCreators';
     }
     const DishWithId = ({match}) => {
       return(
-><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
->
+<DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
+
             isLoading={this.props.dishes.isLoading}
             errMess={this.props.dishes.errMess}
-> comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
+ comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
             addComment={this.props.addComment}
           />
       );
@@ -5745,7 +5682,7 @@ import { addComment, fetchDishes } from '../redux/ActionCreators';
 
 -   Open <i>DishdetailComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
 import { Loading } from './LoadingComponent';
 . . .
@@ -5773,7 +5710,7 @@ import { Loading } from './LoadingComponent';
 
 -   Open <i>HomeComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
 import { Loading } from './LoadingComponent';
 . . .
@@ -5807,7 +5744,7 @@ import { Loading } from './LoadingComponent';
 
 -   Finally, update <i>MenuComponent.js</i> as follows:
 
-```
+```js{:copy}
 . . .
 import { Loading } from './LoadingComponent';
 . . .
@@ -5863,7 +5800,7 @@ store. At the end of this exercise you will be able to:
 -   Add a new file named <i>forms.js</i> in the <i>redux</i> folder and add the
     following to it:
 
-```
+```js{:copy}
   export const InitialFeedback = {
     firstname: '',
     lastname: '',
@@ -5878,7 +5815,7 @@ store. At the end of this exercise you will be able to:
 -   Then, open <i>configureStore.js</i> and update it to add the form to the
     reducers:
 
-```
+```js{:copy}
 . . .
 import { createForms } from 'react-redux-form';
 . . .
@@ -6003,7 +5940,9 @@ application. At the end of this exercise, you will be able to:
 -   json-server is a node module, and hence can be installed globally by
     typing the following at the command prompt:
 
-     npm install json-server -g
+```
+$ npm install json-server -g
+```
 
 If you are using OSX or Linux, use <b>sudo</b> at the front of the command.
 This will install json-server that can be started from the command line
@@ -6020,7 +5959,7 @@ from any folder on your computer.
     at the command prompt to start the server:
 
 ```
-     json-server --watch db.json -p 3001 -d 2000
+$ json-server --watch db.json -p 3001 -d 2000
 ```
 
 -   This should start up a server at port number 3001 on your machine.
@@ -6028,13 +5967,13 @@ from any folder on your computer.
     addresses into your <b>browser address bar</b>:
 
 ```
-  [http://localhost:3001/dishes]{.underline}
+$ [http://localhost:3001/dishes]
 
-  [http://localhost:3001/promotions]{.underline}
+$ [http://localhost:3001/promotions]
 
-  [http://localhost:3001/leaders]{.underline}
+$ [http://localhost:3001/leaders]
 
-  [http://localhost:3001/feedback]{.underline}
+$ [http://localhost:3001/feedback]
 ```
 
 -   Type these addresses into the browser address and see the JSON data
@@ -6045,8 +5984,8 @@ from any folder on your computer.
     that you put in a folder named <b>public</b> in the <b>json-server</b>
     folder above, will be served by the server at the following address:
 
-```{=html}
-  &lt;http://localhost:3001/&gt;
+```dos
+$  <http://localhost:3001>
 ```
 
 -   Shut down the server by typing <b>ctrl-C</b> in the terminal window.
@@ -6063,7 +6002,7 @@ from any folder on your computer.
     the following into your browser address bar:
 
 ```
-  [http://localhost:3001/images/]{.underline}&lt;image name&gt;.png
+$  [http://localhost:3001/images/]<image name>.png
 ```
 
 ### Conclusions
@@ -6137,14 +6076,14 @@ exercise you will be able to:
 -   As a first step, let us install Fetch into our project as follows:
 
 ```
-  yarn add cross-fetch@2.1.0
+$ yarn add cross-fetch@2.1.0
 ```
 
 -   Now that we have installed Fetch, let us configure your application
     to connect to the server. First, create a file named <i>baseUrl.js</i> in
     the <i>shared</i> folder and add the following to it:
 
-```
+```js{:copy}
   export const baseUrl = '[http://localhost:3001/]{.underline}';
 ```
 
@@ -6254,7 +6193,6 @@ const mapDispatchToProps = dispatch => ({
   fetchComments: () => dispatch(fetchComments()),
   fetchPromos: () => dispatch(fetchPromos())
 });
->
 . . .
   componentDidMount() {
     this.props.fetchDishes();
@@ -6262,17 +6200,17 @@ const mapDispatchToProps = dispatch => ({
     this.props.fetchPromos();
   }
 . . .
-          <Home 
-              dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
-              dishesLoading={this.props.dishes.isLoading}
-              dishErrMess={this.props.dishes.errMess}
-              promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
-              promoLoading={this.props.promotions.isLoading}
-              promoErrMess={this.props.promotions.errMess}
-              leader={this.props.leaders.filter((leader) => leader.featured)[0]}
-          />
+  <Home 
+    dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
+    dishesLoading={this.props.dishes.isLoading}
+    dishErrMess={this.props.dishes.errMess}
+    promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
+    promoLoading={this.props.promotions.isLoading}
+    promoErrMess={this.props.promotions.errMess}
+    leader={this.props.leaders.filter((leader) => leader.featured)[0]}
+  />
 . . .
-><DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
+  <DishDetail dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}
             isLoading={this.props.dishes.isLoading}
             errMess={this.props.dishes.errMess}
 ```
@@ -6283,7 +6221,7 @@ const mapDispatchToProps = dispatch => ({
 . . .
 import { baseUrl } from '../shared/baseUrl';
 . . .
-                    <CardImg width=\"100%\" src={baseUrl + dish.image} alt={dish.name} />
+    <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
 . . .
 ```
 
@@ -6293,11 +6231,9 @@ import { baseUrl } from '../shared/baseUrl';
 . . .
 import { baseUrl } from '../shared/baseUrl';
 . . .
->
->        <CardImg src={baseUrl + item.image} alt={item.name} />
+    <CardImg src={baseUrl + item.image} alt={item.name} />
 . . .
->         <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
->
+    <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
 . . .
 ```
 
@@ -6305,10 +6241,10 @@ import { baseUrl } from '../shared/baseUrl';
 
 ```
 . . .
->
+
 import { baseUrl } from '../shared/baseUrl';
 . . .
-                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
+    <CardImg top src={baseUrl + dish.image} alt={dish.name} />
 . . .
 ```
 
@@ -6339,11 +6275,8 @@ able to:
 
 ```
 . . .
->
 export const fetchDishes = () => (dispatch) => {
->
     dispatch(dishesLoading(true));
->
     return fetch(baseUrl + 'dishes')
     .then(response => {
         if (response.ok) {
@@ -6406,12 +6339,10 @@ to:
 
 ```
 . . .
-
   export const addComment = (comment) => ({
     type: ActionTypes.ADD_COMMENT,
     payload: comment
   });
-
   export const postComment = (dishId, rating, author, comment) => (dispatch) => {
     const newComment = {
       dishId: dishId,
@@ -6456,7 +6387,7 @@ to:
 
 -   Open <i>MainComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
   import { postComment, fetchDishes, fetchComments, fetchPromos } from '../redux/ActionCreators';
 . . .
@@ -6468,7 +6399,7 @@ to:
 
 -   Finally, open <i>DishdetailComponent.js</i> and update it as follows:
 
-```
+```js{:copy}
 . . .
   function RenderComments({comments, postComment, dishId}) {
 . . .
@@ -6558,25 +6489,24 @@ be able to:
 
 -   Install react-transition-group in your React project as follows:
 
-yarn add react-transition-group@2.3.0
+```
+$ yarn add react-transition-group@2.3.0
+```
 
 -   Configure CSS classes for use in animation. Open <i>App.css</i> and add
     the following classes:
 
 ```
 . . .
->
 .page-enter {
     opacity: 0.01;
     transform: translateX(-100%);
 }
->
 .page-enter-active {
     opacity: 1;
     transform: translateX(0%);
     transition: all 300ms ease-in;
 }
->
 .page-exit {
     opacity: 1;
     transform: translateX(0%);
@@ -6586,7 +6516,6 @@ yarn add react-transition-group@2.3.0
     transform: translateX(100%);
     transition: all 300ms ease-out;
 }
- 
 ```
 
 -   Then, open MainComponent.js and add in the following to configure
@@ -6594,24 +6523,20 @@ yarn add react-transition-group@2.3.0
 
 ```
 . . .
->
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
->
 . . .
->
           <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
-                  <Route path='/home' component={HomePage} />
-                  <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
-                  <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
-                  <Route path='/menu/:dishId' component={DishWithId} />
-                  <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
-                  <Redirect to="/home" />
+                <Route path='/home' component={HomePage} />
+                <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
+                <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+                <Route path='/menu/:dishId' component={DishWithId} />
+                <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
+                <Redirect to="/home" />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
->
 . . .
 ```
 
@@ -6641,9 +6566,9 @@ you will be able to:
 -   Install react-animation-components into your React app as follows:
 
 ```
-yarn add react-animation-components@3.0.0
->
-yarn add prop-types@15.6.0
+$ yarn add react-animation-components@3.0.0
+
+$ yarn add prop-types@15.6.0
 ```
 
 ### Adding Animations
@@ -6652,11 +6577,8 @@ yarn add prop-types@15.6.0
 
 ```
 . . .
->
 import { FadeTransform } from 'react-animation-components';
->
 . . .
->
             <FadeTransform
                 in
                 transformProps={{
@@ -6671,7 +6593,6 @@ import { FadeTransform } from 'react-animation-components';
                     </CardBody>
                 </Card>
             </FadeTransform>
->
 . . .
 ```
 
@@ -6679,34 +6600,34 @@ import { FadeTransform } from 'react-animation-components';
 
 ```
 . . .
-import { FadeTransform, Fade, Stagger } from \'react-animation-components\';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 . . .
-            \<FadeTransform
+            <FadeTransform
                 in
                 transformProps={{
-                    exitTransform: \'scale(0.5) translateY(-50%)\'
-                }}\>
-            \<Card\>
-                \<CardImg top src={baseUrl + dish.image} alt={dish.name} /\>
-                \<CardBody\>
-                    \<CardTitle\>{dish.name}\</CardTitle\>
-                    \<CardText\>{dish.description}\</CardText\>
-                \</CardBody\>
-            \</Card\>
-            \</FadeTransform\>
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }}>
+            <Card>
+                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
+                <CardBody>
+                    <CardTitle>{dish.name}</CardTitle>
+                    <CardText>{dish.description}</CardText>
+                </CardBody>
+            </Card>
+            </FadeTransform>
 . . .
-                    \<Stagger in\>
-                        {comments.map((comment) =\> {
+                    <Stagger in>
+                        {comments.map((comment) => {
                             return (
-                                \<Fade in\>
-                                \<li key={comment.id}\>
-                                \<p\>{comment.comment}\</p\>
-                                \<p\>\-- {comment.author} , {new Intl.DateTimeFormat(\'en-US\', { year: \'numeric\', month: \'short\', day: \'2-digit\'}).format(new Date(Date.parse(comment.date)))}\</p\>
-                                \</li\>
-                                \</Fade\>
+                                <Fade in>
+                                <li key={comment.id}>
+                                <p>{comment.comment}</p>
+                                <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+                                </li>
+                                </Fade>
                             );
                         })}
-                        \</Stagger\>
+                        </Stagger>
 . . .
 ```
 
@@ -7106,4 +7027,35 @@ considering the following items:
 
 ..the end.
 
-Last updated 2-15-23 10:37pm
+Following is sample of markdown;
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+Last updated 2-24-23 1:30pm
+
+
+# hello world
+
+you can write text [with links](http://example.com) inline or [link references][1].
+
+* one _thing_ has *em*phasis
+* two __things__ are **bold**
+
+[1]: http://example.com
+
+---
+
+hello world
+===========
+
+<this_is inline="xml"></this_is>
+
+> markdown is so cool
+
+    so are code segments
+
+1. one thing (yeah!)
+2. two thing `i can write code`, and `more` wipee!
