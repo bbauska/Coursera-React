@@ -1,6 +1,8 @@
 ---
 Coursera-React: "Build Your First React Website"
 ---
+<!-- readme.md for Coursera-React in github.com/bbauska -->
+<!-- https://github.com/bbauska/Coursera-React/edit/main/README.md -->
 <!--
 [link](URL){:target="_blank"}
 [Hello, world!](http://example.com/){target="_blank"}
@@ -409,13 +411,9 @@ also learn about React components and JSX.
 
 <h4>PDFs of Presentations</h4>
 
-<b>0-Course-Overview.pdf</b>
+<a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a>
 
-PDF File
-
-<b>How to Learn.pdf</b>
-
-PDF File
+<a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b>
 
 ### React Resources
 
@@ -700,15 +698,15 @@ $ git log --oneline
 -   Now, modify the <i>index.html</i> file as follows:
 
 ```
-> <!DOCTYPE html>
-> <html>
->     <head></head>
->     <body>
->         <h1>This is a Header</h1>
->         <p>This is a paragraph</p>
->         <p>This is a second paragraph</p>
->     </body>
-> </html>
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>This is a Header</h1>
+    <p>This is a paragraph</p>
+    <p>This is a second paragraph</p>
+  </body>
+</html>
 ```
 
 -   Now add the modified index.html file to the staging area and then do
@@ -930,9 +928,9 @@ $ npm install lite-server --save-dev
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-```javascript
+```js{:copy}
 {
-  &quot;name&quot;: &quot;git-test&quot;,
+  "name": "git-test",
   "version": "1.0.0",
   "description": "This is the Git and Node basic learning project",
   "main": "index.html",
@@ -1109,7 +1107,9 @@ $ create-react-app --help
 -   Then type the following at the prompt to create a new React
     application named <i>confusion</i>:
 
-> create-react-app confusion
+```
+$ create-react-app confusion
+```
 
 -   This should create a new folder named <i>confusion</i> within your
     <i>React</i> folder and create the React application in that folder.
@@ -1465,14 +1465,14 @@ $ git log --oneline
 -   Now, modify the <i>index.html</i> file as follows:
 
 ```
-> <!DOCTYPE html>
-> <html>
->     <head></head>
->     <body>
->         <h1>This is a Header</h1>
->         <p>This is a paragraph</p>
->     </body>
-> </html>
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>This is a Header</h1>
+    <p>This is a paragraph</p>
+  </body>
+</html>
 ```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
@@ -1486,17 +1486,17 @@ $ git log --oneline
 
 -   Now, modify the <i>index.html</i> file as follows:
 
-```
-> <!DOCTYPE html>
-> <html>
->     <head></head>
->
->     <body>
->         <h1>This is a Header</h1>
->         <p>This is a paragraph</p>
->         <p>This is a second paragraph</p>
->     </body>
-> </html>
+```{=html5}
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h1>This is a Header</h1>
+    <p>This is a paragraph</p>
+    <p>This is a second paragraph</p>
+  </body>
+</html>
 ```
 
 -   Now add the modified index.html file to the staging area and then do
@@ -1729,7 +1729,7 @@ during the installation steps.</b>
 ![](./images/image002.png){width="6.5in" height="8.2875in"}
 
 ```
-> npm -v
+$ npm -v
 ```
 
 ### Conclusions
@@ -1780,19 +1780,19 @@ $ npm install lite-server --save-dev
     Note the addition of two lines, line 7 and line 9.
 
 ```
-    &quot;start&quot;: &quot;npm run lite&quot;,
-    &quot;test&quot;: &quot;echo &quot;Error: no test specified&quot; && exit 1&quot;,
-    &quot;lite&quot;: &quot;lite-server&quot;
+    "start": "npm run lite",
+    "test": "echo Error: no test specified" && exit 1",
+    "lite": "lite-server"
   },
-  &quot;repository&quot;: {
-    &quot;type&quot;: &quot;git&quot;,
-    &quot;url&quot;: &quot;git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}&quot;
+  "repository": {
+    "type": "git",
+    "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
   },
-  &quot;author&quot;: &quot;&quot;,
-  &quot;license&quot;: &quot;ISC&quot;,
-  &quot;homepage&quot;: &quot;[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}&quot;,
-  &quot;devDependencies&quot;: {
-    &quot;lite-server&quot;: &quot;^2.2.2&quot;
+  "author": "",
+  "license": "ISC",
+  "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
   }
 }
 ```
@@ -1800,7 +1800,9 @@ $ npm install lite-server --save-dev
 -   Next, start the development server by typing the following at the
     prompt:
 
-> npm start
+```
+$ npm start
+```
 
 -   This should open your <i>index.html</i> page in your default browser.
 
@@ -2358,61 +2360,57 @@ you will be able to:
 
 -   Add the following code to <i>MenuComponent.js</i>:
 
-```
-        this.state = {
-            dishes: [
-                {
-                  id: 0,
-                  name:'Uthappizza',
-                  image: 'assets/images/uthappizza.png',
-                  category: 'mains',
-                  label:'Hot',
-                  price:'4.99',
+```js{:copy}
+    this.state = {
+      dishes: [
+      {
+        id: 0,
+        name:'Uthappizza',
+        image: 'assets/images/uthappizza.png',
+        category: 'mains',
+        label:'Hot',
+        price:'4.99',
+        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                  >      },
+      {
+        id: 1,
+        name:'Zucchipakoda',
+        image: 'assets/images/zucchipakoda.png',
+        category: 'appetizer',
+        label:'',
+        price:'1.99',
+        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce'                        },
+      {
+        id: 2,
+        name:'Vadonut',
+        image: 'assets/images/vadonut.png',
+        category: 'appetizer',
+        label:'New',
+        price:'1.99',
+        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'                        },
+      {
+        id: 3,
+        name:'ElaiCheese Cake',
+        image: 'assets/images/elaicheesecake.png',
+        category: 'dessert',
+        label:'',
+        price:'2.99',
+        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'                        }
 
-
->               description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                  >      },
->               {
-                  id: 1,
-                  name:'Zucchipakoda',
-                  image: 'assets/images/zucchipakoda.png',
-                  category: 'appetizer',
-                  label:'',
-                  price:'1.99',
-                  description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied w> ith a sweet-tangy tamarind sauce'                        },
-               {
-                  id: 2,
-                  name:'Vadonut',
-                  image: 'assets/images/vadonut.png',
-                  category: 'appetizer',
-                  label:'New',
-                  price:'1.99',
-
-                  description:'A quintessential ConFusion experience, is it a vada or is it a donut?'                        },
-               {
-                  id: 3,
-                  name:'ElaiCheese Cake',
-                  image: 'assets/images/elaicheesecake.png',
-                  category: 'dessert',
-                  label:'',
-                  price:'2.99',
-                  description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'                        }
-
-class Menu extends Component {
+  class Menu extends Component {
     constructor(props) {
-       super(props);
-import React, { Component } from 'react';
-import { Media } from 'reactstrap';
+      super(props);
+
+  import React, { Component } from 'react';
+  import { Media } from 'reactstrap';
+```
 
 -   Next, open <i>App.js</ifile and update it as follows:
 
+```js{:copy}
 . . .
-
 import Menu from './components/MenuComponent';
-
 . . .
-
     <Menu />
-
 . . .
 ```
 
@@ -2457,44 +2455,39 @@ JS File
     that we have removed the dishes variable from the state of the
     component, and updated it to use the Card: 
 
-```
+```js{:copy}
     constructor(props) {
-        super(props);
->
-        this.state = {
-            selectedDish: null
-        }
-    }
->
+      super(props);
+      this.state = {
+        selectedDish: null
+      }
+    }
     onDishSelect(dish) {
-        this.setState({ selectedDish: dish});
+      this.setState({ selectedDish: dish});
     }
->
     renderDish(dish) {
-        if (dish != null)
-            return(
-                <Card>
-                    <CardImg top src={dish.image} alt={dish.name} />
-                    <CardBody>
-                      <CardTitle>{dish.name}</CardTitle>
-                      <CardText>{dish.description}</CardText>
-                    </CardBody>
-                </Card>
-            );
+      if (dish != null)
+        return(
+        <Card>
+          <CardImg top src={dish.image} alt={dish.name} />
+          <CardBody>
+            <CardTitle>{dish.name}</CardTitle>
+            <CardText>{dish.description}</CardText>
+          </CardBody>
+        </Card>
+        );
         else
-            return(
-                <div></div>
-            );
-    }
->
-    render() {
+          return(
+            <div></div>
+          );
+      }
+      render() {
         const menu = this.props.dishes.map((dish) => {
-            return (
-              <div  className="col-12 col-md-5 m-1">
-class Menu extends Component {
->
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
-    CardTitle } from 'reactstrap';
+          return (
+          <div  className="col-12 col-md-5 m-1">
+            class Menu extends Component {
+              import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+                CardTitle } from 'reactstrap';
  . . .
 ```
 
@@ -2505,72 +2498,65 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     the <i>dishes.js</i> file given above in the Exercise Resources and move
     it to the shared folder. Make sure the file is named <i>dishes.js</i>):
 
-```
-export const DISHES =
+```js{:copy}
+  export const DISHES =
     [
+      {
+      id: 0,
+      name:'Uthappizza',
+      image: 'assets/images/uthappizza.png',
+      category: 'mains',
+      label:'Hot',
+      price:'4.99',
+      description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+      comments: [
+        {
+        id: 0,
+        rating: 5,
+        comment: "Imagine all the eatables, living in conFusion!",
+        author: "John Lemon",
+        date: "2012-10-16T17:57:28.556094Z"
+        },
         {
-        id: 0,
-        name:'Uthappizza',
-        image: 'assets/images/uthappizza.png',
-        category: 'mains',
-        label:'Hot',
-        price:'4.99',
->        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-        comments: [
-            {
-            id: 0,
-            rating: 5,
-            comment: "Imagine all the eatables, living in conFusion!",
-            author: "John Lemon",
-            date: "2012-10-16T17:57:28.556094Z"
-            },
-            {
-            id: 1,
-            rating: 4,
-            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-            author: "Paul McVites",
->
-            date: "2014-09-05T17:57:28.556094Z"
-            },
-            {
-            id: 2,
-            rating: 3,
-            comment: "Eat it, just eat it!",
-            author: "Michael Jaikishan",
-            date: "2015-02-13T17:57:28.556094Z"
-            },
-            {
-            id: 3,
-            rating: 4,
-            comment: "Ultimate, Reaching for the stars!",
-            author: "Ringo Starry",
-            date: "2013-12-02T17:57:28.556094Z"
-            },
-            {
+        id: 1,
+        rating: 4,
+        comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+        author: "Paul McVites",
+        date: "2014-09-05T17:57:28.556094Z"
+        },
+        {
+        id: 2,
+        rating: 3,
+        comment: "Eat it, just eat it!",
+        author: "Michael Jaikishan",
+        date: "2015-02-13T17:57:28.556094Z"
+        },
+        {
+        id: 3,
+        rating: 4,
+        comment: "Ultimate, Reaching for the stars!",
+        author: "Ringo Starry",
+        date: "2013-12-02T17:57:28.556094Z"
+        },
+      {
 ```
 
 -   Open <i>App.js</i> and update it as follows:
 
-```
-. . .
->
-import { DISHES } from './shared/dishes';
->
-. . .
->
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dishes: DISHES
-    };
-  }
->
-. . .
->
-  <Menu dishes={this.state.dishes} />
->
-. . .
+```js{:copy}
+  . . .
+  import { DISHES } from './shared/dishes';
+  . . .
+  class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        dishes: DISHES
+      };
+    }
+  . . .
+    <Menu dishes={this.state.dishes} />
+  . . .
 ```
 
 -   Save the changes and do a Git commit with the message "Components Part 2".
@@ -2646,7 +2632,7 @@ new component.
 
 ## Step-By-Step Assignment Instructions
 
-<b>less </b>
+<h4>less</h4>
 
 <b>Objectives and Outcomes</b>
 
@@ -2674,7 +2660,7 @@ instructions for each task are given below. The picture of the completed
 web page included below indicates the location within the web page that
 will be updated by the three tasks.
 
-<b>Task 1</b>
+<h4>Task 1</h4>
 
 In this task you will be adding a new <b><i>DishdetailComponent</i></b> to your
 React application and include the component into the menu component\'s
@@ -2709,7 +2695,7 @@ view so that the details of a specific dish are displayed there:
 
 -   If the dish is null then you should return an empty \<div\>
 
-<b>Task 2</b>
+<h4>Task 2</h4>
 
 In this task you will be adding a card component to the
 <b><i>DishdetailComponent</i></b> view to display the details of the dish given
@@ -2723,7 +2709,7 @@ above:
 -   Display the name of the dish as the Card title, and the description
     as the Card text.
 
-<b>Task 3</b>
+<h4>Task 3</h4>
 
 In this task you will use the comments that are included in the dish
 object above to display a list of the comments for the dish. Please use
@@ -2757,12 +2743,12 @@ height="9.0in"}
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-<b>Task 1:</b>
+<h4>Task 1:</h4>
 
   -   A new <b><i>DishdetailComponent</i></b> has been added to your React application.
 
@@ -2774,11 +2760,11 @@ based on the following criteria:
 
   -   Used the appropriate Bootstrap classes to the div containing the list of comments so that it occupies the entire row for xs and sm  screen sizes, and 5 columns for md screens and above.
 
-<b>Task 2:</b>
+<h4>Task 2:</h4>
 
 -   Used the Card component to display the details of the dish.
 
-<b>Task 3:</b>
+<h4>Task 3:</h4>
 
 -   Included a list of comments about the dish into the dishdetail view.
 
@@ -2885,7 +2871,7 @@ Letter/A4 sized pages.
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Your submission will be reviewed based on the following criteria by
 peers in order to provide you with constructive feedback on your project
@@ -4091,13 +4077,13 @@ into the single page application.
 
 ## Step-By-Step Assignment Instructions
 
-<b>less </b>
+<h4>less</h4>
 
 <b>Assignment Resources</b>
 
 <b>AboutComponent</b>
 
-JS File
+<h4>JS File</h4>
 
 <b>Objectives and Outcomes</b>
 
@@ -4122,7 +4108,7 @@ instructions for each task are given below. The picture of the completed
 web page included below indicates the location within the web page that
 will be updated by the three tasks.
 
-<b>Task 1</b>
+<h4>Task 1</h4>
 
 In this task you will be integrating the AboutComponent into the single
 page application:
@@ -4135,7 +4121,7 @@ page application:
     to the AboutComponent by clicking the links in the navigation bar
     and the footer.
 
-<b>Task 2</b>
+<h4>Task 2</h4>
 
 In this task you will implement a new functional component named
 \<RenderLeader\> through the RenderLeader() function:
@@ -4152,7 +4138,7 @@ In this task you will implement a new functional component named
 -   This will make available the \<RenderLeader\> component for use
     within your AboutComponent.
 
-<b>Task 3</b>
+<h4>Task 3</h4>
 
 In this task you will use the \<RenderLeader\> component created in the
 previous task to render a list of leaders within your AboutComponent:
@@ -4165,12 +4151,12 @@ height="9.0in"}
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-<b>Task 1:</b>
+<h4>Task 1:</h4>
 
 -   The AboutComponent.js file has been downloaded and integrated into
     our React application.
@@ -4178,7 +4164,7 @@ based on the following criteria:
 -   The React application has been appropriately updated to enable
     navigation to the About Us page of our application.
 
-<b>Task 2:</b>
+<h4>Task 2:</h4>
 
 -   Implemented a new <RenderLeader> functional component in your
     application.
@@ -4186,7 +4172,7 @@ based on the following criteria:
 -   Used the reactstrap \<Media\> component to render the details of a
     leader.
 
-<b>Task 3:</b>
+<h4>Task 3:</h4>
 
 -   Updated the leaders variable within the AboutComponent() function to
     make use of the \<RenderLeader\> component to render the list of
@@ -4275,8 +4261,6 @@ with your application At the end of this lesson, you should be able to:
 
 ## Honors Peer-graded Assignment: UI Design and Prototyping
 
-<b>Deadline</b>Oct 30, 11:59 PM PDT
-
 <b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
@@ -4295,7 +4279,7 @@ structure given earlier in this lesson.
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Your submission will be reviewed based on the following criteria by
 peers in order to provide you with constructive feedback on your project
@@ -4800,8 +4784,8 @@ PDF File
 
 In this lesson you will learn about the Flux architecture as a way of
 structuring your React application. You will also be introduced to
-Redux, a realization of the flux architecture. At the end of this lesson
-you will be able to:
+Redux, a realization of the flux architecture.<br>
+At the end of this lesson you will be able to:
 
 -   Install and Configure Redux in your application
 
@@ -5161,7 +5145,7 @@ react-redux-form based local form and do the form validation in code.
 
 ## Step-By-Step Assignment Instructions
 
-<b>less </b>
+<h4>less</h4>
 
 <b>Assignment Overview</b>
 
@@ -5179,7 +5163,7 @@ page:
 
 <b>Assignment Requirements</b>
 
-<b>Task 1</b>
+<h4>Task 1</h4>
 
 In this task you will add a new class component named CommentForm. You
 need to complete the following:
@@ -5193,7 +5177,7 @@ need to complete the following:
 -   The CommentForm component is used by the RenderComments function to
     display the button for toggling the modal.
 
-<b>Task 2</b>
+<h4>Task 2</h4>
 
 In this task you will construct the form for users to submit their
 comments as shown in the image below. You need to complete the
@@ -5206,7 +5190,7 @@ following:
     the author is implemented using a text field, while the comment
     uses a textarea with six rows.
 
-<b>Task 3</b>
+<h4>Task 3</h4>
 
 In this task, you will enable form validation as shown in the images
 below. You need to complete the following:
@@ -5232,24 +5216,24 @@ height="3.7381944444444444in"}
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Upon completion of the assignment, your submission will be reviewed
 based on the following criteria:
 
-<b>Task 1:</b>
+<h4>Task 1:</h4>
 
 -   A CommentForm component is implemented that adds a button to the
     view, which when clicked will toggle a modal containing the form.
 
-<b>Task 2:</b>
+<h4>Task 2:</h4>
 
 -   The form is set up with the three fields correctly.
 
 -   A select is included in the form to enable users to submit the
     rating, a text field for author and a text area for the comment.
 
-<b>Task 3:</b>
+<h4>Task 3:</h4>
 
 -   The author field is being properly validated. If incorrect, the user
     is alerted.
@@ -6692,7 +6676,7 @@ feedback form by posting the feedback to the server.
 
 ## Step-By-Step Assignment Instructions
 
-<b>less </b>
+<h4>less</h4>
 
 <b>Assignment Overview</b>
 
@@ -6714,7 +6698,7 @@ At the end of this assignment, you should have completed the following:
 
 <b>Assignment Requirements</b>
 
-<b>Task 1</b>
+<h4>Task 1</h4>
 
 In this task, you will update the Redux actions and the Home and About
 components to use the data from the server for rendering the leader
@@ -6739,7 +6723,7 @@ information:
 -   Update <i>AboutComponent.js</i> to render the leaders information. You
     should handle the loading and error condition appropriately.
 
-<b>Task 2</b>
+<h4>Task 2</h4>
 
 In this task, you will enable the saving of the feedback data submitted
 using the feedback form in the Contact component. You will save the
@@ -6756,7 +6740,7 @@ feedback form data submitted by the user to the server:
 -   Update the <i>ContactComponent.js</i> to submit the form data using the
     postFeedback() method by passing the feedback form data.
 
-<b>Task 3</b>
+<h4>Task 3</h4>
 
 In this task you will use simple animation using
 react-animation-components to enable a staggered rendering of the list
@@ -6779,11 +6763,11 @@ height="9.0in"}
 
 ## Review criteria
 
-<b>less </b>
+<h4>less</h4>
 
 Your assignment will be assessed based on the following criteria:
 
-<b>Task 1</b>
+<h4>Task 1</h4>
 
 -   Appropriate action types and action creators have been added.
 
@@ -6793,7 +6777,7 @@ Your assignment will be assessed based on the following criteria:
 -   The About component is correctly using the leader data, and handling
     any errors that might arise.
 
-<b>Task 2</b>
+<h4>Task 2</h4>
 
 -   A new postFeedback() action creator is correctly implemented to post
     the feedback data to the server.
@@ -6801,7 +6785,7 @@ Your assignment will be assessed based on the following criteria:
 -   The Contact component has been correctly updated to use
     postFeedback() to post the form data to the server.
 
-<b>Task 3</b>
+<h4>Task 3</h4>
 
 -   Appropriate animation has been added to stagger the rendering of the
     leaders in the AboutComponent.
@@ -6826,9 +6810,6 @@ height="9.0in"}
 
 -   [Cross-Fetch](https://github.com/lquixada/cross-fetch)
 
-```{=html}
-<!-- -->
-```
 -   [Animation Add-Ons](https://reactjs.org/docs/animation.html)
 
 -   [react-transition-group](https://github.com/reactjs/react-transition-group)
@@ -7012,7 +6993,7 @@ server, please submit the URL of the site
 
 ## Review criteria
 
-<b>less</b>
+<h4>less</h4>
 
 Your final project submission will be evaluated by your peers
 considering the following items:
@@ -7027,15 +7008,16 @@ considering the following items:
 
 ..the end.
 
+Last updated 2-24-23 1:30pm
+
+<h3>Sample markdown to follow</h3>
+
 Following is sample of markdown;
 
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
-
-Last updated 2-24-23 1:30pm
-
 
 # hello world
 
