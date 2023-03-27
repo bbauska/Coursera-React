@@ -2243,19 +2243,11 @@ Reactstrap.
 
 <b>1-JavaScript-Frameworks.pdf</b>
 
-PDF File
-
 <b>2-Intro-React.pdf</b>
-
-PDF File
 
 <b>3-React-App-Overview.pdf</b>
 
-PDF File
-
 <b>4-Intro-JSX.pdf</b>
-
-PDF File
 
 ### React Resources
 
@@ -2335,8 +2327,6 @@ lesson you will be able to:
 
 <b>images</b>
 
-ZIP File
-
 ### Objectives and Outcomes
 
 In this exercise you will add the first component to your React
@@ -2404,7 +2394,7 @@ you will be able to:
   import { Media } from 'reactstrap';
 ```
 
--   Next, open <i>App.js</ifile and update it as follows:
+-   Next, open <i>App.js</i> file and update it as follows:
 
 ```js{:copy}
 . . .
@@ -2446,8 +2436,6 @@ this exercise you will be able to:
 ### Exercise Resources
 
 <b>dishes</b>
-
-JS File
 
 ### Updating the Menu Component
 
@@ -2575,15 +2563,9 @@ selected dish.
 
 <b>5-Component-Part1.pdf</b>
 
-PDF File
-
 <b>6-Component-Part2.pdf</b>
 
-PDF File
-
 <b>7-Lifecycle-Methods.pdf</b>
-
-PDF File
 
 ### React Resources
 
@@ -2735,11 +2717,9 @@ JavaScript objects (comments). This task involves the following steps:
 
 -   If the comments are null, then you should return an empty \<div\>.
 
-![](./images/image003.png){width="6.5in"
-height="8.436111111111112in"}
+![](./images/image003.png){width="6.5in" height="8.436111111111112in"}
 
-![](./images/image004.png){width="1.4645833333333333in"
-height="9.0in"}
+![](./images/image004.png){width="1.4645833333333333in" height="9.0in"}
 
 ## Review criteria
 
@@ -2772,9 +2752,8 @@ based on the following criteria:
 
 ### Assignment 1 Screenshots
 
-![](./images/image003.png){width="6.5in"
-height="8.436111111111112in"}![](./images/image004.png){width="1.4645833333333333in"
-height="9.0in"}
+![](./images/image003.png){width="6.5in" height="8.436111111111112in"}
+![](./images/image004.png){width="1.4645833333333333in" height="9.0in"}
 
 ### React Resources
 
@@ -3479,11 +3458,7 @@ React Router for navigation within your React app.
 
 <b>3-VirtualDOM.pdf</b>
 
-PDF File
-
 <b>4-React-Router.pdf</b>
-
-PDF File
 
 ### React Resources
 
@@ -3978,8 +3953,6 @@ pass information to another component.
 
 <b>6-React-Router-Parameters.pdf</b>
 
-PDF File
-
 ### React Resources
 
 -   [react-router](https://github.com/ReactTraining/react-router)
@@ -4296,8 +4269,6 @@ end of this exercise you will be able to:
 
 ## Controlled Forms
 
-## Exercise (Video): Controlled Forms
-
 ## Exercise (Instructions): Controlled Forms
 
 ### Objectives and Outcomes
@@ -4539,8 +4510,6 @@ controlled forms in React.
 
 <b>1-Controlled-Components-Forms.pdf</b>
 
-PDF File
-
 ### React Resources
 
 -   [Controlled Components](https://reactjs.org/docs/forms.html)
@@ -4695,8 +4664,6 @@ add a form to our React application.
 ### PDFs of Presentations
 
 <b>2-Uncontrolled-Components-Forms.pdf</b>
-
-PDF File
 
 ### React Resources
 
@@ -4874,15 +4841,9 @@ your React application.
 
 <b>3-MVC.pdf</b>
 
-PDF File
-
 <b>4-Flux-Arch.pdf</b>
 
-PDF File
-
 <b>5-Intro-Redux.pdf</b>
-
-PDF File
 
 ### React Resources
 
@@ -5056,8 +5017,6 @@ using react-redux-form.
 
 <b>6-React-Redux-Form.pdf</b>
 
-PDF File
-
 ### React Resources
 
 -   [React Redux Form
@@ -5078,8 +5037,6 @@ PDF File
 
 ## Peer-graded Assignment: React Forms and Redux
 
-<b>Deadline</b>Nov 6, 11:59 PM PST
-
 <b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
@@ -5093,7 +5050,7 @@ react-redux-form based local form and do the form validation in code.
 
 <b>Assignment Overview</b>
 
-In this assignment you will update the D<i>ishdetailComponent.js</i> to
+In this assignment you will update the <i>DishdetailComponent.js</i> to
 include a form and do the form validation in code. At the end of this
 assignment, you should have completed the following tasks to update the
 page:
@@ -5340,7 +5297,7 @@ export const ADD_COMMENT = 'ADD_COMMENT';
     to it:
 
 ```js{:copy}
-import <i> as ActionTypes from './ActionTypes';
+import as ActionTypes from './ActionTypes';
 export const addComment = (dishId, rating, author, comment) => ({
     type: ActionTypes.ADD_COMMENT,
     payload: {
@@ -6177,7 +6134,7 @@ able to:
 
 ### Handling Errors
 
--   Open <i>ActionCreators.j</i>s and update it as follows:
+-   Open <i>ActionCreators.js</i> and update it as follows:
 
 ```
 . . .
@@ -6652,7 +6609,7 @@ feedback form data submitted by the user to the server:
     server using Fetch. Recall that the feedback data is accessible at
     <http://localhost:3001/feedback> on the json-server.
 
--   Update <i>MainComponent.j</i>s to make the new dispatch method
+-   Update <i>MainComponent.js</i> to make the new dispatch method
     postFeedback() available to ContactComponent.
 
 -   Update the <i>ContactComponent.js</i> to submit the form data using the
@@ -6889,8 +6846,6 @@ In particular, this section should contain:
     your project.
 
 ## Honors Peer-graded Assignment: Project Implementation and Final Report
-
-<b>Deadline</b> Nov 13, 11:59 PM PST
 
 <b>Ready for the assignment?</b>
 
