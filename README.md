@@ -2854,8 +2854,6 @@ the end of this step you should be able to:
 
 ## Honors Peer-graded Assignment: Ideation
 
-<b>Deadline</b>Oct 23, 11:59 PM PDT
-
 <b>Ready for the assignment?</b>
 
 You will find instructions below to submit.
@@ -2887,7 +2885,7 @@ idea:
     that have some similarities to the proposed idea?
 
 4.  Does the Ideation report provide references to suitable sources in
-    > support of the project idea?
+    support of the project idea?
 
 ## Ideation: Additional Resources
 
@@ -2958,11 +2956,9 @@ class Main extends Component {
         selectedDish: null
     };
   }
- 
   onDishSelect(dishId) {
     this.setState({ selectedDish: dishId});
   }
- 
   render() {
     return (
       <div>
@@ -2977,7 +2973,6 @@ class Main extends Component {
     );
   }
 }
- 
 export default Main;
 ```
 
@@ -2987,9 +2982,7 @@ export default Main;
 ```
 . . .
 import Main from './components/MainComponent';
- 
 class App extends Component {
- 
   render() {
     return (
       <div className="App">
@@ -2998,7 +2991,6 @@ class App extends Component {
     );
   }
 }
- 
 . . .
 ```
 
@@ -3065,7 +3057,6 @@ to:
 import React from 'react';
 import { Card, CardImg, CardImgOverlay,
     CardTitle } from 'reactstrap';
- 
     function RenderMenuItem ({dish, onClick}) {
         return (
             <Card
@@ -3077,9 +3068,7 @@ import { Card, CardImg, CardImgOverlay,
             </Card>
         );
     }
->
-    const Menu = (props) => {
- 
+    const Menu = (props) => { 
         const menu = props.dishes.map((dish) => {
             return (
                 <div className="col-12 col-md-5 m-1"  key={dish.id}>
@@ -3087,7 +3076,6 @@ import { Card, CardImg, CardImgOverlay,
                 </div>
             );
         });
- 
         return (
             <div className="container">
                 <div className="row">
@@ -3096,7 +3084,6 @@ import { Card, CardImg, CardImgOverlay,
             </div>
         );
     }
- 
 export default Menu;
 ```
 
@@ -3131,11 +3118,7 @@ In this exercise we have learnt to implement our components as pure functional c
 
 <b>1-Component-Types-Part1.pdf</b>
 
-PDF File
-
 <b>2-Component-Types-Part2.pdf</b>
-
-PDF File
 
 Other Resources
 
@@ -3164,8 +3147,6 @@ able to:
 -   Set up the routes to enable the navigation
 
 ## React Virtual DOM
-
-## Exercise (Video): Header and Footer
 
 ## Exercise (Instructions): Header and Footer
 
@@ -3197,11 +3178,9 @@ yarn add bootstrap-social@5.1.1
     application to use Font Awesome and Bootstrap Social:
 
 ```
-. . .
- 
+. . . 
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
- 
 . . .
 ```
 
@@ -3213,7 +3192,6 @@ import 'bootstrap-social/bootstrap-social.css';
 ```
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
- 
 class Header extends Component {
   render() {
     return(
@@ -3237,7 +3215,6 @@ class Header extends Component {
     );
   }
 }
- 
 export default Header;
 ```
 
@@ -3245,8 +3222,7 @@ export default Header;
     following to it:
 
 ```
-import React from 'react';
- 
+import React from 'react'; 
 function Footer(props) {
     return(
     <div className="footer">
@@ -3351,8 +3327,6 @@ Footer, into our application.
 
 ## React Router
 
-## Exercise (Video): React Router
-
 ## Exercise (Instructions): React Router
 
 ### Objectives and Outcomes
@@ -3371,7 +3345,9 @@ this exercise you will be able to:
 -   First install React Router into your project by typing the following
     at the prompt:
 
+```
 yarn add react-router-dom@4.2.2
+```
 
 -   Then, open <i>App.js</i> and update it as follows:
 
@@ -3456,20 +3432,20 @@ class Header extends Component {
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-> <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
+<NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
-> <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
+<NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
                             <NavItem>
-> <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
+<NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
                             </NavItem>
                             <NavItem>
->  <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
+<NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
                             </NavItem>
                             <NavItem>
-> <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
+<NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
                             </NavItem>
 ```
 
@@ -3543,10 +3519,6 @@ able to:
 
 -   Use the <i>React router</i> to construct SPA
 
-## Single Page Applications (video)
-
-## Exercise (Video): Single Page Applications Part 1
-
 ## Exercise (Instructions): Single Page Applications Part 1
 
 ### Objectives and Outcomes
@@ -3565,19 +3537,11 @@ of this exercise you will be able to:
 
 <b>dishes</b>
 
-JS File
-
 <b>promotions</b>
-
-JS File
 
 <b>leaders</b>
 
-JS File
-
 <b>comments</b>
-
-JS File
 
 ### Integrating the Contact Component
 
@@ -3586,7 +3550,6 @@ JS File
 
 ```js{:copy}
 import React from 'react';
-
 function Contact(props) {
   return(
     <div className="container">
@@ -3629,7 +3592,7 @@ export default Contact;
 . . .
 import Contact from './ContactComponent';
 . . .
-              <Route exact path='/contactus' component={Contact} />} />
+  <Route exact path='/contactus' component={Contact} />} />
 ```
 
 ### Updating the Home Component
@@ -3650,8 +3613,7 @@ export const DISHES =
         label:'Hot',
         price:'4.99',
         featured: true,
->
->  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
+description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
         },
         {
         id: 1,
@@ -3661,8 +3623,7 @@ export const DISHES =
         label:'',
         price:'1.99',
         featured: false,
->description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
->
+description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
         },
         {
         id: 2,
@@ -3760,9 +3721,7 @@ export const LEADERS = [
       designation: 'Chief Epicurious Officer',
       abbr: 'CEO',
       featured: false,
->
       description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
->
     },
     {
       id: 1,
@@ -3770,9 +3729,8 @@ export const LEADERS = [
       image: '/assets/images/alberto.png',
       designation: 'Chief Food Officer',
       abbr: 'CFO',
->         featured: false,
+        featured: false,
       description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
->
     },
     {
       id: 2,
@@ -3786,7 +3744,6 @@ export const LEADERS = [
     {
       id: 3,
       name: 'Alberto Somayya',
->
       image: '/assets/images/alberto.png',
       designation: 'Executive Chef',
       abbr: 'EC',
@@ -3876,8 +3833,6 @@ integrating the components into a single page application.
 
 ## Module 7: React Router: Parameters
 
-## Exercise (Video): Single Page Applications Part 2
-
 ## Exercise (Instructions): Single Page Applications Part 2
 
 ### Objectives and Outcomes
@@ -3939,14 +3894,14 @@ import { Link } from 'react-router-dom';
 
 ```js{:copy}
 . . .
-    const DishWithId = ({match}) => {
-      return(
-          <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
-            comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
-      );
-    };
+  const DishWithId = ({match}) => {
+    return(
+      <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+        comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
+    );
+  };
 . . .
-              <Route path='/menu/:dishId' component={DishWithId} />
+  <Route path='/menu/:dishId' component={DishWithId} />
 . . .
 ```
 
@@ -3957,31 +3912,31 @@ import { Link } from 'react-router-dom';
 ```js{:copy}
 . . .
 import { Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+  CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 . . .
-            return (
-                <div className="container">
-                <div className="row">
-                    <Breadcrumb>
-                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
-                    </Breadcrumb>
-                    <div className="col-12">
-                        <h3>{props.dish.name}</h3>
-                        <hr />
-                    </div>                
-                </div>
-                <div className="row">
-                    <div className="col-12 col-md-5 m-1">
-                        <RenderDish dish={props.dish} />
-                    </div>
-                    <div className="col-12 col-md-5 m-1">
-                        <RenderComments comments={props.comments} />
-                    </div>
-                </div>
-                </div>
-            );
+  return (
+    <div className="container">
+      <div className="row">
+        <Breadcrumb>
+          <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+          <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+        </Breadcrumb>
+        <div className="col-12">
+          <h3>{props.dish.name}</h3>
+          <hr />
+        </div>                
+      </div>
+      <div className="row">
+        <div className="col-12 col-md-5 m-1">
+          <RenderDish dish={props.dish} />
+        </div>
+        <div className="col-12 col-md-5 m-1">
+          <RenderComments comments={props.comments} />
+        </div>
+      </div>
+    </div>
+  );
 . . .
 ```
 
@@ -3994,16 +3949,16 @@ import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 . . .
-            <div className="row">
-                <Breadcrumb>
-                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Contact Us</BreadcrumbItem>
-                </Breadcrumb>
-                <div className="col-12">
-                    <h3>Contact Us</h3>
-                    <hr />
-                </div>                
-            </div>
+  <div className="row">
+    <Breadcrumb>
+      <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+      <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+    </Breadcrumb>
+    <div className="col-12">
+      <h3>Contact Us</h3>
+      <hr />
+    </div>                
+  </div>
 . . .
 ```
 
@@ -4020,8 +3975,6 @@ pass information to another component.
 ### PDFs of Presentations
 
 <b>5-Single-Page-Apps.pdf</b>
-
-PDF File
 
 <b>6-React-Router-Parameters.pdf</b>
 
@@ -4056,8 +4009,6 @@ PDF File
 ## Assignment 2: React Router and Single Page Applications
 
 ## Peer-graded Assignment: React Router and Single Page Applications
-
-<b>Deadline</b>Oct 30, 11:59 PM PDT
 
 <b>Ready for the assignment?</b>
 
@@ -4146,8 +4097,7 @@ previous task to render a list of leaders within your AboutComponent:
 -   Update the leaders variable within the AboutComponent() function to
     make use of the \<RenderLeader> component to render the list of leaders.
 
-![](./images/image005.png){width="4.361805555555556in"
-height="9.0in"}
+![](./images/image005.png){width="4.361805555555556in" height="9.0in"}
 
 ## Review criteria
 
@@ -4184,12 +4134,9 @@ based on the following criteria:
 
 <b>AboutComponent</b>
 
-JS File
-
 ### Screenshots
 
-![](./images/image005.png){width="4.361805555555556in"
-height="9.0in"}
+![](./images/image005.png){width="4.361805555555556in" height="9.0in"}
 
 ### React Resources
 
@@ -4476,8 +4423,6 @@ class Contact extends Component {
 In this exercise you have learnt to create a controlled form within your
 React application.
 
-## Exercise (Video): Controlled Form Validation
-
 ## Exercise (Instructions): Controlled Form Validation
 
 ### Objectives and Outcomes
@@ -4683,11 +4628,11 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 
 ```js{:copy}
 . . .
-                            <Nav className="ml-auto" navbar>
-                                <NavItem>
-                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
-                                </NavItem>
-                            </Nav>
+  <Nav className="ml-auto" navbar>
+    <NavItem>
+      <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
+    </NavItem>
+  </Nav>
 . . .
 ```
 
@@ -4698,26 +4643,26 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 
 ```js{:copy}
 . . .
-    <Form onSubmit={this.handleLogin}>
-      <FormGroup>
-        <Label htmlFor="username">Username</Label>
-        <Input type="text" id="username" name="username"
-          innerRef={(input) => this.username = input} />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="password">Password</Label>
-          <Input type="password" id="password" name="password"
-            innerRef={(input) => this.password = input}  />
-        </FormGroup>
-        <FormGroup check>
-          <Label check>
-            <Input type="checkbox" name="remember"
-            innerRef={(input) => this.remember = input}  />
-            Remember me
-          </Label>
-        </FormGroup>
-        <Button type="submit" value="submit" color="primary">Login</Button>
-      </Form>
+  <Form onSubmit={this.handleLogin}>
+    <FormGroup>
+      <Label htmlFor="username">Username</Label>
+      <Input type="text" id="username" name="username"
+        innerRef={(input) => this.username = input} />
+    </FormGroup>
+    <FormGroup>
+    <Label htmlFor="password">Password</Label>
+      <Input type="password" id="password" name="password"
+        innerRef={(input) => this.password = input}  />
+    </FormGroup>
+    <FormGroup check>
+      <Label check>
+      <Input type="checkbox" name="remember"
+        innerRef={(input) => this.remember = input}  />
+        Remember me
+      </Label>
+    </FormGroup>
+    <Button type="submit" value="submit" color="primary">Login</Button>
+  </Form>
 . . .
 ```
 
@@ -4728,12 +4673,12 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 . . .
         this.handleLogin = this.handleLogin.bind(this);
 . . .
-    handleLogin(event) {
-        this.toggleModal();
-        alert("Username: " + this.username.value + " Password: " + this.password.value
-            + " Remember: " + this.remember.checked);
-        event.preventDefault();
-    }
+  handleLogin(event) {
+    this.toggleModal();
+    alert("Username: " + this.username.value + " Password: " + this.password.value
+       + " Remember: " + this.remember.checked);
+    event.preventDefault();
+  }
 . . .
 ```
 
@@ -4836,7 +4781,6 @@ export const initialState = {
     promotions: PROMOTIONS,
     leaders: LEADERS
 };
-
 export const Reducer = (state = initialState, action) => {
     return state;
 };
@@ -5202,17 +5146,13 @@ below. You need to complete the following:
 -   The user should be alerted by showing the invalid message displayed
     at the bottom of the field.
 
-![](./images/image006.png){width="6.5in"
-height="7.429861111111111in"}
+![](./images/image006.png){width="6.5in" height="7.429861111111111in"}
 
-![](./images/image007.png){width="6.5in"
-height="4.278472222222222in"}
+![](./images/image007.png){width="6.5in" height="4.278472222222222in"}
 
-![](./images/image008.png){width="6.5in"
-height="3.779861111111111in"}
+![](./images/image008.png){width="6.5in" height="3.779861111111111in"}
 
-![](./images/image009.png){width="6.5in"
-height="3.7381944444444444in"}
+![](./images/image009.png){width="6.5in" height="3.7381944444444444in"}
 
 ## Review criteria
 
@@ -5242,11 +5182,10 @@ based on the following criteria:
 
 ### Assignment Screenshots
 
-![](./images/image006.png){width="6.5in"
-height="7.429861111111111in"}![](./images/image007.png){width="6.5in"
-height="4.278472222222222in"}![](./images/image008.png){width="6.5in"
-height="3.779861111111111in"}![](./images/image009.png){width="6.5in"
-height="3.7381944444444444in"}
+![](./images/image006.png){width="6.5in" height="7.429861111111111in"}
+![](./images/image007.png){width="6.5in" height="4.278472222222222in"}
+![](./images/image008.png){width="6.5in" height="3.779861111111111in"}
+![](./images/image009.png){width="6.5in" height="3.7381944444444444in"}
 
 ### React Resources
 
@@ -5306,10 +5245,8 @@ export const Dishes = (state = DISHES, action) => {
 
 ```
 import { COMMENTS } from '../shared/comments';
->
 export const Comments = (state = COMMENTS, action) => {
     switch (action.type) {
->
         default:
           return state;
       }
@@ -5352,7 +5289,6 @@ import { Dishes } from './dishes';
 import { Comments } from './comments';
 import { Promotions } from './promotions';
 import { Leaders } from './leaders';
-
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
@@ -5862,8 +5798,6 @@ Redux to persist form state.
 
 <b>2-Redux-Thunk.pdf</b>
 
-PDF File
-
 ### Redux Resources
 
 -   [Redux Middleware](https://redux.js.org/advanced/middleware)
@@ -5898,11 +5832,7 @@ json-server node module. At the end of this lesson, you will be able to:
 
 <b>db</b>
 
-JSON File
-
 <b>images</b>
-
-ZIP File
 
 ### Objectives and Outcomes
 
@@ -6001,21 +5931,13 @@ can serve up static web content.
 
 <b>3-Networking-Essentials.pdf</b>
 
-PDF File
-
 <b>4-REST.pdf</b>
-
-PDF File
 
 ### Exercise Resources
 
 <b>db</b>
 
-JSON File
-
 <b>images</b>
-
-ZIP File
 
 ### Other Resources
 
@@ -6408,11 +6330,7 @@ In this exercise you learnt to use Fetch to post data to the server.
 
 <b>5-Promises.pdf</b>
 
-PDF File
-
 <b>6-Fetch.pdf</b>
-
-PDF File
 
 ### Fetch Resources
 
@@ -6889,8 +6807,6 @@ your React application.
 ### PDFs of Presentations
 
 <b>8-Webpack.pdf</b>
-
-PDF File
 
 ### React Resources
 
