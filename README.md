@@ -4663,7 +4663,9 @@ add a form to our React application.
 
 ### PDFs of Presentations
 
-<b>2-Uncontrolled-Components-Forms.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/09-Uncontrolled-Components-Forms.pdf">09-Uncontrolled-Components-Forms.pdf</a></li><br/>
+</ul>
 
 ### React Resources
 
@@ -4839,11 +4841,11 @@ your React application.
 
 ### PDFs of Presentations
 
-<b>3-MVC.pdf</b>
-
-<b>4-Flux-Arch.pdf</b>
-
-<b>5-Intro-Redux.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-MVC.pdf">10-MVC.pdf</a></li><br/>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-Flux-Arch.pdf">10-Flux-Arch.pdf</a></li><br/>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-Intro-Redux.pdf">10-Intro-Redux.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -5014,8 +5016,9 @@ using react-redux-form.
 ## Chapter 2: React Redux Form: Additional Resources
 
 ### PDFs of Presentations
-
-<b>6-React-Redux-Form.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-React-Redux-Form.pdf">10-React-Redux-Form.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -5753,7 +5756,9 @@ Redux to persist form state.
 
 ### PDFs of Presentations
 
-<b>2-Redux-Thunk.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Redux-Thunk.pdf">11-Redux-Thunk.pdf</a></li>
+</ul>
 
 ### Redux Resources
 
@@ -5886,9 +5891,10 @@ can serve up static web content.
 
 ### PDFs of Presentations
 
-<b>3-Networking-Essentials.pdf</b>
-
-<b>4-REST.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Networking-Essentials.pdf">11-Networking-Essentials.pdf</a></li>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-REST.pdf">11-REST.pdf</a></li>
+</ul>
 
 ### Exercise Resources
 
@@ -6285,9 +6291,10 @@ In this exercise you learnt to use Fetch to post data to the server.
 
 ### PDFs of Presentations
 
-<b>5-Promises.pdf</b>
-
-<b>6-Fetch.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Promises.pdf">11-Promises.pdf</a></li>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Fetch.pdf">11-Fetch.pdf</a></li>
+</ul>
 
 ### Fetch Resources
 
@@ -6502,9 +6509,9 @@ using react-animation-components.
 
 ### PDFs of Presentations
 
-<b>7-Animations.pdf</b>
-
-PDF File
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/12-React-Animations.pdf">12-React-Animations.pdf</a></li>
+</ul>
 
 ### React Animations
 
@@ -6763,7 +6770,9 @@ your React application.
 
 ### PDFs of Presentations
 
-<b>8-Webpack.pdf</b>
+<ul>
+<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/12-Webpack.pdf">12-Webpack.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -6879,7 +6888,7 @@ considering the following items:
 
 ..the end.
 
-Last updated 2-24-23 1:30pm
+Last updated 3-29-23 4:21pm
 
 <h3>Sample markdown to follow</h3>
 
