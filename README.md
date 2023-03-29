@@ -411,13 +411,18 @@ also learn about React components and JSX.
 
 <h4>PDFs of Presentations</h4>
 
-<a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a>
+<ul>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a></li>
 
-<a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b></li>
+</ul>
 
 ### React Resources
 
--   [React Site](https://reactjs.org/)
+<ul>
+<li><a href="https://reactjs.org/">React Site</a></li>
+</ul>
+<!-- -   [React Site](https://reactjs.org/) -->
 
 ### Coursera Resources
 
@@ -4664,7 +4669,7 @@ add a form to our React application.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/09-Uncontrolled-Components-Forms.pdf">09-Uncontrolled-Components-Forms.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Uncontrolled-Components-Forms.pdf">09-Uncontrolled-Components-Forms.pdf</a></li><br/>
 </ul>
 
 ### React Resources
@@ -4842,9 +4847,9 @@ your React application.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-MVC.pdf">10-MVC.pdf</a></li><br/>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-Flux-Arch.pdf">10-Flux-Arch.pdf</a></li><br/>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-Intro-Redux.pdf">10-Intro-Redux.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-MVC.pdf">10-MVC.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Flux-Arch.pdf">10-Flux-Arch.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Intro-Redux.pdf">10-Intro-Redux.pdf</a></li>
 </ul>
 
 ### React Resources
@@ -5016,8 +5021,9 @@ using react-redux-form.
 ## Chapter 2: React Redux Form: Additional Resources
 
 ### PDFs of Presentations
+
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/10-React-Redux-Form.pdf">10-React-Redux-Form.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-React-Redux-Form.pdf">10-React-Redux-Form.pdf</a></li>
 </ul>
 
 ### React Resources
@@ -5757,7 +5763,7 @@ Redux to persist form state.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Redux-Thunk.pdf">11-Redux-Thunk.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Redux-Thunk.pdf">11-Redux-Thunk.pdf</a></li>
 </ul>
 
 ### Redux Resources
@@ -5892,8 +5898,8 @@ can serve up static web content.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Networking-Essentials.pdf">11-Networking-Essentials.pdf</a></li>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-REST.pdf">11-REST.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Networking-Essentials.pdf">11-Networking-Essentials.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-REST.pdf">11-REST.pdf</a></li>
 </ul>
 
 ### Exercise Resources
@@ -6292,8 +6298,8 @@ In this exercise you learnt to use Fetch to post data to the server.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Promises.pdf">11-Promises.pdf</a></li>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/11-Fetch.pdf">11-Fetch.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Promises.pdf">11-Promises.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Fetch.pdf">11-Fetch.pdf</a></li>
 </ul>
 
 ### Fetch Resources
@@ -6510,7 +6516,7 @@ using react-animation-components.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/12-React-Animations.pdf">12-React-Animations.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-React-Animations.pdf">12-React-Animations.pdf</a></li>
 </ul>
 
 ### React Animations
@@ -6771,7 +6777,7 @@ your React application.
 ### PDFs of Presentations
 
 <ul>
-<li><a href="github.com/bbauska/Coursera-React/blob/main/pdf/12-Webpack.pdf">12-Webpack.pdf</a></li>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-Webpack.pdf">12-Webpack.pdf</a></li>
 </ul>
 
 ### React Resources
