@@ -48,7 +48,7 @@ Instagram - https://www.instagram.com/thenetninja/
    alt="Coursera logo." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
+<!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
@@ -74,9 +74,9 @@ The hands-on project on Build Your First React Website is divided into following
 <h7>(by The Hong Kong University of Science and Technology)</h7>
 
 <h3>Part II of Front-end web development from Coursera</h3>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
    width="65%"
@@ -865,10 +865,9 @@ during the installation steps.</b>
 -   To ensure that your NodeJS setup is working correctly, type the
     following at the command prompt to check for the version of <b>Node</b>
     and <b>NPM</b>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 01. hong kong university of science and technology logo (01) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image002.png?raw=true"
    width="65%"
@@ -2756,9 +2755,19 @@ based on the following criteria:
 ## Assignment 1: React Components: Additional Resources
 
 ### Assignment 1 Screenshots
-
-![](./images/image003.png){width="6.5in" height="8.436111111111112in"}
-![](./images/image004.png){width="1.4645833333333333in" height="9.0in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 03/04.  (##) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image003.png?raw=true"
+  width="65%"
+  alt="." />
+<img src="./images/004.png"
+  width="15%"
+  alt="" />
+</p>
+<!-- ![](./images/image003.png){width="6.5in" height="8.436111111111112in"} -->
+<!-- ![](./images/image004.png){width="1.4645833333333333in" height="9.0in"} -->
 
 ### React Resources
 
@@ -3100,9 +3109,10 @@ In this exercise we have learnt to implement our components as pure functional c
 
 ### PDFs of Presentations
 
-<b>1-Component-Types-Part1.pdf</b>
-
-<b>2-Component-Types-Part2.pdf</b>
+<ul>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts1.pdf">06-Component-Types-Parts1.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts2.pdf">06-Component-Types-Parts2.pdf</a></li>
+</ul>
 
 Other Resources
 
@@ -3461,9 +3471,10 @@ React Router for navigation within your React app.
 
 ### PDFs of Presentations
 
-<b>3-VirtualDOM.pdf</b>
-
-<b>4-React-Router.pdf</b>
+<ul>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-VirtualDOM.pdf">07-VirtualDOM.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-React-Router-Parameters.pdf">07-React-Router-Parameters.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -3954,9 +3965,10 @@ pass information to another component.
 
 ### PDFs of Presentations
 
-<b>5-Single-Page-Apps.pdf</b>
-
-<b>6-React-Router-Parameters.pdf</b>
+<ul>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-Single-Page-Apps.pdf">08-Single-Page-Apps.pdf</a></li><br/>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-React-Router-Parameters.pdf">08-React-Router-Parameters.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -4513,7 +4525,9 @@ controlled forms in React.
 
 ### PDFs of Presentations
 
-<b>1-Controlled-Components-Forms.pdf</b>
+<ul>
+<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Controlled-Components-Forms.pdf">09-Controlled-Components-Forms.pdf</a></li>
+</ul>
 
 ### React Resources
 
@@ -6894,7 +6908,7 @@ considering the following items:
 
 ..the end.
 
-Last updated 3-29-23 4:21pm
+Last updated 3-30-23 12:00m
 
 <h3>Sample markdown to follow</h3>
 
