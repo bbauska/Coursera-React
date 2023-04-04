@@ -79,7 +79,7 @@ The hands-on project on Build Your First React Website is divided into following
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
-   width="65%"
+   width="50%"
    alt="Hong Kong University of Science and Technology logo." />
 </p>
 <!-- width="5.0in" height="2.6180555555555554in" --->
