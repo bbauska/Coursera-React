@@ -44,7 +44,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/coursera-logo.png?raw=true"
-   width="35%"
+   width="150px"
    alt="Coursera logo." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -52,7 +52,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
-   width="65%"
+   width="50%"
    alt="Hong Kong University of Science and Technology logo." />
 </p>
 <!-- {width="5.0in" height="2.202991032370954in"} -->
