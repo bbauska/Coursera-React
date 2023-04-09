@@ -611,21 +611,23 @@ would be able to:
     command line, by typing the following at the command prompt:
 
 ```
->  $ git \--version
+$ git \--version
 ```
 
--   To configure your user name to be used by Git, type the following at
-    the prompt:
+<ul>
+  <li>To configure your user name to be used by Git, type the following at the prompt:</li>
+</ul>
 
 ```
-> $ git config \--global user.name \"Your Name\"
+$ git config \--global user.name \"Your Name\"
 ```
 
--   To configure your email to be used by Git, type the following at the
-    prompt:
+<ul>
+  <li>To configure your email to be used by Git, type the following at the prompt:</li>
+</ul>
 
 ```
-> git config \--global user.email \<your email address&gt;
+$ git config &dash;&dash;global user.email &lt;your email address&gt;
 ```
 
 -   You can check your default Git global configuration, you can type
@@ -634,7 +636,7 @@ would be able to:
 <h2>Exercise (Video): Basic Git Commands</h2>
 
 ```
-> git config \--list
+$ git config \--list
 ```
 
 <h3>Conclusions</h3>
@@ -655,22 +657,20 @@ the end of this exercise, you will be able to:
 
 <h2>Basic Git Commands</h2>
 
--   At a convenient location on your computer, create a folder named
-    <b>git-test</b>.
-
--   Open this git-test folder in your favorite editor.
-
--   Add a file named <i>index.html</i> to this folder, and add the following
-    HTML code to this file:
+<ul>
+  <li>At a convenient location on your computer, create a folder named <b>git-test</b>.<br></li>
+  <li>Open this git-test folder in your favorite editor.<br></li>
+  <li>Add a file named <i>index.html</i> to this folder, and add the following HTML code to this file:</li>
+</ul>
 
 ```
-> &lt;!DOCTYPE html&gt;
-> &lt;html&gt;
->     &lt;head&gt;&lt;/head&gt;
->       &lt;body&gt;
->         &lt;h1&gt;This is a Header&lt;/h1&gt;
->     &lt;/body&gt;
-> &lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a Header&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 ```
 
 Initializing the folder as a Git repository
@@ -680,7 +680,7 @@ Initializing the folder as a Git repository
     repository:
 
 ```
->  $ git init
+$ git init
 ```
 
 <h3>Checking your Git repository status</h3>
@@ -688,28 +688,37 @@ Initializing the folder as a Git repository
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-> git status
+```
+$ git status
+```
 
 Adding files to the staging area
 
 -   To add files to the staging area of your Git repository, type:
 
-> git add .
+```
+$ git add .
+```
 
 Commiting to the Git repository
 
 -   To commit the current staging area to your Git repository, type:
 
-> git commit -m \"first commit\"
+```
+$ git commit -m \"first commit\"
+```
 
 Checking the log of Git commits
 
 -   To check the log of the commits to your Git repository, type
 
-> git log --oneline
+```
+$ git log --oneline
+```
 
 -   Now, modify the <i>index.html</i> file as follows:
 
+```
 > &lt;!DOCTYPE html&gt;
 > &lt;html&gt;
 >     &lt;head&gt;&lt;/head&gt;
@@ -718,6 +727,7 @@ Checking the log of Git commits
 >         &lt;p&gt;This is a paragraph&lt;/p&gt;
 >     &lt;/body&gt;
 > &lt;/html&gt;
+```
 
 -   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
     and then add a file named <i>test.html</i> to the templates folder. Then
@@ -752,7 +762,7 @@ Checking the log of Git commits
     at the prompt:
 
 ```
->  $ git checkout &lt;second commit&apos;s number&gt; index.html
+$ git checkout &lt;second commit&apos;s number&gt; index.html
 ```
 
 <h3>Resetting the Git repository</h3>
@@ -761,13 +771,13 @@ Checking the log of Git commits
     index.html to its state at the end of the third commit, type:
 
 ```
->  $ git reset HEAD index.html
+$ git reset HEAD index.html
 ```
 
 -   Then type the following at the prompt:
 
 ```
->  $ git checkout -- index.html
+$ git checkout -- index.html
 ```
 
 -   You can also use <i>git reset</i> to reset the staging area to the last
@@ -812,7 +822,9 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin <repository URL>
+```
+$ git remote add origin <repository URL>
+```
 
 <h3>Pushing your commits to the online repository</h3>
 
@@ -820,7 +832,7 @@ git remote add origin <repository URL>
     repository:
 
 ```
->  $ git push -u origin master
+$ git push -u origin master
 ```
 
 <h3>Cloning an online repository</h3>
@@ -828,7 +840,9 @@ git remote add origin <repository URL>
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone <repository URL>
+```
+$ git clone <repository URL>
+```
 
 <h3>Conclusions</h3>
 
@@ -900,11 +914,11 @@ during the installation steps.</b>
 </p>
 <!-- width="4.235295275590551in" height="5.4in" --->
 
-> node -v
->
->       
->
-> npm -v
+```
+$ node -v
+
+$ npm -v
+```
 
 <h3>Conclusions</h3>
 
@@ -953,32 +967,36 @@ of this exercise, you will be able to:
 -   Next, open package.json in your editor and modify it as shown below.
     Note the addition of two lines, line 7 and line 9.
 
-> {
->   "name": "git-test",
->   "version": "1.0.0",
->   "description": "This is the Git and Node basic learning project",
->   "main": "index.html",
->   "scripts": {
->     "start": "npm run lite",
->     "test": "echo "Error: no test specified" && exit 1",
->     "lite": "lite-server"
->   },
->   "repository": {
->     "type": "git",
->     "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
->   },
->   "author": "",
->   "license": "ISC",
->   "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
->   "devDependencies": {
->     "lite-server": "^2.2.2"
->   }
-> }
+```
+{
+  "name": "git-test",
+  "version": "1.0.0",
+  "description": "This is the Git and Node basic learning project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo "Error: no test specified" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+[https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git]{.underline}"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "[https://bitbucket.org/jogesh_k_muppala/git-test#readme]{.underline}",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
+```
 
 -   Next, start the development server by typing the following at the
     prompt:
 
-> npm start
+```
+$ npm start
+```
 
 -   This should open your <i>index.html</i> page in your default browser.
 
@@ -992,7 +1010,9 @@ of this exercise, you will be able to:
     (<b>Note</b>: the name starts with a period)Then, add the following to
     the .gitignore file
 
-> node_modules
+```
+$ node_modules
+```
 
 -   Then do a git commit and push the changes to the online repository.
     You will note that the node_modules folder will not be added to the
@@ -1113,7 +1133,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
-> create-react-app --help
+$ create-react-app --help
 ```
 
 <h3>Generating and Serving a React Project using create-react-app</h3>
@@ -1124,14 +1144,18 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 -   Then type the following at the prompt to create a new React
     application named <i>confusion</i>:
 
-> create-react-app confusion
+```
+$ create-react-app confusion
+```
 
 -   This should create a new folder named <i>confusion</i> within your
     <i>React</i> folder and create the React application in that folder.
 
 -   Move to the <i>confusion</i> folder and type the following at the prompt:
 
-> yarn start
+```
+$ yarn start
+```
 
 -   This will compile the project and then open a tab in your default
     browser at the address &lt;Your Computer\'s Name&gt;:3000.
@@ -1139,9 +1163,11 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 -   You can initialize your project to be a Git repository by typing the
     following commands at the prompt:
 
-> git init
-> git add .
-> git commit -m "Initial Setup"
+```
+$ git init
+$ git add .
+$ git commit -m "Initial Setup"
+```
 
 -   Thereafter you can set up an online Git repository and synchronize
     your project to the online repository. Make sure that the online Git
@@ -1367,22 +1393,30 @@ would be able to:
 -   Check to make sure that Git is installed and available on the
     command line, by typing the following at the command prompt:
 
-> git --version
+```
+$ git --version
+```
 
 -   To configure your user name to be used by Git, type the following at
     the prompt:
 
-> git config --global user.name "Your Name"
+```
+$ git config --global user.name "Your Name"
+```
 
 -   To configure your email to be used by Git, type the following at the
     prompt:
 
-> git config --global user.email <your email address>
+```
+$ git config --global user.email <your email address>
+```
 
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
-> git config --list
+```
+$ git config --list
+```
 
 <h3>Conclusions</h3>
 
@@ -1412,14 +1446,15 @@ the end of this exercise you will be able to:
 -   Add a file named <i>index.html</i> to this folder, and add the following
     HTML code to this file:
 
-> <!DOCTYPE html>
-> <html>
->     <head></head>
->
->     <body>
->         <h1>This is a Header</h1>
->     </body>
-> </html>
+```
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+       <h1>This is a Header</h1>
+    </body>
+</html>
+```
 
 <h3>Initializing the folder as a Git repository</h3>
 
@@ -1427,35 +1462,46 @@ the end of this exercise you will be able to:
     following at the prompt to initialize the folder as a Git
     repository:
 
-> git init
+```
+$ git init
+```
 
 <h3>Checking your Git repository status</h3>
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
 
-> git status
+```
+$ git status
+```
 
 <h3>Adding files to the staging area</h3>
 
 -   To add files to the staging area of your Git repository, type:
 
-> git add .
+```
+$ git add .
+```
 
 <h3>Commiting to the Git repository</h3>
 
 -   To commit the current staging area to your Git repository, type:
 
-> git commit -m "first commit"
+```
+$ git commit -m "first commit"
+```
 
 <h3>Checking the log of Git commits</h3>
 
 -   To check the log of the commits to your Git repository, type
 
-> git log --oneline
+```
+$ git log --oneline
+```
 
 -   Now, modify the <i>index.html</i> file as follows:
 
+```
 > <!DOCTYPE html>
 > <html>
 >     <head></head>
@@ -1464,28 +1510,29 @@ the end of this exercise you will be able to:
 >         <p>This is a paragraph</p>
 >     </body>
 > </html>
+```
 
--   Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
-    and then add a file named <i>test.html</i> to the templates folder. Then
-    set the contents of this file to be the same as the <i>index.html</i>
-    file above.
+<ul>
+  <li>Add a sub-folder named <b>templates</b> to your <b>git-test</b> folder,
+      and then add a file named <i>test.html</i> to the templates folder. Then
+      set the contents of this file to be the same as the <i>index.html</i>
+      file above.<br></li>
+  <li>Then check the status and add all the files to the staging area.<br></li>
+  <li>Then do the second commit to your repository<br></li>
+  <li>Now, modify the <i>index.html</i> file as follows:</li>
+</ul>
 
--   Then check the status and add all the files to the staging area.
-
--   Then do the second commit to your repository
-
--   Now, modify the <i>index.html</i> file as follows:
-
+```
 > <!DOCTYPE html>
-> <html>
->     <head></head>
->
->     <body>
->         <h1>This is a Header</h1>
->         <p>This is a paragraph</p>
->         <p>This is a second paragraph</p>
->     </body>
-> </html>
+<html>
+  <head></head>
+  <body>
+    <h1>This is a Header</h1>
+    <p>This is a paragraph</p>
+    <p>This is a second paragraph</p>
+  </body>
+</html>
+```
 
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
@@ -1496,21 +1543,33 @@ the end of this exercise you will be able to:
     of the second commit using the git log, and then type the following
     at the prompt:
 
-> git checkout <second commit's number> index.html
+```
+$ git checkout &lt;second commit's number&gt; index.html
+```
 
 <h3>Resetting the Git repository</h3>
 
--   To discard the effect of the previous operation and restore
-    index.html to its state at the end of the third commit, type:
+<ul>
+  <li>To discard the effect of the previous operation and restore
+    index.html to its state at the end of the third commit, type:</li>
+</ul>
 
-> git reset HEAD index.html
+```
+$ git reset HEAD index.html
+```
 
--   Then type the following at the prompt:
+<ul>
+  <li>Then type the following at the prompt:</li>
+</ul>
 
-> git checkout -- index.html
+```
+$ git checkout -- index.html
+```
 
--   You can also use <i>git reset</i> to reset the staging area to the last
-    commit without disturbing the working directory.
+<ul>
+  <li>You can also use <i>git reset</i> to reset the staging area to the last
+    commit without disturbing the working directory.</li>
+</ul>
 
 <h2>Conclusions</h2>
 
@@ -1551,21 +1610,27 @@ online repository. At the end of this exercise, you will be able to:
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
 
-git remote add origin <repository URL>
+```
+$ git remote add origin <repository URL>
+```
 
 <h3>Pushing your commits to the online repository</h3>
 
 -   At the prompt, type the following to push the commits to the online
     repository:
 
-> git push -u origin master
+```
+$ git push -u origin master
+```
 
 <h3>Cloning an online repository</h3>
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
 
-> git clone <repository URL>
+```
+$ git clone <repository URL>
+```
 
 <h3>Conclusions</h3>
 
@@ -1706,9 +1771,11 @@ during the installation steps.</b>
   src="./images/image002.png?raw=true"
   style="width:65%;"
   alt="." />
-![](./images/image002.png){width="6.5in" height="8.2875in"}
+<!-- ![](./images/image002.png){width="6.5in" height="8.2875in"} -->
 
-> npm -v
+```
+$ npm -v
+```
 
 <h3>Conclusions</h3>
 
@@ -1733,7 +1800,7 @@ of this exercise, you will be able to:
 -   At the command prompt in your <b>git-test</b> folder, type
 
 ```
->  $ npm init
+$ npm init
 ```
 
 -   Follow along the prompts and answer the questions as follows: accept
@@ -1750,7 +1817,7 @@ Installing an NPM Module
     this, type the following at the prompt:
 
 ```
->  $ npm install lite-server --save-dev
+$ npm install lite-server --save-dev
 ```
 
 -   You can check out more documentation on lite-server
@@ -1780,7 +1847,9 @@ Installing an NPM Module
 -   Next, start the development server by typing the following at the
     prompt:
 
-> npm start
+```
+$ npm start
+```
 
 -   This should open your <i>index.html</i> page in your default browser.
 
@@ -1795,7 +1864,7 @@ Installing an NPM Module
     the .gitignore file
 
 ```
-node_modules
+$ node_modules
 ```
 
 -   Then do a git commit and push the changes to the online repository.
@@ -2081,7 +2150,7 @@ community!
     prompt:
 
 ```
->  $ yarn global add create-react-app@1.5.2
+$ yarn global add create-react-app@1.5.2
 ```
 
 Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
@@ -2092,7 +2161,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     provides, type at the prompt:
 
 ```
->  $ create-react-app --help
+$ create-react-app --help
 ```
 
 <h3>Generating and Serving a React Project using <i>create-react-app</i></h3>
@@ -2104,7 +2173,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     application named <i>confusion</i>:
 
 ```
->  $ create-react-app confusion
+$ create-react-app confusion
 ```
 
 -   This should create a new folder named <i>confusion</i> within your
@@ -2113,7 +2182,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 -   Move to the <i>confusion</i> folder and type the following at the prompt:
 
 ```
->  $ yarn start
+$ yarn start
 ```
 
 -   This will compile the project and then open a tab in your default
@@ -2123,9 +2192,9 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
     following commands at the prompt:
 
 ```
->  $ git commit -m "Initial Setup"
->  $ git init
->  $ git add .
+$ git commit -m "Initial Setup"
+$ git init
+$ git add .
 ```
 
 -   Thereafter you can set up an online Git repository and synchronize
@@ -2163,9 +2232,9 @@ end of this exercise you will be able to:
     the prompt to install reactstrap, and Bootstrap 4:
 
 ```
->  $ yarn add bootstrap@4.0.0
->  $ yarn add reactstrap@5.0.0
->  $ yarn add react-popper@0.9.2
+$ yarn add bootstrap@4.0.0
+$ yarn add reactstrap@5.0.0
+$ yarn add react-popper@0.9.2
 ```
 
 <b>Note</b>: You can also install the same using npm using the \"npm
@@ -4205,50 +4274,54 @@ the end of this exercise you will be able to:
 >                     <div className="col-12">
 >                         <h3>{props.dish.name}</h3>
 >                         <hr />
->                     </div>                
->                 </div>
->                 <div className="row">
->                     <div className="col-12 col-md-5 m-1">
->                         <RenderDish dish={props.dish} />
->                     </div>
->                     <div className="col-12 col-md-5 m-1">
->                         <RenderComments comments={props.comments} />
->                     </div>
->                 </div>
->                 </div>
->             );
-> . . .
+                    </div>                
+                </div>
+                <div className="row">
+                    <div className="col-12 col-md-5 m-1">
+                        <RenderDish dish={props.dish} />
+                    </div>
+                    <div className="col-12 col-md-5 m-1">
+                        <RenderComments comments={props.comments} />
+                    </div>
+                </div>
+                </div>
+            );
+. . .
 ```
 
 <h3>Adding Breadcrumbs to ContactComponent</h3>
 
--   Open ContactComponent.js and add Breadcrumbs to it as follows:
+<ul>
+  <li>Open ContactComponent.js and add Breadcrumbs to it as follows:</li>
+</ul>
 
 ```
-> . . .
-> import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-> import { Link } from 'react-router-dom';
-> . . .
->             <div className="row">
->                 <Breadcrumb>
->                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
->                     <BreadcrumbItem active>Contact Us</BreadcrumbItem>
->                 </Breadcrumb>
->                 <div className="col-12">
->                     <h3>Contact Us</h3>
->                     <hr />
->                 </div>                
->             </div>
-> . . .
+. . .
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+. . .
+            <div className="row">
+                <Breadcrumb>
+                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                </Breadcrumb>
+                <div className="col-12">
+                    <h3>Contact Us</h3>
+                    <hr />
+                </div>                
+            </div>
+. . .
 ```
 
--   Save all the changes and do a Git commit with the message \"Single
-    Page Applications Part 2\".
+<ul>
+  <li>Save all the changes and do a Git commit with the message \"Single
+      Page Applications Part 2\".</li>
+</ul>
 
 <h3>Conclusions</h3>
 
-In this exercise you have seen the use of parameters within the URL to
-pass information to another component.
+<p>In this exercise you have seen the use of parameters within the URL to
+pass information to another component.</p>
 
 <h2>Single Page Applications: Additional Resources</h2>
 
@@ -4256,11 +4329,11 @@ pass information to another component.
 
 <b>5-Single-Page-Apps.pdf</b>
 
-PDF File
+<h4>PDF File</h4>
 
 <b>6-React-Router-Parameters.pdf</b>
 
-PDF File
+<h4>PDF File</h4>
 
 <h3>React Resources</h3>
 
@@ -4301,7 +4374,7 @@ You will find instructions below to submit.
 1.  [<b>Instructions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications)
 
 2.  [<b>My
-    > submission</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
+    submission</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/submit)
 
 3.  [<b>Discussions</b>](https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications/discussions)
 
@@ -4326,15 +4399,15 @@ At the end of this assignment, you should have completed the following
 tasks:
 
 -   Integrated the AboutComponent given above into the single page
-    > application.
+    application.
 
 -   Added a new functional component named &lt;RenderLeader&gt; through the
-    > RenderLeader() function to AboutComponent.js that renders the
-    > details of a given leader using the reactstrap &lt;Media&gt;
-    > component.
+    RenderLeader() function to AboutComponent.js that renders the
+    details of a given leader using the reactstrap &lt;Media&gt;
+    component.
 
 -   Construct and render the list of leaders in the About Us page using
-    > the &lt;RenderLeader&gt; component implemented above.
+    the &lt;RenderLeader&gt; component implemented above.
 
 <b>Assignment Requirements</b>
 
@@ -4349,76 +4422,74 @@ In this task you will be integrating the AboutComponent into the single
 page application:
 
 -   First, download the <i>AboutComponent.js</i> given above and move it to
-    > the components folder, and
+    the components folder, and
 
 -   Update the <i>MainComponent.js</i> file to integrate the AboutComponent
-    > into the single page application. You should be able to navigate
-    > to the AboutComponent by clicking the links in the navigation bar
-    > and the footer.
+    into the single page application. You should be able to navigate
+    to the AboutComponent by clicking the links in the navigation bar
+    and the footer.
 
 <b>Task 2</b>
 
 In this task you will implement a new functional component named
 &lt;RenderLeader&gt; through the RenderLeader() function:
 
--   The RenderLeader() function receives the details of a leader as its
-    > parameter,
-
-```{=html}
-<!-- -->
-```
--   Implement RenderLeader() function to use the Leader information
-    > received as a parameter and render the leader information as shown
-    > in the screenshot below using the reactstrap &lt;Media&gt; component.
-    > Recall how we used the &lt;Media&gt; component in the first module to
-    > render the details of a dish in the MenuComponent.
-
--   This will make available the &lt;RenderLeader&gt; component for use
-    > within your AboutComponent.
+<ul>
+  <li>The RenderLeader() function receives the details of a leader as its parameter,<br></li>
+  <li>Implement RenderLeader() function to use the Leader information received as a parameter 
+    and render the leader information as shown in the screenshot below using the reactstrap 
+	&lt;Media&gt; component. Recall how we used the &lt;Media&gt; component in the first 
+	module to render the details of a dish in the MenuComponent.<br></li>
+  <li>This will make available the &lt;RenderLeader&gt; component for use within your AboutComponent.</li>
+</ul>
 
 <b>Task 3</b>
 
 In this task you will use the &lt;RenderLeader&gt; component created in the
 previous task to render a list of leaders within your AboutComponent:
 
--   Update the leaders variable within the AboutComponent() function to
-    > make use of the &lt;RenderLeader&gt; component to render the list of
-    > leaders.
-
-![](./images/image005.png){width="4.361805555555556in"
-height="9.0in"}
+<ul>
+  <li>Update the leaders variable within the AboutComponent() function to make use of the 
+  &lt;RenderLeader&gt; component to render the list of leaders.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 05.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image005.png?raw=true"
+  style="width:45%;"
+  alt="Image005." />
+<!-- ![](./images/image005.png){width="4.361805555555556in" height="9.0in"} -->
 
 <h2>Review criteria</h2>
 
 <b>less </b>
 
-Upon completion of the assignment, your submission will be reviewed
-based on the following criteria:
+<p>Upon completion of the assignment, your submission will be reviewed based on the 
+following criteria:</p>
 
 <b>Task 1:</b>
 
 -   The AboutComponent.js file has been downloaded and integrated into
-    > our React application.
+    our React application.
 
 -   The React application has been appropriately updated to enable
-    > navigation to the About Us page of our application.
+    navigation to the About Us page of our application.
 
 <b>Task 2:</b>
 
 -   Implemented a new &lt;RenderLeader&gt; functional component in your
-    > application.
+    application.
 
-```{=html}
-<!-- -->
-```
 -   Used the reactstrap &lt;Media&gt; component to render the details of a
-    > leader.
+    leader.
 
 <b>Task 3:</b>
 
--   Updated the leaders variable within the AboutComponent() function to
-    > make use of the &lt;RenderLeader&gt; component to render the list of
-    > leaders.
+<ul>
+  <li>Updated the leaders variable within the AboutComponent() function to make use of the 
+  &lt;RenderLeader&gt; component to render the list of leaders.</li>
+</ul>
 
 <h2>Assignment 2: React Router and Single Page Applications: Additional Resources</h2>
 
@@ -4426,12 +4497,19 @@ based on the following criteria:
 
 <b>AboutComponent</b>
 
-JS File
+<h4>JS File</h4>
 
 <h3>Screenshots</h3>
 
-![](./images/image005.png){width="4.361805555555556in"
-height="9.0in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 05.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image005.png?raw=true"
+  style="width:45%;"
+  alt="Image005." />
+
+<!-- ![](./images/image005.png){width="4.361805555555556in" height="9.0in"} -->
 
 <h3>React Resources</h3>
 
@@ -5147,9 +5225,9 @@ this exercise you will be able to:
     application as follows:
 
 ```
->  $ yarn add redux@3.7.2
+$ yarn add redux@3.7.2
 >
->  $ yarn add react-redux@5.0.7
+$ yarn add react-redux@5.0.7
 ```
 
 -   Next, create a folder named <i>redux</i> in the <i>src</i> folder and then add
@@ -6328,7 +6406,7 @@ from any folder on your computer.
     the following into your browser address bar:
 
 ```
-> [http://localhost:3001/images/]{.underline}<image name>.png
+> [http://localhost:3001/images/]<image name>.png
 ```
 
 <h3>Conclusions</h3>
@@ -7110,69 +7188,61 @@ Your assignment will be assessed based on the following criteria:
 
 <b>Task 2</b>
 
--   A new postFeedback() action creator is correctly implemented to post
-    > the feedback data to the server.
-
--   The Contact component has been correctly updated to use
-    > postFeedback() to post the form data to the server.
+<ul>
+  <li>A new postFeedback() action creator is correctly implemented to post the feedback data to the server.<br></li>
+  <li>The Contact component has been correctly updated to use postFeedback() to post the form data to the server.</li>
+</ul>
 
 <b>Task 3</b>
 
--   Appropriate animation has been added to stagger the rendering of the
-    > leaders in the AboutComponent.
+<ul>
+  <li>Appropriate animation has been added to stagger the rendering of the leaders in the AboutComponent.</li>
+</ul>
 
 <h2>Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources</h2>
 
 <h3>Assignment Screenshots</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 10/11/12.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image010.png?raw=true"
+  style="width:65%;"
+  alt="Image010." />
+<img class="displayed"
+  src="./images/image011.png?raw=true"
+  style="width:65%;"
+  alt="Image011." />
+<img class="displayed"
+  src="./images/image012.png?raw=true"
+  style="width:45%;"
+  alt="Image012." />
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 10.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 12.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-![](./images/image010.png){width="6.5in"
-height="7.308333333333334in"}![](./images/image011.png){width="6.5in"
-height="7.084027777777778in"}![](./images/image012.png){width="4.454861111111111in"
-height="9.0in"}
+<!-- (./images/image010.png){width="6.5in" height="7.308333333333334in"} -->
+<!-- (./images/image011.png){width="6.5in" height="7.084027777777778in"} -->
+<!-- (./images/image012.png){width="4.454861111111111in" height="9.0in"} -->
 
 <h3>React Resources</h3>
 
--   [Redux Actions](https://redux.js.org/basics/actions)
-
--   [Redux Reducers](https://redux.js.org/basics/reducers)
-
--   [Redux Usage with
-    React](https://redux.js.org/basics/usage-with-react)
-
--   [Cross-Fetch](https://github.com/lquixada/cross-fetch)
-
-```{=html}
-<!-- -->
-```
--   [Animation Add-Ons](https://reactjs.org/docs/animation.html)
-
--   [react-transition-group](https://github.com/reactjs/react-transition-group)
-
--   [React Transition Group
-    Documents](https://reactcommunity.org/react-transition-group/)
-
--   [react-animation-components](https://github.com/unruffledBeaver/react-animation-components)
+<ul>
+  <li><a href="https://redux.js.org/basics/actions">Redux Actions</a><br></li>
+  <li><a href="https://redux.js.org/basics/reducers">Redux Reducers</a><br></li>
+  <li><a href="https://redux.js.org/basics/usage-with-react">Redux Usage with React</a><br></li>
+  <li><a href="https://github.com/lquixada/cross-fetch">Cross-Fetch</a><br></li>
+  <li><a href="https://reactjs.org/docs/animation.html">Animation Add-Ons</a><br></li>
+  <li><a href="https://github.com/reactjs/react-transition-group">react-transition-group</a><br></li>
+  <li><a href="https://reactcommunity.org/react-transition-group/">React Transition Group Documents</a><br></li>
+  <li><a href="https://github.com/unruffledBeaver/react-animation-components">react-animation-components</a></li>
+</ul>
 
 <h2>Module xx: Building and Deployment: Objectives and Outcomes</h2>
 
-In this lesson you will learn about Webpack and how react-scripts uses
-webpack to package your React application to create a distribution
-folder. At the end of this exercise you will be able to:
+<p>In this lesson you will learn about Webpack and how react-scripts uses webpack to package your React application to create a distribution folder. At the end of this exercise you will be able to:</p>
 
--   Understand the Webpack way of packaging applications into bundles
-
--   Use react-scripts to build a distribution folder with your React
-    application bundled using Webpack
+<ul>
+  <li>Understand the Webpack way of packaging applications into bundles<br></li>
+  <li>Use react-scripts to build a distribution folder with your React application bundled using Webpack</li>
+</ul>
 
 <h2>Introduction to Webpack</h2>
 
@@ -7182,49 +7252,41 @@ folder. At the end of this exercise you will be able to:
 
 <h3>Objectives and Outcomes</h3>
 
-In this exercise you will learn to use the react-scripts to build a
-distribution folder with the set of application files that can be copied
-to a server to deploy your React application. At the end of this
-exercise you will be able to:
+<p>In this exercise you will learn to use the react-scripts to build a distribution folder with the set of application files that can be copied to a server to deploy your React application. At the end of this
+exercise you will be able to:</p>
 
--   Build your React application using the react-scripts to create a
-    distribution folder
-
--   Deploy your application to a server by copying the built files to
-    your server
+<ul>
+  <li>Build your React application using the react-scripts to create a distribution folder</li>
+  <li>Deploy your application to a server by copying the built files to your server</li>
+</ul>
 
 <h3>Building the Distribution Folder</h3>
 
--   To build the distribution folder containing your React application,
-    type the following at the prompt:
+<ul>
+  <li>To build the distribution folder containing your React application, type the following at the prompt:</li>
+</ul>
 
-npm run build
+<pre>
+$ npm run build
+</pre>
 
--   This should build a distribution folder named <i>build</i> containing all
-    your application files.
+<ul>
+  <li>This should build a distribution folder named <i>build</i> containing all your application files.</li>
+</ul>
 
 <h3>Deploying your React Application</h3>
 
--   To deploy your React application you need a server. Fortunately we
-    already have the json-server available on our computer.
-
--   Copy the contents of the build folder to the public folder of your
-    json-server
-
--   Now your React application can be accessed at the link
-    <http://localhost:3001/>.
-
--   If you are setting up a server on the cloud or anywhere, all that
-    you need to do is copy the contents of the build folder to the
-    server side to deploy your React application. The exact procedure
-    depends on the cloud service provider that you choose to use. Please
-    consult their documentation to see the procedure to set up the
-    server.
+<ul>
+  <li>To deploy your React application you need a server. Fortunately we already have the json-server available on our computer.<br></li>
+  <li>Copy the contents of the build folder to the public folder of your json-server.<br></li>
+  <li>Now your React application can be accessed at the link &lt;http://localhost:3001/&gt;.<br></li>
+  <li>If you are setting up a server on the cloud or anywhere, all that you need to do is copy the contents of the build folder to the server side to deploy your React application. The exact procedure depends on the cloud service provider that you choose to use. Please consult their documentation to see the procedure to set up the server.</li>
+</ul>
 
 <h3>Conclusions</h3>
 
-In this exercise you learnt to use the react-scripts to build and deploy
-your React application.
+<p>In this exercise you learnt to use the react-scripts to build and deploy
+your React application.</p>
 
 <h2>Building and Deployment: Additional Resources</h2>
 
@@ -7236,28 +7298,19 @@ your React application.
 
 <ul>
   <li><a href="https://angular.io/docs/ts/latest/guide/webpack.html" target="_blank" rel="noopener noreferrer">Webpack: an Introduction</a></li><br>
-  <a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-build" target="_blank" rel="noopener noreferrer">Create React App Build</a></li>
+  <li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-build" target="_blank" rel="noopener noreferrer">Create React App Build</a></li>
 </ul>
 
 <h3>Other Resources</h3>
 
--   [Webpack](https://webpack.js.org/concepts/)
-
--   [Webpack on Github](https://webpack.github.io/)
+<ul>
+  <li><a href="https://webpack.js.org/concepts/">Webpack</a><br></li>
+  <li><a href="https://webpack.github.io/">Webpack on Github</a></li>
+</ul>
 
 <h2>Project Implementation: Objectives and Outcomes</h2>
 
-<p>
-This is the final stretch before you complete your project. By this time
-you should already have a good scaffolding for your website. As you
-flesh out your project and race towards completion, it is time to pause
-and take stock of the current situation. Perhaps a critical look back at
-the past, with the view of learning from our experience and
-consolidating this learning into an effective, organized and repeatable
-process is in order. Upon completion of the project it is important not
-only to demonstrate the working project, but also summarize the process
-of reaching the final goal. At the end of this lesson, you will be able
-to:</p>
+<p>This is the final stretch before you complete your project. By this time you should already have a good scaffolding for your website. As you flesh out your project and race towards completion, it is time to pause and take stock of the current situation. Perhaps a critical look back at the past, with the view of learning from our experience and consolidating this learning into an effective, organized and repeatable process is in order. Upon completion of the project it is important not only to demonstrate the working project, but also summarize the process of reaching the final goal. At the end of this lesson, you will be able to:</p>
 
 <ul>
   <li>Document the process of starting from an idea and reaching the conclusion of the project, not just the implementation, but also recognizing the process of reaching the end.</li><br>
@@ -7308,7 +7361,7 @@ to:</p>
 
 <p>You will find instructions below to submit.</p>
 
-<p>It\'s finally time to submit your Capstone project for evaluation. <br.
+<p>It's finally time to submit your Capstone project for evaluation. <br.
 You need to write a final report giving some details about your
 implementation as per the specification in the final report template. <br>
 In addition, you will also submit your source code after uploading it to
@@ -7332,9 +7385,9 @@ If your server is running on any publicly hosted server, please submit the URL o
   <li>Has the URL to the server where the project is running been provided?</li>
 </ul>
 
-..the end.
+<h5>..the end.</h5>
 
-<h6>Last updated 4-03-23 02:50am</h6>
+<h6>Last updated 4-09-23 02:44am</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ ##.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
