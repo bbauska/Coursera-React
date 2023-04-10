@@ -38,7 +38,7 @@ Instagram - https://www.instagram.com/thenetninja/
 <h2 align="center">Coursera - React</h2>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of coursera-react.bauska.net ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of coursera-react.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Coursera logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -71,6 +71,7 @@ The hands-on project on Build Your First React Website is divided into following
  9. Task 9: Debugging React
 
 <h2>Front-End Web Development with React</h2>
+
 <h7>(by The Hong Kong University of Science and Technology)</h7>
 
 <h3>Part II of Front-end web development from Coursera</h3>
@@ -119,150 +120,31 @@ The hands-on project on Build Your First React Website is divided into following
 <h4>Week 1 of 4 - Syllabus</h4>
 
 <h3>Introduction to React</h3>
-<h7>10 hrs</h7>
 
 In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
 also learn about React components and JSX.
 
-<!-- <b>21 videos (Total 234 min), 23 readings</b> -->
-<!--
-## [Welcome to Front-End Web Development with React](https://www.coursera.org/lecture/front-end-react/welcome-to-front-end-web-development-with-react-zHA5u) 10m
-## How to Use the Learning Resources 10m
-## What is Full-Stack Web Development ?5m
-## Exercise (Video): Setting up Git 6m
-## Exercise (Video): Basic Git Commands 18m
-## Exercise (Video): Online Git Repositories 12m
-## Node.js and NPM 3m
-## Exercise (Video): Setting up Node.js and NPM 2m
-## Exercise (Video): Basics of Node.js and NPM 23m
-## Front-end JavaScript Frameworks and Libraries Overview 12m
-## Introduction to React 8m
-## Exercise (Video): Getting Started with React 9m
-## React App Overview 16m
-## Introduction to JSX 5m
-## Exercise (Video): Configuring your React Application 9m
-## React Components 3m
-## Exercise (Video): React Components Part 1 24m
-## React Components: State and Props 9m
-## Exercise (Video): React Components Part 2 22m
-## React Components: Lifecycle Methods Part 1 14m
-## Assignment 1 Requirements (Video): React Components 5m
-<b>23 readings -- Chapter 1</b>
-## Welcome to Front-End Web Development with React: Additional Resources 10m
-## Full-Stack Web Development: The Big Picture: Objectives and Outcomes 10m
-## Full Stack Web Development: Additional Resources 10m
-## Setting up Your Development Environment: Git and Node: Objectives and Outcomes 10m
-## Setting up your Development Environment 10m
-## Exercise (Instructions): Setting up Git 10m
-## Exercise (Instructions): Basic Git Commands 10m
-## Exercise (Instructions): Online Git Repositories 10m
-## Exercise (Instructions): Setting up Node.js and NPM 10m
-## Exercise (Instructions): Basics of Node.js and NPM 10m
-## Setting up your Development Environment: Git and Node: Additional Resources 10m
-## Introduction to React: Objectives and Outcomes 10m
-## Exercise (Instructions): Getting Started with React 10m
-## Exercise (Instructions): Configuring your React Application 10m
-## Introduction to React: Additional Resources 10m
-## React Components: Objectives and Outcomes 10m
-## Exercise (Instructions): React Components Part 1 10m
-## Exercise (Instructions): React Components Part 2 10m
-## React Components: Additional Resources 10m
-## Assignment 1: React Components: Additional Resources 10m
-## Ideation: Objectives and Outcomes 10m
-## Ideation Report Template 10m
-## Ideation: Additional Resources 10m
--->
-
 <h4>Week 2</h4>
 
 <h3>React Router and Single Page Applications</h3>
-<h7>8 hours to complete</h7>
 
 In this week, you will learn about various component types. You will learn about React router and its use in designing single page applications. You will also learn about single page applications and use React Router to design single page applications.
 
 <!-- <b>14 videos (Total 191 min), 16 readings</b> -->
-<!--
-## [Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m
-## Exercise (Video): Presentational and Container Components 21m
-## React Components: Lifecycle Methods Part 28m
-## Functional Components 3m
-## Exercise (Video): Functional Components 14m
-## React Virtual DOM 6m
-## Exercise (Video): Header and Footer 17m
-## React Router 8m
-## Exercise (Video): React Router 36m
-## Single Page Applications 9m
-## Exercise (Video): Single Page Applications Part 1 23m
-## React Router: Parameters 6m
-## Exercise (Video): Single Page Applications Part 2 23m
-## Assignment 2: React Router and Single Page Applications 4m
-<b>16 readings</b>
-## React Component Types: Objectives and Outcomes 10m
-## Exercise (Instructions): Presentational and Container Components 10m
-## Exercise (Instructions): Functional Components 10m
-## React Component Types: Additional Resources 10m
-## React Router: Objectives and Outcomes 10m
-## Exercise (Instructions): Header and Footer 10m
-## Exercise (Instructions): React Router 10m
-## React Router: Additional Resources 10m
-## Single Page Applications: Objectives and Outcomes 10m
-## Exercise (Instructions): Single Page Applications Part 1 10m
-## Exercise (Instructions): Single Page Applications Part 2 10m
-## Single Page Applications: Additional Resources 10m
-## Assignment 2: React Router and Single Page Applications: Additional Resources 10m
-## UI Design and Prototyping: Objectives and Outcomes 10m
-## UI Design and Prototyping Report Template 10m
-## UI Design and Prototyping: Additional Resources 10m
--->
 
 <h4>Week 3</h4>
 
 <h3>React Forms, Flow Architecture and Introduction to Redux</h3>
-<h7>7 hours to complete</h7>
 
 In this module you will be introduced to uncontrolled and controlled
 forms and briefly examine form validation in React applications. You
 will get an overview of the Flux architecture and introduced to Redux as
 a way of realizing the flux architecture
 
-<!--
-<b>13 videos (Total 188 min), 15 readings</b>
-## [Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m
-## Exercise (Video): Controlled Forms 35m
-## Exercise (Video): Controlled Form Validation 23m
-## Uncontrolled Components 2m
-## Exercise (Video): Uncontrolled Forms 17m
-## The Model-View-Controller Framework 7m
-## The Flux Architecture 11m
-## Introduction to Redux 20m
-## Exercise (Video): Introduction to Redux 23m
-## React Redux Forms 4m
-## Exercise (Video): React Redux Form 13m
-## Exercise (Video): React Redux Form Validation 15m
-## Assignment 3: React Forms and Redux 5m
-<b>15 readings</b>
-## Controlled Forms: Objectives and Oute 10m
-## Exercise (Instructions): Controlled Forms 10m
-## Exercise (Instructions): Controlled Form Validation 10m
-## Controlled Forms: Additional Resources 10m
-## Uncontrolled Forms: Objectives and Outcomes 10m
-## Exercise (Instructions): Uncontrolled Forms 10m
-## Uncontrolled Forms: Additional Resources 10m
-## Introduction to Redux: Objectives and Outcomes 10m
-## Exercise (Instructions): Introduction to Redux 10m
-## Introduction to Redux: Additional Resources 10m
-## React Redux Form: Objectives and Outcomes 10m
-## Exercise (Instructions): React Redux Form 10m
-## Exercise (Instructions): React Redux Form Validation 10m
-## React Redux Form: Additional Resources 10m
-## Assignment 3: React Forms and Redux: Additional Resources 10m
--->
-
 <h4>Week 4</h4>
 
 <h3>More Redux and Client-Server Communication</h3>
-<h7>12 hours to complete</h7>
 
 In this module you will explore Redux further including Redux action,
 combining reducers, and Redux thunk, client-server communication using
@@ -270,56 +152,6 @@ Fetch and the REST API. You will get a brief introduction to animation
 in React. You will also learn about testing, building and deploying
 React applications.
 
-<!--
-<b>20 videos (Total 312 min), 26 readings</b>
-## [Redux Actions](https://www.coursera.org/lecture/front-end-react/redux-actions-hUr1y) 8m
-## Exercise (Video): Combining Reducers 9m
-## Exercise (Video): Redux Actions 24m
-## Redux Thunk 10m
-## Exercise (Video): Redux Thunk 50m
-## Exercise (Video): React-Redux-Form Revisited 12m
-## Networking Essentials 17m
-## Brief Representational State Transfer (REST) 16m
-## Exercise (Video): Setting up a Server using json-server 6m
-## Promises 10m
-## Fetch 20m
-## Exercise (Video): Fetch from Server 33m
-## Exercise (Video): Fetch Handling Errors 15m
-## Exercise (Video): Fetch Post Comment 18m
-## React Animations 13m
-## Exercise (Video): React Animations 9m
-## Exercise (Video): React Animation Components 9m
-## Assignment 4: Redux, Client-Server Communication and Fetch 4m
-## Introduction to Webpack 7m
-## Exercise (Video): Building and Deploying the React Application 11m
-<b>26 readings</b>
-## Redux Actions: Objectives and Outcomes 10m
-## Exercise (Instructions): Combining Reducers 10m
-## Exercise (Instructions): Redux Actions 10m
-## Redux Actions: Additional Resources 10m
-## Redux Thunk: Objectives and Outcomes 10m
-## Exercise (Instructions): Redux Thunk 10m
-## Exercise (Instructions): React-Redux-Form Revisited 10m
-## Redux Thunk: Additional Resources 10m
-## Client-Server Communication: Objectives and Outcomes 10m
-## Exercise (Instructions): Setting up a Server using json-server 10m
-## Client-Server Communication: Additional Resources 10m
-## Fetch: Objectives and Outcomes 10m
-## Exercise (Instructions): Fetch from Server 10m
-## Exercise (Instructions): Fetch Handling Errors 10m
-## Exercise (Instructions): Fetch Post Comment 10m
-## Fetch: Additional Resources 10m
-## React Animations: Objectives and Outcomes 10m
-## Exercise (Instructions): React Animations 10m
-## Exercise (Instructions): React Animation Components 10m
-## React Animations: Additional Resources 10m
-## Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources 10m
-## Building and Deployment: Objectives and Outcomes 10m
-## Exercise (Instructions): Building and Deploying the React Application 10m
-## Building and Deployment: Additional Resources 10m
-## Project Implementation: Objectives and Outcomes 10m
-## Final Report Template 10m
--->
 
 This course explores Javascript based front-end application development,
 and in particular the React library (Currently Ver. 16.3).
@@ -370,9 +202,9 @@ strongly recommended.
 
 <https://reactjs.org/>
 
-# React ...the beginning...
+<h1>React ...the beginning...</h1>
 
-## Module 1: Full Stack Web Development: The Big Picture: Objectives and Outcomes
+<h2>Module 1: Full Stack Web Development: The Big Picture: Objectives and Outcomes</h2>
 
 This lesson gives you a big picture view of the Full Stack Web
 Development. The lecture gives you an overview of full stack web
@@ -407,35 +239,32 @@ also learn about React components and JSX.
 -   Express what is meant by full-stack web development
 
 <h3>Welcome to Front-End Web Development with React</h3>
-<h7>10m</h7>
 
 <h4>PDFs of Presentations</h4>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a></li>
-
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 <ul>
-<li><a href="https://reactjs.org/">React Site</a></li>
+  <li><a href="https://reactjs.org/">React Site</a></li>
 </ul>
-<!-- -   [React Site](https://reactjs.org/) -->
 
-### Coursera Resources
+<h3>Coursera Resources</h3>
 
 -   [Coursera Learner Help](https://learner.coursera.help/hc/en-us)
 
 -   [Switching to a Different
     Session](https://learner.coursera.help/hc/en-us/articles/208279776)
 
-## How to Use the Learning Resources 10m
+<h2>How to Use the Learning Resources 10m</h2>
 
 <b>Module 2: What is Full-Stack Web Development?</b>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 This lesson gives you a big picture view of the Full Stack Web
 Development. The lecture gives you an overview of full stack web
@@ -450,11 +279,11 @@ development. At the end of this lesson, you will be able to:
 -   Understand the position of this course in the context of this
     specialization
 
-## Full Stack Web Development: Additional Resources
+<h2>Full Stack Web Development: Additional Resources</h2>
 
 <b>Exercise (Video): Setting up Git</b>
 
-### Useful Links
+<h3>Useful Links</h3>
 
 -   [What is a Full Stack
     developer?](http://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/)
@@ -471,7 +300,7 @@ development. At the end of this lesson, you will be able to:
 -   [What is the 3-Tier
     Architecture?](http://www.tonymarston.net/php-mysql/3-tier-architecture.html)
 
-## Module 3: Setting up Your Development Environment: Git and Node: Objectives and Outcomes
+<h2>Module 3: Setting up Your Development Environment: Git and Node: Objectives and Outcomes</h2>
 
 At the end of this lesson, you should have set up Git and Node.js on
 your computer. You can skip this lesson if you have already completed
@@ -484,9 +313,9 @@ this lesson, you will be able to:
 
 -   Use Node-based modules to perform basic operations.
 
-### Setting up your Development Environment
+<h3>Setting up your Development Environment</h3>
 
-### Software Requirements
+<h3>Software Requirements</h3>
 
 1.  <b>Text editor of your choice</b>: Any text editor that you are already
     familiar with can be used for editing the project files. I will be
@@ -525,11 +354,11 @@ the end of the exercises, unless otherwise instructed. You may wish to
 set up your exercise folder as a Git repository and commit the files to
 the repository at the end of each exercise.
 
-## Exercise (Video): Setting up Git
+<h2>Exercise (Video): Setting up Git</h2>
 
-## Exercise (Instructions): Setting up Git
+<h2>Exercise (Instructions): Setting up Git</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to install Git on your computer. Git is
 required for using all the remaining Node.js and Node based tools that
@@ -543,7 +372,7 @@ would be able to:
 
 -   Set up some of the basic global configuration for Git
 
-### Downloading and Installing Git
+<h3>Downloading and Installing Git</h3>
 
 -   To install Git on your computer, go to
     <https://git-scm.com/downloads> to download the Git installer for
@@ -565,7 +394,7 @@ would be able to:
 
 -   You can choose any of the methods that is most convenient for you.
 
-### Some Global Configuration for Git
+<h3>Some Global Configuration for Git</h3>
 
 -   Open a cmd window or terminal on your computer.
 
@@ -593,20 +422,20 @@ $ git config --global user.email <your email address>
 -   You can check your default Git global configuration, you can type
     the following at the prompt:
 
-## Exercise (Video): Basic Git Commands
+<h2>Exercise (Video): Basic Git Commands</h2>
 
 ```dos
 $ git config --list
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 At the end of this exercise you should have Git available on the
 command-line of your computer.
 
-## Exercise (Instructions): Basic Git Commands
+<h2>Exercise (Instructions): Basic Git Commands</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will get familiar with some basic Git commands. At
 the end of this exercise, you will be able to:
@@ -615,7 +444,7 @@ the end of this exercise, you will be able to:
 
 -   Perform basic Git operations on your Git repository
 
-## Basic Git Commands
+<h2>Basic Git Commands</h2>
 
 -   At a convenient location on your computer, create a folder named
     <b>git-test</b>.
@@ -645,7 +474,7 @@ Initializing the folder as a Git repository
 $ git init
 ```
 
-### Checking your Git repository status
+<h3>Checking your Git repository status</h3>
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
@@ -717,7 +546,7 @@ $ git log --oneline
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
 
-### Checking out a file from an earlier commit
+<h3>Checking out a file from an earlier commit</h3>
 
 -   To check out the index.html from the second commit, find the number
     of the second commit using the git log, and then type the following
@@ -727,7 +556,7 @@ $ git log --oneline
 $ git checkout <second commit's number> index.html
 ```
 
-### Resetting the Git repository
+<h3>Resetting the Git repository</h3>
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
@@ -745,17 +574,17 @@ $ git checkout -- index.html
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 At the end of this exercise, you should have learnt some basic Git
 commands. Experiment with these commands until you fully understand how
 to use Git.
 
-## Exercise (Video): Online Git Repositories
+<h2>Exercise (Video): Online Git Repositories</h2>
 
-## Exercise (Instructions): Online Git Repositories
+<h2>Exercise (Instructions): Online Git Repositories</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn about how to set up and use an online
 Git repository and synchronize your local Git repository with your
@@ -768,7 +597,7 @@ online repository. At the end of this exercise, you will be able to:
 
 -   Clone an online Git repository to your computer
 
-### Setting up an Online Git repository
+<h3>Setting up an Online Git repository</h3>
 
 -   Sign up for an account either at Bitbucket
     ([https://bitbucket.org](https://bitbucket.org/)) or GitHub
@@ -779,7 +608,7 @@ online repository. At the end of this exercise, you will be able to:
     GitHub requires a paid account, and is not available for free
     accounts.
 
-### Set the local Git repository to set its remote origin
+<h3>Set the local Git repository to set its remote origin</h3>
 
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
@@ -788,7 +617,7 @@ online repository. At the end of this exercise, you will be able to:
 $ git remote add origin <repository URL>
 ```
 
-### Pushing your commits to the online repository
+<h3>Pushing your commits to the online repository</h3>
 
 -   At the prompt, type the following to push the commits to the online
     repository:
@@ -797,7 +626,7 @@ $ git remote add origin <repository URL>
 $ git push -u origin master
 ```
 
-### Cloning an online repository
+<h3>Cloning an online repository</h3>
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
@@ -806,23 +635,23 @@ $ git push -u origin master
 $ git clone <repository URL>
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have learnt to set up an online Git repository,
 synchronize your local repository with the remote repository, and clone
 an online repository.
 
-## Module 4: Node.js and NPM
+<h2>Module 4: Node.js and NPM</h2>
 
-## Exercise (Video): Setting up Node.js and NPM
+<h2>Exercise (Video): Setting up Node.js and NPM</h2>
 
-## Exercise (Instructions): Setting up Node.js and NPM
+<h2>Exercise (Instructions): Setting up Node.js and NPM</h2>
 
 <b>Note: Make sure you have installed Git on your machine before you
 install Node.js. Please complete the previous Git installation exercise
 before proceeding with this exercise.</b>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise, you will learn to set up the Node.js environment, a
 popular Javascript based server framework, and node package manager
@@ -838,7 +667,7 @@ will be able to:
 -   Verify that the installation was successful and your machine is
     ready for using Node.js and NPM.
 
-### Installing Node
+<h3>Installing Node</h3>
 
 -   To install Node on your machine, go to
     [https://nodejs.org](https://nodejs.org/) and click on the Download
@@ -856,7 +685,7 @@ will be able to:
 environmental variable in case you forgot to turn on the add to PATH
 during the installation steps.</b>
 
-### Verifying the Node Installation
+<h3>Verifying the Node Installation</h3>
 
 -   Open a terminal window on your machine. If you are using a Windows
     machine, open a cmd window or PowerShell window with <b>admin</b>
@@ -881,17 +710,17 @@ $ node -v
 $ npm -v
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 At the end of this exercise, your machine is now ready with the Node
 installed for further development. We will examine web development tools
 next.
 
-## Exercise (Video): Basics of Node.js and NPM
+<h2>Exercise (Video): Basics of Node.js and NPM</h2>
 
-## Exercise (Instructions): Basics of Node.js and NPM
+<h2>Exercise (Instructions): Basics of Node.js and NPM</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn the basics of Node and NPM. At the end
 of this exercise, you will be able to:
@@ -901,7 +730,7 @@ of this exercise, you will be able to:
 
 -   Install a NPM module and make use of it within your project
 
-### Initializing package.json
+<h3>Initializing package.json</h3>
 
 -   At the command prompt in your <b>git-test</b> folder, type
 
@@ -916,7 +745,7 @@ $ npm init
 -   This should create a <i>package.json</i> file in your <b>git-test</b>
     folder.
 
-### Installing an NPM Module
+<h3>Installing an NPM Module</h3>
 
 -   Install an NPM module, lite-server, that allows you to run a Node.js
     based development web server and serve up your project files. To do
@@ -969,7 +798,7 @@ $ npm start
     and save, the browser should immediately refresh to reflect the
     changes.
 
-### Setting up .gitignore
+<h3>Setting up .gitignore</h3>
 
 -   Next, create a file in your project directory named <i>.gitignore</i>
     (<b>Note</b>: the name starts with a period)Then, add the following to
@@ -983,14 +812,14 @@ $ node_modules
     You will note that the node_modules folder will not be added to the
     commit, and will not be uploaded to the repository.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt to set up package.json, install a npm
 package and start a development server.
 
-## Setting up your Development Environment: Git and Node: Additional Resources
+<h2>Setting up your Development Environment: Git and Node: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <b>Git.pdf</b>
 
@@ -1000,7 +829,7 @@ package and start a development server.
 
 <b>Exercises-Node-NPM.pdf</b>
 
-### Additional Resources (Git)
+<h3>Additional Resources (Git)</h3>
 
 -   Git site [http://git-scm.com](http://git-scm.com/).
 
@@ -1018,7 +847,7 @@ package and start a development server.
 -   [Atlassian comprehensive Git
     tutorial](https://www.atlassian.com/git/tutorials/)
 
-### Additional Resources (Node.js and NPM)
+<h3>Additional Resources (Node.js and NPM)</h3>
 
 -   [Nodejs.org](https://nodejs.org/)
 
@@ -1030,7 +859,7 @@ package and start a development server.
 
 -   [lite-server](https://github.com/johnpapa/lite-server)
 
-## Module 4: Introduction to React: Objectives and Outcomes
+<h2>Module 4: Introduction to React: Objectives and Outcomes</h2>
 
 In this lesson you will be given a quick overview of JavaScript
 frameworks and libraries and then introduced to React in particular. We
@@ -1045,15 +874,15 @@ lesson, you will be able to:
 -   Scaffold out a starter React application using <i>create-react-app</i>,
     the command line tool
 
-## Front-end JavaScript Frameworks and Libraries Overview
+<h2>Front-end JavaScript Frameworks and Libraries Overview</h2>
 
-## Introduction to React
+<h2>Introduction to React</h2>
 
-## Exercise (Video): Getting Started with React
+<h2>Exercise (Video): Getting Started with React</h2>
 
-## Exercise (Instructions): Getting Started with React
+<h2>Exercise (Instructions): Getting Started with React</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this first React exercise, you will first install <i>create-react-app</i>,
 the command line tool for scaffolding React applications. You will then
@@ -1066,7 +895,7 @@ end of this exercise you will be able to:
 
 -   Scaffold out a basic React application
 
-### Installing Yarn
+<h3>Installing Yarn</h3>
 
 -   Yarn is another package manager like NPM, but is better suited and
     faster to work with for React applications. So let us install yarn
@@ -1078,7 +907,7 @@ end of this exercise you will be able to:
 -   If you choose not to install Yarn, you can continue to use npm in
     place of yarn without any problem.
 
-### Installing create-react-app
+<h3>Installing create-react-app</h3>
 
 From the React documentation we learn that the <i>create-react-app</i> CLI
 makes it easy to create an application that already works, right out of
@@ -1103,7 +932,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 $ create-react-app --help
 ```
 
-### Generating and Serving a React Project using create-react-app
+<h3>Generating and Serving a React Project using create-react-app</h3>
 
 -   At a convenient location on your computer, create a folder named
     <i>React</i> and move into that folder.
@@ -1140,19 +969,19 @@ $ git commit -m "Initial Setup"
     your project to the online repository. Make sure that the online Git
     repository is a <b><i>private</i></b> repository.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you installed the create-react-app CLI tool and created
 a basic React project and served up the compiled project to your
 browser.
 
-## React App Overview
+<h2>React App Overview</h2>
 
-## Introduction to JSX
+<h2>Introduction to JSX</h2>
 
-## Setting up your Development Environment
+<h2>Setting up your Development Environment</h2>
 
-### Software Requirements
+<h3>Software Requirements</h3>
 
 1.  <b>Text editor of your choice</b>: Any text editor that you are already
     familiar with can be used for editing the project files. I will be
@@ -1188,30 +1017,30 @@ browser.
 
 <b>8 hours to complete</b>
 
-## React Router and Single Page Applications
+<h2>React Router and Single Page Applications</h2>
 
 In this week, you will learn about various component types. You will
 learn about React router and its use in designing single page
 applications. You will also learn about single page applications and use
 React Router to design single page applications.
 
-## [Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m
+<h2>[Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m</h2>
 
 
-## React Forms, Flow Architecture and Introduction to Redux
+<h2>React Forms, Flow Architecture and Introduction to Redux</h2>
 
 In this module you will be introduced to uncontrolled and controlled
 forms and briefly examine form validation in React applications. You
 will get an overview of the Flux architecture and introduced to Redux as
 a way of realizing the flux architecture.
 
-### [Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m
+<h3>[Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m</h3>
 
 <h1>WEEK # 4</h1>
 
 <b>12 hours to complete</b>
 
-## More Redux and Client-Server Communication
+<h2>More Redux and Client-Server Communication</h2>
 
 In this module you will explore Redux further including Redux action,
 combining reducers, and Redux thunk, client-server communication using
@@ -1219,105 +1048,11 @@ Fetch and the REST API. You will get a brief introduction to animation
 in React. You will also learn about testing, building and deploying
 React applications.
 
-## [Redux Actions](https://www.coursera.org/lecture/front-end-react/redux-actions-hUr1y) 8m
+<h2>[Redux Actions](https://www.coursera.org/lecture/front-end-react/redux-actions-hUr1y) 8m</h2>
 
-## Exercise (Video): Combining Reducers 9m
+<h2>Exercise (Instructions): Setting up Git</h2>
 
-## Exercise (Video): Redux Actions 24m
-
-## Redux Thunk 10m
-
-## Exercise (Video): Redux Thunk 50m
-
-## Exercise (Video): React-Redux-Form Revisited 12m
-
-Networking Essentials 17m
-
-Brief Representational State Transfer (REST) 16m
-
-Exercise (Video): Setting up a Server using json-server 6m
-
-Promises 10m
-
-Fetch 20m
-
-Exercise (Video): Fetch from Server 33m
-
-Exercise (Video): Fetch Handling Errors 15m
-
-Exercise (Video): Fetch Post Comment 18m
-
-React Animations 13m
-
-Exercise (Video): React Animations 9m
-
-Exercise (Video): React Animation Components 9m
-
-Assignment 4: Redux, Client-Server Communication and Fetch 4m
-
-Introduction to Webpack 7m
-
-Exercise (Video): Building and Deploying the React Application 11m
-
-<b>26 readings</b>
-
-Redux Actions: Objectives and Outcomes 10m
-
-Exercise (Instructions): Combining Reducers 10m
-
-Exercise (Instructions): Redux Actions 10m
-
-Redux Actions: Additional Resources 10m
-
-Redux Thunk: Objectives and Outcomes 10m
-
-Exercise (Instructions): Redux Thunk 10m
-
-Exercise (Instructions): React-Redux-Form Revisited 10m
-
-Redux Thunk: Additional Resources 10m
-
-Client-Server Communication: Objectives and Outcomes 10m
-
-Exercise (Instructions): Setting up a Server using json-server 10m
-
-Client-Server Communication: Additional Resources 10m
-
-Fetch: Objectives and Outcomes 10m
-
-Exercise (Instructions): Fetch from Server 10m
-
-Exercise (Instructions): Fetch Handling Errors 10m
-
-Exercise (Instructions): Fetch Post Comment 10m
-
-Fetch: Additional Resources 10m
-
-React Animations: Objectives and Outcomes 10m
-
-Exercise (Instructions): React Animations 10m
-
-Exercise (Instructions): React Animation Components 10m
-
-React Animations: Additional Resources 10m
-
-Assignment 4: Redux, Client-Server Communication and Fetch: Additional
-Resources 10m
-
-Building and Deployment: Objectives and Outcomes 10m
-
-Exercise (Instructions): Building and Deploying the React Application
-10m
-
-Building and Deployment: Additional Resources 10m
-
-Project Implementation: Objectives and Outcomes 10m
-
-Final Report Template 10m
-
-# Exercise (Instructions): Setting up Git
-
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to install Git on your computer. Git is
 required for using all the remaining Node.js and Node based tools that
@@ -1331,7 +1066,7 @@ would be able to:
 
 -   Set up some of the basic global configuration for Git
 
-### Downloading and Installing Git
+<h3>Downloading and Installing Git</h3>
 
 -   To install Git on your computer, go to
     <https://git-scm.com/downloads> to download the Git installer for
@@ -1353,7 +1088,7 @@ would be able to:
 
 -   You can choose any of the methods that is most convenient for you.
 
-### Some Global Configuration for Git
+<h3>Some Global Configuration for Git</h3>
 
 -   Open a cmd window or terminal on your computer.
 
@@ -1385,16 +1120,16 @@ $ git config --global user.email <your email address>
 $ git config --list
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 At the end of this exercise you should have Git available on the
 command-line of your computer.
 
-### Exercise (Video): Basic Git Commands
+<h3>Exercise (Video): Basic Git Commands</h3>
 
-## Exercise (Instructions): Basic Git Commands
+<h2>Exercise (Instructions): Basic Git Commands</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will get familiar with some basic Git commands. At
 the end of this exercise you will be able to:
@@ -1403,7 +1138,7 @@ the end of this exercise you will be able to:
 
 -   Perform basic Git operations on your Git repository
 
-### Basic Git Commands
+<h3>Basic Git Commands</h3>
 
 -   At a convenient location on your computer, create a folder named
     <b>git-test</b>.
@@ -1423,7 +1158,7 @@ the end of this exercise you will be able to:
 </html>
 ```
 
-### Initializing the folder as a Git repository
+<h3>Initializing the folder as a Git repository</h3>
 
 -   Go to the git-test folder in your cmd window/terminal and type the
     following at the prompt to initialize the folder as a Git
@@ -1433,7 +1168,7 @@ the end of this exercise you will be able to:
 $ git init
 ```
 
-### Checking your Git repository status
+<h3>Checking your Git repository status</h3>
 
 -   Type the following at the prompt to check your Git repository\'s
     status:
@@ -1442,7 +1177,7 @@ $ git init
 $ git status
 ```
 
-### Adding files to the staging area
+<h3>Adding files to the staging area</h3>
 
 -   To add files to the staging area of your Git repository, type:
 
@@ -1450,7 +1185,7 @@ $ git status
 $ git add .
 ```
 
-### Commiting to the Git repository
+<h3>Commiting to the Git repository</h3>
 
 -   To commit the current staging area to your Git repository, type:
 
@@ -1458,7 +1193,7 @@ $ git add .
 $ git commit -m "first commit"
 ```
 
-### Checking the log of Git commits
+<h3>Checking the log of Git commits</h3>
 
 -   To check the log of the commits to your Git repository, type
 
@@ -1506,7 +1241,7 @@ $ git log --oneline
 -   Now add the modified index.html file to the staging area and then do
     a third commit.
 
-### Checking out a file from an earlier commit
+<h3>Checking out a file from an earlier commit</h3>
 
 -   To check out the index.html from the second commit, find the number
     of the second commit using the git log, and then type the following
@@ -1516,7 +1251,7 @@ $ git log --oneline
 $ git checkout <second commit's number> index.html
 ```
 
-### Resetting the Git repository
+<h3>Resetting the Git repository</h3>
 
 -   To discard the effect of the previous operation and restore
     index.html to its state at the end of the third commit, type:
@@ -1534,17 +1269,17 @@ $ git checkout -- index.html
 -   You can also use <i>git reset</i> to reset the staging area to the last
     commit without disturbing the working directory.
 
-## Conclusions
+<h2>Conclusions</h2>
 
 At the end of this exercise you should have learnt some basic Git
 commands. Experiment with these commands until you fully understand how
 to use Git.
 
-## Online Git Repositories
+<h2>Online Git Repositories</h2>
 
-## Exercise (Instructions): Online Git Repositories
+<h2>Exercise (Instructions): Online Git Repositories</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn about how to set up and use an online
 Git repository and synchronize your local Git repository with your
@@ -1557,7 +1292,7 @@ online repository. At the end of this exercise, you will be able to:
 
 -   Clone an online Git repository to your computer
 
-### Setting up an Online Git repository
+<h3>Setting up an Online Git repository</h3>
 
 -   Sign up for an account either at Bitbucket
     ([https://bitbucket.org](https://bitbucket.org/)) or GitHub
@@ -1568,7 +1303,7 @@ online repository. At the end of this exercise, you will be able to:
     GitHub requires a paid account, and is not available for free
     accounts.
 
-### Set the local Git repository to set its remote origin
+<h3>Set the local Git repository to set its remote origin</h3>
 
 -   At the prompt, type the following to set up your local repository to
     link to your online Git repository:
@@ -1577,7 +1312,7 @@ online repository. At the end of this exercise, you will be able to:
 $ git remote add origin <repository URL>
 ```
 
-### Pushing your commits to the online repository
+<h3>Pushing your commits to the online repository</h3>
 
 -   At the prompt, type the following to push the commits to the online
     repository:
@@ -1586,7 +1321,7 @@ $ git remote add origin <repository URL>
 $ git push -u origin master
 ```
 
-### Cloning an online repository
+<h3>Cloning an online repository</h3>
 
 -   To clone an online repository to your computer, type the following
     at the prompt:
@@ -1595,13 +1330,13 @@ $ git push -u origin master
 $ git clone <repository URL>
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have learnt to set up an online Git repository,
 synchronize your local repository with the remote repository, and clone
 an online repository.
 
-## Node.js and NPM
+<h2>Node.js and NPM</h2>
 
 JavaScript which was designed as a scripting language for the
 browser, has seen deployment far beyond the browser. 
@@ -1678,15 +1413,15 @@ module. 
 We will look at how we can use the package.json file in more detail in
 the subsequent exercises.
 
-## Exercise (Video): Setting up Node.js and NPM
+<h2>Exercise (Video): Setting up Node.js and NPM</h2>
 
-## Exercise (Instructions): Setting up Node.js and NPM
+<h2>Exercise (Instructions): Setting up Node.js and NPM</h2>
 
 <b>Note: Make sure you have installed Git on your machine before you
 install Node.js. Please complete the previous Git installation exercise
 before proceeding with this exercise.</b>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise, you will learn to set up the Node.js environment, a
 popular Javascript based server framework, and node package manager
@@ -1702,7 +1437,7 @@ will be able to:
 -   Verify that the installation was successful and your machine is
     ready for using Node.js and NPM.
 
-### Installing Node
+<h3>Installing Node</h3>
 
 -   To install Node on your machine, go to
     [https://nodejs.org](https://nodejs.org/) and click on the Download
@@ -1720,7 +1455,7 @@ will be able to:
 environmental variable in case you forgot to turn on the add to PATH
 during the installation steps.</b>
 
-### Verifying the Node Installation
+<h3>Verifying the Node Installation</h3>
 
 -   Open a terminal window on your machine. If you are using a Windows
     machine, open a cmd window or PowerShell window with <b>admin</b>
@@ -1736,15 +1471,15 @@ during the installation steps.</b>
 $ npm -v
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 At the end of this exercise, your machine is now ready with the Node
 installed for further development. We will examine web development tools
 next.
 
-### Exercise (Instructions): Basics of Node.js and NPM
+<h3>Exercise (Instructions): Basics of Node.js and NPM</h3>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn the basics of Node and NPM. At the end
 of this exercise, you will be able to:
@@ -1754,11 +1489,13 @@ of this exercise, you will be able to:
 
 -   Install a NPM module and make use of it within your project
 
-### Initializing package.json
+<h3>Initializing package.json</h3>
 
 -   At the command prompt in your <b>git-test</b> folder, type
 
+```
 $ npm init
+```
 
 -   Follow along the prompts and answer the questions as follows: accept
     the default values for most of the entries, except set the entry
@@ -1814,7 +1551,7 @@ $ npm start
     and save, the browser should immediately refresh to reflect the
     changes.
 
-### Setting up .gitignore
+<h3>Setting up .gitignore</h3>
 
 -   Next, create a file in your project directory named <i>.gitignore</i>
     (<b>Note</b>: the name starts with a period)Then, add the following to
@@ -1828,14 +1565,14 @@ $ node_modules
     You will note that the node_modules folder will not be added to the
     commit, and will not be uploaded to the repository.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt to set up package.json, install a npm
 package and start a development server.
 
-### Setting up your Development Environment: Git and Node: Additional Resources
+<h3>Setting up your Development Environment: Git and Node: Additional Resources</h3>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <b>Git.pdf</b>
 
@@ -1853,7 +1590,7 @@ PDF File
 
 PDF File
 
-### Additional Resources (Git)
+<h3>Additional Resources (Git)</h3>
 
 ```
 $ git site [http://git-scm.com](http://git-scm.com/).
@@ -1873,7 +1610,7 @@ $ git site [http://git-scm.com](http://git-scm.com/).
 -   [Atlassian comprehensive Git
     tutorial](https://www.atlassian.com/git/tutorials/)
 
-### Additional Resources (Node.js and NPM)
+<h3>Additional Resources (Node.js and NPM)</h3>
 
 -   [Nodejs.org](https://nodejs.org/)
 
@@ -1885,7 +1622,7 @@ $ git site [http://git-scm.com](http://git-scm.com/).
 
 -   [lite-server](https://github.com/johnpapa/lite-server)
 
-## Introduction to React: Objectives and Outcomes
+<h2>Introduction to React: Objectives and Outcomes</h2>
 
 In this lesson you will be given a quick overview of JavaScript
 frameworks and libraries and then introduced to React in particular. We
@@ -1900,9 +1637,9 @@ lesson, you will be able to:
 -   Scaffold out a starter React application using <i>create-react-app</i>,
     the command line tool
 
-### Front-end JavaScript Frameworks and Libraries Overview
+<h3>Front-end JavaScript Frameworks and Libraries Overview</h3>
 
-## Introduction to React
+<h2>Introduction to React</h2>
 
 We ended the previous lecture with a question, is React a library or is
 it a framework and what exactly is React? 
@@ -2061,7 +1798,7 @@ create-react-app, which we will use to scaffold out our very first React
 application in the first exercise, and then we will start building upon
 this application throughout the remaining exercises of this course.
 
-## Exercise (Video): Getting Started with React
+<h2>Exercise (Video): Getting Started with React</h2>
 
 Now that we have examined React briefly in the previous two lectures,
 I\'m sure you\'re curious about getting started with React, getting your
@@ -2071,9 +1808,9 @@ So, in this exercise, we will look at how we will get started with
 React. I\'m sure by now your computer is already configured with Note
 and you have access to NPM, the package manager that comes with Note.
 
-## Exercise (Instructions): Getting Started with React
+<h2>Exercise (Instructions): Getting Started with React</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this first React exercise, you will first install <i>create-react-app</i>,
 the command line tool for scaffolding React applications. You will then
@@ -2086,7 +1823,7 @@ end of this exercise you will be able to:
 
 -   Scaffold out a basic React application
 
-### Installing Yarn
+<h3>Installing Yarn</h3>
 
 -   Yarn is another package manager like NPM, but is better suited and
     faster to work with for React applications. So let us install yarn
@@ -2098,7 +1835,7 @@ end of this exercise you will be able to:
 -   If you choose not to install Yarn, you can continue to use npm in
     place of yarn without any problem.
 
-### Installing <i>create-react-app</i>
+<h3>Installing <i>create-react-app</i></h3>
 
 From the React documentation we learn that the <i>create-react-app</i> CLI
 makes it easy to create an application that already works, right out of
@@ -2123,7 +1860,7 @@ Use <i>sudo</i> on a Mac and Linux. Alternately you can use npm, by typing
 $ create-react-app --help
 ```
 
-### Generating and Serving a React Project using <i>create-react-app</i>
+<h3>Generating and Serving a React Project using <i>create-react-app</i></h3>
 
 -   At a convenient location on your computer, create a folder named
     <i>React</i> and move into that folder.
@@ -2160,21 +1897,21 @@ $ git add .
     your project to the online repository. Make sure that the online Git
     repository is a <b><i>private</i></b> repository.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you installed the create-react-app CLI tool and created
 a basic React project and served up the compiled project to your
 browser.
 
-## React App Overview
+<h2>React App Overview</h2>
 
-## Introduction to JSX
+<h2>Introduction to JSX</h2>
 
-## Exercise (Video): Configuring your React Application
+<h2>Exercise (Video): Configuring your React Application</h2>
 
-## Exercise (Instructions): Configuring your React Application
+<h2>Exercise (Instructions): Configuring your React Application</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we will set up our project to use Reactstrap (a package
 supporting easy to use React based Bootstrap 4 components). We will then
@@ -2185,7 +1922,7 @@ end of this exercise you will be able to:
 
 -   Start using reactstrap components in your application.
 
-### Configure your React Project to use Reactstrap
+<h3>Configure your React Project to use Reactstrap</h3>
 
 -   To configure your project to use reactstrap, type the following at
     the prompt to install reactstrap, and Bootstrap 4:
@@ -2200,7 +1937,7 @@ $ yarn add react-popper@0.9.2
 install \<package\> \--save\" option if you are using npm instead of
 yarn.
 
-### Configure to use Bootstrap 4
+<h3>Configure to use Bootstrap 4</h3>
 
 -   Next, open index.js file in the src folder and add the following
     line into the imports:
@@ -2211,7 +1948,7 @@ yarn.
   . . .
 ```
 
-### Adding a Navigation Bar:
+<h3>Adding a Navigation Bar:</h3>
 
 -   Open App.js in the src folder and update it as follows:
 
@@ -2236,14 +1973,14 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 
 -   Do a Git commit with the message \"Configuring React\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we learnt to configure our React application to use
 Reactstrap.
 
-## Introduction to React: Additional Resources
+<h2>Introduction to React: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <b>1-JavaScript-Frameworks.pdf</b>
 
@@ -2253,7 +1990,7 @@ Reactstrap.
 
 <b>4-Intro-JSX.pdf</b>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Reactjs.org](https://reactjs.org/)
 
@@ -2268,7 +2005,7 @@ Reactstrap.
 -   [Convert JSX using Online Babel
     Compiler](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 
-### Definitions
+<h3>Definitions</h3>
 
 -   [Framework](https://en.wikipedia.org/wiki/Software_framework)
 
@@ -2284,7 +2021,7 @@ Reactstrap.
 -   [Imperative vs
     Declarative](http://latentflip.com/imperative-vs-declarative)
 
-### Blog Articles
+<h3>Blog Articles</h3>
 
 -   [5 Best JavaScript Frameworks in
     2017](https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282#.tt1k09l1d)
@@ -2310,7 +2047,7 @@ Reactstrap.
 -   [Why isn\'t React called framework? What does it lack to be a
     framework?](https://hashnode.com/post/why-isnt-react-called-framework-what-does-it-lack-to-be-a-framework-ciwm324og010xzx53wjfq354i)
 
-## React Components: Objectives and Outcomes
+<h2>React Components: Objectives and Outcomes</h2>
 
 In this lesson you will learn about React components and how we
 construct an React component and design its views. At the end of this
@@ -2321,17 +2058,17 @@ lesson you will be able to:
 -   Construct the React component code and the view for your component
     using JSX and JavaScript
 
-## React Components
+<h2>React Components</h2>
 
-## Exercise (Video): React Components Part 1
+<h2>Exercise (Video): React Components Part 1</h2>
 
-## Exercise (Instructions): React Components Part 1
+<h2>Exercise (Instructions): React Components Part 1</h2>
 
-### Exercise Resources
+<h3>Exercise Resources</h3>
 
 <b>images</b>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will add the first component to your React
 application and update its view using JSX. At the end of this exercise
@@ -2341,7 +2078,7 @@ you will be able to:
 
 -   Use JSX to define the views of your component.
 
-### Adding a Menu Component
+<h3>Adding a Menu Component</h3>
 
 -   First, download the <i>images.zip</i> file provided above and then unzip
     the file. Create a folder named <i>assets</i> in the <i>public</i> folder.
@@ -2413,19 +2150,19 @@ import Menu from './components/MenuComponent';
 -   Save all changes and do a Git commit with the message \"Components
     Part 1\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we added a new component to our React application,
 added data to its class, and then updated the app to show the
 information in the web page.
 
-## React Components: State and Props
+<h2>React Components: State and Props</h2>
 
-## Exercise (Video): React Components Part 2
+<h2>Exercise (Video): React Components Part 2</h2>
 
-## Exercise (Instructions): React Components Part 2
+<h2>Exercise (Instructions): React Components Part 2</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we will continue modifying the menu component from the
 previous exercise. Instead of a list, we will use a Card component from
@@ -2437,11 +2174,11 @@ this exercise you will be able to:
 
 -   Use the Card component to display detailed information.
 
-### Exercise Resources
+<h3>Exercise Resources</h3>
 
 <b>dishes</b>
 
-### Updating the Menu Component
+<h3>Updating the Menu Component</h3>
 
 -   Open <i>MenuComponent.js</i> and update its contents as follows. Note
     that we have removed the dishes variable from the state of the
@@ -2559,11 +2296,11 @@ In this exercise we used a list of Cards to display the information in
 the menu component. Also, we used a card to display the details of a
 selected dish.
 
-## React Components: Lifecycle Methods Part 1
+<h2>React Components: Lifecycle Methods Part 1</h2>
 
-## React Components: Additional Resources
+<h2>React Components: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <b>5-Component-Part1.pdf</b>
 
@@ -2571,7 +2308,7 @@ selected dish.
 
 <b>7-Lifecycle-Methods.pdf</b>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [React
     Components](https://reactjs.org/docs/components-and-props.html)
@@ -2598,9 +2335,9 @@ selected dish.
 -   [React Dev Tools Chrome
     Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
-## Assignment 1 Requirements (Video): React Components
+<h2>Assignment 1 Requirements (Video): React Components</h2>
 
-## Peer-graded Assignment: React Components
+<h2>Peer-graded Assignment: React Components</h2>
 
 <b>Deadline</b>Oct 23, 11:59 PM PDT
 
@@ -2616,7 +2353,7 @@ to show the details of a selected dish. You will use the Card component
 and the Bootstrap unstyled list component to prepare the view for this
 new component.
 
-## Step-By-Step Assignment Instructions
+<h2>Step-By-Step Assignment Instructions</h2>
 
 <h4>less</h4>
 
@@ -2725,7 +2462,7 @@ JavaScript objects (comments). This task involves the following steps:
 
 ![](./images/image004.png){width="1.4645833333333333in" height="9.0in"}
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -2752,9 +2489,9 @@ based on the following criteria:
 
 -   Included a list of comments about the dish into the dishdetail view.
 
-## Assignment 1: React Components: Additional Resources
+<h2>Assignment 1: React Components: Additional Resources</h2>
 
-### Assignment 1 Screenshots
+<h3>Assignment 1 Screenshots</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 03/04.  (##) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2769,7 +2506,7 @@ based on the following criteria:
 <!-- ![](./images/image003.png){width="6.5in" height="8.436111111111112in"} -->
 <!-- ![](./images/image004.png){width="1.4645833333333333in" height="9.0in"} -->
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [React
     Components](https://reactjs.org/docs/components-and-props.html)
@@ -2790,7 +2527,7 @@ based on the following criteria:
 
 -   [Bootstrap Grid](http://getbootstrap.com/docs/4.0/layout/grid/)
 
-## Module 5: Ideation: Objectives and Outcomes
+<h2>Module 5: Ideation: Objectives and Outcomes</h2>
 
 The first step in your journey towards the implementation of the
 Capstone project begins with an idea. In this module you will develop
@@ -2815,11 +2552,11 @@ the end of this step you should be able to:
 -   Identify other projects that might have similar features and would
     act as exemplars for your project
 
-## Ideation Report Template
+<h2>Ideation Report Template</h2>
 
-### Project Title
+<h3>Project Title</h3>
 
-### 1. Introduction
+<h3>1. Introduction</h3>
 
 -   A brief introduction to your website idea. State the goals of the
     project.
@@ -2827,25 +2564,25 @@ the end of this step you should be able to:
 -   The values / benefits (tangible and intangible) this application can
     bring to a company/organization/end-user.
 
-### 2. Expected List of Features
+<h3>2. Expected List of Features</h3>
 
 -   A brief list of features that you expect your website to support.
 
 -   Brief justifications for including these features.
 
-### 3. Market Survey
+<h3>3. Market Survey</h3>
 
   -   Do a survey of the Web to find about five web sites that might have similar ideas as yours.
 
   -   Briefly compare the features of these applications with your application idea.
 
-### 4. References
+<h3>4. References</h3>
 
   -   Give references to any material / websites / books etc. relevant to your application idea
 
   -   Give the links to the websites relevant to your idea, that you listed in the section above.
 
-## Honors Peer-graded Assignment: Ideation
+<h2>Honors Peer-graded Assignment: Ideation</h2>
 
 <b>Ready for the assignment?</b>
 
@@ -2860,7 +2597,7 @@ given in this module, and emphasize the points specified in the
 template. The written submission needs to be no more than three standard
 Letter/A4 sized pages.
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -2880,20 +2617,20 @@ idea:
 4.  Does the Ideation report provide references to suitable sources in
     support of the project idea?
 
-## Ideation: Additional Resources
+<h2>Ideation: Additional Resources</h2>
 
-### General Resources
+<h3>General Resources</h3>
 
 -   [Ideation (creative
     process)](https://en.wikipedia.org/wiki/Ideation_(creative_process))
 
-### Volunteer your Services
+<h3>Volunteer your Services</h3>
 
 -   [VolunteerMatch.org](http://www.volunteermatch.org/)
 
 -   [Free Code Camp](https://www.freecodecamp.com/)
 
-## Module 6: React Component Types: Objectives and Outcomes
+<h2>Module 6: React Component Types: Objectives and Outcomes</h2>
 
 In this lesson you will learn about various types of React components:
 Presentational, Container and Functional components. At the end of this
@@ -2905,15 +2642,15 @@ lesson you will be able to:
 -   Create presentational, container and functional components in your
     React application
 
-## Presentational and Container Components
+<h2>Presentational and Container Components</h2>
 
 Notes
 
-## Exercise (Video): Presentational and Container Components
+<h2>Exercise (Video): Presentational and Container Components</h2>
 
-## Exercise (Instructions): Presentational and Container Components
+<h2>Exercise (Instructions): Presentational and Container Components</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we understand about how presentational components deal
 with the look and feel of the app and container components deal with the
@@ -2928,7 +2665,7 @@ data and behavior. At the end of this exercise you will learn about:
 -   Enable container components to deal with the state, provide the data
     and handle user interactions.
 
-### Add a Container Component
+<h3>Add a Container Component</h3>
 
 -   Add a new component named <i>MainComponent.js</i> in the components
     folder and update its contents as follows:
@@ -2987,7 +2724,7 @@ class App extends Component {
 . . .
 ```
 
-### Turn Menu Component into a Presentational Component
+<h3>Turn Menu Component into a Presentational Component</h3>
 
 -   Open MenuComponent.js and update its contents by removing the state
     and removing the DishdetailComponent reference, and make use of the
@@ -3017,20 +2754,20 @@ class App extends Component {
 -   Save all the changes and do a Git commit with the message
     "Presentational and Container Components"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt how to structure your app into
 presentational and container components.
 
-## React Components: Lifecycle Methods Part 2
+<h2>React Components: Lifecycle Methods Part 2</h2>
 
-## Functional Components
+<h2>Functional Components</h2>
 
-## Exercise (Video): Functional Components
+<h2>Exercise (Video): Functional Components</h2>
 
-## Exercise (Instructions): Functional Components
+<h2>Exercise (Instructions): Functional Components</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this lesson we explore the design of functional components in React.
 We will reimplement both the MenuComponent and DishdetailComponent as
@@ -3042,7 +2779,7 @@ to:
 -   Illustrate the reimplementation of presentational components as pure
     functional components
 
-### Implementing Functional Components
+<h3>Implementing Functional Components</h3>
 
 -   Open MenuComponent.js and update it as follows:
 
@@ -3101,17 +2838,17 @@ export default DishDetail;
 -   Save all the changes and do a Git commit with the message
     "Functional Components".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we have learnt to implement our components as pure functional components.
 
-## React Component Types: Additional Resources
+<h2>React Component Types: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts1.pdf">06-Component-Types-Parts1.pdf</a></li><br/>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts2.pdf">06-Component-Types-Parts2.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts1.pdf">06-Component-Types-Parts1.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/06-Component-Types-Parts2.pdf">06-Component-Types-Parts2.pdf</a></li>
 </ul>
 
 Other Resources
@@ -3128,7 +2865,7 @@ Other Resources
 -   [Functional Stateless Components in
     React](https://javascriptplayground.com/functional-stateless-components-react/)
 
-## Module 8: React Router: Objectives and Outcomes
+<h2>Module 8: React Router: Objectives and Outcomes</h2>
 
 In this lesson we cover the basics of React router. We examine how the
 router enables the navigation among views of various components that
@@ -3140,11 +2877,11 @@ able to:
 
 -   Set up the routes to enable the navigation
 
-## React Virtual DOM
+<h2>React Virtual DOM</h2>
 
-## Exercise (Instructions): Header and Footer
+<h2>Exercise (Instructions): Header and Footer</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will add in a header and a footer to our React
 application using two React components. This will illustrate the use of
@@ -3158,7 +2895,7 @@ your application. At the end of this exercise you will be able to:
 -   Make use of Font Awesome icons and Bootstrap-social within your
     React application
 
-### Using Font Awesome Icons and Bootstrap-Social
+<h3>Using Font Awesome Icons and Bootstrap-Social</h3>
 
 -   First use yarn or npm to fetch Font Awesome and Bootstrap-social to
     the project by typing the following at the prompt:
@@ -3178,7 +2915,7 @@ import 'bootstrap-social/bootstrap-social.css';
 . . .
 ```
 
-### Adding a Header and a Footer
+<h3>Adding a Header and a Footer</h3>
 
 -   Create a new file named HeaderComponent.js and add the following to
     it:
@@ -3257,7 +2994,7 @@ function Footer(props) {
             <div className="row justify-content-center">             
 ```
 
-### Integrating Header and Footer into the React Application
+<h3>Integrating Header and Footer into the React Application</h3>
 
 -   Now we open MainComponent.js and update it to integrate the header
     and footer into our application:
@@ -3313,17 +3050,17 @@ address{
 -   Save all the changes and do a Git commit with the message \"Header
     and Footer\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we updated the React application to use Font Awesome
 and Bootstrap Social, and also integrated two new components, Header and
 Footer, into our application.
 
-## React Router
+<h2>React Router</h2>
 
-## Exercise (Instructions): React Router
+<h2>Exercise (Instructions): React Router</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we learn to use the React Router to configure and set
 up navigation among various pages in a React application. At the end of
@@ -3334,7 +3071,7 @@ this exercise you will be able to:
 -   Configure the routes for React router to enable you to navigate to
     various pages within your React application
 
-### Installing and Configuring React Router
+<h3>Installing and Configuring React Router</h3>
 
 -   First install React Router into your project by typing the following
     at the prompt:
@@ -3357,7 +3094,7 @@ import { BrowserRouter } from 'react-router-dom';
 . . .
 ```
 
-### Add a Home Component
+<h3>Add a Home Component</h3>
 
 -   Create a new file named HomeComponent.js in the components folder
     and add the following to it:
@@ -3374,7 +3111,7 @@ function Home(props) {
 export default Home;   
 ```
 
-### Configuring the Router
+<h3>Configuring the Router</h3>
 
 -   Open <i>MainComponent.js</i> file and update it as follows:
 
@@ -3462,21 +3199,21 @@ import { Link } from 'react-router-dom';
 -   Save all the changes and do a Git commit with the message \"React
     Router\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learn about installing, configuring and using the
 React Router for navigation within your React app.
 
-## React Router: Additional Resources
+<h2>React Router: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-VirtualDOM.pdf">07-VirtualDOM.pdf</a></li><br/>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-React-Router-Parameters.pdf">07-React-Router-Parameters.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-VirtualDOM.pdf">07-VirtualDOM.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/07-React-Router-Parameters.pdf">07-React-Router-Parameters.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [react-router](https://github.com/ReactTraining/react-router)
 
@@ -3488,7 +3225,7 @@ React Router for navigation within your React app.
 -   [React Router Dom
     Documentation](https://reacttraining.com/react-router/web/guides/philosophy)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [React Router DOM: set-up, essential components, & parameterized
     routes](https://blog.logrocket.com/react-router-dom-set-up-essential-components-parameterized-routes-505dc93642f1)
@@ -3499,7 +3236,7 @@ React Router for navigation within your React app.
 -   [A Simple React Router v4
     Tutorial](https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf)
 
-## Module 09: Single Page Applications: Objectives and Outcomes
+<h2>Module 09: Single Page Applications: Objectives and Outcomes</h2>
 
 In this lesson you will explore single page applications (SPA) and React
 support for SPA. You will learn to use the routes and React router that
@@ -3510,9 +3247,9 @@ able to:
 
 -   Use the <i>React router</i> to construct SPA
 
-## Exercise (Instructions): Single Page Applications Part 1
+<h2>Exercise (Instructions): Single Page Applications Part 1</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will continue to develop the React application as a
 single page application, integrating the various components. At the end
@@ -3524,7 +3261,7 @@ of this exercise you will be able to:
 -   Provide a way of navigating among various pages using the React
     router support.
 
-### Exercise Resources
+<h3>Exercise Resources</h3>
 
 <b>dishes</b>
 
@@ -3534,7 +3271,7 @@ of this exercise you will be able to:
 
 <b>comments</b>
 
-### Integrating the Contact Component
+<h3>Integrating the Contact Component</h3>
 
 -   Add a new file named <i>ContactComponent.js</i> file and update its
     contents as follows:
@@ -3586,7 +3323,7 @@ import Contact from './ContactComponent';
   <Route exact path='/contactus' component={Contact} />} />
 ```
 
-### Updating the Home Component
+<h3>Updating the Home Component</h3>
 
 -   First update <i>dishes.js</i> file in the shared folder to update the
     dishes as follows. (<b>NOTE</b>: Alternately you can download
@@ -3817,16 +3554,16 @@ class Main extends Component {
 -   Save all the changes and do a Git commit with the message \"Single
     Page Applications Part 1\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you developed the Angular application further by
 integrating the components into a single page application.
 
-## Module 7: React Router: Parameters
+<h2>Module 7: React Router: Parameters</h2>
 
-## Exercise (Instructions): Single Page Applications Part 2
+<h2>Exercise (Instructions): Single Page Applications Part 2</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will integrate the DishdetailComponent into your
 single page application. You will use a route parameter in the URL to
@@ -3837,7 +3574,7 @@ the end of this exercise you will be able to:
     the use of route parameters within the URL to pass information to a
     component.
 
-### Updating to Use Parameters on Routes
+<h3>Updating to Use Parameters on Routes</h3>
 
 -   Open <i>MenuComponent.js</i> and add the following changes to it to
     enable the information about the selected dish to be passed to the
@@ -3896,7 +3633,7 @@ import { Link } from 'react-router-dom';
 . . .
 ```
 
-### Updating DishDetail Component
+<h3>Updating DishDetail Component</h3>
 
 -   Open <i>DishdetailComponent.js</i> and update it as follows:
 
@@ -3931,7 +3668,7 @@ import { Link } from 'react-router-dom';
 . . .
 ```
 
-### Adding Breadcrumbs to ContactComponent
+<h3>Adding Breadcrumbs to ContactComponent</h3>
 
 -   Open ContactComponent.js and add Breadcrumbs to it as follows:
 
@@ -3956,21 +3693,21 @@ import { Link } from 'react-router-dom';
 -   Save all the changes and do a Git commit with the message \"Single
     Page Applications Part 2\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have seen the use of parameters within the URL to
 pass information to another component.
 
-## Single Page Applications: Additional Resources
+<h2>Single Page Applications: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-Single-Page-Apps.pdf">08-Single-Page-Apps.pdf</a></li><br/>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-React-Router-Parameters.pdf">08-React-Router-Parameters.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-Single-Page-Apps.pdf">08-Single-Page-Apps.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/08-React-Router-Parameters.pdf">08-React-Router-Parameters.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [react-router](https://github.com/ReactTraining/react-router)
 
@@ -3982,7 +3719,7 @@ pass information to another component.
 -   [React Router Dom
     Documentation](https://reacttraining.com/react-router/web/guides/philosophy)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Arrow
     Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
@@ -3996,9 +3733,9 @@ pass information to another component.
 
 -   [SPA and the Single Page Myth](http://www.johnpapa.net/pageinspa/)
 
-## Assignment 2: React Router and Single Page Applications
+<h2>Assignment 2: React Router and Single Page Applications</h2>
 
-## Peer-graded Assignment: React Router and Single Page Applications
+<h2>Peer-graded Assignment: React Router and Single Page Applications</h2>
 
 <b>Ready for the assignment?</b>
 
@@ -4016,7 +3753,7 @@ by adding a new component named AboutComponent to serve up the details
 of the corporate leaders, and you will then integrate the AboutComponent
 into the single page application.
 
-## Step-By-Step Assignment Instructions
+<h2>Step-By-Step Assignment Instructions</h2>
 
 <h4>less</h4>
 
@@ -4089,7 +3826,7 @@ previous task to render a list of leaders within your AboutComponent:
 
 ![](./images/image005.png){width="4.361805555555556in" height="9.0in"}
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -4118,17 +3855,17 @@ based on the following criteria:
     make use of the \<RenderLeader\> component to render the list of
     leaders.
 
-## Assignment 2: React Router and Single Page Applications: Additional Resources
+<h2>Assignment 2: React Router and Single Page Applications: Additional Resources</h2>
 
-### Assignment Resources
+<h3>Assignment Resources</h3>
 
 <b>AboutComponent</b>
 
-### Screenshots
+<h3>Screenshots</h3>
 
 ![](./images/image005.png){width="4.361805555555556in" height="9.0in"}
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [react-router](https://github.com/ReactTraining/react-router)
 
@@ -4143,7 +3880,7 @@ based on the following criteria:
 -   [reactstrap \<Media\>
     component](https://reactstrap.github.io/components/media/)
 
-## UI Design and Prototyping: Objectives and Outcomes
+<h2>UI Design and Prototyping: Objectives and Outcomes</h2>
 
 Now that you are more clear about your project idea, it\'s time to
 conceive how your project is going to look like for the end-users. This
@@ -4163,17 +3900,17 @@ with your application At the end of this lesson, you should be able to:
 -   Construct a prototype to enable understanding the flow of your
     application
 
-## UI Design and Prototyping Report Template
+<h2>UI Design and Prototyping Report Template</h2>
 
-### Project Title
+<h3>Project Title</h3>
 
-### 1. Introduction
+<h3>1. Introduction</h3>
 
 -   Give a brief introduction to your project and the list of features.
     Summarize in a few sentences what you proposed in the ideation
     report.
 
-### 2. User Interface Design and Prototype
+<h3>2. User Interface Design and Prototype</h3>
 
 -   Give some sample user interface layouts for your application. You
     can use either wireframe diagrams or prototyping tools to construct
@@ -4182,7 +3919,7 @@ with your application At the end of this lesson, you should be able to:
 -   Briefly explain the rationale behind designing your UI and how it is
     geared towards supporting the list of features for your application.
 
-### 3. Navigation Structure
+<h3>3. Navigation Structure</h3>
 
 -   Give a brief overview of the navigation structure for your
     application.
@@ -4192,11 +3929,11 @@ with your application At the end of this lesson, you should be able to:
     also construct a prototype using one of the prototyping tools to
     illustrate this.
 
-### 4. References
+<h3>4. References</h3>
 
 -   Provide any references relevant to the report.
 
-## Honors Peer-graded Assignment: UI Design and Prototyping
+<h2>Honors Peer-graded Assignment: UI Design and Prototyping</h2>
 
 <b>Ready for the assignment?</b>
 
@@ -4214,7 +3951,7 @@ some user interface designs and the flow of your application and the
 navigation structure. The report should follow the report template
 structure given earlier in this lesson.
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -4234,9 +3971,9 @@ idea:
 4.  Does the report provide references to suitable sources in support of
     the project?
 
-## UI Design and Prototyping: Additional Resources
+<h2>UI Design and Prototyping: Additional Resources</h2>
 
-### Wireframing, Mockups and UI Design
+<h3>Wireframing, Mockups and UI Design</h3>
 
 -   [Wireframe.cc](https://wireframe.cc/)
 
@@ -4259,13 +3996,13 @@ idea:
 -   [Free Bootstrap Wireframing Set for
     PowerPoint](https://onextrapixel.com/free-bootstrap-wireframing-set-for-powerpoint/)
 
-### UI Templates
+<h3>UI Templates</h3>
 
 -   [Bootstrap Expo](http://expo.getbootstrap.com/)
 
 -   [Ionic Showcase](http://showcase.ionicframework.com/)
 
-### Information Architecture
+<h3>Information Architecture</h3>
 
 -   [A visual vocabulary for describing information architecture and
     interaction design](http://www.jjg.net/ia/visvocab/)
@@ -4276,7 +4013,7 @@ idea:
     and Beyond (2nd Edition) (Voices That
     Matter)](http://www.amazon.com/The-Elements-User-Experience-User-Centered/dp/0321683684/ref=pd_cp_14_1?ie=UTF8&refRID=0RXJWKFHY0TNF5QM2764)
 
-## Controlled Forms: Objectives and Outcomes
+<h2>Controlled Forms: Objectives and Outcomes</h2>
 
 In this lesson you will learn about controlled components and how they
 can be used to design controlled forms in your React application. At the
@@ -4284,11 +4021,11 @@ end of this exercise you will be able to:
 
 -   Design a controlled form in your React application.
 
-## Controlled Forms
+<h2>Controlled Forms</h2>
 
-## Exercise (Instructions): Controlled Forms
+<h2>Exercise (Instructions): Controlled Forms</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn about using controlled components to
 design controlled forms in your React application. At the end of this
@@ -4296,7 +4033,7 @@ exercise you will be able to:
 
 -   Design a controlled form in your React application.
 
-### Importing the Necessary Components
+<h3>Importing the Necessary Components</h3>
 
 -   You will start out by importing the necessary components from
     reactstrap into <i>ContactComponent.js</i> as follows:
@@ -4321,7 +4058,7 @@ class Contact extends Component {
 }
 ```
 
-### Creating the Controlled Form
+<h3>Creating the Controlled Form</h3>
 
 -   Update the <i>ContactComponent.js</i> file as follows to set up the
     Controlled Form:
@@ -4406,14 +4143,14 @@ class Contact extends Component {
 -   Save all changes and do a Git commit with the message "Controlled
     Forms".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have learnt to create a controlled form within your
 React application.
 
-## Exercise (Instructions): Controlled Form Validation
+<h2>Exercise (Instructions): Controlled Form Validation</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will be introduced to simple form validation for
 controlled forms in React. At the end of this exercise you will be able
@@ -4422,7 +4159,7 @@ to:
 -   Configure and perform simple form validation for your controlled
     forms
 
-### Simple Form Validation
+<h3>Simple Form Validation</h3>
 
 -   Open <i>ContactComponent.js</i> and update it as follows to introduce the
     support to track form errors and perform validation:
@@ -4516,26 +4253,26 @@ class Contact extends Component {
 -   Save all the changes and do a Git commit with the message
     \"Controlled Form Validation\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have learnt about doing simple form validation for
 controlled forms in React.
 
-## Controlled Forms: Additional Resources
+<h2>Controlled Forms: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Controlled-Components-Forms.pdf">09-Controlled-Components-Forms.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Controlled-Components-Forms.pdf">09-Controlled-Components-Forms.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Controlled Components](https://reactjs.org/docs/forms.html)
 
 -   [reactstrap Form](https://reactstrap.github.io/components/form/)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Controlled / Uncontrolled React
     Components](https://www.viget.com/articles/controlling-components-react/)
@@ -4555,7 +4292,7 @@ controlled forms in React.
 -   [Instant form field validation with React's controlled
     inputs](https://goshakkk.name/instant-form-fields-validation-react/)
 
-## Module 8: Uncontrolled Forms: Objectives and Outcomes
+<h2>Module 8: Uncontrolled Forms: Objectives and Outcomes</h2>
 
 Forms in React can be approached in two ways, either through
 uncontrolled components, or controlled components. In this lesson we
@@ -4566,11 +4303,11 @@ able to:
 
 -   Handle the form submission in the React application
 
-## Uncontrolled Components
+<h2>Uncontrolled Components</h2>
 
-## Exercise (Video): Uncontrolled Forms
+<h2>Exercise (Video): Uncontrolled Forms</h2>
 
-## Exercise (Instructions): Uncontrolled Forms
+<h2>Exercise (Instructions): Uncontrolled Forms</h2>
 
 In this exercise we will create an uncontrolled form within our React
 application using the uncontrolled component approach. At the end of
@@ -4580,7 +4317,7 @@ this exercise you will be able to:
 
 -   Handle the form submission in the React application
 
-### Adding a Modal to Host the Form
+<h3>Adding a Modal to Host the Form</h3>
 
 -   Update <i>HeaderComponent.js</i> as follows to add a new Modal to the
     application to host the form:
@@ -4624,7 +4361,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 . . .
 ```
 
-### Adding the Uncontrolled Form
+<h3>Adding the Uncontrolled Form</h3>
 
 -   Add the form to the modal body as shown below:
 
@@ -4673,20 +4410,20 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jum
 -   Save all the changes and do a Git commit with the message
     \"Uncontrolled Form\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we learnt to use an uncontrolled component approach to
 add a form to our React application.
 
-## Uncontrolled Forms: Additional Resources
+<h2>Uncontrolled Forms: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Uncontrolled-Components-Forms.pdf">09-Uncontrolled-Components-Forms.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/09-Uncontrolled-Components-Forms.pdf">09-Uncontrolled-Components-Forms.pdf</a></li><br/>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Uncontrolled
     Components](https://reactjs.org/docs/uncontrolled-components.html)
@@ -4696,7 +4433,7 @@ add a form to our React application.
 -   [reactstrap Modal
     Component](https://reactstrap.github.io/components/modals/)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Controlled / Uncontrolled React
     Components](https://www.viget.com/articles/controlling-components-react/)
@@ -4713,7 +4450,7 @@ add a form to our React application.
 -   [Some Thoughts On Forms in
     React](https://medium.com/javascript-inside/some-thoughts-on-forms-in-react-9ca2d9078c20)
 
-## Introduction to Redux: Objectives and Outcomes
+<h2>Introduction to Redux: Objectives and Outcomes</h2>
 
 In this lesson you will learn about the Flux architecture as a way of
 structuring your React application. You will also be introduced to
@@ -4724,17 +4461,17 @@ At the end of this lesson you will be able to:
 
 -   Enable your React app to make use of Redux
 
-## Module 9: The Model-View-Controller Framework
+<h2>Module 9: The Model-View-Controller Framework</h2>
 
-## Module 10: The Flux Architecture
+<h2>Module 10: The Flux Architecture</h2>
 
-## Module xx: Introduction to Redux
+<h2>Module xx: Introduction to Redux</h2>
 
-## Chapter 1: Exercise (Video): Introduction to Redux
+<h2>Chapter 1: Exercise (Video): Introduction to Redux</h2>
 
-## Chapter 2: Exercise (Instructions): Introduction to Redux
+<h2>Chapter 2: Exercise (Instructions): Introduction to Redux</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to use Redux. You will install and
 configure Redux and use it within your React application. At the end of
@@ -4744,7 +4481,7 @@ this exercise you will be able to:
 
 -   Configure your React application to make use of Redux
 
-### Installing and Configuring Redux
+<h3>Installing and Configuring Redux</h3>
 
 -   As a first step you will install Redux and React-Redux into your
     application as follows:
@@ -4851,22 +4588,22 @@ const mapStateToProps = state => {
 -   Save all the changes and do a Git commit with the message \"Intro.
     to Redux\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt to install and configure Redux and use it in
 your React application.
 
-## Introduction to Redux: Additional Resources
+<h2>Introduction to Redux: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-MVC.pdf">10-MVC.pdf</a></li><br/>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Flux-Arch.pdf">10-Flux-Arch.pdf</a></li><br/>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Intro-Redux.pdf">10-Intro-Redux.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-MVC.pdf">10-MVC.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Flux-Arch.pdf">10-Flux-Arch.pdf</a></li><br/>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-Intro-Redux.pdf">10-Intro-Redux.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Redux](https://redux.js.org/)
 
@@ -4878,7 +4615,7 @@ your React application.
 
 -   [The Flux Architecture](https://facebook.github.io/flux/)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Redux
     Tutorials](https://github.com/markerikson/react-redux-links/blob/master/redux-tutorials.md)
@@ -4886,7 +4623,7 @@ your React application.
 -   [Flux Architecture In Depth
     Overview](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
 
-## Module xx: React Redux Form: Objectives and Outcomes
+<h2>Module xx: React Redux Form: Objectives and Outcomes</h2>
 
 In this lesson we will learn to create forms using react-redux-form that
 enables us to store form information in the Redux store, and brings
@@ -4896,13 +4633,13 @@ additional benefits. At the end of this lesson you will be able to:
 
 -   Store the form state in the Redux store
 
-## Chapter 1. React Redux Forms
+<h2>Chapter 1. React Redux Forms</h2>
 
-## Chapter 2. Exercise (Video): React Redux Form
+<h2>Chapter 2. Exercise (Video): React Redux Form</h2>
 
-## Chapter 3. Exercise (Instructions): React Redux Form
+<h2>Chapter 3. Exercise (Instructions): React Redux Form</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will install react-redux-form and then convert the
 controlled form that we created earlier into a form supported by
@@ -4912,7 +4649,7 @@ react-redux-form. At the end of this exercise you will be able to:
 
 -   Implement a controlled form using react-redux-form
 
-### Installing and Using react-redux-form
+<h3>Installing and Using react-redux-form</h3>
 
 -   We first install the <i>react-redux-form</i> into our project as follows:
 
@@ -4963,16 +4700,16 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we installed and used the react-redux-form to design a
 controlled form.
 
-## Module xx: Exercise (Video): React Redux Form Validation
+<h2>Module xx: Exercise (Video): React Redux Form Validation</h2>
 
-## Chapter 2: Exercise (Instructions): React Redux Form Validation
+<h2>Chapter 2: Exercise (Instructions): React Redux Form Validation</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we will explore simple form validation for
 react-redux-form. At the end of this exercise you will be able to:
@@ -4980,7 +4717,7 @@ react-redux-form. At the end of this exercise you will be able to:
 -   Configure and implement simple form validation for controlled forms
     designed using react-redux-form.
 
-### Implementing Simple Form Validation
+<h3>Implementing Simple Form Validation</h3>
 
 -   Open <i>ContactComponent.js</i> and update it as follows to implement
     form validation:
@@ -5027,25 +4764,25 @@ const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i.test
 -   Save all the changes and do a Git commit with the message \"React
     Redux Form Validation\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt about implementing simple form validation
 using react-redux-form.
 
-## Chapter 2: React Redux Form: Additional Resources
+<h2>Chapter 2: React Redux Form: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-React-Redux-Form.pdf">10-React-Redux-Form.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/10-React-Redux-Form.pdf">10-React-Redux-Form.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [React Redux Form
     Documentation](https://davidkpiano.github.io/react-redux-form/docs.html)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [The boring React Redux
     forms](https://medium.com/@steida/the-boring-react-redux-forms-a15ee8a6b52b)
@@ -5056,9 +4793,9 @@ using react-redux-form.
 -   [Should you store your form state in
     Redux?](https://goshakkk.name/should-i-put-form-state-into-redux/)
 
-## Assignment 3: React Forms and Redux
+<h2>Assignment 3: React Forms and Redux</h2>
 
-## Peer-graded Assignment: React Forms and Redux
+<h2>Peer-graded Assignment: React Forms and Redux</h2>
 
 <b>Ready for the assignment?</b>
 
@@ -5067,7 +4804,7 @@ You will find instructions below to submit.
 In this assignment you will be updating the React application with a
 react-redux-form based local form and do the form validation in code.
 
-## Step-By-Step Assignment Instructions
+<h2>Step-By-Step Assignment Instructions</h2>
 
 <h4>less</h4>
 
@@ -5134,7 +4871,7 @@ below. You need to complete the following:
 
 ![](./images/image009.png){width="6.5in" height="3.7381944444444444in"}
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -5158,16 +4895,16 @@ based on the following criteria:
 -   The author field is being properly validated. If incorrect, the user
     is alerted.
 
-## Assignment 3: React Forms and Redux: Additional Resources
+<h2>Assignment 3: React Forms and Redux: Additional Resources</h2>
 
-### Assignment Screenshots
+<h3>Assignment Screenshots</h3>
 
 ![](./images/image006.png){width="6.5in" height="7.429861111111111in"}
 ![](./images/image007.png){width="6.5in" height="4.278472222222222in"}
 ![](./images/image008.png){width="6.5in" height="3.779861111111111in"}
 ![](./images/image009.png){width="6.5in" height="3.7381944444444444in"}
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [reactstrap Modal
     Component](https://reactstrap.github.io/components/modals/)
@@ -5175,7 +4912,7 @@ based on the following criteria:
 -   [React Redux Form
     Documentation](https://davidkpiano.github.io/react-redux-form/docs.html)
 
-## Redux Actions: Objectives and Outcomes
+<h2>Redux Actions: Objectives and Outcomes</h2>
 
 In this lesson we will look at how to create redux actions and how
 action creators can be designed to return the action objects. Thereafter
@@ -5190,13 +4927,13 @@ exercise, you will be able to:
 -   Split the reducer function into multiple simpler functions and
     combine the reducer functions
 
-## Module xx: Redux Actions
+<h2>Module xx: Redux Actions</h2>
 
-## Module xx: Exercise (Video): Combining Reducers
+<h2>Module xx: Exercise (Video): Combining Reducers</h2>
 
-## Exercise (Instructions): Combining Reducers
+<h2>Exercise (Instructions): Combining Reducers</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn about how we can have separate reducers
 managing parts of the state, and how they can be combined together to
@@ -5206,7 +4943,7 @@ manage the whole state. At the end of this exercise you will be able to:
 
 -   Combine the reducers to manage the entire state
 
-### Splitting the Reducer
+<h3>Splitting the Reducer</h3>
 
 -   In the redux folder, create a new file named dishes.js and add the
     following to it:
@@ -5287,16 +5024,16 @@ export const ConfigureStore = () => {
 -   Save all the changes and do a Git commit with the message
     "Combining Reducers".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we have learnt to split the reducer into multiple
 reducers that manage partial state, and then combine them together.
 
-## Module xx: Exercise (Video): Redux Actions
+<h2>Module xx: Exercise (Video): Redux Actions</h2>
 
-## Exercise (Instructions): Redux Actions
+<h2>Exercise (Instructions): Redux Actions</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we will learn to define various Redux actions and
 implement the action creators to dispatch the actions to the Redux
@@ -5307,7 +5044,7 @@ store. At the end of this exercise you will be able to:
 -   Dispatch actions from the action creators to update the system state
     in the Redux store
 
-### Creating Actions
+<h3>Creating Actions</h3>
 
 -   In the <i>redux</i> folder create a new file named <i>ActionTypes.js</i> and
     add the following to it:
@@ -5392,16 +5129,16 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main))
 -   Save all the changes and do a Git commit with the message \"Redux
     Actions\"
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we have learnt to create and dispatch actions to update
 the system state in the Redux store.
 
-## Redux Actions: Additional Resources
+<h2>Redux Actions: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
-### Redux Resources
+<h3>Redux Resources</h3>
 
 -   [Redux Actions](https://redux.js.org/basics/actions)
 
@@ -5410,7 +5147,7 @@ the system state in the Redux store.
 -   [Redux Usage with
     React](https://redux.js.org/basics/usage-with-react)
 
-## Module xx: Redux Thunk: Objectives and Outcomes
+<h2>Module xx: Redux Thunk: Objectives and Outcomes</h2>
 
 Redux Thunk
 [middleware](https://github.com/reactjs/redux/blob/master/docs/advanced/Middleware.md)
@@ -5423,15 +5160,15 @@ function. At the end of this lesson you will be able to:
 -   Use a logger middleware to print a log of actions initiated on the
     Redux store.
 
-## Redux Thunk
+<h2>Redux Thunk</h2>
 
-## Exercise (Video): Redux Thunk
+<h2>Exercise (Video): Redux Thunk</h2>
 
 Notes
 
-## Exercise (Instructions): Redux Thunk
+<h2>Exercise (Instructions): Redux Thunk</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 Redux Thunk
 [middleware](https://github.com/reactjs/redux/blob/master/docs/advanced/Middleware.md)
@@ -5443,7 +5180,7 @@ function. At the end of this exercise you will be able to:
 
 -   Use a logger to print a log of actions initiated on the Redux store.
 
-### Installing Redux Thunk and Logger
+<h3>Installing Redux Thunk and Logger</h3>
 
 -   Install Redux Thunk and Logger as shown below:
 
@@ -5677,15 +5414,15 @@ import { Loading } from './LoadingComponent';
 -   Save all the changes and do a Git commit with the message \"Redux
     Thunk\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we saw the use of Redux Thunk and the Logger.
 
-## Exercise (Video): React-Redux-Form Revisited
+<h2>Exercise (Video): React-Redux-Form Revisited</h2>
 
-## Exercise (Instructions): React-Redux-Form Revisited
+<h2>Exercise (Instructions): React-Redux-Form Revisited</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise we will explore the interaction between
 react-redux-form and the Redux store. We will see how to map the form
@@ -5695,7 +5432,7 @@ store. At the end of this exercise you will be able to:
 -   Use react-redux-form to interact with Redux store and store the
     state of the form in the store.
 
-### Updating the Feedback Form
+<h3>Updating the Feedback Form</h3>
 
 -   Add a new file named <i>forms.js</i> in the <i>redux</i> folder and add the
     following to it:
@@ -5767,20 +5504,20 @@ import { InitialFeedback } from './forms';
 -   Save all the changes and do a Git commit with the message \"React
     Redux Forms Revisited\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we have seen how to use react-redux-form together with
 Redux to persist form state.
 
-## Redux Thunk: Additional Resources
+<h2>Redux Thunk: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Redux-Thunk.pdf">11-Redux-Thunk.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Redux-Thunk.pdf">11-Redux-Thunk.pdf</a></li>
 </ul>
 
-### Redux Resources
+<h3>Redux Resources</h3>
 
 -   [Redux Middleware](https://redux.js.org/advanced/middleware)
 
@@ -5790,7 +5527,7 @@ Redux to persist form state.
 
 -   [React-redux-form](https://davidkpiano.github.io/react-redux-form/docs.html)
 
-## Module: Client-Server Communication: Objectives and Outcomes
+<h2>Module: Client-Server Communication: Objectives and Outcomes</h2>
 
 In this lesson you will learn about communication between your React
 application and a server. You will establish a simple server using the
@@ -5802,21 +5539,21 @@ json-server node module. At the end of this lesson, you will be able to:
 
 -   Use the json-server as a simple static web server.
 
-## Networking Essentials
+<h2>Networking Essentials</h2>
 
-## Brief Representational State Transfer (REST)
+<h2>Brief Representational State Transfer (REST)</h2>
 
-## Exercise (Video): Setting up a Server using json-server
+<h2>Exercise (Video): Setting up a Server using json-server</h2>
 
-## Exercise (Instructions): Setting up a Server using json-server
+<h2>Exercise (Instructions): Setting up a Server using json-server</h2>
 
-### Exercise Resources
+<h3>Exercise Resources</h3>
 
 <b>db</b>
 
 <b>images</b>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 The Node module, <i>json-server</i>, provides a very simple way to set up a
 web server that supports a full-fledged REST API server. It can also
@@ -5831,7 +5568,7 @@ application. At the end of this exercise, you will be able to:
 -   Configure your server to serve up static web content stored in a
     folder named <i>public</i>.
 
-### Installing json-server
+<h3>Installing json-server</h3>
 
 -   json-server is a node module, and hence can be installed globally by
     typing the following at the command prompt:
@@ -5844,7 +5581,7 @@ If you are using OSX or Linux, use <b>sudo</b> at the front of the command.
 This will install json-server that can be started from the command line
 from any folder on your computer.
 
-### Configuring the Server
+<h3>Configuring the Server</h3>
 
 -   At any convenient location on your computer, create a new folder
     named <b>json-server</b>, and move to this folder.
@@ -5886,7 +5623,7 @@ $  <http://localhost:3001>
 
 -   Shut down the server by typing <b>ctrl-C</b> in the terminal window.
 
-### Serving up the Images
+<h3>Serving up the Images</h3>
 
 -   Create a public folder in your json-server folder.
 
@@ -5901,28 +5638,28 @@ $  <http://localhost:3001>
 $  [http://localhost:3001/images/]<image name>.png
 ```
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise, you learnt how to configure and start a simple server
 using the <b>json-server</b> node module. You also learnt how the server
 can serve up static web content.
 
-## Client-Server Communication: Additional Resources
+<h2>Client-Server Communication: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Networking-Essentials.pdf">11-Networking-Essentials.pdf</a></li>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-REST.pdf">11-REST.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Networking-Essentials.pdf">11-Networking-Essentials.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-REST.pdf">11-REST.pdf</a></li>
 </ul>
 
-### Exercise Resources
+<h3>Exercise Resources</h3>
 
 <b>db</b>
 
 <b>images</b>
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [json-server](https://github.com/typicode/json-server)
 
@@ -5931,7 +5668,7 @@ can serve up static web content.
 
 -   [JSON](http://www.json.org/)
 
-## Fetch: Objectives and Outcomes
+<h2>Fetch: Objectives and Outcomes</h2>
 
 In this lesson you will learn about Fetch as a means of communication
 between your React application and a REST API server. At the end of this
@@ -5942,15 +5679,15 @@ lesson you will be able to:
 -   Use Fetch to communicate from your React application with a REST API
     server
 
-## Promises
+<h2>Promises</h2>
 
-## Fetch
+<h2>Fetch</h2>
 
-## Exercise (Video): Fetch from Server
+<h2>Exercise (Video): Fetch from Server</h2>
 
-## Exercise (Instructions): Fetch from Server
+<h2>Exercise (Instructions): Fetch from Server</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will incorporate Fetch into your React app and then
 use it to communicate with the REST API server. At the end of this
@@ -5960,7 +5697,7 @@ exercise you will be able to:
 
 -   Use Fetch to communicate with the REST API server
 
-### Fetch
+<h3>Fetch</h3>
 
 -   As a first step, let us install Fetch into our project as follows:
 
@@ -6140,16 +5877,16 @@ import { baseUrl } from '../shared/baseUrl';
 -   Save all the changes and do a Git commit with the message \"Fetch
     from Server\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you have learnt to install Fetch and use it communicate
 with the server.
 
-## Exercise (Video): Fetch Handling Errors
+<h2>Exercise (Video): Fetch Handling Errors</h2>
 
-## Exercise (Instructions): Fetch Handling Errors
+<h2>Exercise (Instructions): Fetch Handling Errors</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn how to handle errors encountered while
 communicating with the server. At the end of this exercise you will be
@@ -6158,7 +5895,7 @@ able to:
 -   Configure your app to appropriately handle errors encountered while
     communicating with the server
 
-### Handling Errors
+<h3>Handling Errors</h3>
 
 -   Open <i>ActionCreators.js</i> and update it as follows:
 
@@ -6203,16 +5940,16 @@ export const fetchComments = () => (dispatch) => {    
 -   Save all the changes and do a Git commit with the message \"Fetch
     Handling Errors\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt how to configure your app to handle errors
 in communicating with the server.
 
-## Exercise (Video): Fetch Post Comment
+<h2>Exercise (Video): Fetch Post Comment</h2>
 
-## Exercise (Instructions): Fetch Post Comment
+<h2>Exercise (Instructions): Fetch Post Comment</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn how to configure Fetch to be able to
 post data to the server. At the end of this exercise, you will be able
@@ -6222,7 +5959,7 @@ to:
 
 -   Receive and process the response to the POST operation on the server
 
-### Posting a Comment
+<h3>Posting a Comment</h3>
 
 -   Open <i>ActionCreators.js</i> and update it as follows:
 
@@ -6303,24 +6040,24 @@ to:
 -   Save all the changes and do a Git commit with the message \"Fetch
     Post Comment\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt to use Fetch to post data to the server.
 
-## Fetch: Additional Resources
+<h2>Fetch: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Promises.pdf">11-Promises.pdf</a></li>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Fetch.pdf">11-Fetch.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Promises.pdf">11-Promises.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/11-Fetch.pdf">11-Fetch.pdf</a></li>
 </ul>
 
-### Fetch Resources
+<h3>Fetch Resources</h3>
 
 -   [Cross-Fetch](https://github.com/lquixada/cross-fetch)
 
-### Promise Resources
+<h3>Promise Resources</h3>
 
 -   [JavaScript
     Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -6334,7 +6071,7 @@ In this exercise you learnt to use Fetch to post data to the server.
 -   [JavaScript Promises: an
     Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Introduction to
     fetch()](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
@@ -6345,7 +6082,7 @@ In this exercise you learnt to use Fetch to post data to the server.
 -   [Fetch vs. Axios.js for making http
     requests](https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5)
 
-## Module xx: React Animations: Objectives and Outcomes
+<h2>Module xx: React Animations: Objectives and Outcomes</h2>
 
 In this lesson we will learn about adding various subtle animations to
 our React app for a better user experience. At the end of this lesson
@@ -6355,13 +6092,13 @@ you will be able to:
 
 -   Add additional component animations using react-animation-components
 
-## React Animations
+<h2>React Animations</h2>
 
-## Exercise (Video): React Animations
+<h2>Exercise (Video): React Animations</h2>
 
-## Exercise (Instructions): React Animations
+<h2>Exercise (Instructions): React Animations</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to implement animations in your React
 app using react-transition-group. At the end of this exercise you will
@@ -6371,7 +6108,7 @@ be able to:
 
 -   Implement simple animation using the react-transition-group
 
-### Installing React-Transition-Group
+<h3>Installing React-Transition-Group</h3>
 
 -   Install react-transition-group in your React project as follows:
 
@@ -6429,16 +6166,16 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 -   Save all the changes and do a Git commit with the message \"React
     Animations\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise we implemented simple animation using
 react-transition-group.
 
-## Exercise (Video): React Animation Components
+<h2>Exercise (Video): React Animation Components</h2>
 
-## <b>Exercise (Instructions): React Animation</b> Components
+<h2><b>Exercise (Instructions): React Animation</b> Components</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to use react-animation-components to add
 more subtle animations to your React app. At the end of this exercise
@@ -6447,7 +6184,7 @@ you will be able to:
 -   Use react-animation-components to add more subtle animations to your
     React app.
 
-### Installing React-Animation-Components
+<h3>Installing React-Animation-Components</h3>
 
 -   Install react-animation-components into your React app as follows:
 
@@ -6457,7 +6194,7 @@ $ yarn add react-animation-components@3.0.0
 $ yarn add prop-types@15.6.0
 ```
 
-### Adding Animations
+<h3>Adding Animations</h3>
 
 -   Open <i>HomeComponents.js</i> and update as follows:
 
@@ -6520,20 +6257,20 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components'
 -   Save all the changes and do a Git commit with the message \"React
     Animation Components\".
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you saw yet another way of adding subtle animations
 using react-animation-components.
 
-## React Animations: Additional Resources
+<h2>React Animations: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-React-Animations.pdf">12-React-Animations.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-React-Animations.pdf">12-React-Animations.pdf</a></li>
 </ul>
 
-### React Animations
+<h3>React Animations</h3>
 
 -   [Animation Add-Ons](https://reactjs.org/docs/animation.html)
 
@@ -6544,7 +6281,7 @@ using react-animation-components.
 
 -   [react-animation-components](https://github.com/unruffledBeaver/react-animation-components)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [How to build animated microinteractions in
     React](https://medium.freecodecamp.org/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8)
@@ -6561,9 +6298,9 @@ using react-animation-components.
 -   [Amazing React animation with
     react-pose](https://medium.com/@joomiguelcunha/amazing-react-animation-with-react-pose-3b67d9eb6e07)
 
-## Assignment 4: Redux, Client-Server Communication and Fetch
+<h2>Assignment 4: Redux, Client-Server Communication and Fetch</h2>
 
-## Peer-graded Assignment: Redux, Client-Server Communication and Fetch
+<h2>Peer-graded Assignment: Redux, Client-Server Communication and Fetch</h2>
 
 <b>Deadline</b> Nov 13, 11:59 PM PST
 
@@ -6576,7 +6313,7 @@ the server to render the information corresponding to the leadership
 team of the company. In addition, you will handle the submission of the
 feedback form by posting the feedback to the server.
 
-## Step-By-Step Assignment Instructions
+<h2>Step-By-Step Assignment Instructions</h2>
 
 <h4>less</h4>
 
@@ -6663,7 +6400,7 @@ height="7.084027777777778in"}
 ![](./images/image012.png){width="4.454861111111111in"
 height="9.0in"}
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -6692,16 +6429,16 @@ Your assignment will be assessed based on the following criteria:
 -   Appropriate animation has been added to stagger the rendering of the
     leaders in the AboutComponent.
 
-## Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources
+<h2>Assignment 4: Redux, Client-Server Communication and Fetch: Additional Resources</h2>
 
-### Assignment Screenshots
+<h3>Assignment Screenshots</h3>
 
 ![](./images/image010.png){width="6.5in"
 height="7.308333333333334in"}![](./images/image011.png){width="6.5in"
 height="7.084027777777778in"}![](./images/image012.png){width="4.454861111111111in"
 height="9.0in"}
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Redux Actions](https://redux.js.org/basics/actions)
 
@@ -6721,7 +6458,7 @@ height="9.0in"}
 
 -   [react-animation-components](https://github.com/unruffledBeaver/react-animation-components)
 
-## Module xx: Building and Deployment: Objectives and Outcomes
+<h2>Module xx: Building and Deployment: Objectives and Outcomes</h2>
 
 In this lesson you will learn about Webpack and how react-scripts uses
 webpack to package your React application to create a distribution
@@ -6732,13 +6469,13 @@ folder. At the end of this exercise you will be able to:
 -   Use react-scripts to build a distribution folder with your React
     application bundled using Webpack
 
-## Introduction to Webpack
+<h2>Introduction to Webpack</h2>
 
-## Exercise (Video): Building and Deploying the React Application
+<h2>Exercise (Video): Building and Deploying the React Application</h2>
 
-## Exercise (Instructions): Building and Deploying the React Application
+<h2>Exercise (Instructions): Building and Deploying the React Application</h2>
 
-### Objectives and Outcomes
+<h3>Objectives and Outcomes</h3>
 
 In this exercise you will learn to use the react-scripts to build a
 distribution folder with the set of application files that can be copied
@@ -6751,7 +6488,7 @@ exercise you will be able to:
 -   Deploy your application to a server by copying the built files to
     your server
 
-### Building the Distribution Folder
+<h3>Building the Distribution Folder</h3>
 
 -   To build the distribution folder containing your React application,
     type the following at the prompt:
@@ -6763,7 +6500,7 @@ npm run build
 -   This should build a distribution folder named <i>build</i> containing all
     your application files.
 
-### Deploying your React Application
+<h3>Deploying your React Application</h3>
 
 -   To deploy your React application you need a server. Fortunately we
     already have the json-server available on our computer.
@@ -6781,20 +6518,20 @@ npm run build
     consult their documentation to see the procedure to set up the
     server.
 
-### Conclusions
+<h3>Conclusions</h3>
 
 In this exercise you learnt to use the react-scripts to build and deploy
 your React application.
 
-## Building and Deployment: Additional Resources
+<h2>Building and Deployment: Additional Resources</h2>
 
-### PDFs of Presentations
+<h3>PDFs of Presentations</h3>
 
 <ul>
-<li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-Webpack.pdf">12-Webpack.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/12-Webpack.pdf">12-Webpack.pdf</a></li>
 </ul>
 
-### React Resources
+<h3>React Resources</h3>
 
 -   [Webpack: an
     Introduction](https://angular.io/docs/ts/latest/guide/webpack.html)
@@ -6802,13 +6539,13 @@ your React application.
 -   [create-react-app
     Build](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-build)
 
-### Other Resources
+<h3>Other Resources</h3>
 
 -   [Webpack](https://webpack.js.org/concepts/)
 
 -   [Webpack on Github](https://webpack.github.io/)
 
-## Project Implementation: Objectives and Outcomes
+<h2>Project Implementation: Objectives and Outcomes</h2>
 
 <p>This is the final stretch before you complete your project. By this time
 you should already have a good scaffolding for your website. As you
@@ -6832,15 +6569,15 @@ At the end of this lesson, you will be able to:
 
 -   Understand the design and development process through the practice.
 
-## Final Report Template
+<h2>Final Report Template</h2>
 
-### Project Title
+<h3>Project Title</h3>
 
-### 1. Introduction
+<h3>1. Introduction
 
 -   Briefly describe the salient features of your project.
 
-### 2. Design and Implementation
+<h3>2. Design and Implementation</h3>
 
 Give a detailed system description and design and implementation
 details.
@@ -6860,7 +6597,7 @@ In particular, this section should contain:
 
 -   Include a few screen shots of your website in the report
 
-### 3. Conclusions
+<h3>3. Conclusions</h3>
 
 -   Briefly state what results you obtained from your project.
 
@@ -6869,12 +6606,12 @@ In particular, this section should contain:
 -   Discuss any choices that you might have made differently, in
     hindsight after completing the project.
 
-### 4. References
+<h3>4. References</h3>
 
 -   Give references to any material / websites / books etc. relevant to
     your project.
 
-## Honors Peer-graded Assignment: Project Implementation and Final Report
+<h2>Honors Peer-graded Assignment: Project Implementation and Final Report</h2>
 
 <b>Ready for the assignment?</b>
 
@@ -6891,7 +6628,7 @@ adding appropriate comments within the code so that reviewers can easily
 understand the code. If your server is running on any publicly hosted
 server, please submit the URL of the site
 
-## Review criteria
+<h2>Review criteria</h2>
 
 <h4>less</h4>
 
@@ -6919,7 +6656,7 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-# hello world
+<h7>hello world</h7>
 
 you can write text [with links](http://example.com) inline or [link references][1].
 
