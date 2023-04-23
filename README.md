@@ -117,7 +117,7 @@ The hands-on project on Build Your First React Website is divided into following
 
   - Be able to use Redux to design the architecture for a React-Redux application
 
-<h4>Week 1 of 4 - Syllabus</h4>
+<h2>Week 1 of 4 - Syllabus</h2>
 
 <h3>Introduction to React</h3>
 
@@ -125,7 +125,7 @@ In this module we get a quick introduction to front-end JavaScript
 frameworks and libraries, followed by an introduction to React. We will
 also learn about React components and JSX.
 
-<h4>Week 2</h4>
+<h2>Week 2</h2>
 
 <h3>React Router and Single Page Applications</h3>
 
@@ -133,7 +133,7 @@ In this week, you will learn about various component types. You will learn about
 
 <!-- <b>14 videos (Total 191 min), 16 readings</b> -->
 
-<h4>Week 3</h4>
+<h2>Week 3</h2>
 
 <h3>React Forms, Flow Architecture and Introduction to Redux</h3>
 
@@ -142,7 +142,7 @@ forms and briefly examine form validation in React applications. You
 will get an overview of the Flux architecture and introduced to Redux as
 a way of realizing the flux architecture
 
-<h4>Week 4</h4>
+<h2>Week 4</h2>
 
 <h3>More Redux and Client-Server Communication</h3>
 
@@ -1013,9 +1013,9 @@ browser.
     available through the <b>Additional Resources</b> of the specific
     lesson.
 
-<h1>WEEK # 2</h1>
+<h2>WEEK # 2</h2>
 
-<b>8 hours to complete</b>
+<h6>8 hours to complete</h6>
 
 <h2>React Router and Single Page Applications</h2>
 
@@ -1026,7 +1026,6 @@ React Router to design single page applications.
 
 <h2>[Presentational and Container Components](https://www.coursera.org/lecture/front-end-react/presentational-and-container-components-TZMPB) 6m</h2>
 
-
 <h2>React Forms, Flow Architecture and Introduction to Redux</h2>
 
 In this module you will be introduced to uncontrolled and controlled
@@ -1036,9 +1035,9 @@ a way of realizing the flux architecture.
 
 <h3>[Controlled Forms](https://www.coursera.org/lecture/front-end-react/controlled-forms-RYDaq) 5m</h3>
 
-<h1>WEEK # 4</h1>
+<h2>WEEK # 4</h2>
 
-<b>12 hours to complete</b>
+<h6>12 hours to complete</h6>
 
 <h2>More Redux and Client-Server Communication</h2>
 
@@ -5543,7 +5542,7 @@ json-server node module. At the end of this lesson, you will be able to:
 
 <h2>Brief Representational State Transfer (REST)</h2>
 
-<h2>Exercise (Video): Setting up a Server using json-server</h2>
+<h2>Exercise: Setting up a Server using json-server</h2>
 
 <h2>Exercise (Instructions): Setting up a Server using json-server</h2>
 
@@ -5683,7 +5682,7 @@ lesson you will be able to:
 
 <h2>Fetch</h2>
 
-<h2>Exercise (Video): Fetch from Server</h2>
+<h2>Exercise: Fetch from Server</h2>
 
 <h2>Exercise (Instructions): Fetch from Server</h2>
 
@@ -5882,7 +5881,7 @@ import { baseUrl } from '../shared/baseUrl';
 In this exercise you have learnt to install Fetch and use it communicate
 with the server.
 
-<h2>Exercise (Video): Fetch Handling Errors</h2>
+<h2>Exercise: Fetch Handling Errors</h2>
 
 <h2>Exercise (Instructions): Fetch Handling Errors</h2>
 
@@ -5945,7 +5944,7 @@ export const fetchComments = () => (dispatch) => {    
 In this exercise you learnt how to configure your app to handle errors
 in communicating with the server.
 
-<h2>Exercise (Video): Fetch Post Comment</h2>
+<h2>Exercise: Fetch Post Comment</h2>
 
 <h2>Exercise (Instructions): Fetch Post Comment</h2>
 
@@ -6094,7 +6093,7 @@ you will be able to:
 
 <h2>React Animations</h2>
 
-<h2>Exercise (Video): React Animations</h2>
+<h2>Exercise: React Animations</h2>
 
 <h2>Exercise (Instructions): React Animations</h2>
 
@@ -6171,7 +6170,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 In this exercise we implemented simple animation using
 react-transition-group.
 
-<h2>Exercise (Video): React Animation Components</h2>
+<h2>Exercise: React Animation Components</h2>
 
 <h2><b>Exercise (Instructions): React Animation</b> Components</h2>
 
@@ -6471,7 +6470,7 @@ folder. At the end of this exercise you will be able to:
 
 <h2>Introduction to Webpack</h2>
 
-<h2>Exercise (Video): Building and Deploying the React Application</h2>
+<h2>Exercise: Building and Deploying the React Application</h2>
 
 <h2>Exercise (Instructions): Building and Deploying the React Application</h2>
 
