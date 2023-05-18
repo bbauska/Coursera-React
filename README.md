@@ -237,8 +237,8 @@ also learn about React components and JSX.
 <h4>PDFs of Presentations</h4>
 
 <ul>
-  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00-Course-Overview.pdf</a></li>
-  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00-How-to-Learn.pdf</b></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/blob/main/pdf/00-Course-Overview.pdf">00. Course Overview</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/blob/main/pdf/00-How-to-Learn.pdf">00. How to Learn</b></li>
 </ul>
 
 <h3>React Resources</h3>
@@ -815,13 +815,11 @@ package and start a development server.
 
 <h3>PDFs of Presentations</h3>
 
-<b>Git.pdf</b>
-
-<b>Git-Exercises.pdf</b>
-
-<b>NodeJS.pdf</b>
-
-<b>Exercises-Node-NPM.pdf</b>
+<ul>
+  <li><a href="https://github.com/bbauska/Coursera-React/blob/main/pdf/01-Git.pdf">01. Git</b><br><br></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/blob/main/pdf/01-Exercises-Git.pdf">01. Git Exercises</a><br><br></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/blob/main/pdf/01-Exercises-Node-NPM.pdf">01. Node NPM Exercises</b></li>
+</ul>
 
 <h3>Additional Resources (Git)</h3>
 
