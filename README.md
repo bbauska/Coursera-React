@@ -237,8 +237,8 @@ also learn about React components and JSX.
 <h4>PDFs of Presentations</h4>
 
 <ul>
-  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00. Course-Overview.pdf</a></li>
-  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00. How-to-Learn.pdf</b></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. Course-Overview.pdf">00-Course-Overview.pdf</a></li>
+  <li><a href="https://github.com/bbauska/Coursera-React/tree/main/pdf/00. How-to-Learn.pdf">00-How-to-Learn.pdf</b></li>
 </ul>
 
 <h3>React Resources</h3>
