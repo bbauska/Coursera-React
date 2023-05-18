@@ -13,22 +13,16 @@ $ npm
 <!--
 🐱‍👤 View this course in full now - without ads - on Net Ninja Pro:
 https://netninja.dev/p/bootstrap-5-cr...
-
 🐱‍💻 Access the course files on GitHub:
 https://github.com/iamshaunjp/bootstr...
-
 🐱‍💻 HTML & CSS Crash Course:
 https://www.youtube.com/watch?v=hu-q2...
-
 🐱‍💻 Node.js Crash Course:
 https://www.youtube.com/playlist?list...
-
 🐱‍💻 SASS Crash Course:
 https://www.youtube.com/watch?v=St5B7...
-
 🐱‍💻 VS Code - https://code.visualstudio.com/
 🐱‍💻 Bootstrap 5 Docs - https://getbootstrap.com/docs/5.0/get...
-
 🐱‍💻  Social Links:
 Facebook - https://www.facebook.com/thenetninjauk
 Twitter - https://twitter.com/thenetninjauk
@@ -72,9 +66,9 @@ The hands-on project on Build Your First React Website is divided into following
 
 <h2>Front-End Web Development with React</h2>
 
-<h7>(by The Hong Kong University of Science and Technology)</h7>
+<h6>(by The Hong Kong University of Science and Technology)</h6>
 
-<h3>Part II of Front-end web development from Coursera</h3>
+<h2>Part II of Front-end web development from Coursera</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 01. hong kong university of science and technology logo (01) ~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
