@@ -35,7 +35,7 @@ Twitter - https://twitter.com/thenetninjauk
 Instagram - https://www.instagram.com/thenetninja/
 -->
 
-<h2 align="center">Coursera - React</h2>
+<h1 align="center">Coursera - React</h1>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of coursera-react.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
