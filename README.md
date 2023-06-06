@@ -1,5 +1,5 @@
 ---
-Coursera-React: "Build Your First React Website"
+Coursera-React: Build Your First React Website
 ---
 <!-- readme.md for Coursera-React in github.com/bbauska -->
 <!-- https://github.com/bbauska/Coursera-React/edit/main/README.md -->
