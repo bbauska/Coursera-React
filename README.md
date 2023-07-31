@@ -99,17 +99,17 @@ The hands-on project on Build Your First React Website is divided into following
 
 <h3>At the end of this course, you will:</h3>
 
-  - Be familiar with client-side Javascript application development and the React library
+  - Be familiar with client-side Javascript application development and the React library,
 
-  - Be able to implement single page applications in React
+  - Be able to implement single page applications in React,
 
-  - Be able to use various React features including components and forms
+  - Be able to use various React features including components and forms,
 
-  - Be able to implement a functional front-end web application using React
+  - Be able to implement a functional front-end web application using React,
 
-  - Be able to use Reactstrap for designing responsive React applications
+  - Be able to use Reactstrap for designing responsive React applications, and
 
-  - Be able to use Redux to design the architecture for a React-Redux application
+  - Be able to use Redux to design the architecture for a React-Redux application.
 
 <h2>Week 1 of 4 - Syllabus</h2>
 
@@ -182,15 +182,15 @@ strongly recommended.
 
 <b>At the end of this course, you will:</b>
 
-  - Be familiar with client-side Javascript application development and the React library
+  - Be familiar with client-side Javascript application development and the React library,
 
-  - Be able to implement single page applications in React
+  - Be able to implement single page applications in React,
 
-  - Be able to use various React features including components and forms
+  - Be able to use various React features including components and forms,
 
-  - Be able to implement a functional front-end web application using React
+  - Be able to implement a functional front-end web application using React,
 
-  - Be able to use Reactstrap for designing responsive React applications
+  - Be able to use Reactstrap for designing responsive React applications, and
 
   - Be able to use Redux to design the architecture for a React-Redux application.
 
@@ -200,18 +200,18 @@ strongly recommended.
 
 <h2>Module 1: Full Stack Web Development: The Big Picture: Objectives and Outcomes</h2>
 
-This lesson gives you a big picture view of the Full Stack Web
+This lesson (1) gives you a big picture view of the Full Stack Web
 Development. The lecture gives you an overview of full stack web
-development. At the end of this lesson, you will be able to:
+development. At the end of this lesson (1), you will be able to:
 
 -   Understand what is meant by full stack in the context of web
-    development
+    development,
 
 -   Distinguish between front-end, back-end and full stack web
-    development
+    development, and
 
 -   Understand the position of this course in the context of this
-    specialization
+    specialization.
 
 <h2>WEEK # 1</h2>
 
@@ -224,13 +224,13 @@ also learn about React components and JSX.
 <h4>Learning Objectives</h4>
 
 -   Express the general characteristics of JavaScript frameworks and
-    libraries
+    libraries,
 
--   Create a new project using React
+-   Create a new project using React,
 
--   Create React components within your React application
+-   Create React components within your React application, and
 
--   Express what is meant by full-stack web development
+-   Express what is meant by full-stack web development.
 
 <h3>Welcome to Front-End Web Development with React</h3>
 
@@ -262,16 +262,16 @@ also learn about React components and JSX.
 
 This lesson gives you a big picture view of the Full Stack Web
 Development. The lecture gives you an overview of full stack web
-development. At the end of this lesson, you will be able to:
+development. At the end of this lesson (2), you will be able to:
 
 -   Understand what is meant by full stack in the context of web
-    development
+    development,
 
 -   Distinguish between front-end, back-end and full stack web
-    development
+    development, and
 
 -   Understand the position of this course in the context of this
-    specialization
+    specialization.
 
 <h2>Full Stack Web Development: Additional Resources</h2>
 
@@ -299,11 +299,11 @@ development. At the end of this lesson, you will be able to:
 At the end of this lesson, you should have set up Git and Node.js on
 your computer. You can skip this lesson if you have already completed
 this as part of an earlier course in the specialization. At the end of
-this lesson, you will be able to:
+this lesson (3), you will be able to:
 
--   Set up a Git repository and perform basic Git operations
+-   Set up a Git repository and perform basic Git operations,
 
--   Set up and use online Git repositories
+-   Set up and use online Git repositories, and
 
 -   Use Node-based modules to perform basic operations.
 
@@ -359,12 +359,12 @@ required for using all the remaining Node.js and Node based tools that
 we encounter in the rest of the course. At the end of this exercise, you
 would be able to:
 
--   Install Git on your computer
+-   Install Git on your computer,
 
 -   Ensure that Git can be used from the command-line or command-prompt
-    on your computer
+    on your computer, and
 
--   Set up some of the basic global configuration for Git
+-   Set up some of the basic global configuration for Git.
 
 <h3>Downloading and Installing Git</h3>
 
